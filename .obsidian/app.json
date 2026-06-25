@@ -1,0 +1,28 @@
+{
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
+  "showLineNumber": false,
+  "readableLineLength": true,
+  "tabSize": 4,
+  "vimMode": false,
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "resources/excalidraw/",
+    "resources/misc/",
+    "resources/audio/",
+    "resources/others/"
+  ],
+  "rightToLeft": false,
+  "newFileLocation": "root",
+  "showUnsupportedFiles": true,
+  "defaultViewMode": "preview",
+  "propertiesInDocument": "visible",
+  "deleteUnlinkedAttachments": "ask"
+}
