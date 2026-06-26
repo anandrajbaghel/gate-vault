@@ -1,6 +1,6 @@
 # INDEX_SPEC.md
 
-# GATE Vault Repository Index Specification
+# GATE Vault Index Specification
 
 Version: 1.0
 
@@ -10,219 +10,29 @@ Status: Draft
 
 # Purpose
 
-This document defines the repository inventory used by GATE Manager.
+This document defines the structure of `vault-index.json`.
 
-The index represents the complete contents of a released vault.
+The index is the canonical inventory of all repository-managed content.
 
-It is generated automatically.
+It is generated automatically before every release.
 
-It must never be edited manually.
+The plugin never generates this file.
+
+The plugin trusts this file.
 
 ---
 
 # Philosophy
 
-The index is not policy.
-
-The index is not metadata.
-
-The index is an inventory.
-
-It tells the plugin exactly what exists inside the repository.
-
----
-
-# Generation
-
-The index is generated during every release.
-
-It always represents the released repository.
-
-Manual editing is prohibited.
-
----
-
-# Repository Scope
-
-Every repository-managed file appears exactly once.
-
-Repository-owned files
-
-Shared files
-
-Special files
-
-All appear in the index.
-
-User-owned files never appear because they are not part of the repository.
-
----
-
-# Root Structure
-
-The index contains:
-
-Repository Version
-
-Generation Time
-
-Generator Version
-
-Repository Hash
-
-Entries
-
-Statistics
-
----
-
-# Entry
-
-Every repository file becomes one entry.
-
-Each entry contains:
-
-Path
-
-Type
-
-Size
-
-SHA-256 Hash
-
-Ownership
-
-Rule Reference
-
-Version Introduced
-
-Last Modified Version
-
-Future fields may be added.
-
----
-
-# Path
-
-Paths are always repository-relative.
-
-Example:
-
-1. Mathematics/Linear Algebra/Vector Space.md
-
-Never absolute paths.
-
----
-
-# Type
-
-Examples:
-
-Markdown
-
-Image
-
-PDF
-
-JSON
-
-Folder
-
-Future types may be added.
-
----
-
-# Hash
-
-Every file stores a SHA-256 hash.
-
-Hashes are used for:
-
-Update detection
-
-Conflict detection
-
-Verification
-
-Integrity
-
-The planner never compares timestamps.
-
----
-
-# Ownership
-
-Copied from vault-rules.json.
-
-Never inferred.
-
 Repository
 
-Shared
+↓
 
-Special
+Repository Validator
 
-User-owned files never appear.
+↓
 
----
-
-# Rule Reference
-
-Each entry references the rule responsible for the file.
-
-Example:
-
-Repository Notes
-
-Shared Error
-
-Shared Trends
-
-Special Obsidian
-
-This avoids duplicated policy.
-
----
-
-# Statistics
-
-The index stores:
-
-Total Files
-
-Total Directories
-
-Total Bytes
-
-Repository Version
-
-Generated Timestamp
-
-Generator Version
-
----
-
-# Validation
-
-The planner verifies:
-
-Every indexed file exists.
-
-No duplicate paths.
-
-Valid hashes.
-
-Referenced rule exists.
-
-Invalid indexes are rejected.
-
----
-
-# Planner Usage
-
-Planner reads:
-
-vault-rules.json
+Repository Index Generator
 
 ↓
 
@@ -230,88 +40,320 @@ vault-index.json
 
 ↓
 
-Local Vault
+Plugin
 
-↓
+The plugin never scans the extracted repository to discover managed files.
 
-Install Plan
-
-Planner never scans the repository to infer ownership.
-
-Planner trusts the published index.
+The repository explicitly publishes its inventory.
 
 ---
 
-# Update Detection
+# Location
 
-Repository Hash
+Repository Root
 
-↓
-
-Installed Hash
-
-↓
-
-Current Local Hash
-
-Three-way comparison determines:
-
-Skip
-
-Update
-
-Conflict
-
-Archive
-
-Never rely on timestamps.
+vault-index.json
 
 ---
 
-# Archive Detection
+# Generation
 
-If a repository-owned file existed previously but no longer exists in the current index:
+Generated automatically.
 
-Create Archive action.
+Never edited manually.
 
-Never delete automatically.
+Every release must regenerate this file.
 
 ---
 
-# Extensibility
+# Hash Algorithm
+
+SHA-256
+
+All file hashes must use SHA-256.
+
+---
+
+# Top Level Structure
+
+vault-index.json contains:
+
+formatVersion
+
+version
+
+generated
+
+generatedAt
+
+generator
+
+statistics
+
+entries
+
+---
+
+# formatVersion
+
+Integer
+
+Increment only for breaking format changes.
+
+---
+
+# version
+
+Repository version.
+
+Should match:
+
+vault-manifest.json
+
+---
+
+# generated
+
+Boolean.
+
+Always true after successful generation.
+
+---
+
+# generatedAt
+
+ISO-8601 timestamp.
+
+Generation time.
+
+---
+
+# generator
+
+Contains generator metadata.
+
+Fields:
+
+name
+
+version
+
+hashAlgorithm
+
+Example
+
+{
+    "name": "generate-index.js",
+    "version": "1.0.0",
+    "hashAlgorithm": "SHA-256"
+}
+
+---
+
+# Statistics
+
+Contains:
+
+files
+
+directories
+
+bytes
+
+managedFiles
+
+managedDirectories
+
+---
+
+# Entries
+
+Entries is an array.
+
+One entry per managed file.
+
+Directories are optional.
+
+Future versions may index directories.
+
+---
+
+# Entry Structure
+
+Each entry contains:
+
+path
+
+type
+
+ownership
+
+hash
+
+size
+
+modified
+
+---
+
+# path
+
+Repository relative path.
+
+Example
+
+1. Mathematics/Mathematics.md
+
+---
+
+# type
+
+Possible values:
+
+note
+
+dictionary
+
+trend
+
+error
+
+attachment
+
+image
+
+pdf
+
+other
+
+Future types may be added.
+
+---
+
+# ownership
+
+Possible values:
+
+repository
+
+shared
+
+user
+
+special
+
+Determined from vault-rules.json.
+
+---
+
+# hash
+
+SHA-256
+
+Hex string.
+
+---
+
+# size
+
+Bytes.
+
+---
+
+# modified
+
+ISO-8601 timestamp.
+
+Repository file modification time.
+
+---
+
+# Ordering
+
+Entries must be sorted alphabetically by path.
+
+Generation must be deterministic.
+
+---
+
+# Excluded Files
+
+Generator must ignore:
+
+.git/
+
+.github/
+
+.obsidian/
+
+tools/
+
+README.md
+
+SPEC.md
+
+VAULT_SPEC.md
+
+INDEX_SPEC.md
+
+UPDATE_POLICY.md
+
+CONTRIBUTING.md
+
+LICENSE
+
+vault-index.json
+
+---
+
+# Validation
+
+Generator validates:
+
+Duplicate paths
+
+Missing paths
+
+Empty hashes
+
+Invalid ownership
+
+Unknown file type
+
+Invalid timestamps
+
+Duplicate entries
+
+Validation failure aborts generation.
+
+---
+
+# Future Compatibility
 
 Future fields may include:
 
-Digital Signature
+checksum
 
-Compression Metadata
+compression
 
-Language
+mimeType
 
-Tags
+encoding
 
-Dependencies
+language
 
-Package Groups
+tags
 
-Future plugins should ignore unknown optional fields.
+dependencies
 
----
-
-# Generation Requirements
-
-Index generation must be deterministic.
-
-Generating twice without repository changes must produce identical output.
+Unknown fields must be ignored by the plugin.
 
 ---
 
 # Guiding Principle
 
-The index describes the repository.
+The index is the canonical description of repository content.
 
-The rules describe behaviour.
+The plugin trusts the index.
 
-The planner combines both.
-
-Neither file should duplicate the responsibility of the other.
+The generator guarantees the index.
