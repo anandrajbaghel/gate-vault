@@ -1,22 +1,32 @@
 {
-    "name": "GATE Vault",
-    "id": "gate-vault",
+  "id": "gate-vault",
 
-    "version": "0.0.1",
+  "name": "GATE Vault",
 
-    "description": "Community-maintained Obsidian knowledge base for GATE preparation.",
+  "description": "Community-maintained Obsidian knowledge base for GATE preparation.",
 
-    "plugin": {
-        "minimumVersion": "0.1.0"
-    },
+  "version": "0.0.1",
 
-    "repository": {
-        "owner": "anandrajbaghel",
-        "name": "gate-vault",
-        "branch": "main"
-    },
+  "formatVersion": 1,
 
-    "vault": {
-        "formatVersion": 1
-    }
+  "plugin": {
+    "minimumVersion": "0.1.0"
+  },
+
+  "repository": {
+    "owner": "anandrajbaghel",
+    "name": "gate-vault",
+    "branch": "main"
+  },
+
+  "release": {
+    "channel": "stable"
+  },
+
+  "features": {
+    "restoreOfficialFiles": true,
+    "mergeHybridFiles": true,
+    "compareChanges": false,
+    "rollback": false
+  }
 }
