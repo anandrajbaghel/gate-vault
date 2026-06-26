@@ -1,5 +1,11 @@
 {
-  "version": 1,
-  "generated": false,
-  "entries": []
+    "formatVersion": 1,
+    "version": "0.0.2",
+    "generated": false,
+    "entries": [],
+    "statistics": {
+        "files": 0,
+        "directories": 0,
+        "bytes": 0
+    }
 }
