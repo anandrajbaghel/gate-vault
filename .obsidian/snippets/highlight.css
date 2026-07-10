@@ -1,0 +1,23 @@
+/* <mark> text </mark> */
+/* ==text== */
+
+mark {
+  background-color: var(--color-accent) !important;
+  background-color: color-mix(in srgb, var(--color-accent) 20%, transparent 80%) !important;
+  color: #000 !important;
+  padding: 0.08em 0.4em;
+  border-radius: 4px;
+  transition: 0.21s;
+}
+
+body.theme-dark mark,
+.theme-dark mark {
+  background-color: color-mix(in srgb, var(--color-accent) 40%, var(--background-primary) 60%) !important;
+  color: #fff !important;
+}
+
+/* .suggestion-highlight {
+    font-weight: bold;
+    color: var(--text-accent);
+    background-color: transparent;
+} */

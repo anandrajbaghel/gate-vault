@@ -1,0 +1,6 @@
+/* changes style for table headers */
+
+.markdown-preview-view table th{
+	background-color: #eee !important;
+	color: var(--color-accent) !important;
+}

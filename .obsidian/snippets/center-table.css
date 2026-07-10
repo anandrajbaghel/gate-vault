@@ -1,0 +1,7 @@
+/* align table at center */
+
+.markdown-preview-view table {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
