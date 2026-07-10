@@ -1,0 +1,141 @@
+/* ==========================================
+GATE STUDY CALLOUTS
+========================================== */
+
+/* SUBJECT */
+.callout[data-callout="subject"] {
+--callout-color: 44, 62, 80;
+--callout-icon: library;
+}
+
+/* TOPIC */
+.callout[data-callout="topic"] {
+--callout-color: 52, 152, 219;
+--callout-icon: folder-tree;
+}
+
+/* FORMULA */
+.callout[data-callout="formula"] {
+--callout-color: 0, 123, 255;
+--callout-icon: sigma;
+}
+
+/* DEFINITION */
+.callout[data-callout="definition"] {
+--callout-color: 39, 174, 96;
+--callout-icon: book-open;
+}
+
+/* CONCEPT */
+.callout[data-callout="concept"] {
+--callout-color: 142, 68, 173;
+--callout-icon: lightbulb;
+}
+
+/* DERIVATION */
+.callout[data-callout="derivation"] {
+--callout-color: 243, 156, 18;
+--callout-icon: list-ordered;
+}
+
+/* EXAMPLE */
+.callout[data-callout="example"] {
+--callout-color: 52, 73, 94;
+--callout-icon: flask-conical;
+}
+
+/* NUMERICAL */
+.callout[data-callout="numerical"] {
+--callout-color: 41, 128, 185;
+--callout-icon: calculator;
+}
+
+/* PYQ */
+.callout[data-callout="pyq"] {
+--callout-color: 231, 76, 60;
+--callout-icon: file-question;
+}
+
+/* HINT */
+.callout[data-callout="hint"] {
+--callout-color: 241, 196, 15;
+--callout-icon: lightbulb;
+}
+
+/* ANSWER */
+.callout[data-callout="answer"] {
+--callout-color: 46, 204, 113;
+--callout-icon: check-circle;
+}
+
+/* TRICK */
+.callout[data-callout="trick"] {
+--callout-color: 230, 126, 34;
+--callout-icon: zap;
+}
+
+/* EXAM TIP */
+.callout[data-callout="examtip"] {
+--callout-color: 211, 84, 0;
+--callout-icon: target;
+}
+
+/* IMPORTANT */
+.callout[data-callout="important"] {
+--callout-color: 192, 57, 43;
+--callout-icon: star;
+}
+
+/* COMMON MISTAKE */
+.callout[data-callout="mistake"] {
+--callout-color: 127, 0, 0;
+--callout-icon: alert-triangle;
+}
+
+/* MEMORY */
+.callout[data-callout="memory"] {
+--callout-color: 26, 188, 156;
+--callout-icon: brain;
+}
+
+/* REVISION */
+.callout[data-callout="revision"] {
+--callout-color: 155, 89, 182;
+--callout-icon: refresh-cw;
+}
+
+/* FAQ */
+.callout[data-callout="faq"] {
+--callout-color: 22, 160, 133;
+--callout-icon: messages-square;
+}
+
+/* REFER */
+.callout[data-callout="refer"] {
+--callout-color: 0, 184, 148;
+--callout-icon: link;
+}
+
+/* RELATED */
+.callout[data-callout="related"] {
+--callout-color: 22, 160, 133;
+--callout-icon: link-2;
+}
+
+/* NAVIGATION */
+.callout[data-callout="navigation"] {
+--callout-color: 52, 152, 219;
+--callout-icon: map;
+}
+
+/* PREREQUISITE */
+.callout[data-callout="prerequisite"] {
+--callout-color: 142, 68, 173;
+--callout-icon: arrow-left-circle;
+}
+
+/* NEXT */
+.callout[data-callout="next"] {
+--callout-color: 39, 174, 96;
+--callout-icon: arrow-right-circle;
+}
