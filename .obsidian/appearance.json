@@ -1,0 +1,22 @@
+{
+  "accentColor": "",
+  "theme": "system",
+  "enabledCssSnippets": [
+    "center-images",
+    "center-table",
+    "highlight",
+    "table",
+    "underline",
+    "admonitions",
+    "seamless-embeds"
+  ],
+  "baseFontSize": 16,
+  "showRibbon": true,
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Verdana,Inter,Georgia,Arial",
+  "monospaceFontFamily": "",
+  "baseFontSizeAction": false,
+  "cssTheme": ""
+}
