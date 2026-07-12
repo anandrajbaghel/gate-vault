@@ -1,9 +1,0 @@
-{
-  "pinned": [
-    "workspace:toggle-pin",
-    "theme:toggle-light-dark",
-    "workspace:export-pdf",
-    "graph:open-local",
-    "app:open-settings"
-  ]
-}
