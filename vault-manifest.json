@@ -1,28 +1,20 @@
 {
   "id": "gate-vault",
-
   "name": "GATE Vault",
-
   "description": "Community-maintained Obsidian knowledge base for GATE preparation.",
-
-  "version": "0.0.2",
-
+  "version": "0.0.7",
   "formatVersion": 1,
-
   "plugin": {
     "minimumVersion": "0.1.0"
   },
-
   "repository": {
     "owner": "anandrajbaghel",
     "name": "gate-vault",
     "branch": "main"
   },
-
   "release": {
     "channel": "stable"
   },
-
   "features": {
     "restoreOfficialFiles": true,
     "mergeHybridFiles": true,
