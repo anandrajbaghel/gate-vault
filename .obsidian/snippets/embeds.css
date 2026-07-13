@@ -1,0 +1,47 @@
+body {
+  --embed-background: transparent;
+  --embed-border-start: none;
+  --embed-border-end: none;
+  --embed-border-top: none;
+  --embed-border-bottom: none;
+  --embed-padding: 0;
+  --embed-max-height: none;
+}
+
+.workspace .markdown-embed,
+.workspace .markdown-embed-content,
+.workspace .markdown-embed .markdown-preview-view {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: none;
+}
+
+/* Show embed link icon */
+.markdown-embed-link svg {
+  stroke: var(--color-accent);
+}
+
+.workspace .internal-embed {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.workspace .internal-embed .markdown-embed {
+  padding: 0;
+  margin: 0;
+}
+
+.workspace .markdown-embed hr,
+.workspace .internal-embed hr {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
