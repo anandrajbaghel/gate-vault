@@ -5,6 +5,17 @@ All notable changes to the GATE Vault are documented in this file.
 <p align="left"> <a href="https://razorpay.me/@anandbaghel"> <img src="https://img.shields.io/badge/Support%20GATE%20Vault-d97706?style=for-the-badge&logo=github&logoColor=white" alt="Support Development"> </a> </p>
 
 ---
+### v0.0.9
+
+> [!info] What's New in v0.0.9
+> Uploaded updated [[Electric Circuits]] MoC.
+
+#### Improved
+
+- `updated` property renamed to `modified`
+- `> [!pyq]- PYQ : YYYY` embeds being changed to `> [!pyq]- PYQ : GATE EE YYYY` for better visual understanding.
+
+---
 ## v0.0.8
 
 > [!info] What's New in v0.0.8
