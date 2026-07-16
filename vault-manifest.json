@@ -2,10 +2,11 @@
   "id": "gate-vault",
   "name": "GATE Vault",
   "description": "Community-maintained Obsidian knowledge base for GATE preparation.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "formatVersion": 1,
+  "changelog": "Changelog.md",
   "plugin": {
-    "minimumVersion": "0.1.0"
+    "minimumVersion": "1.0.0"
   },
   "repository": {
     "owner": "anandrajbaghel",
