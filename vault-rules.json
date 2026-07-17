@@ -1,6 +1,6 @@
 {
     "formatVersion": 1,
-    "version": "0.0.10",
+    "version": "0.0.15",
 
     "index": {
         "include": [
@@ -15,9 +15,9 @@
             "8. Electrical and Electronic Measurements",
             "9. Analog & Digital Electronics",
             "10. Power Electronics",
-            "11. ERROR Logbook ⚡",
-            "12. PYQs Pattern Book 🔥",
-            "13. REVISION Sheets 📙",
+            "11. ERROR Logbook",
+            "12. PYQs Pattern Book",
+            "13. REVISION Sheets",
             "14. Reading List 📃",
             "15. Master",
             "Resources",
