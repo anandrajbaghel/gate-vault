@@ -2,7 +2,7 @@
   "id": "gate-vault",
   "name": "GATE Vault",
   "description": "Community-maintained Obsidian knowledge base for GATE preparation.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "formatVersion": 1,
   "changelog": "Changelog.md",
   "plugin": {
