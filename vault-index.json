@@ -969,6 +969,11 @@
             "size": 5789
         },
         {
+            "path": "Changelog.md",
+            "hash": "d64897cab1c9af462b7e727a87b59195236337f9cf38569afaff8cbca3128b35",
+            "size": 1728
+        },
+        {
             "path": "Resources/Dictionary/holomorphic function.md",
             "hash": "cc53e6cb0499302cf8ed3a1111490c018c303f687591db7ab4d32047c5f5ab1f",
             "size": 166
@@ -3230,8 +3235,8 @@
         }
     ],
     "statistics": {
-        "files": 645,
+        "files": 646,
         "directories": 48,
-        "bytes": 20250475
+        "bytes": 20252203
     }
 }
