@@ -1,0 +1,27 @@
+name: Package and Upload Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create ZIP Archive
+        run: |
+          # Zip everything in the folder, but exclude the hidden .git history
+          zip -r gate-vault.zip . -x "*.git*"
+
+      - name: Upload ZIP to Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Automatically upload the zip to the release you just clicked "Publish" on
+          gh release upload ${{ github.event.release.tag_name }} gate-vault.zip
