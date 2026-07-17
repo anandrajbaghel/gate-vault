@@ -1,6 +1,6 @@
 {
     "formatVersion": 1,
-    "version": "0.0.11",
+    "version": "0.0.12",
     "generated": true,
     "files": [
         {
@@ -25,8 +25,8 @@
         },
         {
             "path": ".obsidian/snippets/center-images.css",
-            "hash": "bad0657717be6209b89e9c172956a0c50b9e266839e8b9811711953cd20deae2",
-            "size": 104
+            "hash": "228e7633a6c566c09e9aa7dddb33329911300a144b23e0c09a43d772875ac21b",
+            "size": 102
         },
         {
             "path": ".obsidian/snippets/center-table.css",
@@ -3230,13 +3230,13 @@
         },
         {
             "path": "vault-manifest.json",
-            "hash": "a3b623d48c14ec7a40d59ba7b6115657e8f8b96994ce5e0144e854ae437b16a5",
+            "hash": "01d997d53e1b2a29c73b89bc1707bba05afab9ac2d150e4e3d19d4334ca0f20e",
             "size": 542
         }
     ],
     "statistics": {
         "files": 646,
         "directories": 48,
-        "bytes": 20252203
+        "bytes": 20252201
     }
 }
