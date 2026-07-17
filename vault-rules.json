@@ -1,5 +1,34 @@
 {
     "formatVersion": 1,
-    "version": "0.0.9",
-    "rules": []
+    "version": "0.0.10",
+
+    "index": {
+        "include": [
+            ".obsidian",
+            "1. Mathematics",
+            "2. Electric Circuits",
+            "3. Electromagnetic Fields",
+            "4. Signal & Systems",
+            "5. Electrical Machines",
+            "6. Power Systems",
+            "7. Control Systems",
+            "8. Electrical and Electronic Measurements",
+            "9. Analog & Digital Electronics",
+            "10. Power Electronics",
+            "11. ERROR Logbook ⚡",
+            "12. PYQs Pattern Book 🔥",
+            "13. REVISION Sheets 📙",
+            "14. Reading List 📃",
+            "15. Master",
+            "Resources",
+            "vault-manifest.json"
+        ],
+
+        "exclude": [
+            ".obsidian/plugins",
+            ".obsidian/cache",
+            ".obsidian/workspace.json",
+            ".obsidian/workspace-mobile.json"
+        ]
+    }
 }
