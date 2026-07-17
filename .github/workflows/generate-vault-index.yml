@@ -4,15 +4,19 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'vault-index.json'
 
 permissions:
   contents: write
 
+# This suppresses the Node 20 warning spam
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
+
 jobs:
   generate-index:
-    # Prevent the workflow from triggering itself after its own commit
     if: github.actor != 'github-actions[bot]'
-
     runs-on: ubuntu-latest
 
     steps:
@@ -34,11 +38,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet; then
-            echo "No changes."
-            exit 0
-          fi
-
           git add vault-index.json
-          git commit -m "Update vault-index.json"
-          git push
+          
+          # Safer way to check for changes that won't trigger exit code 1
+          if [ -n "$(git status --porcelain vault-index.json)" ]; then
+            git commit -m "chore: auto-generate vault-index.json"
+            git push
+            echo "Changes pushed successfully."
+          else
+            echo "No changes in vault-index.json."
+          fi
