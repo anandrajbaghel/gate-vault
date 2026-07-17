@@ -959,6 +959,16 @@
             "size": 4073
         },
         {
+            "path": "11. ERROR Logbook/error - Bode Plots.md",
+            "hash": "6b305b2289d430ac2ef8e6b46793da6338c96f0dd75f02783c2f3dc96bf5b310",
+            "size": 128
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Bode Plots.md",
+            "hash": "f2e55418269af2fd5ca4df317fde857aaff7b7a83d32915b8151631909bfa64e",
+            "size": 1110
+        },
+        {
             "path": "2. Electric Circuits/1. Network Basics & Circuit Laws/1. Fundamental Concepts/Kirchhoff's Laws.md",
             "hash": "617a203810563400e3ac3d39270e376f745d3ff4b3ec7350e129366a53a886b1",
             "size": 3708
@@ -3235,8 +3245,8 @@
         }
     ],
     "statistics": {
-        "files": 646,
-        "directories": 48,
-        "bytes": 20252201
+        "files": 648,
+        "directories": 50,
+        "bytes": 20253439
     }
 }
