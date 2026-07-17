@@ -1,6 +1,6 @@
 {
     "formatVersion": 1,
-    "version": "0.0.12",
+    "version": "0.0.13",
     "generated": true,
     "files": [
         {
@@ -3230,7 +3230,7 @@
         },
         {
             "path": "vault-manifest.json",
-            "hash": "01d997d53e1b2a29c73b89bc1707bba05afab9ac2d150e4e3d19d4334ca0f20e",
+            "hash": "bb375073ff1708db8e0e8e927d01de4cf61618c36e484707511cebc1e41158e4",
             "size": 542
         }
     ],
