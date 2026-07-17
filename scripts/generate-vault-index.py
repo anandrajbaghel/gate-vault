@@ -10,9 +10,6 @@ RULES_FILE = ROOT / "vault-rules.json"
 MANIFEST_FILE = ROOT / "vault-manifest.json"
 INDEX_FILE = ROOT / "vault-index.json"
 
-# Must perfectly match the textExts array in main.js HashService
-TEXT_EXTS = ['.md', '.txt', '.json', '.csv', '.js', '.css', '.html', '.xml', '.yaml', '.yml', '.svg']
-
 def fatal(msg):
     print(f"[ERROR] {msg}")
     sys.exit(1)
@@ -39,24 +36,12 @@ def is_excluded(relative_path, excludes):
 
 def compute_file_data(path: Path):
     """
-    Computes size and SHA256 hash.
-    Mimics HashService in main.js to ensure CRLF is normalized to LF for text files.
+    Computes size and SHA256 hash of the raw binary file.
+    This guarantees the hash perfectly matches the ZIP extraction stream.
     """
-    ext = path.suffix.lower()
     size = path.stat().st_size
-    
-    if ext in TEXT_EXTS:
-        try:
-            # Read text and normalize CRLF to LF just like the plugin does
-            content = path.read_text(encoding='utf-8')
-            content = content.replace('\r\n', '\n')
-            hash_hex = hashlib.sha256(content.encode('utf-8')).hexdigest()
-            return hash_hex, size
-        except UnicodeDecodeError:
-            pass # fallback to binary processing if UTF-8 decode fails
-    
-    # Binary hashing fallback
     hasher = hashlib.sha256()
+    
     with path.open('rb') as f:
         while chunk := f.read(8192):
             hasher.update(chunk)
