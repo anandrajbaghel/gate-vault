@@ -1,2 +1,4 @@
-* text=auto
-*.md text eol=lf
+# .gitattributes
+# Force LF line endings for all text files (MD, JSON, etc.) 
+# to ensure SHA256 hash integrity in the GATE plugin
+* text=auto eol=lf
