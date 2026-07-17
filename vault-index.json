@@ -1,11 +1,3237 @@
 {
     "formatVersion": 1,
-    "version": "0.0.9",
-    "generated": false,
-    "entries": [],
+    "version": "0.0.10",
+    "generated": true,
+    "files": [
+        {
+            "path": ".obsidian/app.json",
+            "hash": "401e0a137a3a835809055c49bfb30cf2dadd2cd3922afec0fde4705d8ffc180c",
+            "size": 649
+        },
+        {
+            "path": ".obsidian/appearance.json",
+            "hash": "b5787e09a39dc43f986c8ddb4724a48d0229abb2bffbc0d6845e0441bff15ba4",
+            "size": 462
+        },
+        {
+            "path": ".obsidian/core-plugins.json",
+            "hash": "3973d905543f18c8a6fb9b260e53e219565736e82fbda4355749825e76f3b22f",
+            "size": 696
+        },
+        {
+            "path": ".obsidian/snippets/admonitions.css",
+            "hash": "a3fa031ed5c421affbb1fcfe8e942e9f799cfdc5ad32dc30abbf0bfc9d2af99e",
+            "size": 2637
+        },
+        {
+            "path": ".obsidian/snippets/center-images.css",
+            "hash": "bad0657717be6209b89e9c172956a0c50b9e266839e8b9811711953cd20deae2",
+            "size": 104
+        },
+        {
+            "path": ".obsidian/snippets/center-table.css",
+            "hash": "0dc2fea4b4d661cc68da6d725707e5ec50dd1f95810e3e9c961f28f040fbf89c",
+            "size": 133
+        },
+        {
+            "path": ".obsidian/snippets/embeds.css",
+            "hash": "df2c611924d446c0db9bbd8a7ce304a8c79546a138423e7badbeb8a9a0442c07",
+            "size": 912
+        },
+        {
+            "path": ".obsidian/snippets/highlight.css",
+            "hash": "76b9498f293dcb5e884c0c6ae9db38bb43de99276b767bb47da09a1c48641932",
+            "size": 612
+        },
+        {
+            "path": ".obsidian/snippets/table.css",
+            "hash": "0027e5eb98e68335ed67de993363998216480c7edc2ce376447a334038d61e72",
+            "size": 156
+        },
+        {
+            "path": ".obsidian/snippets/underline.css",
+            "hash": "cc84f25c2fd9494f3ce23dd7e3283a557f99c42664802ce722be31cb86d732d4",
+            "size": 189
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Basis and Dimension of a Vector Space.md",
+            "hash": "6ecd862415c70b46e8b90fb7efcac9cd138bb1974f9a4226e8a78d12022a5b81",
+            "size": 4683
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Fundamental Subspaces of a Matrix.md",
+            "hash": "c58ab27adc45c429924758f38cb249f5feb7208cf53ca0ced23da6b6c661090f",
+            "size": 4774
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Gram-Schmidt Orthonormalization Process.md",
+            "hash": "1069a66bacfad36f5191a6259034ca197b93c6a57b2bd415175bf35673f6e0c2",
+            "size": 4308
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Inner Product Space.md",
+            "hash": "e9ed062ffdd669a687972afeccc07b8825a739c5d4dcd6b31baef32359582e11",
+            "size": 5152
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Linear Independence and Dependence of Vectors.md",
+            "hash": "1fb00b178f201f2ee924ef9cb0ec4e6c792723a7c1df0ca116c078d7cf0f9605",
+            "size": 4596
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Linear Transformation.md",
+            "hash": "4bb11b078385590339ec3ebfc085e6000669187fdd3699a16e77ff3f97c18c36",
+            "size": 4783
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Norm of a Vector.md",
+            "hash": "f0be46f53c022ab51d68d58f90ef69ece902304b9ecc9554cf98a80505d38bf9",
+            "size": 3331
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Orthogonality.md",
+            "hash": "979bb87b4052a61a473c1935a50acd3255fa9140b91c466f8db4d966917d7c04",
+            "size": 5336
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Orthonormal Basis.md",
+            "hash": "058654b7f26ed666b877a08e6bf458c44d9905a03191ee4a879de3321c0bf805",
+            "size": 4099
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Rank and Nullity of a Linear Transformation.md",
+            "hash": "91ac064dac69dc790656f19ef0ae41722ec9dbcfcf2191e6f71e76eef48ac90e",
+            "size": 3852
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Rank-Nullity Theorem.md",
+            "hash": "dc9c5d37d12b6c48c624c8290139eaf0aef640b151d8de04e1e6a40171cf04bd",
+            "size": 3627
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Span of a Set of Vectors.md",
+            "hash": "36ca50e9cfed98f2ceb8072238fac5fa1846b8c7b24ee000232a01499732f067",
+            "size": 3555
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Subspaces.md",
+            "hash": "837cb702441e8b515bfd8f0f6923f67eecfb5220fa57dfb9be09cbc488402b3b",
+            "size": 4465
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Vector Space Definition and Properties.md",
+            "hash": "a2c7ef5cb8665415f07a3523a0f45651446417b08733c8131a8652db4bcf0b76",
+            "size": 5856
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Block Matrices.md",
+            "hash": "ff39ced09a802040bda825ac84a4f807905b307e56586d04be942dc89b1ba474",
+            "size": 6617
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Hermitian Matrices.md",
+            "hash": "d8a416e917faeb189303d68ba0c97b0e376241a48b1210e61eaac0549fb197d9",
+            "size": 4587
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Jacobian.md",
+            "hash": "fd0458f78926749bb876d6d9c5d9feef46a6e90c4363de68e2c8f9f296fecbb5",
+            "size": 5640
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Nilpotent Matrices.md",
+            "hash": "2293310ac9eb6e24f35f869e8457f3ec9a650196bbfec5814c636c7940146aa6",
+            "size": 4033
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Orthogonal Matrices.md",
+            "hash": "7bd259726e7997a45c9c6d02a819c04698e4cec9d805a99a93c85df91baface7",
+            "size": 3952
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Skew-Hermitian Matrices.md",
+            "hash": "47f33dbc395b63ce736cea259d3dc61cda409a7fac98341172accd14cd86e307",
+            "size": 4197
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Skew-Symmetric Matrices.md",
+            "hash": "33d684832f1f49c48599a6e3a2b7175d32b696045cbf8ec54e32b758444f1339",
+            "size": 5478
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Symmetric Matrices.md",
+            "hash": "3a02f7933263a231db3912e1f4dbd6ad1272c0a90c6cc6933bf9a4b9cb4d2c03",
+            "size": 5452
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Types of Matrix.md",
+            "hash": "60c1ae9ea75549041929bdb64ed1a34ef81b26f62e9df67e1ce16f7a8b8ce5c1",
+            "size": 4271
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/1. Matrix Types/Unitary Matrices.md",
+            "hash": "0c33a7ab172e1e4f866bbbb1a89f167cbc050e3ef9b65ade96a8179b2e350195",
+            "size": 4136
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/2. Matrix Decompositions/Cholesky Decomposition.md",
+            "hash": "fb1cd55e01b8f8e0a308673db61ab2999046454015ac7185710fc94ec6d1fb05",
+            "size": 4446
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/2. Matrix Decompositions/LU Decomposition.md",
+            "hash": "f135e6170c1b354938f1dc85a03db03e9c8d77374bf27cdad501dbb18ee0138a",
+            "size": 4688
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Adjoint of a Matrix.md",
+            "hash": "eb4b3f850edcbb62d0ef2c14ebcf5a1ea43829812e982f889b6ca0fc51d24587",
+            "size": 4227
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Determinant of a Matrix.md",
+            "hash": "40eff9946bad9b8e407679df4d38805d8dc814a36223c0737ccdc1183b079a03",
+            "size": 4882
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Inverse of a Matrix.md",
+            "hash": "006a403011f45fc4bc045355f3c5cd14500d6b89dc45d4332ad0d504ba329c6f",
+            "size": 4684
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Matrix Operations.md",
+            "hash": "746a173d8edfd23ec934df17fc1164550402d6e70f955ff7b3103be058762dad",
+            "size": 7196
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Minors and Cofactors.md",
+            "hash": "480723b6e304a980b069e8c5daa3f94b298ae621f20bef14ce62d44b27e3fc99",
+            "size": 4026
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Properties of Transpose and Inverse.md",
+            "hash": "6fad7cec31cab12c1026312cead54bed65f47a386c50080f0d3938d18e42ecc8",
+            "size": 5225
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/3. Matrix Fundamentals/Rank of a Matrix.md",
+            "hash": "73dd7533aee74c809cb6ccdd7e823ed256623943abbd78817652369377e0d468",
+            "size": 6955
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/4. Matrix Properties/Homogeneous System of Linear Equations.md",
+            "hash": "46c51907d5a0417acefdbe2178b2ad59fd13a5c7790645f516c816fe49bee607",
+            "size": 4278
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/4. Matrix Properties/Matrix Representation of a Linear Transformation.md",
+            "hash": "0b950df2dae381693f242b3c016d016464352a6d8319a910bebbc6c3afdf02b4",
+            "size": 4160
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/4. Matrix Properties/Non-Homogeneous System of Linear Equations.md",
+            "hash": "406aae8038d34490634699035d795915705d438eedd7d37949d7a27480327a4a",
+            "size": 4612
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/4. Matrix Properties/Quadratic Forms.md",
+            "hash": "896715a0c37cfe16107bf5414dc80153d3ba5c315ea849b510fb8519fee2f593",
+            "size": 5484
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/2. Matrix Algebra/4. Matrix Properties/Rotation Matrix.md",
+            "hash": "18fa3cd823d75fd62b9f8b5ebaf7c9c48c9cad4f5c69705f02a96a8ba1365bc0",
+            "size": 5061
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/Consistency of Linear Equations.md",
+            "hash": "98f09bf131542a0276a7fcdc2f185e033126a2c302e8a035711a5760ff6a3b70",
+            "size": 4380
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/Cramer's Rule.md",
+            "hash": "5096476dfad79420e5ae2833c414fd30ea66c0de618f6464f33c4bb650e46d67",
+            "size": 4154
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/Gaussian Elimination Method.md",
+            "hash": "80b11ff13e61f49cdf6392c4aa66aef7db097c271880b66b70b55ff880050888",
+            "size": 5954
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/Roots of Polynomials.md",
+            "hash": "2d93ce822734b43079a12272495841614464ebf49aae922ba2ac6197dee95fd3",
+            "size": 4541
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/Solving Systems of Linear Equations.md",
+            "hash": "11e69e844a470af2c687e524f5c0ff7a5cfd9b47162b2cc9f2e7f69f812d97ee",
+            "size": 5432
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/System of Linear Equations.md",
+            "hash": "6a697abd72fbe198da62d679a8ab1ae95618077e386bb57653921872c79f54d7",
+            "size": 3552
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/3. Systems of Linear Equations/Theory of Equations.md",
+            "hash": "56384532e4b25ea61cdd0ebfd73096114ddb418513ae6ab306927a6be4e09019",
+            "size": 5742
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Calculating Eigenvalues and Eigenvectors.md",
+            "hash": "1e0c6ff35c30ee3d993156077fe715b31c94b2aaa8b70196acf79cb90414358e",
+            "size": 1978
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Cayley-Hamilton Theorem.md",
+            "hash": "46e210daf643a74ec34279a8d79bc0514650e522d858062e0840455919ee677b",
+            "size": 4688
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Characteristic Polynomial and Equation.md",
+            "hash": "77a0f0c1f40fcf00379efe7443b8f03bcce66b349ce0e13a5f61caba34c96245",
+            "size": 4649
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Diagonalization of a Matrix.md",
+            "hash": "3179f0b88bc0b48525b95f297b832a69b0cd41ca2dff64df34acea644fb1d870",
+            "size": 6444
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Eigenspaces and Multiplicity.md",
+            "hash": "addedaf44241a1e56d9a1224011fa24f1554349426ebbf3456f1cda8f585e0e1",
+            "size": 1881
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Eigenvalues and Eigenvectors.md",
+            "hash": "4842ad24ed984580fa9c462fd8467ff1ce291e0df974994345c7db4e9a41cc35",
+            "size": 7212
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Geometric Interpretation of Eigenvectors.md",
+            "hash": "d9452c55eb7bb9c10aeae7bbbf52c0380b80ea5e183d4315192f036b18099e1f",
+            "size": 1441
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Minimal Polynomial.md",
+            "hash": "9e6a7ad85e54a09cd6796044fed3032918fc3905a2212c762c32dc16ca658c80",
+            "size": 4776
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/4. Eigenvalues & Eigenvectors/Properties of Eigenvalues and Eigenvectors.md",
+            "hash": "6f34438ae0896bf6aa441bc1fe84079d364757dacb272f9580e7da6e617b2807",
+            "size": 5979
+        },
+        {
+            "path": "1. Mathematics/1. Linear Algebra/Linear Algebra.md",
+            "hash": "966a7033df69293236259c2dda7367690d03ca320a7d6cc382d92937de5da694",
+            "size": 5495
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/1. Functions of a Single Variable/Indeterminate Forms (L'Hôpital's Rule).md",
+            "hash": "38797a7adf036872f13c7bb0cb4a6e7598e8ec8abd20027f0afe2fb3c80bc9eb",
+            "size": 5867
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/1. Functions of a Single Variable/Intermediate Value Theorem.md",
+            "hash": "d3aecfaca8653683706fadce04d564d4f0742360299345808c32cb49cea0bd66",
+            "size": 4198
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/1. Functions of a Single Variable/Limits, Continuity, and Differentiability.md",
+            "hash": "1be0cfe59b1d3bc63ceecba378cc40f5e7d48ed202cad115b475e723529b6406",
+            "size": 5119
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/1. Functions of a Single Variable/Mean Value Theorems.md",
+            "hash": "7682b94dbc1b10888ded1dda9b1b790d6eff9c76af56381139b177cea1cf6145",
+            "size": 4082
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/2. Integral Calculus/Area in Polar Coordinates.md",
+            "hash": "c82029a18c4f14b94e74d02ade68b169fd86bee4c89ba709f79d89f1d9e827e6",
+            "size": 5231
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/2. Integral Calculus/By-Parts Integration.md",
+            "hash": "988e44efc1e4c83bc0390bfb01cc2f70b4f8a45a73e2692191660fee91b27458",
+            "size": 1086
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/2. Integral Calculus/Definite and Improper Integrals.md",
+            "hash": "da52a9e3dce25163a556c522cf5575fa7229db7cb7881284ff64d81c82da743c",
+            "size": 3506
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/2. Integral Calculus/Evaluation of Definite Integrals.md",
+            "hash": "32a9cb79248f8577887c9d5818b2c1e5036598cb2739e282af22400829f29583",
+            "size": 3689
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/2. Integral Calculus/Evaluation of Improper Integrals.md",
+            "hash": "c138cd14288527c43aaeb4eeeeb1ee1e9ffd7aa7a6096ba1dc86210937960a4f",
+            "size": 4559
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/2. Integral Calculus/Fundamental Theorem of Calculus.md",
+            "hash": "f58ad8f3643a77b7ae6a76cf7f43e40c20a9a2850e114f202f8b757958da38ad",
+            "size": 4340
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Hessian Matrix.md",
+            "hash": "5f06856ccf164c2602060a72f1ffada478db20753e9957344094996557f83844",
+            "size": 5308
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Lagrange Multipliers.md",
+            "hash": "e351dfba60045d897b0c46add528d99691022781634557932e19dd70072f32c6",
+            "size": 4932
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Maxima and Minima (Multivariable).md",
+            "hash": "e57cf36cfa432f3bd2f6c6fd3a68a98e506893a53c6162fe09e093fd19353047",
+            "size": 4534
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Maxima and Minima (Single Variable).md",
+            "hash": "0139e88502e72af502202f3240680de6a4850b1ce4c75afca1e779a9c1eb8729",
+            "size": 4657
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Method of Lagrange Multipliers.md",
+            "hash": "db69e1fe4ff8a58695cca68e1dcd4552528e93bbd6abe8f6c99878dc616b87c5",
+            "size": 3546
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Partial Derivatives.md",
+            "hash": "437429ddb933e96daf38413c8d1ef6743e3285e6ff945a6cc2c590072c85d660",
+            "size": 4021
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Saddle Points.md",
+            "hash": "1a26a7e7fbb36949408f9b329294b11d6d41066f59d4b718e3ec9c7e49bf4236",
+            "size": 3792
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/3. Functions of Two or More Variables/Total Derivative.md",
+            "hash": "efbcd5837c43da91b5cf4dd23e7edad80d3b9c3c9767ce76fc58393f0a71f6c3",
+            "size": 3828
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/4. Multiple Integrals/Applications of Multiple Integrals (Area, Volume).md",
+            "hash": "4a9628011062a166597d335b5b62e2c173229b1738b65c4c21a839161da1d459",
+            "size": 3862
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/4. Multiple Integrals/Double Integrals.md",
+            "hash": "1ad6c7f257a11484f0b3e7c00aeced1f2b677815a8753f492d34d5da84252d55",
+            "size": 5582
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/4. Multiple Integrals/Triple Integrals.md",
+            "hash": "ae31655f59ebe3669d80ac7e34b3b43bf1b77626aac5399678aaea0719a9d8e9",
+            "size": 5561
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/5. Fourier Series/Dirichlet's Conditions.md",
+            "hash": "b9cffeb3caff9a49934f0e7b75cbb1a4761c4ee6c01d087089ba2dd2f8f9da27",
+            "size": 3963
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/5. Fourier Series/Euler's Formulae for Fourier Coefficients.md",
+            "hash": "2916eed0e6a7ffb7c3f644db4224df9003ba4b85a3aa1a562ce9cd64017a0c49",
+            "size": 4003
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/5. Fourier Series/Fourier Series Representation of Periodic Functions.md",
+            "hash": "d444359bcea576e789a69c605defa7ea59a053309e00c6b29ac33dad3e8c4e35",
+            "size": 4343
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/5. Fourier Series/Fourier Series.md",
+            "hash": "bbc402f47b92517bea3c39b1d5c61d409c63b56b66a9063ddb01b90bcdac19af",
+            "size": 7284
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Curl.md",
+            "hash": "3784330dae5d44717b9924d284e23191807065e6bb4897601bef19d2e8cd6d79",
+            "size": 5295
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Directional Derivatives.md",
+            "hash": "b82bd69aea7faf562d93d3539a798c6311ee0dda5410162557f15e41eeb987ee",
+            "size": 4405
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Divergence.md",
+            "hash": "687eac40a29418422c10dc5c4992d9c563719e4d28e7d0c6cfbc6fb6b1e738d2",
+            "size": 5372
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Equation of a Plane.md",
+            "hash": "bb225f37594e13d1fe6f565e86652f87d37e9c5a049c9a11a8e8dee258e5902d",
+            "size": 5767
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Gauss's Divergence Theorem.md",
+            "hash": "7e38ef2e29f666d9af585697105acbea8bf242d2cbd4d5e244f986ffeb0e25f3",
+            "size": 4014
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Gradient.md",
+            "hash": "a99be3f00dbab275aeef8ba24334254be03ce23d92c0197a4b9e89708a6e6b72",
+            "size": 5362
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Green's Theorem.md",
+            "hash": "2c0e69b3ea342c44bca9e1f422cda210d573de7e85f99d9eff735856d98e1374",
+            "size": 4347
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Line Integrals.md",
+            "hash": "6f125fff7ea51ee65a5ffa1efc62d8bac309bb77bfa3750b3d92465742d5c826",
+            "size": 11298
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Normal Vector.md",
+            "hash": "8c6fba6228fba6febb5fe39f0cc0c7a9c116f4ba55610d634e7ec054e5783b09",
+            "size": 4053
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Stokes' Theorem.md",
+            "hash": "7fc8d75296bf44a043c10cab32c4143c34823dc2bdd1b16545d5f2230697fdf3",
+            "size": 4815
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Surface Integrals.md",
+            "hash": "f4228ffdf6f687e75d4146f5922314139cb06a35a3c283f347aab6827f404e38",
+            "size": 4796
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Vector Analysis and Coordinate Systems.md",
+            "hash": "3a48a9c18a94469f9f9760fad97a0f1e5079ca3aa0f4ce7e72e7948ebe7887a4",
+            "size": 6352
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Vector Differential Operators.md",
+            "hash": "d8b822a31bb17070efbbd82db3e67325fa173bdeb02ffe4a03a94c83b1d201b5",
+            "size": 5516
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Vector Fields.md",
+            "hash": "9f0334d3dccf3952e8f7b6401f659fd50ea10eb30223b42d0a88d4d77cc786ee",
+            "size": 4591
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Vector Identities.md",
+            "hash": "c1fc6bac7d78c2362683383b7a2889cb0abb267861ee6295188ed9232b66c08c",
+            "size": 4217
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/6. Vector Calculus/Volume Integrals.md",
+            "hash": "599b793c72aeb6b91c830cc51b5a282c20e4d11054474dfe9f39df3587047a8e",
+            "size": 4855
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/7. Differential Calculus/Concavity and Convexity.md",
+            "hash": "8d1fb6f90e9aaabad52c962eed14ee4bd25c7d4b17fa55d625cdd6c124506c27",
+            "size": 4595
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/8. Supplementary Topics/Fourier Transform Standard Pairs Table.md",
+            "hash": "beb1460e08fdd5487abfa4ae1181f71df4f91f02cb3494297fbe5ab63775a6f7",
+            "size": 5410
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/8. Supplementary Topics/Fourier Transforms.md",
+            "hash": "163bf0c1090989236db30e6cf34fcbf313a13006502b26e906ece4075dcc42a4",
+            "size": 13753
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/8. Supplementary Topics/Limits and Continuity of Multivariable Functions.md",
+            "hash": "d8fd605581e412d68c9d86ee8d0a7b5b208542e64c5f6c71e152baee43c8c350",
+            "size": 4847
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/8. Supplementary Topics/Linearization.md",
+            "hash": "4e18df654c23a86dd39e5c4db4b4e36c09f453f42197557c9e2aa647ba61fc80",
+            "size": 4332
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/8. Supplementary Topics/Monotonicity.md",
+            "hash": "470aadb008ce59a738ae6ec11c7548f0428d4c2596415cc123a2f67d0da6ec26",
+            "size": 5931
+        },
+        {
+            "path": "1. Mathematics/2. Calculus/Calculus.md",
+            "hash": "4d0aab0e8edcdb08c080bf04645dfd70c3008ddfa8ed5fa66356fe96a54e221c",
+            "size": 5797
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/1. First-Order Equations/Existence and Uniqueness Theorem for ODEs.md",
+            "hash": "f813e7945783734b253db43cb60965f01e39b892b104d5e33c61076066597f53",
+            "size": 5673
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/1. First-Order Equations/First-Order Differential Equations.md",
+            "hash": "fbe88d234514d2aaa835d3c74e69ccb65ef6a2be4ad0321d3552b83e1e479514",
+            "size": 4895
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/1. First-Order Equations/Solving First-Order Linear ODEs.md",
+            "hash": "0652bc52e804d5a28043fb008ccbea13a434d68181f77b9b159ebace50d79f06",
+            "size": 5131
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/1. First-Order Equations/Solving First-Order Non-Linear ODEs.md",
+            "hash": "3ed303d5e104bb16f7f3f4319c8aba039f99aacbf8ce5ba7a88851201ce026f6",
+            "size": 4339
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/2. Linear ODEs/Cauchy-Euler Equation.md",
+            "hash": "940c7b1bc331f3c6ed843bc176bebb61e47c6f958d76d6e81f3ddd32e2711f23",
+            "size": 4248
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/2. Linear ODEs/Linear Homogeneous ODEs with Constant Coefficients.md",
+            "hash": "406b774e52e96770b01c29c2632a3a95cac43232b09e620881c74e7dae579ece",
+            "size": 4163
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/2. Linear ODEs/Linear Non-Homogeneous ODEs with Constant Coefficients.md",
+            "hash": "a2a6443f48772ae5128e6359fd03aa0db1537b41efd14eb8b965420c04f3b2dd",
+            "size": 4499
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/2. Linear ODEs/Method of Variation of Parameters.md",
+            "hash": "5ffdc5a9783295fdea4fff65633b5a69133f5dbb04f62fb57afbe6be084c8678",
+            "size": 4473
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/2. Linear ODEs/Second-Order Differential Equations.md",
+            "hash": "a240105f2a80b00e60df63a9215497c261397e2d310c37e5ccd2a480d7210b06",
+            "size": 5588
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/3. Initial & Boundary Value Problems/Boundary Value Problems (BVP).md",
+            "hash": "723b019d2ab7a211614389f5ef67b86cb2dcced7590a7a6d5fae7ef3d95c788b",
+            "size": 5622
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/3. Initial & Boundary Value Problems/Initial Value Problems (IVP).md",
+            "hash": "642c02c4c7efb83596e93a5bf2f424ddc3aca9993850a4815cb1ca19964ecbbb",
+            "size": 5525
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/Common PDEs in Engineering (Heat, Wave, Laplace).md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/Formation of PDEs.md",
+            "hash": "933843d00e66688e4685bd00e717c7f79b313ee1cde1ff6548b2b488de8aaf1b",
+            "size": 4509
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/Laplace's Equation.md",
+            "hash": "5a07003fce510c918d7e4816e0fc9a5f5e6a46a8c29fef3c762d8eba60719251",
+            "size": 5877
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/Method of Separation of Variables.md",
+            "hash": "619dc31b7c22b057a7017cab9ec5baffb5be1310205db1dbd7f5fe813887d4dd",
+            "size": 4457
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/Partial Differential Equations.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/The Heat Equation.md",
+            "hash": "d3f6acbd64efb3240275e479c99fc6d3a5f42a2e6ece1c4cfd207113f0770235",
+            "size": 5282
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/4. Partial Differential Equations (PDE)/The Wave Equation.md",
+            "hash": "f4337377ade75e4b40ad823bf556363dd39664b0f33e4ef91b2f7b1fdd6eb364",
+            "size": 5406
+        },
+        {
+            "path": "1. Mathematics/3. Differential Equations/Differential Equations.md",
+            "hash": "ca05c0d01705e75ef737433a6cf64bbab96becf6c0ea0c72bbd15db706cbeb83",
+            "size": 4928
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/1. Complex Numbers & Functions/Algebra of Complex Numbers.md",
+            "hash": "39b67a5c2b6c180a237ced57bd0d58785353156ac9698a924e6431d6b2f688bc",
+            "size": 8821
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/1. Complex Numbers & Functions/Functions of a Complex Variable.md",
+            "hash": "2e26c973f8b5936333e296a0c1e811f79e4ffba8711e4bf2c7668464f453ee10",
+            "size": 5707
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/1. Complex Numbers & Functions/Mapping of Contours.md",
+            "hash": "01cdc547e09e6833c7d889b4a64d9b2980981d1ff6be7c55c156a264c61510bf",
+            "size": 5821
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/2. Analytic Functions/Analytic Functions.md",
+            "hash": "30910b55c712aae2ccb9f0fa5baec02e142885f740c8b4225346fc074e21f775",
+            "size": 5477
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/2. Analytic Functions/Cauchy-Riemann Equations.md",
+            "hash": "9ac16e6bd09006064262ddcd04a761d574fd449818c29015574d48c2e123149e",
+            "size": 5283
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/2. Analytic Functions/Limits, Continuity, and Differentiability of Complex Functions.md",
+            "hash": "c654faf5d57105e1483020db3130bbe7c9dfb5d390bb2eab078ee72ca0df3871",
+            "size": 4532
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/3. Complex Integration/Cauchy's Integral Formula.md",
+            "hash": "922bf90cc518ee106da83fffe247778acb4704e10644e4c93059e078a63dfdfd",
+            "size": 6389
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/3. Complex Integration/Cauchy's Integral Theorem.md",
+            "hash": "a450b6c1aca0a8bddcdd902780edc43ba02731628b2ebe7b3f5e3951ae244724",
+            "size": 5775
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/3. Complex Integration/Contour Integration.md",
+            "hash": "f7d54dfa862a687508d853ee34cfd48a4af5de1fce32447d2552fff97a3d82b6",
+            "size": 5127
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/4. Series & Residues/Laurent Series.md",
+            "hash": "2ed777d0c5647f0b0499981eb5e95386bafa3e47516b761b1a26e0c3531670c9",
+            "size": 5580
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/4. Series & Residues/Poles and Zeros.md",
+            "hash": "9d33ad6bf3b3373982eb037fe33ecc2352e49b70e3cbdc41d3a639d336c9e7b0",
+            "size": 4466
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/4. Series & Residues/Residue Theorem.md",
+            "hash": "a9276595e5106c1e0c733f4c69159d34cf375cd65fcd5a0cb268555a9688755d",
+            "size": 4497
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/4. Series & Residues/Residues.md",
+            "hash": "ca5771be0c30050be24db05b7a0bbaf4a111c642ff70d294e72797ef107d7a5f",
+            "size": 4767
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/4. Series & Residues/Singularities of a Complex Function.md",
+            "hash": "ca2f4b97875e18758743cf9992660e6ccfcdcd3bdf388d72a92e143344b9a8c3",
+            "size": 5348
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/4. Series & Residues/Taylor Series.md",
+            "hash": "2ec3604dfdee34eaa7c0af118302ad39e6547fd3cf2a7fad60f6b242eda2378f",
+            "size": 6005
+        },
+        {
+            "path": "1. Mathematics/4. Complex Variables/5. Applications/Solving Real Integrals using Residue Theorem.md",
+            "hash": "45e3f67003d96d58f5d2f1845784b63567bdece6fbac288292e4fd6f291d85bf",
+            "size": 4566
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/1. Basic Probability/Axioms of Probability.md",
+            "hash": "73b825c6552b84b8cc5254aa8158766c7f8a5ad0cdade4b2c65493a442cbc931",
+            "size": 3421
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/1. Basic Probability/Bayes' Theorem.md",
+            "hash": "41edc3b97c8ad3df7ebb3fc26d69e6342f10ceb8b6e89ce404c324474688166a",
+            "size": 4564
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/1. Basic Probability/Conditional Probability.md",
+            "hash": "23936e125ede68d461a6077810018449182d10c0222b2118fe6e3cae5150578a",
+            "size": 4381
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/1. Basic Probability/Set Theory.md",
+            "hash": "9bed1872eb2b56c4aca0213faa59c686515234678970ee7c2251cc668d7e5400",
+            "size": 4472
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/2. Descriptive Statistics/Mean, Median, Mode.md",
+            "hash": "d9fcae337b7eb93e4fb17f40926e34dbc3f5949d1b493a38b7e7ee3432c128ef",
+            "size": 8058
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/2. Descriptive Statistics/Standard Deviation and Variance.md",
+            "hash": "45d8f9a46cfb6cbc73182e7ea3a75cf0ef086732c1e0cda2a28fa4d841fda360",
+            "size": 5724
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/3. Random Variables/Continuous Random Variables.md",
+            "hash": "55960d744e332c135ec8ff5157aec1869a251af8a44acec3862d2a13d2d888b0",
+            "size": 4848
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/3. Random Variables/Cumulative Distribution Function (CDF).md",
+            "hash": "437fbdc868d09d97dfc23203f572cc4271977595c48a63eb936e0430ab996c6e",
+            "size": 3913
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/3. Random Variables/Discrete Random Variables.md",
+            "hash": "7af84d6a635d7a8446d4e555d1816ddbd21127c850ec79093bbf4c653ca0f3d8",
+            "size": 4678
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/3. Random Variables/Probability Density Function (PDF).md",
+            "hash": "751474e24690538f5150617e57d0b34c9f89eefa521800098ca896a833bd3032",
+            "size": 4095
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/3. Random Variables/Probability Mass Function (PMF).md",
+            "hash": "1892d7fa862ad3868d0dd32fbbcfdfe12663578c2a62c133f827e92be474d857",
+            "size": 3629
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/3. Random Variables/Random Variables.md",
+            "hash": "d043215495149e5f1328ea869288f7dc77d95cc2b7d232d71e37f76559c6c7e4",
+            "size": 5105
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Bernoulli Distribution.md",
+            "hash": "73ce4d20e99a1810ed8302b5cfc1fbbb909b9d3ea90bbd7a615b0658132c0fc8",
+            "size": 3375
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Binomial Distribution.md",
+            "hash": "22c74a1dbb7ac3052731765d45c9fb76a470354d494f9f6276ddc4eaf74a0f9b",
+            "size": 3666
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Continuous Uniform Distribution.md",
+            "hash": "30642c762450481d5add3657de7a42e51f25fd0bd81ecd829054ee4506755c7e",
+            "size": 4191
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Discrete Uniform Distribution.md",
+            "hash": "e2413b17d34b7fdfd72003b08df476cc21037afdf37af07775d3439716190731",
+            "size": 3586
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Exponential Distribution.md",
+            "hash": "c7acee02c97be16dcbd4748848ee903cb3c6bbf9de4c55a0b28cd12c8b913e23",
+            "size": 5197
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Geometric Distribution.md",
+            "hash": "167fb36b11e9ad61d8af7f1d77d3b3f4cd51c705191659e01796c60d4cde8fc4",
+            "size": 4868
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Normal Distribution.md",
+            "hash": "ff399abc415c7f5e5618ec7e8c6f7a1e426e7992c4341ea9191d772cd7f3fee3",
+            "size": 4587
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/4. Probability Distributions/Poisson Distribution.md",
+            "hash": "45f1d3f340c60474512286e3cb75b744171b871cc79ef90f077995a45f73af68",
+            "size": 4142
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/5. Sampling Theorems/Concept of Sampling.md",
+            "hash": "83958aaad3d54e33731c1dc0bd0935cb89643abb65377201f40b6dbc77a02bf7",
+            "size": 5363
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Central Limit Theorem.md",
+            "hash": "f6f0fff87dd0f9db4a27a231f50dfcc9ba641ca11dae88123a596fee6253a877",
+            "size": 4620
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Combinatorics.md",
+            "hash": "898ebc552289f7d6e7335fb2e9cc4b8e73c2308fc21b51f46aa10608a49f853f",
+            "size": 5507
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Correlation Coefficient.md",
+            "hash": "26b26242838d42ab6a2815aa3eaa3be09c157520630966e0a39449dd1856d45a",
+            "size": 4374
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Covariance.md",
+            "hash": "bc2afa79e5be41742bc62f048491008edc153fe7c1c4332280ba1188ee3c3df7",
+            "size": 4505
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Estimators (Biased and Unbiased).md",
+            "hash": "809e45c34c71527b019256d9428cc6b9e0cd193c83b0131f0fa06fc2491f4dc8",
+            "size": 4544
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Expected Value.md",
+            "hash": "ced887ea0dccde6b9be98fb64841aba205e72fdf9ab9136925e3a2c3961bb633",
+            "size": 3880
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Law of Total Probability.md",
+            "hash": "dda445ee407ce6efe98e0722756215ed1712aa3bdc2d164bc3b2573aa62ebce2",
+            "size": 3848
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Linear Regression.md",
+            "hash": "c55e4b77101dbb84cb9d376e72900c08c99e849e0bb8cd43dfbda743353e0419",
+            "size": 8597
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Mean and Variance.md",
+            "hash": "af31fc7f7cd5101a19d6c741ba792c4bc199207e0d8752604849fc8979776baa",
+            "size": 4127
+        },
+        {
+            "path": "1. Mathematics/5. Probability & Statistics/6. Supplementary Topics/Transformation of Variables.md",
+            "hash": "5989ee843f7f60648fdb21324ee805e60ef7fd1315ca0a03d359f50662c00d74",
+            "size": 6331
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/1. Solutions of Equations/Solving Linear Algebraic Equations.md",
+            "hash": "d0b3966a498cf2ddd77dab632bb9ff2d6f70842f99319dc35016aa28b7a308d0",
+            "size": 5460
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/1. Solutions of Equations/Solving Non-Linear Algebraic Equations.md",
+            "hash": "cdef3f4e739253ba57b88bf93fb65b4b4cfe55987fea9bfc9ab49f41ec3f574c",
+            "size": 5566
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/2. Numerical Integration/Simpson's Rule.md",
+            "hash": "62c5723b86be7783cf75e62ef35d2c60138a1a0bf12d7af51f288c29d06854f2",
+            "size": 5315
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/2. Numerical Integration/Trapezoidal Rule.md",
+            "hash": "cfc4d8e4fcffa97d45a301154b524407f050cd141415cd93462051cc59bda70b",
+            "size": 3933
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/3. Numerical Solutions of ODEs/Euler's Method.md",
+            "hash": "34fe1780794377c271864624eadb9902ea09f7249ef7ab1629bc2187e17ef24f",
+            "size": 3701
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/3. Numerical Solutions of ODEs/Runge-Kutta Methods.md",
+            "hash": "0770ff26bd945378ee48e180d685fd5081fa2231bf40bb1490b4ca202ed7da8d",
+            "size": 4189
+        },
+        {
+            "path": "1. Mathematics/6. Numerical Methods/Numerical Methods.md",
+            "hash": "21d07bc678022d6a472d86000717fbbb7a9ca782b264445139016410f18512d7",
+            "size": 4546
+        },
+        {
+            "path": "1. Mathematics/Mathematics.md",
+            "hash": "061e7a2ecd1342ef06a8a916d6d444004478abd323968f549a089a99a81be5c3",
+            "size": 7697
+        },
+        {
+            "path": "1. Mathematics/archive/2. Extra Topics/Geometric Series and its derivatives.md",
+            "hash": "6919b86e27623dc7ba4a3759aca61400105d6900fa9a7562ed89fa5d36c5ece8",
+            "size": 5165
+        },
+        {
+            "path": "1. Mathematics/archive/2. Extra Topics/Properties of Kronecker Delta.md",
+            "hash": "3e7ad9d371bc41ed0e85e07bc5eb4003cc801db5deb39eaf7a2874f0d03e7efc",
+            "size": 1819
+        },
+        {
+            "path": "1. Mathematics/archive/3. Reference Tables/Laplace Transform Standard Pairs Table.md",
+            "hash": "cdf335563d8f4998c97c10f0a4df81f4eff919e6c8d51e286242d588cd2a0784",
+            "size": 6055
+        },
+        {
+            "path": "1. Mathematics/archive/3. Reference Tables/Trigonometric Identities.md",
+            "hash": "41a2cf91e7b987fe3c3291f13ce894643eb7d22aac337f04633e0fdbffc43d37",
+            "size": 4073
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Basics & Circuit Laws/1. Fundamental Concepts/Kirchhoff's Laws.md",
+            "hash": "617a203810563400e3ac3d39270e376f745d3ff4b3ec7350e129366a53a886b1",
+            "size": 3708
+        },
+        {
+            "path": "2. Electric Circuits/Electric Circuits.md",
+            "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
+            "size": 5789
+        },
+        {
+            "path": "Resources/Dictionary/holomorphic function.md",
+            "hash": "cc53e6cb0499302cf8ed3a1111490c018c303f687591db7ab4d32047c5f5ab1f",
+            "size": 166
+        },
+        {
+            "path": "Resources/Images/Question Paper/README.md",
+            "hash": "b808f988eeea0bdd18d69c4280c6a2ae3ec3c668724a5f3e7ac7b0fdce4b9837",
+            "size": 91
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q23.png",
+            "hash": "b3e6aa0daeed39223eafd772dfb86374a424c23f1170339e95fcaae5cdc0be79",
+            "size": 9352
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q36-a.png",
+            "hash": "51f2dd019e4a0594c57ac3c96449df760975073a7db7decbbe91e8fcee204634",
+            "size": 2567
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q36-b.png",
+            "hash": "6c5274db96a866b11ac4ca91db5848f67aa68f7254d2f0c833d435024b320754",
+            "size": 2433
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q36-c.png",
+            "hash": "6ca4f652a13f565bb1985e0d98bbcdd99acd2b031e66092dc64a6326092f4c63",
+            "size": 2601
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q36-d.png",
+            "hash": "7201358197b617df834a2f91245c02c45791ddea5fee49180667ec194e421c4c",
+            "size": 2690
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q40.png",
+            "hash": "eddeab8ed72df43a734bd94c0be725c00fa3d68a2d9e041a53ea530cd9c90c25",
+            "size": 6682
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q41.png",
+            "hash": "0d8b16193628c3d17bb9d96f72de11042bd6423105fb87ac75f95c8b6063b748",
+            "size": 48074
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q44-a.png",
+            "hash": "c3d919c8fe144b64122a653c87f49ae25e9d4bae4c90f7d02d3de4962eefdb22",
+            "size": 31524
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q44-b.png",
+            "hash": "1db537770e3d8498b63bb9327eeceab227fec568275fb6e30a24ab5ff3d85469",
+            "size": 32104
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q44-c.png",
+            "hash": "d78f92927233c9e3df1587e4b5d65a5e643f176f2c5a09835d7ef55701c63f3d",
+            "size": 30935
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q44-d.png",
+            "hash": "95e2c9dfdce6bbc7039bbb8ef080ca5a8a1d4dc3db8999ccfbff42b02648492a",
+            "size": 31564
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q44.png",
+            "hash": "555898a54850fdd1cdbfc5f4758c1137850b9d10a063b662661de70e08e89e33",
+            "size": 29122
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q50-51.png",
+            "hash": "04a54309ff90432d7531561d0487ccb739febcb9037b80a40cd83cc12ebcd1da",
+            "size": 11158
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2010-ee-q54-55.png",
+            "hash": "2935cb5a6297c12a4019b07c6ea14ad736636c14cad975096768d2f026e69f51",
+            "size": 3094
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-q32.png",
+            "hash": "5a7e526470f91ec686c6c4b8ed371467d856fcba49f27d332b7296bd1411a603",
+            "size": 45332
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-q9.png",
+            "hash": "2285327f0d7af86ce40a316e89d4188c3d1061413eb7f1d7178446b708ad9bed",
+            "size": 11321
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-setA-q24.png",
+            "hash": "9ed933ed7cdd1caf6a973669fbfd800709629cd1cadab3e79f3df967e879da4c",
+            "size": 16741
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-setA-q52-53.png",
+            "hash": "c972c238f8bf7710b615f6310af566e81b8f738aa8a446b6596f2014d8e645ef",
+            "size": 37406
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-setA-q52-a.png",
+            "hash": "e2d62985e53e5d31917478e710c2e7c11950e99203c8d1807927513e7d371045",
+            "size": 34035
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-setA-q52-b.png",
+            "hash": "519fc458ef1b60cca3e077e9065f8a97d395613a7c877674d960094cebdc962a",
+            "size": 33884
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-setA-q52-c.png",
+            "hash": "3dc793bbb9dd5d1caa377e9f11ea9d60d0246883b5115c076414817d78e47701",
+            "size": 35126
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2011-ee-setA-q52-d.png",
+            "hash": "365e00dbb112b89eaf64894735f016e252435ab2ffcd85dd58b143a8154939fc",
+            "size": 35336
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2012-ee-q21.png",
+            "hash": "125030d90b60455e26c56ccb10bbe9622c8dbcd1854a6b23d2c925901ed99023",
+            "size": 20253
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2012-ee-setA-q35.png",
+            "hash": "fcc2eb89b43f8fa59f9ff19b3e1b11f68cd7bd87bdcdc791c1aec75f7102b15d",
+            "size": 12198
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2012-ee-setA-q40.png",
+            "hash": "f6d2441584c819060e8b89cd356b11944cc3bb39f99ef235982bce3f8b3e69ab",
+            "size": 26819
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2012-ee-setA-q48-49.png",
+            "hash": "e03ed3e529fb7342248e4cc8b6c71b92a912b95744aa076ec1378fadb95eb996",
+            "size": 43954
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2012-ee-setA-q50-51.png",
+            "hash": "beacdf234be17b29fc1c1dc92807a545e3101978e741606ae6f8ce85b5dd06f1",
+            "size": 4717
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2012-ee-setA-q52-53.png",
+            "hash": "075aca3bfce3ab3192fb95845567b775d40b2984630e8548f727d0f19cef494f",
+            "size": 19544
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2013-ee-q15.png",
+            "hash": "fd9f5311b2312d1ac17c789f0aaa3e735427a3341ba4a8fa36723132ac67f600",
+            "size": 22302
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2013-ee-q3.png",
+            "hash": "34c60cc02ea52a4448465c58e8ff38620aed1385049c53623d6ad4374723354d",
+            "size": 3939
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2013-ee-setA-q2.png",
+            "hash": "2726bcf7683285a58f8298fde89723edf3d2354caa2f9fbbccc3211491635703",
+            "size": 13279
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2013-ee-setA-q48-49.png",
+            "hash": "032328bab4adc1910cfc7d2197bce3527709048bd1fb28fcf4fe19d51f99c35c",
+            "size": 10263
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set1-q15.png",
+            "hash": "645e3ec365686e58c71fddd54fc4173f57229ee754e7ee2722936f699f393b43",
+            "size": 20032
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set1-q18.png",
+            "hash": "0982dac68a6847dfd90580a714cdd20c15a708e1642254c3ade447bdb004b8d5",
+            "size": 18402
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set1-q39.png",
+            "hash": "9cfb877a3959b28f75b6185b9f0817dbdcf901e26421662d96d17fd68fee9c7e",
+            "size": 53529
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set1-q45.png",
+            "hash": "e2dca62a7585710a229eff7a7779a34d6496f663929880ca8020ac7a059f86c7",
+            "size": 70689
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set1-q54.png",
+            "hash": "055d60b82e1b66eee9dacfedb637f691232a8183917d5977004b12f4d3ac38ba",
+            "size": 22284
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set2-q11.png",
+            "hash": "4cb462e2de92f89ed244358df97e77b68b527f0af7e151d82ec1ad3561e3f2de",
+            "size": 9687
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set2-q12.png",
+            "hash": "bccfd577a2ebec7d443b0994354df0f5e45dfda8fe1576a44dbe8a1a3067d1a1",
+            "size": 48164
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set2-q19.png",
+            "hash": "63cda6bd61538a09e9805e5ba4f050da95028c4fc440593e7e4068e7c510977d",
+            "size": 15133
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set3-q30.png",
+            "hash": "73200371e3339e9ec3cf2501ea10b8d8aaa7824d0bc44604017af6c5ea91ee4b",
+            "size": 12099
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set3-q33.png",
+            "hash": "f94976860429901e91f846a39c0948d71292a25830b7736b256b77222eb105c1",
+            "size": 37842
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set3-q39.png",
+            "hash": "9910aae449c7dc6c9cd5239ddc0b13b8dbbdb4bd262cf05bf76dfc716836423a",
+            "size": 248214
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set3-q46.png",
+            "hash": "7b6b45b615e791a78694f24028e19ffaf1192ffa28a11ac816d42e85f16af9c3",
+            "size": 28816
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2014-ee-set3-q53.png",
+            "hash": "0918b2871c9c62977068be97e6409a0efd004bf1092a3f3d53b6b87d2f28044d",
+            "size": 45313
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-29.png",
+            "hash": "65a5971aef8afcf19128c34753364f5f2e708ed28ba599964fa728a061df44ee",
+            "size": 72306
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-40.png",
+            "hash": "792f4dcc40d878a71ccf8fe4efdb4cccdd55ee4224a7753488cb3b33d778efe3",
+            "size": 314980
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q18.png",
+            "hash": "edb2ed8469f43a089e90da611065ec7c0007aaaaadfecfa04c417842f805636d",
+            "size": 44906
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q20.png",
+            "hash": "b36d0a6052a2db4ca2ac9a063d1b41e49e02226d13d39d0c645d7c0440f7e473",
+            "size": 59723
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q28.png",
+            "hash": "9c6e9fa5abe3427706ec6dffb5d8c20c457bca3e48d672f1bb08a3a3527ec6a4",
+            "size": 128307
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q30-a.png",
+            "hash": "3756405b5a236b2f45030e3af3686065776b30b6bbbff5ae77365b653e9c6c70",
+            "size": 65539
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q30-b.png",
+            "hash": "b1eae3ad5af85c00356cf5aeb9f78b9197f77fbf054e30ff79df244fa24d3c20",
+            "size": 62204
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q30-c.png",
+            "hash": "818bb24a39f0124002b34003b50218ac5b34e133f039b4132caa0e5bb60f35f6",
+            "size": 45617
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q30-d.png",
+            "hash": "2513a84852b203bd854d9d33d6a85b64b89da88c4638eca318c992c1956856b5",
+            "size": 45546
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q30.png",
+            "hash": "59d2ab24aadf076c53f54a36f645c889ac4b846ca7f83955ec4b7cdc8e4f81be",
+            "size": 53626
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q34.png",
+            "hash": "fc69211dd64c0edfb87ef192dfe3648f40cbaeef8fbbdaea199813f78f83f062",
+            "size": 85767
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q35.png",
+            "hash": "bf579fa0a8e9e68ce16d50dbc537e81274a3b392530125690a6716db28bffafd",
+            "size": 55430
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q41.png",
+            "hash": "63dbfdac3ec3cadf289774eb663fd20a33b0f555f6a20e4b36befac2acdc930a",
+            "size": 52236
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q42.png",
+            "hash": "31d3f8822fad949f7eecb95ef16e60579513aa5af3c46fe5e33aa567d43dee8f",
+            "size": 42322
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q54.png",
+            "hash": "bebeacb62a931b7a0bbbaa6c6a6a0e96809a5334874e6451f48b348c50b6b8f4",
+            "size": 132364
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q55.png",
+            "hash": "b8c158078098c331b3fbeb65263d907533bb5dc8b34524fcc4402bde2a65a1dc",
+            "size": 56076
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q57.png",
+            "hash": "fd36ef65b6c98a5309e2b78db894342267b217f72bd212e3bf50931888f40fe7",
+            "size": 63996
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q62.png",
+            "hash": "9e7259cede5730e51aa9b4c322ba3f8b34ac22fecb04d87a9d9d2f35d0da2a93",
+            "size": 126419
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set1-q64.png",
+            "hash": "5f64003919ff46293075795edb0a0f4573a5bf5587534193e71a50f880995917",
+            "size": 92861
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q26-a.png",
+            "hash": "6fb14618163a7bb9fa2c4412870e8776e883234ebd8733a72af479f5640ebcb5",
+            "size": 39794
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q26-b.png",
+            "hash": "e257b70c4a0b8c206e073ceb5cadd3bb70cdb1b1ed332cc711beb58ccb089b9a",
+            "size": 37781
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q26-c.png",
+            "hash": "7a316c366d30b6a3ccedc982ad0b5da465b79c0edd6c982ccc3f8caf7f847f67",
+            "size": 40429
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q26-d.png",
+            "hash": "a92c5c19a7a669b79ee723bc575b8130574d0b4530e5c393c19a994ffefd1296",
+            "size": 38692
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q26.png",
+            "hash": "22c6cc1a59297c178bd43f00a50459f7ce389e1ef5f5b4e3e00cc4ebafcd4ac8",
+            "size": 88503
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q28.png",
+            "hash": "42df61815573115e28227531fb4a9e76ed95fa4274933832dedaf20e5e84ff0d",
+            "size": 13452
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q29.png",
+            "hash": "18022ecb17fdeacb4ddae498000d59bf65d9c6064c5122dc3412cdf8933631d2",
+            "size": 89999
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q30.png",
+            "hash": "cd6b15fb9a0512de32c50890c51c3adeea573d8b2cc4d3a2ea4782539d5c4665",
+            "size": 77151
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q32.png",
+            "hash": "01ccced4b17adf460f688630244e59e4892b478f796049e71f470223f75fe72e",
+            "size": 89055
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q35-a.png",
+            "hash": "c60deb9bfffabba6f5689b40f6e3631afc0ae1d68c68c5f159d7b49eec9ae2ca",
+            "size": 23623
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q35-b.png",
+            "hash": "49b252d18f4da9fb2ca16cfe91db67494bfc8eca5ea1e07a8972c0e4a3268782",
+            "size": 13400
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q35-c.png",
+            "hash": "020d81403d388d6e22900731c3f5f9ec9df5dcf3caaeed063649cd5c8844e476",
+            "size": 11290
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q35-d.png",
+            "hash": "c1231afa1831829212ca7995a8c672eb7d46ec19b248f2c2654c91aa3420e3be",
+            "size": 20922
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q35.png",
+            "hash": "38dc8e61015516a4dcd2dbc1af1ae07390d41eb3c5f43145ad6feee9a765678c",
+            "size": 63329
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q41.png",
+            "hash": "f2f1cabf28e53e890717dbe499ae273231c7f7ff38ac5cd19cc081793dfa531c",
+            "size": 46114
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q42.png",
+            "hash": "a472989c6087fdadda8db8b7d54147cd3780e8fe7aa1ef623b21f92ae6feba43",
+            "size": 55952
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q51.png",
+            "hash": "fb63f6a52771998a7af3a90bdc825df1783d2e2f9bc7519a932d11f5aff48399",
+            "size": 46998
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q52.png",
+            "hash": "93d6f604d909cc0d2ca0c13de89b0f631f977fd9898a8beabe86d0004bb4be0a",
+            "size": 80681
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q53.png",
+            "hash": "085ef50f8a9b67b44a601e915cdcce3c544f60bd10ab68fb395492016b335c20",
+            "size": 121911
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q54.png",
+            "hash": "0bf80dad4294ecbfb0443c79522647af8ec6746e46329c945763c765071d85ef",
+            "size": 54758
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q57.png",
+            "hash": "1b8d5836e1725843c5207f91227e4792d39418998b00decf314d3619e5a23d5f",
+            "size": 58098
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q61.png",
+            "hash": "44c045d4666028be789f5b4cc6119f91d13aacfb2ebbf9cd61d6bdade1ea78cf",
+            "size": 222692
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q63-a.png",
+            "hash": "d5507e41a47c0b63afa923ccf4813cecd5eb2a6999d7afdb3b3dd60c05cceed0",
+            "size": 34085
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q63-b.png",
+            "hash": "aefb7e57da0df633e4bfdaea6faa14f7b8edf8db83ba6f0a24cf3819272294ae",
+            "size": 28034
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q63-c.png",
+            "hash": "609dc962f2fe1d6da637991d6849281615509aa395764a6194c04afff55499cd",
+            "size": 37263
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2015-ee-set2-q63-d.png",
+            "hash": "6c810cb94b179828b11b7a05e0ab5050fdec8055f376f35b4cbfdd10813292fa",
+            "size": 33908
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q11.png",
+            "hash": "02297c119cdf58211a6b76dba42f60a726f9f21c27de3c7acdcc41ba1d3cf7ce",
+            "size": 12848
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q15.png",
+            "hash": "9734365ddb852ddf2688174a573b44a76a1995045a9a8467161c6391fc96b72d",
+            "size": 41030
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q17.png",
+            "hash": "5940fd91023a0d0cb66f5008e6bf8fc8486cc62b1a1ff1c1273c9a1dd09655c6",
+            "size": 13278
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q18.png",
+            "hash": "93bdbdb023939fccc26508c016914a51cadfaeea485d55cc5282eeb2a38aa6e0",
+            "size": 20798
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q22.png",
+            "hash": "13a87800f407eb2932d729b766155c14fd8cc4c5d147420a82b3f7e69595b92f",
+            "size": 24254
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q24-a.png",
+            "hash": "e064786ed198103534d647f5bbdae11f7f275882fea0d17b5c5e9c7d492322df",
+            "size": 2865
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q24-b.png",
+            "hash": "815592b02aaad6125ba9ae42f1022ef8bbb0a3e884a2f48a1ba688d651fc5b22",
+            "size": 2361
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q24-c.png",
+            "hash": "ee1adec54103ad4eb0f532752113f86285e283a7a2e52a2f8a8b05e62ea24a65",
+            "size": 10741
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q24-d.png",
+            "hash": "fb3e1c59f6b9649fafb00fbdc1efc4a066b19bbc362673d83e818c9d99c2291d",
+            "size": 11559
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q25.png",
+            "hash": "26285641ef5a74af0a7d77b1ead2b5868ee38085512dc81e8717a28f0b81cc45",
+            "size": 13075
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q30.png",
+            "hash": "add12759287b973afc923ce78af81f8f03f4376c1809902bfe752e5b85c570ac",
+            "size": 20839
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q34.png",
+            "hash": "c7e65a9f8fd20df8e22406f0e3bd7f739a56074ebbe5abe7f483926546e09f9a",
+            "size": 24072
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q39.png",
+            "hash": "6fc2d0f02da2fe706f4b6cc3d681d9a27bd93de16459bb105212a86908cb8e48",
+            "size": 15557
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q42.png",
+            "hash": "204f39ac2b700ba8573d36f8ee41f7c536c777102b783dad8c267bea31f07aeb",
+            "size": 11685
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q52.png",
+            "hash": "e9f06656c7be29d58f562131d54037e69b056f5f21a4de48b54b43ca188c48b1",
+            "size": 27023
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q54.png",
+            "hash": "fcbfa9cf48984afaebc929bb0f47cceb8d75992152f66c7bf65ee887d94883a5",
+            "size": 15255
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set1-q55.png",
+            "hash": "f679812050529a1a72d9209c12311705a59f736c1c0e16ea02b5b5db77c90500",
+            "size": 86621
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q11.png",
+            "hash": "5022d1c81849a8fb9f97d0db3076f095cee613e7e76d2f46c62d90b99511016f",
+            "size": 30354
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q13.png",
+            "hash": "4faac5495f46936911c22cd6132f1119b6084b40c63831ab3e442de3846221fc",
+            "size": 13103
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q20.png",
+            "hash": "2612afc0089e2e17510a1f7db626ccf8a2a5e15a4d599595acd4d3fa74950d59",
+            "size": 25887
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q21.png",
+            "hash": "a0829d96eb22b625034ae21889132f2fc15f244c5104c9a1f0a1794da8b65a0c",
+            "size": 10201
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q23.png",
+            "hash": "d32aa6a5d8b60ed6471dd368dc907f16078c44c904cf7d4fb5f09ba947dfaed1",
+            "size": 14665
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q28.png",
+            "hash": "785d7099326e2955f54e46b035ceaf94577f0df1afaf5fde3e0c27cb131ad4b7",
+            "size": 91708
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q3.png",
+            "hash": "4987b80a5860ec5b644bfcc999a945eb54bfc6b18d28fa8897ca95d26b50a81a",
+            "size": 25864
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q34.png",
+            "hash": "3bb90219120ca9ae9b7bea21e57a27872e1b1e0dcff00eeca685d87c033d1fcf",
+            "size": 23244
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q35.png",
+            "hash": "fb288ce537d86303996b322cbe2b7daa2faecac2920f59a34df93d53ac489228",
+            "size": 16227
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q36.png",
+            "hash": "259984005c827c7a610bdbbf3e43b0cc41d7a8a5c25483a134fea8f6d1b60249",
+            "size": 22113
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q37.png",
+            "hash": "d1fc885cfa9839a24e5f6f27afc1231c20398aa85a27f694ac49af93c897621d",
+            "size": 12502
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q38.png",
+            "hash": "23eb427f24be5dbac2f2fb499878c21543af906d87ea32ca84ddd95a6a0a4d86",
+            "size": 29504
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q45.png",
+            "hash": "352320e56477acd9e3f96adc70d915fb816645b24ce40fad8ceb88d746a5b6c0",
+            "size": 25528
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q47.png",
+            "hash": "535f9ae0bf72d1086269cd7318a2994dcc90d6230217b0bc766f0ddabac1598f",
+            "size": 20044
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q53.png",
+            "hash": "fdc6df93f6074a8da6e67cda36a620ab1ddccc120e188ed6db5f5ec8d8092af0",
+            "size": 11058
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2016-ee-set2-q55.png",
+            "hash": "1a1e7de0e1724e9d7827edc0e8ec6e873cd7998c2f1620f3c5484c93a108332d",
+            "size": 24586
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-q18.png",
+            "hash": "73713e63e2ec207e51c52bfb9c93739187f335bac31c1d8b7b12313e1fb9c0c9",
+            "size": 205237
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-q19.png",
+            "hash": "85f20dc5a4830dad9ad730da58f7416f3a1c1de8da404cdd53ba3ac752376509",
+            "size": 298682
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-q31.png",
+            "hash": "e1c355f512aac16ab88889e618aaacf8b4035f97a6ae652477be4a9701ca9b7c",
+            "size": 37451
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-q9.png",
+            "hash": "d42a915889dbb4677efc49dfeb49b84ca8976a1237c8ded84d16a08dd8529270",
+            "size": 110917
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q10.png",
+            "hash": "c6f0eb684381bc5d1c51d84b1b31b5176884c1412446f93648ae2c44d008c79c",
+            "size": 67273
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q17.png",
+            "hash": "9607e4def2708dcbb9670df2a4da1e182ec71df90552be265243cb34b486fa87",
+            "size": 39908
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q22.png",
+            "hash": "493bbb8829ff447c17c025b01cbd03688e68fe4113424022fb5a534db999350f",
+            "size": 63787
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q28.png",
+            "hash": "94b79dba172c93a41e72f3d37f7b35a24ac782d3aac5d74c778c4c4b14cb2420",
+            "size": 46401
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q29.png",
+            "hash": "6bd767ae290d8337387a13f33dffab5045b659ee1c674de84a39ed386576b7ab",
+            "size": 90498
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q32.png",
+            "hash": "e631ded5c5c0fd09580a69228f49afca218a3a12fa4198aa6f85746ab2094d13",
+            "size": 92047
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q34.png",
+            "hash": "617342d3f572a498d287df63af7240b711f5479daa46f90411a27752b8f8d1e9",
+            "size": 192002
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q40.png",
+            "hash": "f140ff11f2f325b17f384968cb94f18a87a813d62960f48888ba4bfc4ddc3bd3",
+            "size": 67762
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q41.png",
+            "hash": "4e628fceb444f33e586b0c7456573d063aa74cb9ef3d4c7c0b2d9a7ebff0c365",
+            "size": 129050
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q43.png",
+            "hash": "2317adfafbf95ed14e50179544296ee90dd621b14f0c663b441e6ca4424862ea",
+            "size": 114173
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set1-q55.png",
+            "hash": "7fdaccf0efd3870235dbdcb615ae5651d08157b5a2091b51d025462fc3fe917c",
+            "size": 48643
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q15.png",
+            "hash": "36cca0f43b1a237b01aff4c2990b02a5650210c80a719754ddc19ada971ead70",
+            "size": 95715
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q16.png",
+            "hash": "e493f742b758d83698331efafe1b530c35da80e1f5ebde691eb54af391b7bf91",
+            "size": 95218
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q24.png",
+            "hash": "32efa104c15dbd71a7256195d7879415a80f506881415c06de1e377b54855e15",
+            "size": 29867
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q3.png",
+            "hash": "cee16c82309f6770c7683cc1e01e4ae97a46a097d098f2b4417d77d48c7f8437",
+            "size": 120563
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q32.png",
+            "hash": "f79d27765663eb17d5ddac93f2d994346f0d5fe03e9ae3ee7d11f98c5543f9ee",
+            "size": 35668
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q41.png",
+            "hash": "05e091f7d0aa826321945ff8d427df07b6ed5652c7599102e4c07a5aed76a526",
+            "size": 71485
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q50.png",
+            "hash": "45c9c49656dc35d5800c65e4d62967fd5b913d8da4bce171473d1c2776a954dd",
+            "size": 64288
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee-set2-q51.png",
+            "hash": "2c397fc6f508b76603e58fdf501505ed854de21e38a05dee4c3568a6abc4a4ce",
+            "size": 52163
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q21.png",
+            "hash": "a2835f268c673e27abf09fee9e0be6b5775673863157bcea4c5d1dea9a143973",
+            "size": 135283
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q22.png",
+            "hash": "fa20472df0984b7d1b5ed856772b47f3b6c941f37283b0790846de88f4cf7c4a",
+            "size": 188992
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q23.png",
+            "hash": "d4ad1f053b13bee6d8182ed71a370058670a846b7d37c716927d8bd6c9529c73",
+            "size": 78357
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q29.png",
+            "hash": "3877767a163bb5f247902c1fa6fed5fe8a692f7c44bc94a9fe15febca8ae3d9b",
+            "size": 216599
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q30.png",
+            "hash": "f899b6dc6547f18e85cf34b96cbf2b4879dfb00230501db139c17683f53b7eb2",
+            "size": 176041
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q31.png",
+            "hash": "83a96c9f5e172f1feb5858708e8a85d92cdcd98f1d70547f047f1513d16384d5",
+            "size": 118838
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2017-ee2-q4.png",
+            "hash": "4f6ccacfed344b0cf7bf745dafcbc10082fc877eb5e09dea567b469b9f6ce107",
+            "size": 170653
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q14.png",
+            "hash": "56697d42f236c36432697bbd5659e364362aa2412ad9b3cdacf06ef4336ac00a",
+            "size": 15129
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q15.png",
+            "hash": "7a409ede53016042b559f387446b9bcc081ba937fb4383289a27dafdf6e18635",
+            "size": 19585
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q19.png",
+            "hash": "3116764eab046ee2bf58917f98d30262ccfd250c284cd4e5c8d1b8762d88dc8a",
+            "size": 19345
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q23.png",
+            "hash": "5b6531f77c4796f296918f8fb8fe64b90687dec0350dd92848e75be1759e32e6",
+            "size": 32934
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q26.png",
+            "hash": "b4c5d6e2b223708f761f1c1692139de3cb730572b7fe0e057d5bd18862d5cd80",
+            "size": 49362
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q29.png",
+            "hash": "69687a031920d3dbb668116f155d8e60b75f74b0ffd3aaf184fb99ec62cfd74f",
+            "size": 17062
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q3.png",
+            "hash": "5bc7c1b6b20f76e69193e6e215dbd8521d462b31be42a57a8e16afcef7271a2e",
+            "size": 21859
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q31-a.png",
+            "hash": "fff484f3d15f54ca7bc58035c2cf3d38776344607d35edb6157dade1195d55b2",
+            "size": 8474
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q31-b.png",
+            "hash": "7a118d3e671e290f27d6f8cd232e6b4329dee57941ae849aff0a4de2f923f438",
+            "size": 9222
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q31-c.png",
+            "hash": "4f4e137a3a2694f824a529220acdcdd6026dc937a83626883a63ee987b796f83",
+            "size": 8634
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q31-d.png",
+            "hash": "d93e1af584bb9718c5a5acd0a3f4c49e7cfa23d54ecc3cb5ac358156acc74b07",
+            "size": 9852
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q31.png",
+            "hash": "391c8eb32f24400ac7f3b0bcce0021aabeefdc2c9310f29bc4b51395d46b7b3f",
+            "size": 17975
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q32.png",
+            "hash": "0fa55243e5789a2d146ca4b34049eb189ae846877e73e7f15c9831298540e504",
+            "size": 21260
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q36.png",
+            "hash": "7a2abe54e7f95128c8e9656af00c5d5d9f355f973e2e0b1fc155980452daeedb",
+            "size": 15797
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q4.png",
+            "hash": "a76eb19a6741aa7ca3a9e8eaf82c9ac061d09c7aae0994915d899b724e063e12",
+            "size": 21286
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q41.png",
+            "hash": "3e6c2567f6b1dae51a52a163fa7f7ca9fd328aa131941c2c8d7668b9eea7ff53",
+            "size": 23542
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q42.png",
+            "hash": "b777f7c46e2c64b447849749d1bbf69d2acca1e82771f7355053522cfccd628d",
+            "size": 8703
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q46.png",
+            "hash": "bb8f0efc6c6f0b97cec48520e5c817b08d69d72d88078133bd8c0a8852b9ca19",
+            "size": 29077
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q47.png",
+            "hash": "11be89b25ea65065f5bca9d0187b8101a8ec1020e6489798e874f0788dcde894",
+            "size": 15581
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q48.png",
+            "hash": "d404778b204f0290ec606a31550a70ad71f0e2b20d94c39b8a0fa46ca98a21fd",
+            "size": 10854
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q49.png",
+            "hash": "52caa6dbcbd862d2dc40af0db69ae67317311349d29593ada5560324f5180c03",
+            "size": 28305
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q50.png",
+            "hash": "224de7d901a247b2b134eae789107a8992f2ef7d1f1f95c264b2be2d2a794283",
+            "size": 33079
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q53.png",
+            "hash": "a291823146549e78e812f35c66421279649eb2d8c0b021dc3b07d2a8cb1b2982",
+            "size": 15576
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q54.png",
+            "hash": "4d5c03a12a3f301498c80651af79a4ca594a7ddde300fb124c123da0ec1f405b",
+            "size": 30067
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q55.png",
+            "hash": "852919934a9423f420d6a13b150cb7f8ccf4a97f1b0c67476aa418370f1fbdf8",
+            "size": 16687
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2018-ee-q8.png",
+            "hash": "f25babd87bac7e0ee73dee80ed88868403cace7c2a1e615a6b5ab57dbba176cc",
+            "size": 18280
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q12.png",
+            "hash": "55781a181812a3b19dba29f2832f02e6e8d0412bb9b7bf6074daa18ebe745c3e",
+            "size": 58662
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q19.png",
+            "hash": "8746ea991a7cb360723223bedc4973a8352f62c09e9f217c30f7dae7b0154244",
+            "size": 24185
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q29.png",
+            "hash": "515d15f2f269c5d82fead52252dc6afec75a15209b5bd771142087ddad635f2a",
+            "size": 64826
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q35.png",
+            "hash": "9561970443e16a5cc8dddad314ceee5a109020c77336c795ec0046b1a592c022",
+            "size": 74917
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q42.png",
+            "hash": "1eb6d10c98cba173561d9202d68d08e4d6a6fa2db6832fff6ee3e4267d7ea4ed",
+            "size": 79257
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q44.png",
+            "hash": "5627917d3789c2759d81c873e7da7e0b33f23ff9f040cea25ea0d05f4d8ba36c",
+            "size": 29391
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2019-ee-q51.png",
+            "hash": "aee562bfa89f7ecdf6fdc6fbaa825b11129b9a25fcf618a717e9ef41ce7e4dab",
+            "size": 45646
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q12.png",
+            "hash": "f5df2093d9c9528ab1e838acb7e464ecaed3f4713c3bca28629cd2e96c73ea44",
+            "size": 43100
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q13-a.png",
+            "hash": "f64161b4e3f944428401b080614e1d39dab92f28b6c7b11d2221b355e77124a7",
+            "size": 20749
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q13-b.png",
+            "hash": "42c0e42e8f016d0a06fde947189ae2513645acd9b459d4abacae4c3fa5451ad1",
+            "size": 21234
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q13-c.png",
+            "hash": "9ca5769be32fe437f46258972b52e1b655d0abfbf73641f916fe8a27de9c39c1",
+            "size": 25772
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q13-d.png",
+            "hash": "12d7ac5929613e6bcd4bfc013911e654c88fc2981d45ede9c45da98343089c61",
+            "size": 24553
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q13.png",
+            "hash": "4b2118dede52b57787c3ecfded6ca81507199a1942a3e0bcd5287ea8a7bc89a8",
+            "size": 34534
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q18.png",
+            "hash": "21996bd6a12f84d429e3a09a06f1a13a75e21c04f5a54ec595c1b5d9c239b344",
+            "size": 43337
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q19.png",
+            "hash": "b6f3e73485373293c08e88eb59719fe01ca18bcb71f3e81b22f6657199138cf7",
+            "size": 66163
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q29.png",
+            "hash": "d56b826907c7d8e3afc46a260f7ed2e7a2a50f7d92d93fe2d28cf2e9250458bc",
+            "size": 40108
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q30.png",
+            "hash": "0900dcb4d399f591d173194bc00d68022eb0a1a293f5da0752b1fbe751446321",
+            "size": 37244
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q35.png",
+            "hash": "fd1c7c5c4bc0d846fe11635012cb4d03fb9bec3dfb2c83d87914c3f4c01ff29d",
+            "size": 20169
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q43.png",
+            "hash": "a294d356b762ce0e2b06c48d164535be1ff3f9912fdbaed17e8cfef4508321d3",
+            "size": 52008
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q44.png",
+            "hash": "a462c59ad7eea2e40c19d79125f18aa522721cde96205a2084728fba549bee7c",
+            "size": 24234
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q47.png",
+            "hash": "60023bb0f48277a7d85eb07f9ff33c3b9c67723367bd04877430b1de0d1a331a",
+            "size": 24935
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q48.png",
+            "hash": "eb3a7591e806d458a052fe40f840673bd1f4063d0e55ffc57b4ece39e2554bc1",
+            "size": 138587
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q50.png",
+            "hash": "7ff816029db249c1826dd41da2f648a531c1fec79c62d0d8458239f135044c53",
+            "size": 24978
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ee-q53.png",
+            "hash": "7d2ceca3ca91c2958ef835b4147fd858c68fbefa2f26c9212906aa35104d0006",
+            "size": 78342
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ga-q10.png",
+            "hash": "5cec74693f3372f5bbfa0f6f138b3ee7fee6dd4973d33313b437bdf5ec7c7480",
+            "size": 398268
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2020-ga-q9.png",
+            "hash": "dd27b8dac43675dc627b2ba992b2245fd031a403f790f9d746a15b23aaa7f5d1",
+            "size": 53773
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q11.png",
+            "hash": "bb7932e812668a137a4af619c415649bb06006766082f9f8ce9f1347958516bb",
+            "size": 79319
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q14.png",
+            "hash": "538bb2d0a332400fc89624286969c4a6da93a01466e8085df7b86d0070f623f0",
+            "size": 74629
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q16.png",
+            "hash": "12ad98d61740c79e9bd93aa8d22393f40dfbca34c08e61c5976643a483e9f8fc",
+            "size": 35306
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q20.png",
+            "hash": "11750a2df8ed65c863b0d149bbc9a1075360dc72646dc0b6cd7f7c01e9ae6f24",
+            "size": 75333
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q23.png",
+            "hash": "222c5b5935598592f9007866307f27b0b0b315b409dfddd9ac83f598ff73cec7",
+            "size": 94849
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q24.png",
+            "hash": "d95134f5c6a48a560b1799c0eca96d752084ff2d2447ec13e6f103aa8a59dab6",
+            "size": 66942
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q25.png",
+            "hash": "2621a47f349f75dc2bea944564a9cfd9c861c3df8258cde838f4495e20281110",
+            "size": 56180
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q29.png",
+            "hash": "633460817f7e3be0c189bac3abbc36ae594f1c9c0c6c8098c0a614d0a78b717b",
+            "size": 70310
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q30.png",
+            "hash": "eed82dad09d95b5da3865fa1261239538d1dd46089c4368adf7f0c087cc0ed0d",
+            "size": 73423
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q34.png",
+            "hash": "5cf19a7c194d542f09e8e02be1b557b3f022dc9c05a1e5a85e2754f787cd1e8e",
+            "size": 87318
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q35.png",
+            "hash": "299bec7a28aa2e367ad33a77f9707dfd6266ab660df3e9423755ce220334c4e7",
+            "size": 103310
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q39.png",
+            "hash": "29f4f5a3bd373c2fcac521dfb339841db2ed28e473179e335a61bcd74c2a742f",
+            "size": 93668
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q4.png",
+            "hash": "229e2fa39aea5901f50569854843c105cadbeff537f5cc2fe4a6ab3d3dddfcbf",
+            "size": 51885
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q40.png",
+            "hash": "1654b45f43e38663258690bd96077a4a428b1acce57bb6e57854e1db5acf7d00",
+            "size": 48790
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q46.png",
+            "hash": "87786805a1cc5ff39a19a1f47a4201d1ae5f35c4b60b55a3a3f65cb719c4a2fe",
+            "size": 64060
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q47.png",
+            "hash": "5ae5005fd4e88a25f9fad16b3a0d664ea8548c0a718bfe7b14d8bf146b70098b",
+            "size": 65095
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q48.png",
+            "hash": "ae0efea69d6c23f4b65b8e24f24335c9b54c56ef18279f8bd6844e0f798d147f",
+            "size": 86803
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q50.png",
+            "hash": "4354c6c3261808c17fae476b079f2c3bc550a0d76f73b3d74b5d89784743f31f",
+            "size": 167304
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q51.png",
+            "hash": "be35ead5c79a416711151aeb84d679728868358b691eeac5ef431adb15c539d8",
+            "size": 8682
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q52.png",
+            "hash": "823a9275cfd1da71e8d0a7b2c6373af601099530ff1a928830341ea00f8a7be4",
+            "size": 65916
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q53.png",
+            "hash": "2ef8bbb6897a668f248f4b5bed1fb20567a7d5d47300877c8064a95a236a33e1",
+            "size": 75490
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q54.png",
+            "hash": "6ad8b2da4b53afc693bd542e4b5a11a9126ec85921b56035dc3e3a86d28fa1c0",
+            "size": 48101
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q55.png",
+            "hash": "fcd53203237b42c6a39a7614c0c522787f68ddaf6724bae34ee4e7d906293091",
+            "size": 77789
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ee-q8.png",
+            "hash": "fa5decaff3fcd3db84e8295c731efdbd0afd06aabc290fa8a5a286a5539615ea",
+            "size": 139432
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q2-a.png",
+            "hash": "bc132bda72079404ff36d466e8eb8c56ea3fef8dde6e124acd0b69e8fcc0902c",
+            "size": 30239
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q2-b.png",
+            "hash": "5bf81adf65d6a960709daa40f87e212b7fdd543293fe94397adb3c7886815938",
+            "size": 25820
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q2-c.png",
+            "hash": "ef69ec7bb578236a2c246cf6dfe069b9f88440d2e1d791b7ba495a898b01c229",
+            "size": 25496
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q2-d.png",
+            "hash": "fd56b12d56b90e577694ee177b49a68db634b9280b77e4c3a7bb8d6aae46fb24",
+            "size": 16005
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q2.png",
+            "hash": "acebaff0de9dea01b113a4bf813493d4343d31e44780cd27329a610a4c73649c",
+            "size": 13571
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q7.png",
+            "hash": "6c3cd575d15ecf6bdf35898565c6c9755f44a620c9972b0d946941329f411fee",
+            "size": 77889
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2021-ga-q9.png",
+            "hash": "d3ee9aad83076b5f66ce8d5b59d9b0b1e726456d62b672acdb6875bb78ad0cad",
+            "size": 105276
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q14.png",
+            "hash": "604dfed8e91f6f167a30750b820af3189fa22c6c2924bf46465428d9896cb745",
+            "size": 13581
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q16.png",
+            "hash": "733ce2101a85735a66add7a18e304e15ded56b88d6864f5db84e7d28e497f83f",
+            "size": 15054
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q17.png",
+            "hash": "6646c20240e02188d20a9ebc169837d528ae950cbc18f9fb30b04249b93280e8",
+            "size": 18307
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q21.png",
+            "hash": "1fffbdd1b1ae7a54831df81898bff6c9a2ce12c72291fa4447a9840942d077a7",
+            "size": 18206
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q25.png",
+            "hash": "fe380a769c94935217cf89e346e3c77398de901b56ec673aadf3dc7d667b45dc",
+            "size": 17852
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q28.png",
+            "hash": "45779db4aa1449f06e625d533eee0e6c4ff90d151c1623639ec24f1560493439",
+            "size": 8725
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q31.png",
+            "hash": "8515da0b981835061a01cf15b0e6328b5d21196f52c835f50a4596b015488e30",
+            "size": 17655
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q34.png",
+            "hash": "b7e545a05ad35ea2944a841324936a3a05c78ad4f03f942da37fda8c2e01c8ee",
+            "size": 25666
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q36-a.png",
+            "hash": "924aab6e4be378362ac0cff396067662b1ad88118a35514eddbb2009784f6f71",
+            "size": 5887
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q36-b.png",
+            "hash": "08f0873524266c5496e2cfe6aeafde0b52e40234b5a84af98c1a06b218a09ea2",
+            "size": 5824
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q36-c.png",
+            "hash": "0c614aaf85f6f8194b3b1b0a803792c48b75c5680840d3fbccbf0aed2f1f03da",
+            "size": 5777
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q36-d.png",
+            "hash": "e12b20eddc2846ec98a5dfec6a865b2b91b0acf4d7e62ba387c70d7313e6ea3d",
+            "size": 6795
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q36.png",
+            "hash": "87943b03cbd16c0aa4af91eb455a822619a24c11c68e923026144ac40c5515f1",
+            "size": 11061
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q37.png",
+            "hash": "22f4c8f5f9fc3cc853d4d77dbd38f8303c98b48fc83b839f3313779e839759cb",
+            "size": 9456
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q38.png",
+            "hash": "2b00964d65e8d6cf3f038a71a474d786a664a65726803dab6f9bd7ad22bae4fe",
+            "size": 15017
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q39.png",
+            "hash": "81d43984ddac90ca3f0dc61acc73856c025c1f4c018503711c4158e284fec533",
+            "size": 13259
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q44.png",
+            "hash": "1b24ea96a480d8598fe25fe61435043c8d94cba696fda6b489e0d508aba17d73",
+            "size": 11450
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q48.png",
+            "hash": "a86d5a6314f26ff66a57cf81068ba9da3f08a0f705dba690310f9a4723451d17",
+            "size": 8113
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q51.png",
+            "hash": "7daf35ba63c19638df1b90140ed89582111a7a89ac1d5c0e207321ffbff8ac4c",
+            "size": 10751
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q53.png",
+            "hash": "260df0aec7f211458e6efa15a82b1228daf0fd9d4cccdb55520f8524174f4848",
+            "size": 91536
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q55.png",
+            "hash": "fc7cdb6ab1899265aeab623358ca20072813f70dd3c64a092c1a7cf6578abfa9",
+            "size": 21695
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q58.png",
+            "hash": "f28186760b38a4664e74bd7dae285453efc05c0f28d1a3e132c44ee9c2daa5f4",
+            "size": 7562
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q59.png",
+            "hash": "329267249c0293c6bab68a7b8bfe5e22205cb6e721397b269c36fc643a282a03",
+            "size": 19212
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q61.png",
+            "hash": "9945c2991a8d3d71a143f31b12859b9404e8365ca52a2c6fb38f9a245d71543f",
+            "size": 17155
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ee-q63.png",
+            "hash": "a7bff4e533951e6292e4d4c61c9b1811dd93bd9bb453c21f03e18d145a41fa6f",
+            "size": 44359
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ga-q10-a.png",
+            "hash": "4c8669a253651fa779cb080d5fca29ed94e501edb4e199b7c039d3878b27d6a7",
+            "size": 2151
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ga-q10-b.png",
+            "hash": "e1372e64dcf67ddd31bc93a1c919fefa3ba062b9e3f76cc0eac56df5cf3ad754",
+            "size": 1919
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ga-q10-c.png",
+            "hash": "112a603590a7f620b420393e559c70781e32a3271d827d6639e5c17c300a45fb",
+            "size": 1791
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ga-q10-d.png",
+            "hash": "be09c616ca1b1047c6dd2d36c80128e14b124ecff3757f25a9b8533949a84886",
+            "size": 1316
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ga-q10.png",
+            "hash": "0a470675aa782179aa5fd9ebdcf3ffd594d16346b8af5449294d682942581ee8",
+            "size": 4715
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2022-ga-q5.png",
+            "hash": "96ee17061d707ca15d59b9aff24477cca26170b1787f84bbeb9882ecf2e70696",
+            "size": 56156
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q12.png",
+            "hash": "4adf17d5b4df900e630758fb9dcae18620a49346725854f44ada3b0f3ddf8eed",
+            "size": 22238
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q13.png",
+            "hash": "701a2819f28a96248f563cc49bf832bb07ef3bdc4fce62c731f9d13a45e44059",
+            "size": 8153
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q20.png",
+            "hash": "97e4a3fc856b1e2bc29436879b8fce39a19f037885132b99d72bd2e70448653b",
+            "size": 32733
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q22.png",
+            "hash": "99f8d2d8fd5860995246a0bd71509d4344b9efed6ef019503a6f6543ea94cdc1",
+            "size": 125707
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q23.png",
+            "hash": "360c437e0922b267f7486bda6f356b20992bc028385d42d878c500962724f804",
+            "size": 17354
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q24.png",
+            "hash": "1a0065606d09cedabcf7439b488e6b6a922c11b250026f199a97905f6aab5252",
+            "size": 12964
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q26-a.png",
+            "hash": "ae0d2924b8c24e6fea1e77a9a906a61e7d66bce90fb2b1737530bd908500ace6",
+            "size": 3967
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q26-b.png",
+            "hash": "6fb53c88848c2c345c2be1c5aefb381e20199234bfff4ac8d0b3e13f76639d89",
+            "size": 4853
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q26-c.png",
+            "hash": "2a65dc4ea1a4a2f38c62307028429a6158863a1aedba041ab23308cadf56fda9",
+            "size": 4744
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q26-d.png",
+            "hash": "72f3ecd57159484e10cfc7ed7964e08b0f496f5a388bc28fcc05765c803c9b87",
+            "size": 6274
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q26.png",
+            "hash": "f38a0bf6d5d3dc4ec40aa1a93e21bd57f23ee7a445c358a04d0bc15bfe884e87",
+            "size": 9710
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q29.png",
+            "hash": "44b6b02dfa27a51e857031a7a474cf1b2b42ba791920f148d4fe728976138fed",
+            "size": 22391
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q39.png",
+            "hash": "c2b2e84ad91346253a2729b4bbfb84740069b591cec7998c8cc2fe0bdb8f0086",
+            "size": 24120
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q40.png",
+            "hash": "0047801e3b31c2ba8d646ee8f98ecbe820d4a43a4da5500e3123ac6f4e7f97ca",
+            "size": 17286
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q41.png",
+            "hash": "2bab71bf7cf10c8c9df42ba31e3e3cbcc0cf4b92560e6337578eb531c1a7096f",
+            "size": 108041
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q43.png",
+            "hash": "c13ea466292bc371d63c045ba3a2c34b4770175f1d076b3b2aad8a219e923ebe",
+            "size": 17153
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q44.png",
+            "hash": "06e115ee42804c1461e88d83498cacc056aeefb3dfdbd5f802957eff433052b0",
+            "size": 10937
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q51.png",
+            "hash": "b33cf5993e6b5950de0a77cc5e767fb0de7c15aad1bb556fbf7598638f3aa19e",
+            "size": 19628
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q52.png",
+            "hash": "d77e785e4f482ec87271c3335bc94c56f99ec2bd7bfc50c598d9cd9e303dd67b",
+            "size": 14244
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q53.png",
+            "hash": "395963c235ebd6f1a9a575db7dd5a96c0f2cb4114d6de02fa6c7e2bb2cd1bc75",
+            "size": 23355
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q54.png",
+            "hash": "d2656912fb942489d181b0326e61fa6b6fbc84025b485104907ba5afd3852687",
+            "size": 20928
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q55.png",
+            "hash": "1f8cbe4f50522ced814e2be52d5a4bd47c8d424fd7f011a5077b5c0ac9e2a19b",
+            "size": 11303
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q56.png",
+            "hash": "23ef79d540df965a73a0020ded74bf4781774d9564a3b4c6d2b2bf1bb54a0e03",
+            "size": 102623
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q58.png",
+            "hash": "17d46cd09a331a871fd598e0e7a35c14946af548b544f2c819e8f667c94c37af",
+            "size": 16177
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q59.png",
+            "hash": "69267fdd96fa81b4a8069a8fde0842f97fc81f735f08c4e035aac9abe6ab9959",
+            "size": 14851
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q60.png",
+            "hash": "1d9aa7c4298be5264e8b9050c2bc5ff2b6f8692d824c3ba693270055d994574a",
+            "size": 97923
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q61.png",
+            "hash": "e5dae6be43aff7f85c8cd9a40f7815ac625cf5799ee42c1237b300a412651b87",
+            "size": 43774
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q62.png",
+            "hash": "458c0fc664c6cad41fd44787ee07a2bd8428371d3bc7b330ea0ea86cfc8c9b7e",
+            "size": 36879
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ee-q64.png",
+            "hash": "e46f8b40e19d159671b2c1fbcfddd889c83a8839e9d02498513cf1ffe842de82",
+            "size": 43144
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ga-q10.png",
+            "hash": "57decda1c8565c7debfe58ebcb780ad6577f57e61861b23c11af12ada3e866ed",
+            "size": 21516
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ga-q5.png",
+            "hash": "7b2b7e438f13eff3c36fcc291bae7ea1a265e1e54f1fd854531b946fe21060b7",
+            "size": 132677
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2023-ga-q7.png",
+            "hash": "4aa088c48371c591ac1044e07cde89cd2f390f9a5cfaf3aa447082438c4cceef",
+            "size": 45068
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-20.png",
+            "hash": "08cea15a128fc6bd2376e00cfa6244a3090110955e5799ff5424607c8b4c9304",
+            "size": 18980
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-22.png",
+            "hash": "7bd141f154fabb23aa8436ee36eabfd2c2335fcbd77742c8e14548fc8a308360",
+            "size": 7977
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-25.png",
+            "hash": "c402a5f2e17979892ca58ee58f80ecff687e17228f4cd7481b1361e6c726beb6",
+            "size": 24059
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-26.png",
+            "hash": "469dc1985c1a6d92a8770545bbf9a8d4aee4b731a34114b76edab68b2f6cf0a4",
+            "size": 29904
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-34.png",
+            "hash": "0018cb0bd10e163ebec51030d40ca00e03601ee54e3b910ba8d1f6be930baaf9",
+            "size": 53431
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-35.png",
+            "hash": "5a79eb90a400ee56528650b9a98096c1561f1fd819b20a51b89fa922d214bf84",
+            "size": 34782
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-41.png",
+            "hash": "06415b18083b102da01eec0019af1f6c0902db104d29a62059e4c6ad5a517537",
+            "size": 37486
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-42.png",
+            "hash": "da695f89a98f421e45041fa7a43c10cd56815fefa209d3ce952a652bcd75aebd",
+            "size": 26562
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-48.png",
+            "hash": "7a736cf8e99aa722f13857c949aeeb9cc27b5ed2b6e5f2c443e6013990274d12",
+            "size": 31118
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-49.png",
+            "hash": "929ea2732732c139bf448cf047e9e514394250e2247cfa39abb6166eee9f17d3",
+            "size": 37418
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-50.png",
+            "hash": "9643a848236cec338366214e7e207b370bbae5bb64c2a528afc7a69ef0b248b2",
+            "size": 46268
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-56.png",
+            "hash": "ea398d42d8deee592e57f8cf02d0d17ed4e4256ab9ce45fbd6f2fc054700d031",
+            "size": 15481
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-57.png",
+            "hash": "4d02e6f5b76ecc129b4298641a49317c441df698a1db4566ebc06df860c92ec9",
+            "size": 17830
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-58.png",
+            "hash": "1c872faa85120f6b585269109fd75d5045f124675902e012950a6f47ebff8efc",
+            "size": 11301
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-59.png",
+            "hash": "e412943d0b95a02ab55eeb197a97df120b032780a2b80391a25bdf3c4c738692",
+            "size": 20262
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-60.png",
+            "hash": "cfc2211321988d623f719190a213f42c025918034dcb63df6014c712a9515e1b",
+            "size": 28423
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-61.png",
+            "hash": "027dc1be7ddea1e9aa1b17a9d7a7d6df03fbfcb333fb6f5f3f1aa41d98652a9c",
+            "size": 43318
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-64.png",
+            "hash": "2016c94b4ea627859aa69892ea10e775ed673de5383309050367417a097ca97b",
+            "size": 25489
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q12.png",
+            "hash": "46b923cb07fa4ee3fe41d4a904c0b774b08a69e530f450ca5422ca4b101c41a4",
+            "size": 25108
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q13.png",
+            "hash": "8d47a69baca589f2a3b26ff34f1e57284f0770b654637d14d67e5fb21bffbc4d",
+            "size": 21485
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q14.png",
+            "hash": "36b80dd0226d720aa9075aee5c825f0ec3ae3720aa4a4ee70374eaef9d424da3",
+            "size": 24535
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q18-a.png",
+            "hash": "c9e3f5e559d08216f44a5287db532b79e441eaaf03fb6d87d6cc21ec8186ec7c",
+            "size": 8968
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q18-b.png",
+            "hash": "4147a6f286786a799618805067447806efcc04f9b130d55dc44ac01599e5b218",
+            "size": 10517
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q18-c.png",
+            "hash": "d418957f32aedb05e1d8a0e539cf4aaa52b6603a2f06c194d4f2648bd45a75e9",
+            "size": 15802
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q18-d.png",
+            "hash": "3e99fb919a8d8c7400d8d0bd69aebbac4a7a18b5793bcb4d48b16e2ebd3f7cfc",
+            "size": 11816
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q19.png",
+            "hash": "121027986583b8fb6ca79b7e10bb50d16072cfea62def81a5ff40eba008187f8",
+            "size": 27859
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q2-a.png",
+            "hash": "9e217b161948fccd713c25767724dc9d5d5bd1eb09c05f98a76ab162a88a6c86",
+            "size": 12889
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q2-b.png",
+            "hash": "30924f2584751d1017b37320102d938c6a745bf9ede4dd4768bdb5afd8413f3e",
+            "size": 13339
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q2-c.png",
+            "hash": "ce5be42ec2691c9764c444de1b44ad9d08c1bd15ba939d6aaef698c3979eefcd",
+            "size": 15244
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q2-d.png",
+            "hash": "640815e71a21e6b23d22a1d5ecc8bfe5cd5d96090511dfbf3a533ad83461dcd7",
+            "size": 15425
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q21.png",
+            "hash": "e8a4b64cd2966676e9f1abf7868c89f39956e9f376eac4bb445cef1df60e2a13",
+            "size": 32623
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q7.png",
+            "hash": "f3debf082b84dc0c8cbcad6ccee0c913f06cb47980e596cb5a1a1e7d16ec10a9",
+            "size": 16959
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q8.png",
+            "hash": "ef04ca7c9671e7a407a893f8317b0d9c940a41a8daa4632db5372d799d827cf4",
+            "size": 40829
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2024-ee-q9.png",
+            "hash": "d462fd4eb913597c4608022a655a85d09e205e9f4438cbfde9ff98897ebb8287",
+            "size": 25428
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q10.png",
+            "hash": "2f165e155ff39a85e01ae0d8385e1cd935c3d92663c765cbc21e69806fa2e6cf",
+            "size": 71703
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q17.png",
+            "hash": "b89a523a88e51b3e604b8a3c814393d288026a701133e7945063ffe33004a958",
+            "size": 36682
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q18-a.png",
+            "hash": "8c8881842757ebab8875fab4dd553cb52d70acc3f584f30ece94c030a5894b53",
+            "size": 10389
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q18-b.png",
+            "hash": "6742cfa12332cf96c6bddd6873d728e1f9d7219d36fd4d1fcbb0a8a302ced9d0",
+            "size": 9019
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q18-c.png",
+            "hash": "4763069aa20068d0184309faae412b2c4c45c6005f65739cf54751610226af57",
+            "size": 13933
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q18-d.png",
+            "hash": "b7ea69b3e91676aa0b77a2d115477327932bb367cfdcfcf3fbb296c90de43b56",
+            "size": 15582
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q18.png",
+            "hash": "d6cefc6875147cc575e76a9278c4501799ea56817a9c9f14284883b8f2be63be",
+            "size": 14479
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q23.png",
+            "hash": "2c0697fd82115b5704c30c1cb2b1f4d09e9e5cfa8b78d2ceca84b44d9ba24a37",
+            "size": 18613
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q25.png",
+            "hash": "6cef00c916a95dfa9c11e22d43e41e0c908754cac994785441e640e7dd9722e6",
+            "size": 111381
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q26.png",
+            "hash": "08ea0a6e41485247225de7a22198036b63513e4832efbd97f9a8e804065ef969",
+            "size": 70799
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q29.png",
+            "hash": "2ff3d5359b98e77e74a785e7bcefec0175dea97c5f89ae86a34e9458a78e0818",
+            "size": 29383
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q3.png",
+            "hash": "674491863bec424ef374a51e7949f995f330e477cfc47bb6a8bb31013e51eeb3",
+            "size": 19937
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q34.png",
+            "hash": "a47e1976c339756607bb34b7da8ae6e63c0b8272b2de5aeeda503699b2a8765a",
+            "size": 14723
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q37-a.png",
+            "hash": "c827655060889587d43ed2639fad6c8195c6983248ded50d70548606196ebe8b",
+            "size": 11717
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q37-b.png",
+            "hash": "d3f2667aa2fcc5c4c74c04e53c24e908791d29453561839210a9633e5e1bfa2d",
+            "size": 10188
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q37-c.png",
+            "hash": "fc25ffedc9e45a9fff95ecc71cdf4202263745fc4a5f8beda91cbff7bdb84701",
+            "size": 10986
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q37-d.png",
+            "hash": "1f1e5ebcf880ab864d1695eb2fb3a433d49c8b6e63575ebaa9afc48313ec3f27",
+            "size": 10229
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q38.png",
+            "hash": "a26a99f835d5223149acc39190cd7b5a86967dfc2b015f65ffad773bcc83b837",
+            "size": 22054
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q39-a.png",
+            "hash": "ed1bab7a3673a5d9c720106161aa7811afbe253a08927c8ad181502d31f24a65",
+            "size": 13355
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q39-b.png",
+            "hash": "1bce1a387e252d7960813055dedc9dc626ab25b02bb0b7a61d72d3c47c8ed67d",
+            "size": 8580
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q39-c.png",
+            "hash": "3ea58cafbdd694f0ccc663ed112eb6b95833a82bc7656ba02a1705ac3c16e6c6",
+            "size": 20710
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q39-d.png",
+            "hash": "f0c3e0ce6a8fe39110bfbc0053a0de249a1116707a27555dd3fc083559c60455",
+            "size": 10910
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q39.png",
+            "hash": "10004ec62a1350a4c46323e69827d32da193484a28062210e297137b2c3ca072",
+            "size": 24585
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q4.png",
+            "hash": "b0788fc32a0a39bb14275565987793915a0a4e2e15757368996b0f514c82a40a",
+            "size": 130291
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q41.png",
+            "hash": "b7e3ecd653596c8f8fa042f0a658e9131817d5c606be70d9f1002926dd81e5f9",
+            "size": 26157
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q43.png",
+            "hash": "895d06c15bab806cf9609262f2353d4acc2ecd8e8fc44ecdb1bdb12945cd417d",
+            "size": 66415
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q47.png",
+            "hash": "66698f3cf66bc3aa68936bac5cca346c07756d67d90b615a87c5df203a0433d4",
+            "size": 31844
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q48.png",
+            "hash": "11e2f2ea700891d85e6fd85544a9cf3611d7b911948e1714db655cb63980f669",
+            "size": 77044
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q49.png",
+            "hash": "f391793607c599d721a93561c8dab06423ddd0bba11214ee76320a484229e2ae",
+            "size": 168099
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q50.png",
+            "hash": "4cbc76bc69dcd42194a4b275d8f21fcc515bb88207da578f2d5982bc14d5d853",
+            "size": 55504
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q56.png",
+            "hash": "31e14ab60d69490f9a48a9fb82472b71a6500f2d7e5e2bc9fb36a4663dba49a4",
+            "size": 68084
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q57.png",
+            "hash": "682be831efe61f50ea6dc4fa5abde9f6db8125b3cf6fb7e0a52d74013c8e7ac9",
+            "size": 31586
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q58.png",
+            "hash": "c836c41f8de9d42d1fa4714aa0549bce42c5b21d4f09d5fa4f55d1580a927400",
+            "size": 35707
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q59.png",
+            "hash": "b5bfe48deeddef1e077242ff18210496d30804e62849b2c5474e7b0a2e9ddc2d",
+            "size": 59199
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q60.png",
+            "hash": "304c2060ea64d6af8e4c9518fb7511b25d18cea9816fb2fb48e802e3ece43f6c",
+            "size": 36187
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q65.png",
+            "hash": "4a1bb35c07364731f6e333463f9fb007e4dfe4b5b6a1eb951debd39ce919df5c",
+            "size": 26296
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2025-ee-q7.png",
+            "hash": "3ab366aaa57cca471b9aca075d557e1b5a253389dec9af947f739407ed3c5306",
+            "size": 70659
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q19.png",
+            "hash": "d0868addf003d09248040080e7b4090d2f89fe78de407b42ba6d05ceff7f5a03",
+            "size": 56287
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q22.png",
+            "hash": "1a8944cc45d8ef4b0afec626641bc8c48b70d0245b52ba44fbdb9339f7b9c161",
+            "size": 41243
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q23.png",
+            "hash": "65086b90ad23afdc72638b05f7460cdfd7f4e629e4b3f8fd88cb1bffa46dfc55",
+            "size": 27516
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q24.png",
+            "hash": "b9dcde3c503fa916a8a050d82f4adaf011d4ecc70ea75db3cc6b15a7463ae894",
+            "size": 118431
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q25.png",
+            "hash": "17db5306d5cafb9d065c2a5df08ccd656b3ec8f06885ad12dbdbe0d9e56da033",
+            "size": 74636
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q27.png",
+            "hash": "243416d54ec600413eade794efb6539fbadfd0e26dd738f35ccf2879a1529c9c",
+            "size": 74949
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q28.png",
+            "hash": "2df32dcb9d714720f1fc4768900f24a921fde68b2dc4a65a53720013d32c2e05",
+            "size": 83310
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q29.png",
+            "hash": "a150a153fbee997c7511284b2c1ceb49efb1f889ccb1a73433a51177688ed3f6",
+            "size": 44268
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q33.png",
+            "hash": "37d46417ebfc33c03a609d07ee41106dd4c5a9e91df37c7ea2069e6a5f652b24",
+            "size": 75340
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q34.png",
+            "hash": "75f8938a0913e39ac9b917957629397c7a2f85a3d06a99cbf431e3aea257ea2e",
+            "size": 36026
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q37.png",
+            "hash": "01cdbcf2ecf10e370d75cb660133921fb00fbd2316a6c5b9cf2f1e06bca8d51f",
+            "size": 59476
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q38.png",
+            "hash": "13145b14bfa2b6cff87ad938697bc5b97dbade99bc0c0bacf579c82a641841fe",
+            "size": 76771
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q39.png",
+            "hash": "f907a29751394b55ca6465982bc013bce920e15ee31a3cb09c3b09e8085c113d",
+            "size": 110860
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q41.png",
+            "hash": "95c1eea063973f1c2e5680cb22bbe9a6060e221b3e40f570d3bf10801e15b2a7",
+            "size": 36374
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q43.png",
+            "hash": "a7e0cc82c01e5348db51ca4cdaf205d222a728817a189dabd8e0e20f5022e9bf",
+            "size": 54463
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q44.png",
+            "hash": "680ae0f49f3954fe6da07173491a51fdea03151ada431f3dd52d741a9f4edf9c",
+            "size": 47333
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q45.png",
+            "hash": "89d1f353017716ce27c3d38fe54a1bfaffc846c90b972b4bce0f9f41f9085d62",
+            "size": 64825
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q46.png",
+            "hash": "2223677bb8a753a4ad6dd99f352a90847e7401a11e475165cfb0997f993b7dba",
+            "size": 71705
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q47.png",
+            "hash": "3ac3de4a3fb3b06fb0e45efde817852f60dd0165e1c86b1a4680967eba8cfbe7",
+            "size": 71221
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q48.png",
+            "hash": "43d295d44a67bacf26d4410d3a00116ed33df45b7bb840cf31c17b05a75fd5d5",
+            "size": 49194
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q51.png",
+            "hash": "d7a219b1181e18a0de388396b9aa8ad568a0d972629ef8786b1936e2458fdc86",
+            "size": 63770
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q54.png",
+            "hash": "833fc0605ef89cec1189ab4e6a8e13cf5752d5805f1a6cc84bcbfe6019a26ef2",
+            "size": 33785
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q57.png",
+            "hash": "a73743c63719973e999e355b8f1ae032d7e27d51ff20c8a0c49a99807740d4da",
+            "size": 71139
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q60.png",
+            "hash": "0e8c185c023ada6643adb8651ef28a0c1a9b995c48738686e6781de5538778d6",
+            "size": 111003
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ee-q61.png",
+            "hash": "9283667e069b1d85a2244c8ff30919c4b3eae25bcebd040c766654aca48d054f",
+            "size": 42272
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ga-q2.png",
+            "hash": "d19f3b6ad7c697b04e83b0c357eccd4239246730d657803c528b0fd987df258b",
+            "size": 77453
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ga-q5.png",
+            "hash": "fca1a032e0c69884b71da0a8264eebcd70a11a703ee4afd4b797940c7f7df378",
+            "size": 127633
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ga-q7.png",
+            "hash": "af1ff35039f5798cfa5579c249002cbc13205d8d906a981eed02fd5c9d5f8bf4",
+            "size": 93422
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ga-q8.png",
+            "hash": "ea777faf01587333db98afd7233899c6893557f9134df68b8fe6934ed6838c0f",
+            "size": 44416
+        },
+        {
+            "path": "Resources/Images/Question Paper/gate-2026-ga-q9.png",
+            "hash": "cfe5c49a801b604b575def0c250f04d3469ec1dc09c537e6b593faf34caedbf3",
+            "size": 59484
+        },
+        {
+            "path": "Resources/OnlyQ/README.md",
+            "hash": "15db755843eefec7fba9e0df8b357d00c5c805f11cc70ca91da2effff5b71753",
+            "size": 75
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2010.md",
+            "hash": "71b9737d148ac3e907eaff0a44aa2e52316e0763ef0397d53198dbae71929a0a",
+            "size": 1590
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2011.md",
+            "hash": "cd93a39ed0096baa3746f0e3798a07e216f8e3bcef8edcb738d5c6d6a34d9a74",
+            "size": 1590
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2012.md",
+            "hash": "375c967b13b0be323036516364579683c4f2b6280e00cf340274d6e66dd5481d",
+            "size": 1590
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2013.md",
+            "hash": "376bd0f9efeeffed4c55ab0f9a02e55a2b34d9a84d995848afdc42fcee246353",
+            "size": 1590
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2014(1).md",
+            "hash": "76970253781e099bcd30c507c291c63f0f87057bc7eee8cbd6b6cf9fdbf0a056",
+            "size": 1783
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2014(2).md",
+            "hash": "dbd2227ee9804cad50d52837ff9b9fed4a42a053a0eb76eff55da7c5c9897086",
+            "size": 1783
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2014(3).md",
+            "hash": "dee7ad137416819ad07d50d17714ca40e9868f948817af3a9e947a151f41a372",
+            "size": 1783
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2015(1).md",
+            "hash": "e3559cd42b3a35124169239b947471c58995703a50a14019da9643c9e2d51e30",
+            "size": 1792
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2015(2).md",
+            "hash": "36ce96ea1af90b21dbdcc25d60d99ff0d4beafdcc3076605e84e3d0ec6fcbc2e",
+            "size": 1792
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2016(1).md",
+            "hash": "3d5755a6debfb34c0da472a4a910ea02720edb69ee71ada4712ecbc6cedcc4fb",
+            "size": 1783
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2016(2).md",
+            "hash": "ca3cfcd2a842d0c699dabaa2385196925b2cae0124f1e620cb66de58eacab4f3",
+            "size": 1783
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2017(1).md",
+            "hash": "238a7c5803df58eb13a6ea78f6346dbaccf39d60de2a25be435efe986fb78840",
+            "size": 1793
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2017(2).md",
+            "hash": "f52102f6fc4bc67281f2ff459a749030877ee7b4451ce40ec9aa9283ada14abc",
+            "size": 1793
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2018.md",
+            "hash": "66110009af9602900e23c81405cbb81b092dde993be4ae4849a70c8751175313",
+            "size": 1580
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2019.md",
+            "hash": "50acd6c8368b30f583f683357b431b87e3e426baaf705041e0347d2afee060dd",
+            "size": 1580
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2020.md",
+            "hash": "27597836401328bdaa7704eee359d74765907ded4105c095bd6f735f55f1e2ed",
+            "size": 1580
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2021.md",
+            "hash": "d88abf8f3f1d6749682a89f149f915f31ad00ad67ed833590940899eb8befdeb",
+            "size": 1580
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2022.md",
+            "hash": "3f8472cc88954cf71d612eb0b079e014d0415c3c014450143278aa0eb46739c3",
+            "size": 1589
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2023.md",
+            "hash": "c540e664c71887e8c103ba7ace926a0873d2cc1af17da39dfe3cc28a551d0134",
+            "size": 1589
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2024.md",
+            "hash": "ff2c01c548598ffda8bc6c25ccda3b0a9a1f4e56474b376229944e15040cb4ea",
+            "size": 1589
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2025.md",
+            "hash": "979d1f80f8efb4bda87263cd1d4a7937ab6c9e82b509903e69624d3f18bc80d1",
+            "size": 1589
+        },
+        {
+            "path": "Resources/OnlyQ/onlyQ_ee_2026.md",
+            "hash": "32b1a4cc82f48352210805afc30e05fcd399de3bd2e6c2ed40936d219a5ac644",
+            "size": 1589
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/README.md",
+            "hash": "85e0a0d7d02f354898971e341ec0252a8221e6ac78b8ecee3d382bf72dc15d49",
+            "size": 47
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2007.md",
+            "hash": "08839defa5c847c8bcd23ceb9547dc78dcf7d6d17078e974178582eba1807686",
+            "size": 36
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2008.md",
+            "hash": "91e8bec383e11c2c0a3f17eb79c3050c882cd90e0123fdddacacb44b7e6cc7e9",
+            "size": 36
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2009.md",
+            "hash": "2d46a4ee7b8f320a9f704f8a6d8f11223f82918ced219afdf874f1499f179003",
+            "size": 36
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2010.md",
+            "hash": "094077a308305d34009974f133efc31c1623c9bdef326468deb9626d0b8357dd",
+            "size": 39172
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2011.md",
+            "hash": "1a358634b7157cdb925285a2002ce76c37f5a2206eeafe12f39340e49c9ba392",
+            "size": 40995
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2012.md",
+            "hash": "73dec6739bb790ff18b2ec1d8e64c157bf8a372f36a560e818727f9a379a5051",
+            "size": 34551
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2013.md",
+            "hash": "421b38b6552c31b1b252a51ec10b0012c99a0fbf6e5152d4c8931c5ef8c9fe79",
+            "size": 37539
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2014(1).md",
+            "hash": "ede70c11f3737c5cf761a15a5e949a1c2fb2431c0c41b30d6d063f9493dad939",
+            "size": 38228
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2014(2).md",
+            "hash": "95e973a5dbce82282fd12433d0d9d592849c50e6332feab6d68445996cadd68f",
+            "size": 38129
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2014(3).md",
+            "hash": "22c76c5d637be0494627ef21a21aa1c3c6efd9bc36652053eff96df37027dcf6",
+            "size": 38274
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2015(1).md",
+            "hash": "4d62acc8651cfb2fa4476d6142ed07a8c81c06d192e0e572a44930b97873e2f8",
+            "size": 40539
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2015(2).md",
+            "hash": "7453b99ff26dda7e580d24d91060be4f72f02bb6ee79dee075e834606896a13c",
+            "size": 40979
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2016(1).md",
+            "hash": "4a44bbd0df9375b5ac13d43c0cf098c152f508188a01bed7947d59530b548bdd",
+            "size": 38721
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2016(2).md",
+            "hash": "ed9d899e0fd2ee6055563ddba3973d323d7bea8adc3ba97725edd049dbc0b4fe",
+            "size": 36950
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2017(1).md",
+            "hash": "f9c757e00ea3b3f66277256b8bc40184e6e5f2daa72a196100d78a2f0e280222",
+            "size": 40841
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2017(2).md",
+            "hash": "1f1354ec827ffdaf3d8c387ec326ced301ce49e5351b0fa76763594b82eb9195",
+            "size": 38786
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2018.md",
+            "hash": "c7082fee66ebdd3ce210fbafbeaf4abb7edd56e9b09cec27361ede3136bf7734",
+            "size": 40086
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2019.md",
+            "hash": "e56f118fbd3895b83c88ffa2918031950591d167282ba9c162cf8aaa7c7c31ec",
+            "size": 37309
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2020.md",
+            "hash": "160eead1c747ac2cc86cd09c6b41d626c0e45a428443b31668610d51fd10281c",
+            "size": 42136
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2021.md",
+            "hash": "2e10f0bdbf077dda31e1bcaac8e992fb8ccff24a6c7bcf80184d7b3f04fe10c2",
+            "size": 41233
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2022.md",
+            "hash": "7102dd13a43e3f2739bace6b9e48c327121779d41ade1a9540cdd15da0425189",
+            "size": 41127
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2023.md",
+            "hash": "caed990f0aae7e62d7c77ad8fa91f2894b8a072d042f4ad537368d3c7aeeffd4",
+            "size": 46425
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2024.md",
+            "hash": "f9714e87c2e9dcae52738b3e44ac4cc9520094a0e502242f34308e85f258b530",
+            "size": 43593
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2025.md",
+            "hash": "e0887ec0aea83c3af61b416ecf1bd2961f56e9d37bebd46fe40c7c812d97b43c",
+            "size": 42297
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/ee_2026.md",
+            "hash": "1df296e3b4ebcc36d3930b4ca680767418eb7143a34e4fd762f1d14ba83ce429",
+            "size": 47995
+        },
+        {
+            "path": "vault-manifest.json",
+            "hash": "e05b93f9756d89f5d0430f9195c11c0e335f4dd1bebec4511daaf9fad79bd09f",
+            "size": 542
+        }
+    ],
     "statistics": {
-        "files": 0,
-        "directories": 0,
-        "bytes": 0
+        "files": 645,
+        "directories": 48,
+        "bytes": 20250475
     }
 }
