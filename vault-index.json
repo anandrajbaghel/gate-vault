@@ -969,11 +969,6 @@
             "size": 1110
         },
         {
-            "path": "2. Electric Circuits/1. Network Basics & Circuit Laws/1. Fundamental Concepts/Kirchhoff's Laws.md",
-            "hash": "617a203810563400e3ac3d39270e376f745d3ff4b3ec7350e129366a53a886b1",
-            "size": 3708
-        },
-        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3245,8 +3240,8 @@
         }
     ],
     "statistics": {
-        "files": 648,
-        "directories": 50,
-        "bytes": 20253439
+        "files": 647,
+        "directories": 49,
+        "bytes": 20249731
     }
 }
