@@ -969,6 +969,96 @@
             "size": 1110
         },
         {
+            "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Capacitors.md",
+            "hash": "83427b88eab8a75376bf38ac2240f1786cd992d49d867640bd9453f0861e009c",
+            "size": 4355
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Circuit Elements.md",
+            "hash": "725e617ecb6d585feb9203e5ced5ed815c68a9f03bce67663d5d1c86e51ea1e0",
+            "size": 4516
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Dependent Sources.md",
+            "hash": "997544325dfb721379bfe6fc8b9d67af9a01080531e7d7b0b7b1c532b38226d1",
+            "size": 6163
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Inductors.md",
+            "hash": "d926f65f4cc70a0dcc0b9b9ccd0d60d07307bfce75b2ca32be412a1589ba07da",
+            "size": 4323
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Ohm's Law.md",
+            "hash": "3c52f0eb9ee03083938667f116173dadcb293bb9584c0a8c7f943dc583c5e35d",
+            "size": 4518
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Resistors.md",
+            "hash": "e3bcaf2d513912aee0f4ebbd46488facaf55df38855b38e7bb9f33b88cb087c8",
+            "size": 5128
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/2. Fundamental Concepts/Energy Stored in Inductors and Capacitors.md",
+            "hash": "f590a30836476bd95a8cebbad92c0c31e6abffe7f7e68c4732da75fbe73b3cd7",
+            "size": 4878
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/2. Fundamental Concepts/Ideal Independent Sources.md",
+            "hash": "7cec265525e1c5c06b5f5f8e6401081e79047762ae1d45d2e17892fb52739cf5",
+            "size": 4555
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/2. Fundamental Concepts/Kirchhoff's Laws.md",
+            "hash": "44aaf7acfb548adf182041130460a480b058289c67f94087ff3032ed19da2705",
+            "size": 4426
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/2. Fundamental Concepts/Passive Circuit Elements.md",
+            "hash": "dfa13c2b4dac941df1253d5a3f99cc36fc283ad1daf56a2b4001fba9eaba316b",
+            "size": 5045
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/3. Circuit Laws/Current Divider Rule.md",
+            "hash": "16253ceecf67f1c7682e1c21a34542024bdc2723294d0e58b4edb302fb24b768",
+            "size": 4747
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/3. Circuit Laws/Voltage Divider Rule.md",
+            "hash": "ba97830a1a02bc40aa521c73fefc59f7468ce08518f0be97e07d1145942e4630",
+            "size": 5022
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/4. Circuit Analysis Methods/Mesh Analysis.md",
+            "hash": "e5cd9a7e7a5cf23aa2cb5f5770d52d75c677d336bac974357408ce57a3bc652c",
+            "size": 5437
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/4. Circuit Analysis Methods/Nodal Analysis.md",
+            "hash": "726f97bed43359eda20abd346fd64b934f7eec3103a2ca0a4ff02dc9692487bb",
+            "size": 5400
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/4. Circuit Analysis Methods/Source Transformation.md",
+            "hash": "2e43547a570ccdc6e1408223a79409cfcd5ea26cc0cdd709f4718ff041f90b25",
+            "size": 5307
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/4. Circuit Analysis Methods/Star-Delta Transformation.md",
+            "hash": "39e6d4728f7449d2b0b3ef78866bdc92104236470c80a3613a3d2ac214c229b9",
+            "size": 4829
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/4. Circuit Analysis Methods/Supermesh Analysis.md",
+            "hash": "4d856b3c23f721decf64f83fe2b753e06f34cd44b9fd6dd4a3191c642132f577",
+            "size": 5026
+        },
+        {
+            "path": "2. Electric Circuits/1. Network Fundamentals/4. Circuit Analysis Methods/Supernode Analysis.md",
+            "hash": "8be7abc1b25e3ae41ad4bea7e773f519e5b734267dd2876c1a7a5cd6775daadb",
+            "size": 3814
+        },
+        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3240,8 +3330,8 @@
         }
     ],
     "statistics": {
-        "files": 647,
-        "directories": 49,
-        "bytes": 20249731
+        "files": 665,
+        "directories": 53,
+        "bytes": 20337220
     }
 }
