@@ -1284,6 +1284,46 @@
             "size": 4743
         },
         {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/1. Balanced Three-Phase Systems/Analysis of Balanced Three-Phase Circuits.md",
+            "hash": "eb825d1b96212b57f8c85dabb75b812998a9b5e6608a595470d690a692b841ce",
+            "size": 4941
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/1. Balanced Three-Phase Systems/Generation of Three-Phase Voltages.md",
+            "hash": "82d06db44f5c235ded1edd6e42f135235ed883e7fda41ce3b9ac0aef49249e48",
+            "size": 5130
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/1. Balanced Three-Phase Systems/Phase Sequence.md",
+            "hash": "e34f7f67ba6d815c0f05b845cb4617a9a216cf96c2722727617181d3900e6d91",
+            "size": 4894
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/1. Balanced Three-Phase Systems/Star and Delta Connections.md",
+            "hash": "9c465ed952fb01fcbee8cb95ba0293c2de6f2f0f2a56ae6db9cd6fb61476f8f9",
+            "size": 6088
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/1. Balanced Three-Phase Systems/Voltage and Current Relationships in Star and Delta.md",
+            "hash": "4dceb3e13ae0eef4dff91389c33a0b7fbc641b0dc1034bb8320d78dc54e05cb0",
+            "size": 5187
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/2. Power in Three-Phase Circuits/Power Measurement in Three-Phase Circuits.md",
+            "hash": "f4963fb3b54ee3fba1cffe8223937d091c3c21bd29afe8677e57ff40176bb4a3",
+            "size": 4929
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/2. Power in Three-Phase Circuits/Two-Wattmeter Method for Power Measurement.md",
+            "hash": "f7412bb2f67cf8c84024605f510c916be66b22cd3bc932eaa0f5c227f52cab47",
+            "size": 4891
+        },
+        {
+            "path": "2. Electric Circuits/6. Three-Phase Circuits/3. Unbalanced Three-Phase Systems/Analysis of Unbalanced Systems (Introduction).md",
+            "hash": "674a871a70968a1aeed87fecfb4f1a55cb6886828196e2ed8999b06fa88c351a",
+            "size": 6059
+        },
+        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3555,8 +3595,8 @@
         }
     ],
     "statistics": {
-        "files": 710,
-        "directories": 65,
-        "bytes": 20577698
+        "files": 718,
+        "directories": 68,
+        "bytes": 20619817
     }
 }
