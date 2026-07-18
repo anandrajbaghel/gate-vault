@@ -5,7 +5,7 @@ All notable changes to the GATE Vault are documented in this file.
 <p align="left"> <a href="https://razorpay.me/@anandbaghel"> <img src="https://img.shields.io/badge/Support%20GATE%20Vault-d97706?style=for-the-badge&logo=github&logoColor=white" alt="Support Development"> </a> </p>
 
 ---
-### v0.1.0
+### v0.1.1
 
 > [!info] What's New in v0.1.0
 > 🔥 Uploaded Full Notes for [[Electric Circuits]].
@@ -15,7 +15,7 @@ All notable changes to the GATE Vault are documented in this file.
 - Some notes can be like `"Link Name" is not created yet. Click to create.` Please avoid such links as of now. These links will be gradually improved/removed/renamed.
 
 ---
-### v0.0.10 - v0.0.15
+### v0.0.10 - v0.0.15 & v0.1.0
 
 Testing Versions for [GATE Manager](https://community.obsidian.md/plugins/gate-manager) Plugin.
 
