@@ -1394,6 +1394,91 @@
             "size": 5789
         },
         {
+            "path": "2. Electric Circuits/archive/1. Deprecated/AC Circuits.md",
+            "hash": "490cf6ddeb09ddc10836261dd91a0c0e681b700ebc4f8b68c34777130fa06a3f",
+            "size": 4540
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/Circuit Analysis Techniques.md",
+            "hash": "4baccefa08d196b98cc0b1429639942a1f2188385a9b5bd6708af1dfc14b19d1",
+            "size": 7371
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/LC Circuit Transients.md",
+            "hash": "ff1d896ef1d6f7ca92c9aaa0d1f4f7913675a91c91808a66070e2b68b1d1ae95",
+            "size": 8364
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/Network Theorems.md",
+            "hash": "06101124fc78db1e0c7695a7670db7069bacb21849e74bccfeb823759fea0535",
+            "size": 5719
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/Nodal and Mesh Analysis.md",
+            "hash": "972af63e4eabd43559f05fcea8900812b2cc5da833d5b63e4596cb44fc05889d",
+            "size": 5302
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/Output Power Calculation.md",
+            "hash": "ce730389158901d4cdc93f71e760558e5e6f4fb78e7387d98c114a7e90e62bda",
+            "size": 4603
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/Three-Phase Circuits.md",
+            "hash": "8aa3ffbb8367ba1b5a9b4305f5061f6f2b33c3a3f06712c772da6119951666f1",
+            "size": 6391
+        },
+        {
+            "path": "2. Electric Circuits/archive/1. Deprecated/Two Port Networks.md",
+            "hash": "a6060a2826461ae6ff1009d8877f1664d2b88683355e10639f1af271a986190b",
+            "size": 6050
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Bridge Circuits.md",
+            "hash": "1eb3486a4f799bc96694ac4d181c6b788a9d01f2d39026165995eb2b369fb670",
+            "size": 5262
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Driving-Point Functions.md",
+            "hash": "f711ade6121f1254e5742e33dd4287cd2715d9506b22ad8aedd283efc5b7aef1",
+            "size": 5940
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Filters.md",
+            "hash": "e1fb6aa03bf21533de21231261c9c67ef09679345a5b7791ab229c8e78e19c3d",
+            "size": 2567
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Linearity in Electric Circuits.md",
+            "hash": "1faea14b11b04fe2a9afcacc34ee6723a37209d2a2bc7f7341c40f7f9428f14a",
+            "size": 5135
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Neutral Current in Three-Phase System.md",
+            "hash": "0cd3d7d4a8fdc7ba08841190024e5d85cf3db6458a23a69912ad40cdd1b1ad8d",
+            "size": 6185
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Response to Square Wave.md",
+            "hash": "c7ced4dadd62cc3de400c58af7b77351431e4d65dd418b976cbcba7f743aae53",
+            "size": 5755
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Test Source Method.md",
+            "hash": "9ca8cffca53144ef088603bf76aff73d379278fa4c48a5525756b52b8221b78c",
+            "size": 4575
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Transient-Free Switching.md",
+            "hash": "47344ea6e09429b4d3ae760b792730698599bcb8b70d3daa814b4e73b8f81a87",
+            "size": 4873
+        },
+        {
+            "path": "2. Electric Circuits/archive/2. Extra Topics/Two-Phase Systems.md",
+            "hash": "fbfd229488b8f28d6913b885a30dc3bbc8461e9cfa8e68d3aed245441a891e99",
+            "size": 4617
+        },
+        {
             "path": "Changelog.md",
             "hash": "d64897cab1c9af462b7e727a87b59195236337f9cf38569afaff8cbca3128b35",
             "size": 1728
@@ -3660,8 +3745,8 @@
         }
     ],
     "statistics": {
-        "files": 731,
-        "directories": 71,
-        "bytes": 20686362
+        "files": 748,
+        "directories": 73,
+        "bytes": 20779611
     }
 }
