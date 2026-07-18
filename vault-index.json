@@ -1179,6 +1179,66 @@
             "size": 4351
         },
         {
+            "path": "2. Electric Circuits/4. Transient Analysis/1. Fundamentals/Initial and Final Conditions in Inductors and Capacitors.md",
+            "hash": "67ae170b563415541428af18db5a7cc3ebec7a14ca2a8561be9ee62083ad015e",
+            "size": 4426
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/1. Fundamentals/Natural and Forced Response.md",
+            "hash": "b8708685184d39de9fbd6e1aece7608a6ea72decee5bfd9f3e76f0407775db1e",
+            "size": 6570
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/1. Fundamentals/Switching Transients.md",
+            "hash": "86539689eccb1a8297bba79fd2b106df2275c71119ec1567654e922acfb875c0",
+            "size": 6733
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/1. Fundamentals/Time Constant.md",
+            "hash": "d1e9dd41a10480483d2a1337a045bf9ee5795e73be4bfe0e1726f2810e49844a",
+            "size": 5853
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/2. First-Order Circuits/Source-Free RL and RC Circuits.md",
+            "hash": "3e9f3ad0d73f41d75cbec14411e61253d689f535cb56f0748f3e85cf4c313c98",
+            "size": 4595
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/2. First-Order Circuits/Step Response of RL and RC Circuits.md",
+            "hash": "d7e01e33bbeb69e44336f327a74c3d896f391a9d72747760c15c16e840044ff0",
+            "size": 4038
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/3. Second-Order Circuits/Natural Frequency and Damping Ratio.md",
+            "hash": "512f71476173c926d0eb466be682e7bf8f27ea99579ce421a61b65546ae1ec4f",
+            "size": 4085
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/3. Second-Order Circuits/Overdamped, Critically Damped, and Underdamped Responses.md",
+            "hash": "a9df61e913af2ad67df221bd0e8df91a9b9fde6506bb80d9d7ead36df229386c",
+            "size": 5383
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/3. Second-Order Circuits/Source-Free Series and Parallel RLC Circuits.md",
+            "hash": "da955fcf0851e0845765a5c352f06147032727a07ffa0bb22620ad600a0cb384",
+            "size": 6063
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/3. Second-Order Circuits/Step Response of Series and Parallel RLC Circuits.md",
+            "hash": "dfc8ab96e4a176509e01b9f22e5ac96bf7f2bfef4972027e203951d5808b576a",
+            "size": 5141
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/4. Transient Analysis with Sinusoidal Excitation/RLC Circuit Response to Sinusoidal Inputs.md",
+            "hash": "8c1682519185bc60a76cc46b692e310b686418b1ba63c656c09b52d939783d0e",
+            "size": 5584
+        },
+        {
+            "path": "2. Electric Circuits/4. Transient Analysis/Transient Analysis.md",
+            "hash": "c6babf37bbe51f2c1cb288bc4c0eb5a97e258a2c125b9525e0bdb6f86840237d",
+            "size": 6382
+        },
+        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3450,8 +3510,8 @@
         }
     ],
     "statistics": {
-        "files": 689,
-        "directories": 57,
-        "bytes": 20469101
+        "files": 701,
+        "directories": 62,
+        "bytes": 20533954
     }
 }
