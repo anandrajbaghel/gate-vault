@@ -1324,6 +1324,46 @@
             "size": 6059
         },
         {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/1. Mutual Inductance/Coefficient of Coupling.md",
+            "hash": "c5db032b640e87374624be6d853e49c88e53f8b1c6fa1f6e0a6c83a37c6a9455",
+            "size": 4193
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/1. Mutual Inductance/Concept of Mutual Inductance.md",
+            "hash": "f2433dc1c2d0bcc89ec2dd87f0f9f2fc7c6ce2a0d0f4dc49dce2f01a19a28d37",
+            "size": 5297
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/1. Mutual Inductance/Dot Convention.md",
+            "hash": "60e78ce158f15ad206db231b0ae2aa48cb30a8049fe5b8beed6808aa2f1bbb28",
+            "size": 3353
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/1. Mutual Inductance/Energy in a Coupled Circuit.md",
+            "hash": "ef40d2e6c52b2c67352b05f21206b680ec5729a61db4d0fefbdbf6d93cbf39ec",
+            "size": 4720
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/1. Mutual Inductance/Mutual Inductance.md",
+            "hash": "d9a19724ce695d85c460cee4d814f800fb59b1ecaba62da25d844e81f8547ec4",
+            "size": 5062
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/2. Transformer Fundamentals/Analysis of Circuits with Magnetic Coupling.md",
+            "hash": "7a1de10c2bcc6c56b5b2518a46893baffb43ae8b7aa0ea4f2a0e91b47d3809f6",
+            "size": 7131
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/2. Transformer Fundamentals/Ideal Transformer.md",
+            "hash": "c727dc842aec15134befe79f10e7b79d43d4e73eb8e0dc16e7660c0edb39c9e0",
+            "size": 4545
+        },
+        {
+            "path": "2. Electric Circuits/7. Magnetically Coupled Circuits/2. Transformer Fundamentals/Linear Transformer.md",
+            "hash": "e4a053859c8cb52f9cc85eb345b851212cb086a670e451590b0e38bb2dc08f98",
+            "size": 7732
+        },
+        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3595,8 +3635,8 @@
         }
     ],
     "statistics": {
-        "files": 718,
-        "directories": 68,
-        "bytes": 20619817
+        "files": 726,
+        "directories": 70,
+        "bytes": 20661850
     }
 }
