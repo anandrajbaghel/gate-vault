@@ -1059,6 +1059,41 @@
             "size": 3814
         },
         {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Maximum Power Transfer Theorem.md",
+            "hash": "ce93f42c8f9b1d5965ef27c99a696b2d8f3a78ca4a9579358495a346e96cac47",
+            "size": 8387
+        },
+        {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Millman's Theorem.md",
+            "hash": "4b5ff7727c09a508e72c8d1dc4fda839ab11dff2221cd7a8f9f54d7ba60e8211",
+            "size": 5104
+        },
+        {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Norton's Theorem.md",
+            "hash": "1e77807e5281c66ef0531cf9c4042eb1f694e80fb62f1d79a6b895526f2a1181",
+            "size": 4086
+        },
+        {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Reciprocity Theorem.md",
+            "hash": "c2e9fdcf7d8f6a2854a2b41fcd475fcc8ad891e7f1e82278a61b80bb8664db2a",
+            "size": 6590
+        },
+        {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Superposition Theorem.md",
+            "hash": "7c13f519a1c7b7e945437e05b8cb3f391eeb09cd12ea59394f70242127a3b271",
+            "size": 5286
+        },
+        {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Tellegen's Theorem.md",
+            "hash": "a436c7bfe0011f1143c2e9ac617537affee21c81193aca3d23c86074fee808dc",
+            "size": 5833
+        },
+        {
+            "path": "2. Electric Circuits/2. Network Theorems/1. DC & AC Network Theorems/Thevenin's Theorem.md",
+            "hash": "fc427aa55f0a4b94e086c99d5af48f949b9b125a566f7e906db94f566fe9aa41",
+            "size": 6905
+        },
+        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3330,8 +3365,8 @@
         }
     ],
     "statistics": {
-        "files": 665,
-        "directories": 53,
-        "bytes": 20337220
+        "files": 672,
+        "directories": 54,
+        "bytes": 20379411
     }
 }
