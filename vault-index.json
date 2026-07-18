@@ -1094,6 +1094,91 @@
             "size": 6905
         },
         {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/1. AC Fundamentals/AC Circuit Analysis.md",
+            "hash": "6ffda480e3366cb5e82ee46f2da4860789764cefd589f374726e85bbf3a35679",
+            "size": 6478
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/1. AC Fundamentals/Admittance, Conductance, and Susceptance.md",
+            "hash": "ef0d15251e222666bb9859bfbd5a328793c7b5f7e060e4dbde2be0ed2b5a7892",
+            "size": 5861
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/1. AC Fundamentals/Phasors and Impedance Concept.md",
+            "hash": "c193f912a3056d97e4dde5e0cdcd5e2f725730bbd08c5a7fd3425623493f29fb",
+            "size": 8331
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/1. AC Fundamentals/RMS and Average Values.md",
+            "hash": "4782a9d63415cb8f5f0dfa876f40fd3e83496ccfd894204b6b27a0e446873cf0",
+            "size": 5572
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/1. AC Fundamentals/Series and Parallel AC Circuits.md",
+            "hash": "94e8a5bd4981b59669d15377a9f9696b732db6a22f78edd16603995b500f2250",
+            "size": 5919
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/2. Power in AC Circuits/AC Power Analysis.md",
+            "hash": "fb545f27a516af6967c5e8915d4317b411c1099ef3ca379e2f10ea52fe6755b2",
+            "size": 9011
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/2. Power in AC Circuits/Complex Power and the Power Triangle.md",
+            "hash": "2791eb2824fc3f72fcdd2610d1f6894562c05982f535388071135aea1d534e8b",
+            "size": 4869
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/2. Power in AC Circuits/Instantaneous and Average Power.md",
+            "hash": "d5a0718078313ea65b430298ba0dd3ce48920a4669b8e50dc9d8187c60f93712",
+            "size": 6188
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/2. Power in AC Circuits/Power Factor Correction.md",
+            "hash": "38b693fbc83ed4548062d23af32c6e62ff082cb23e8e91cd7b6c1f4d777681dc",
+            "size": 3162
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/2. Power in AC Circuits/Power Factor.md",
+            "hash": "f2c054394b4e45c051675bedd1707467d466c2596ae0e194df1bdfd10315a694",
+            "size": 4361
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/2. Power in AC Circuits/Power and Energy in Circuits.md",
+            "hash": "d02cd89433422bcb76a54b54fba79b8bfee26e890bc298aeeceb78e84fe25655",
+            "size": 4587
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/3. Resonance/Bandwidth and Selectivity.md",
+            "hash": "c2f4256be4057fa1f42569cb341b36c2bef2d2f4bb055cda1c167416fe45f520",
+            "size": 3890
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/3. Resonance/Half-Power Frequency (-3dB).md",
+            "hash": "ab242b2db22db113f33356c4d6e9f7dbedd28b2e7551bdcc1b28f6926ff1a502",
+            "size": 2522
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/3. Resonance/Parallel Resonance in RLC Circuits.md",
+            "hash": "eaa64ce9cf4db433e1bb2533736221e1ef92c0e8623fb0f8da7404e78c2ec8d7",
+            "size": 4949
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/3. Resonance/Quality Factor (Q-Factor).md",
+            "hash": "0c92c2e46956d2240a5f83eee0ebe798e65418bb7139673dd834873754b07069",
+            "size": 7057
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/3. Resonance/Resonance.md",
+            "hash": "69b332aeed9d85d241811dd108ee9727436be7086b01730276475014653bda66",
+            "size": 2582
+        },
+        {
+            "path": "2. Electric Circuits/3. Sinusoidal Steady-State Analysis (AC Circuits)/3. Resonance/Series Resonance in RLC Circuits.md",
+            "hash": "e46dd3c8de8ac4f584e24176ee6296df56e59f2621d564dffb1b21aa094b1569",
+            "size": 4351
+        },
+        {
             "path": "2. Electric Circuits/Electric Circuits.md",
             "hash": "572d8f9f2c5bd85a97cd56c0277afc7ee2d2eb11c2b300b9090ec1cfa50ea6cd",
             "size": 5789
@@ -3365,8 +3450,8 @@
         }
     ],
     "statistics": {
-        "files": 672,
-        "directories": 54,
-        "bytes": 20379411
+        "files": 689,
+        "directories": 57,
+        "bytes": 20469101
     }
 }
