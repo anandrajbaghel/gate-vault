@@ -3749,6 +3749,46 @@
             "size": 316
         },
         {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2016(1).pdf",
+            "hash": "cfac25fa940750c9aff95803f0c890b5a520ffaa0daede075a2d4273d44f1c53",
+            "size": 443385
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2016(2).pdf",
+            "hash": "5bea3027b75ce5f28e89e7237850422e3fd097b07a3ea1ea4f53c3b00a010de6",
+            "size": 468934
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2016.pdf",
+            "hash": "6b743b18ecaaea3928ebe8b4dd61309c412f64078cca71bd6e9fd43bde960eaf",
+            "size": 767697
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2017(1).pdf",
+            "hash": "f8d098796aee50ddc834b17d559ca22cf89b19a7abceb6e231141a641991a4bf",
+            "size": 4106855
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2017(2).pdf",
+            "hash": "d215ec143fa878f0de8bda5a204210adc6bd14cb1aaf6b192ed9d8032e796cd5",
+            "size": 3710305
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2018.pdf",
+            "hash": "6da8dfd63af1c4780e9430a41565d60460b598968060642cb2629285001fda14",
+            "size": 427728
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2019.pdf",
+            "hash": "183c6acdab5b664b6c082acf5f9e302a2d557b61ec33b8144bd760d297bf4dbe",
+            "size": 1987903
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2020.pdf",
+            "hash": "58a2d8e4e88d6f60af965404f92fdce4af17c080cbc766ed1e7812758ce8d385",
+            "size": 2684869
+        },
+        {
             "path": "Resources/Question Paper/GATE/PDF/ee_2021.pdf",
             "hash": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
             "size": 2
@@ -3785,8 +3825,8 @@
         }
     ],
     "statistics": {
-        "files": 756,
+        "files": 764,
         "directories": 74,
-        "bytes": 23857133
+        "bytes": 38454809
     }
 }
