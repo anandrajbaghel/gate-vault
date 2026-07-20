@@ -3864,6 +3864,16 @@
             "size": 2684869
         },
         {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2021.pdf",
+            "hash": "198f5ebecf32291aaaa1468bab5ed6b163100b5cc2b7674bb77c0153890c201f",
+            "size": 8168470
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2022.pdf",
+            "hash": "3bfb03e85698be07c4b14bf5846b845b6a12966da3122d3fe8f31dbde682aef4",
+            "size": 2548662
+        },
+        {
             "path": "Resources/Question Paper/GATE/PDF/ee_2023.pdf",
             "hash": "e79d91b669f9cb602a979f034a27c7fc124d87e67e0efed8a6f1a318a6963ef0",
             "size": 1049539
@@ -3879,14 +3889,19 @@
             "size": 1013019
         },
         {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2026.pdf",
+            "hash": "4b6702632024b9e7fdd35f5eff68315b4c41bea3ea90132654cfce87bf58412f",
+            "size": 2968499
+        },
+        {
             "path": "vault-manifest.json",
             "hash": "56af0f6db0f9cb4ea756738d56e33873ffc41c279a835abb5cbbc3a05f4a8965",
             "size": 541
         }
     ],
     "statistics": {
-        "files": 776,
+        "files": 779,
         "directories": 74,
-        "bytes": 68275752
+        "bytes": 81961383
     }
 }
