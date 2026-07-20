@@ -1489,11 +1489,6 @@
             "size": 166
         },
         {
-            "path": "Resources/GATE/PDF/ee_2021.pdf",
-            "hash": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
-            "size": 2
-        },
-        {
             "path": "Resources/Images/Question Paper/README.md",
             "hash": "b808f988eeea0bdd18d69c4280c6a2ae3ec3c668724a5f3e7ac7b0fdce4b9837",
             "size": 91
@@ -3749,6 +3744,11 @@
             "size": 43
         },
         {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2021.pdf",
+            "hash": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+            "size": 2
+        },
+        {
             "path": "vault-manifest.json",
             "hash": "ffeeb54f8be154eac3ffc2681d194b542c8c4b173ef99d78ad665b9588322fdb",
             "size": 541
@@ -3756,7 +3756,7 @@
     ],
     "statistics": {
         "files": 750,
-        "directories": 75,
+        "directories": 74,
         "bytes": 20780071
     }
 }
