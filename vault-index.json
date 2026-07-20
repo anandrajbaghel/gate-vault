@@ -3749,6 +3749,36 @@
             "size": 316
         },
         {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2013(4).pdf",
+            "hash": "b1fd83617125aa0119b3e99521af9ff04a5417e8a099003fc1159e48193a1844",
+            "size": 185686
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2013.pdf",
+            "hash": "bce6ae16ae0348ea5e006f42c3c58c0693da6ae3a3f1be9786382abaa0e31238",
+            "size": 726267
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2014(1).pdf",
+            "hash": "10013f2959c507a9bf9cf78030693e98b4149831b6949695d333febdd65742fa",
+            "size": 955458
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2014(2).pdf",
+            "hash": "6020f761ece689ad22a8b4a97d1a3c9118975ff1a6e2c53591d14af7c01ac004",
+            "size": 920409
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2014(3).pdf",
+            "hash": "31a31880758861981ccd8e5aa8da539c4ab728aa42d84ec27e90ff1351513589",
+            "size": 1014965
+        },
+        {
+            "path": "Resources/Question Paper/GATE/PDF/ee_2014.pdf",
+            "hash": "185d823e6d70c110a45d57a9727820201b930edd2290f844d999de96a03a37f4",
+            "size": 2306260
+        },
+        {
             "path": "Resources/Question Paper/GATE/PDF/ee_2015(1).pdf",
             "hash": "8c88886baba6e8a875c9e1ea23dc34050b0618fca30e1e40ea49bab9e306ae64",
             "size": 3060061
@@ -3840,8 +3870,8 @@
         }
     ],
     "statistics": {
-        "files": 767,
+        "files": 773,
         "directories": 74,
-        "bytes": 50397191
+        "bytes": 56506236
     }
 }
