@@ -24,11 +24,12 @@ All notable changes to the GATE Vault are documented in this file.
 > See `Resources/Question Paper/GATE/PDF/`[[ee_2026.pdf]] (for copyright see `Resources/Question Paper/GATE/PDF/`[[COPYRIGHT]])
 > 
 > ---
-> ###### Plugins to Boost your Preparation
+> #### Plugins to Boost your Preparation
 > 1. GATE Calculator [Open  in Browser](https://community.obsidian.md/plugins/gate-calculator)
 > 2. Custom Tag Color [Open in Browser](https://community.obsidian.md/plugins/custom-tag-color)
 > 
-> **Settings > Community Plugin > Browse >** `Search name of plugin you want to install`
+> ##### Steps to Install Plugins
+> **Settings > Community Plugin > Browse >** `Search name of plugin you want to install` : Select & click **Install**.
 
 
 ---
