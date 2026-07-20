@@ -3864,11 +3864,6 @@
             "size": 2684869
         },
         {
-            "path": "Resources/Question Paper/GATE/PDF/ee_2022.pdf",
-            "hash": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
-            "size": 2
-        },
-        {
             "path": "Resources/Question Paper/GATE/PDF/ee_2023.pdf",
             "hash": "e79d91b669f9cb602a979f034a27c7fc124d87e67e0efed8a6f1a318a6963ef0",
             "size": 1049539
@@ -3890,8 +3885,8 @@
         }
     ],
     "statistics": {
-        "files": 777,
+        "files": 776,
         "directories": 74,
-        "bytes": 68275754
+        "bytes": 68275752
     }
 }
