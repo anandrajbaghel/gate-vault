@@ -3740,8 +3740,8 @@
         },
         {
             "path": "Resources/Question Paper/GATE/PDF/README.md",
-            "hash": "6894de58bf6cf45c29949f1feeefcb9717a1090319d01a6f48fe7679543b37b0",
-            "size": 43
+            "hash": "a452a3e975c98ac9481101905d98e0e9f162de481f36c31902460f6337a018b9",
+            "size": 316
         },
         {
             "path": "Resources/Question Paper/GATE/PDF/ee_2021.pdf",
@@ -3782,6 +3782,6 @@
     "statistics": {
         "files": 755,
         "directories": 74,
-        "bytes": 23855683
+        "bytes": 23855956
     }
 }
