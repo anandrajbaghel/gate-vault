@@ -1,8 +1,35 @@
 # Changelog
 
+<p style="color: var(--color-accent);">
 All notable changes to the GATE Vault are documented in this file.
+</p>
 
-<p align="left"> <a href="https://razorpay.me/@anandbaghel"> <img src="https://img.shields.io/badge/Support%20GATE%20Vault-d97706?style=for-the-badge&logo=github&logoColor=white" alt="Support Development"> </a> </p>
+---
+<p align="center">
+  <a href="https://razorpay.me/@anandbaghel">
+    <img src="https://img.shields.io/badge/Support_GATE_Vault-d97706?style=for-the-badge" alt="Support GATE Vault">
+  </a>
+</p>
+
+<p align="center">
+  <strong>If GATE Vault has helped you, consider supporting its development.</strong><br>
+  Every contribution helps keep the project free and continuously improving.
+</p>
+
+---
+### v0.1.2
+
+> [!info] What's New in v0.1.2
+> - Added Original Question Papers (PDF) (2007-2026).
+> See `Resources/Question Paper/GATE/PDF/`[[ee_2026.pdf]] (for copyright see `Resources/Question Paper/GATE/PDF/`[[COPYRIGHT]])
+> 
+> ---
+> ###### Plugins to Boost your Preparation
+> 1. GATE Calculator [Open  in Browser](https://community.obsidian.md/plugins/gate-calculator)
+> 2. Custom Tag Color [Open in Browser](https://community.obsidian.md/plugins/custom-tag-color)
+> 
+> **Settings > Community Plugin > Browse >** `Search name of plugin you want to install`
+
 
 ---
 ### v0.1.1
