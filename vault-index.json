@@ -1874,6 +1874,96 @@
             "size": 170
         },
         {
+            "path": "Resources/Dictionary/permeability.md",
+            "hash": "fc59e58ae02f3ffdf6e4be6f5c9cfae8ffb581e58244ff41a62114095ee0f477",
+            "size": 180
+        },
+        {
+            "path": "Resources/Dictionary/peterson coil.md",
+            "hash": "195e53268d93bbc4f358a2b1b639ad34887e7b164ebb9b77f8d869f44ea7dd2e",
+            "size": 235
+        },
+        {
+            "path": "Resources/Dictionary/phase margin.md",
+            "hash": "4d0359590515ad1b9c11839bcc870b949c9f69802fbc78a7daa35ee099b9d4e2",
+            "size": 258
+        },
+        {
+            "path": "Resources/Dictionary/photometer.md",
+            "hash": "a8d98cb86fae128370d2bf1582c70c166b274f2003b289d22815865fb6dfac97",
+            "size": 134
+        },
+        {
+            "path": "Resources/Dictionary/pole-mounted transformers.md",
+            "hash": "b33a04a13ab1bbb2d3ba5d34dc910713bb2f9cd02460a024be323ce72c5bbe96",
+            "size": 164
+        },
+        {
+            "path": "Resources/Dictionary/potential function.md",
+            "hash": "89cd74be1083a7c4b7e7bffce38aed4cb8a81a7161805240a530b83dd1dade06",
+            "size": 235
+        },
+        {
+            "path": "Resources/Dictionary/power transformers.md",
+            "hash": "e40e38d0c17af5c69f4a82da23f3be21e54dddcc51092c0c916611654d0207dd",
+            "size": 172
+        },
+        {
+            "path": "Resources/Dictionary/power.md",
+            "hash": "9fe08e37a0f9c79456b21ee1e58412ce61153a7aa2aa3097e09ddb7ce24f9ac8",
+            "size": 628
+        },
+        {
+            "path": "Resources/Dictionary/reactance.md",
+            "hash": "999526cf27bce4b82629f9cc33d31334b09679ac28287031ce2c129fbabddb07",
+            "size": 253
+        },
+        {
+            "path": "Resources/Dictionary/reactor.md",
+            "hash": "c7fb3e87d9349b405ed2ecf063ca47ea7a6e686d92dbca37107ca79e020c9080",
+            "size": 151
+        },
+        {
+            "path": "Resources/Dictionary/region of convergence.md",
+            "hash": "a97b192bac5b55837920b3046841dbf3fd002d61fc3bd2695586eadf38e98091",
+            "size": 525
+        },
+        {
+            "path": "Resources/Dictionary/regression.md",
+            "hash": "7d2707ec47852b6995ffe4ec378932dd1da0d2b4b66b0bc00aa4963d1b724ef9",
+            "size": 200
+        },
+        {
+            "path": "Resources/Dictionary/relative permeability.md",
+            "hash": "bdbc4bc4a061a4a5a0e47145a666fbcab522854bd94b79f26bb374d45cc98672",
+            "size": 229
+        },
+        {
+            "path": "Resources/Dictionary/reluctance.md",
+            "hash": "e45152a12bb45d84bcb3c819abf32fb38a7e5ef36ba66ea76537759b1e33c9e7",
+            "size": 642
+        },
+        {
+            "path": "Resources/Dictionary/rescheduled.md",
+            "hash": "ecb8ca142dceb19ebbb5a8cd48f2fda6f71286327b73ac71c4175fc6ecd0fcf5",
+            "size": 198
+        },
+        {
+            "path": "Resources/Dictionary/shield wires.md",
+            "hash": "f54ad20149985950caf6a57965ff5745c467ca2ac13eb3064047fb16f22b9f5e",
+            "size": 167
+        },
+        {
+            "path": "Resources/Dictionary/snubber circuits.md",
+            "hash": "3931fee21c0af257258a6f481a1cf5de236d8ce30a72639feab34e002df1b483",
+            "size": 140
+        },
+        {
+            "path": "Resources/Dictionary/substations.md",
+            "hash": "eebf9d41586258b6052a35900889b70004af85b1f1f671f479e99144c7b2abdc",
+            "size": 175
+        },
+        {
             "path": "Resources/Images/Question Paper/README.md",
             "hash": "b808f988eeea0bdd18d69c4280c6a2ae3ec3c668724a5f3e7ac7b0fdce4b9837",
             "size": 91
@@ -4285,8 +4375,8 @@
         }
     ],
     "statistics": {
-        "files": 856,
+        "files": 874,
         "directories": 74,
-        "bytes": 81981807
+        "bytes": 81986493
     }
 }
