@@ -2029,6 +2029,116 @@
             "size": 5191
         },
         {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Armature Reaction.md",
+            "hash": "ff4f8fd53cc42881e6ddb9029c4c8df9a9600f2bf0c1908e14efea75c0ed5837",
+            "size": 7559
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Armature Winding (Lap and Wave).md",
+            "hash": "dc0bd8bf4e8d4869ddb6996160c969c1ad93ef67d1238f82b25502624a0c775d",
+            "size": 7067
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Commutation and Methods of Improvement.md",
+            "hash": "6f1581e63424b1b250c603ccd9b8120465cca496567dc262cfe047a9241288e4",
+            "size": 6036
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Compensating Windings.md",
+            "hash": "7f63376bf9eb02880d5c3d3c74e2050fa18b069256241c2991baaf1bb65fb18d",
+            "size": 5573
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Constructional Features of DC Machines.md",
+            "hash": "f6220e8eca1a06b095ee6debf0a48d5cb01092c56f68ce7cacf9dc781caf9826",
+            "size": 7580
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/EMF and Torque Equations of a DC Machine.md",
+            "hash": "232cde58c5471cda044f123e7647288ba395d47a9bbc13547e61f2b0c89d9ea0",
+            "size": 8762
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Principle of Operation of DC Generators.md",
+            "hash": "4c1cfcb631c8d08fc911c191ddf33d7dc6b848eb105c7d98032e2b1e974d3bc7",
+            "size": 5768
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/1. Fundamentals/Principle of Operation of DC Motors.md",
+            "hash": "5a717c0d058fb5f3ddf72de06cb4c7d9d6b516c9f91269d77d33c1a22b8b66b8",
+            "size": 7658
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/2. DC Generators/Applications of DC Generators.md",
+            "hash": "ad0fb85761b77a5d64449902ba64e2dd109205c46d74e5c1cf1dc0f89148942f",
+            "size": 5092
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/2. DC Generators/Characteristics of DC Generators.md",
+            "hash": "697f1b850e75c5d50193afb0c3f0901e7930eefd6fb52613d3f85315997ec675",
+            "size": 6261
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/2. DC Generators/Types of DC Generators.md",
+            "hash": "d98957e597e80e8f33aee4968a6c5a79ee670993e2049a5b6acf1499639919cf",
+            "size": 6713
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/2. DC Generators/Voltage Build-up in a Shunt Generator.md",
+            "hash": "bab1da658fb80e0aa29cf62109b4e1227cdfc8fc3cfdcf270f0f48d3f2d64fdf",
+            "size": 5957
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Characteristics of DC Motors.md",
+            "hash": "3aade207e1ee4141907fc1b1f09a38d0f2b5d4b2e4e189ab168b244309c1e21e",
+            "size": 4904
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/DC Motors.md",
+            "hash": "c49ba08f2382b580ede846bc9f23b10896fec331cea0a15d2facc26e01e339e3",
+            "size": 5216
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/DC Series Motor.md",
+            "hash": "a00e4b55392efdb2096e6e52e54feb32860c9f25e9da01adab4cc490452bc0c8",
+            "size": 6320
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/DC Shunt Motor.md",
+            "hash": "dc9dabd9facb14f905299695a5aff505d58360cb56086271302e31ffab59d9ae",
+            "size": 7104
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Dynamic Braking.md",
+            "hash": "9f4ec6e9cd41d4a00c2880ca55eae48d3eb35208b9dd7dfa889321ecbf93329b",
+            "size": 5128
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Losses, Efficiency, and Testing of DC Machines.md",
+            "hash": "0c9bbe5746c15d210ca96d6ed1884c38e1d3c03b4125772febd8197e01b6eb58",
+            "size": 7110
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Regenerative Braking.md",
+            "hash": "fd2679da301ab1c903e95da6ecc5fdcee2e58f4db04dd426bb16f65b950268fb",
+            "size": 4748
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Speed Control of DC Motors.md",
+            "hash": "f36960ee0fc6b465d83d9fd4aacb2d01132bae5d20821ee5eb602cb02201bc30",
+            "size": 7111
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Starting of DC Motors.md",
+            "hash": "44fd6cd106a8b79221b60aab99a5694052603844f347ddbcc4bea2893ea2e86f",
+            "size": 5795
+        },
+        {
+            "path": "5. Electrical Machines/3. DC Machines/3. DC Motors/Types of DC Motors.md",
+            "hash": "96477fd4938e61ff511d967b0a92edc76cca2cd6f77d282d6bbad8db210dd33c",
+            "size": 6625
+        },
+        {
             "path": "5. Electrical Machines/Electrical Machines.md",
             "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
             "size": 6358
@@ -4990,8 +5100,8 @@
         }
     ],
     "statistics": {
-        "files": 997,
-        "directories": 103,
-        "bytes": 82552320
+        "files": 1019,
+        "directories": 106,
+        "bytes": 82692407
     }
 }
