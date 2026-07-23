@@ -2139,6 +2139,106 @@
             "size": 6625
         },
         {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/1. Fundamentals/Concept of Slip.md",
+            "hash": "eff7d73d1d1d845744923362c06a667da6d9919daa99c6302bc491280c50907d",
+            "size": 6408
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/1. Fundamentals/Construction of Three-Phase Induction Motors.md",
+            "hash": "371ab86f69b7892c89f93b16bbf2642907e5ded03cb24828059986e1dd171fe1",
+            "size": 10471
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/1. Fundamentals/Frequency of Rotor Current and EMF.md",
+            "hash": "68b97f573c5f28ab5d22608ba94e122882185c7658010d7e83a53d1be15ee632",
+            "size": 4383
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/1. Fundamentals/Rotating Magnetic Field (RMF).md",
+            "hash": "f3d095871bf2a5362898f39fb1936820d8147863e025a70cf5c94ee650dd74fe",
+            "size": 6467
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Derivation of Exact Condition for Maximum Torque.md",
+            "hash": "1c1eef5693d2a151759a4033cf1043e083504ed9cdf3bd6cc238106ac80e38a6",
+            "size": 3817
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Effect of Rotor Resistance on Torque-Slip Curve.md",
+            "hash": "b980862c96e5277b8a3d56871abefa37839c0f801f0158a929b27f1f2b0d5775",
+            "size": 5124
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Equivalent Circuit of a Three-Phase Induction Motor.md",
+            "hash": "ab3a4cbfc8e43958aac4cc0a3b06739f6b2374acf9a4f255c982c3ece678fe7a",
+            "size": 10026
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Induction Generator Operation.md",
+            "hash": "ef7ff674dad13da7c0f57a65227d86698bd7952687b8e070d52added7c3733df",
+            "size": 5803
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Modes of Operation of Induction Machines.md",
+            "hash": "91c0c8c868ef0b906f9ff4647bf345b36eea8ce1f28d2fa2f2837324f1111732",
+            "size": 5556
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Power Flow Diagram and Torque Development.md",
+            "hash": "8972bd2185272611195b2582ff91b2ad5ecb9dbf151caf45bbb58871af40a2b8",
+            "size": 5442
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Starting Torque, Maximum Torque and Full Load Torque.md",
+            "hash": "cca7159044f79922abd3333bed5c20c049fdd19684ef56fc0eb3af3aa7576c5a",
+            "size": 7593
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/2. Performance & Analysis/Torque-Slip Characteristics of Induction Motor.md",
+            "hash": "8abc2bf67e1f697923a2f36a7b439f49472e7c243174f4f6756edc3ab5fe224a",
+            "size": 6870
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/3. Starting & Speed Control/Cogging and Crawling Phenomena.md",
+            "hash": "312262a2b4b5724ead0c8c1ea49ecd28c651b58c11c7aad7ff1324b8c8a153ba",
+            "size": 4738
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/3. Starting & Speed Control/Induction Motor Drives.md",
+            "hash": "cdaea17961e2c895aef0df0f4c70c0c103e3efa10a2fd9d4209c076ccbccd8cb",
+            "size": 4880
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/3. Starting & Speed Control/Speed Control of Induction Motors.md",
+            "hash": "b9781e69102e369f469ae8b8e2505d2fffd2785bebebe06bd42c7d4a710625ea",
+            "size": 7572
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/3. Starting & Speed Control/Starting Methods for Induction Motors.md",
+            "hash": "5ac284a80144accfcd2023f78c095956ac7a0cad38d44f7aeba50e50b8a5b61b",
+            "size": 5504
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/4. Testing/Circle Diagram of an Induction Motor.md",
+            "hash": "debc8965c8eadd3397cc85d8c68ac72db94ebe6ca97a9a2320941da8c795c616",
+            "size": 6204
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/4. Testing/Losses and Efficiency of Induction Motors.md",
+            "hash": "2d1cd72cf2966907440386c194be8a1175e03496d0db4db12841396d729f5939",
+            "size": 3678
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/4. Testing/No-Load and Blocked Rotor Tests.md",
+            "hash": "6af45f88199a5373c203ad0885ac80e4e7e8797baa6fdadf87e89b4a4e366fdd",
+            "size": 5039
+        },
+        {
+            "path": "5. Electrical Machines/4. Three-Phase Induction Motors/Induction Machines.md",
+            "hash": "d3b1e2866f7be8cbad0ceeebee7b07596668f51acd378be83615eaa9af9f8e9a",
+            "size": 5731
+        },
+        {
             "path": "5. Electrical Machines/Electrical Machines.md",
             "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
             "size": 6358
@@ -5100,8 +5200,8 @@
         }
     ],
     "statistics": {
-        "files": 1019,
-        "directories": 106,
-        "bytes": 82692407
+        "files": 1039,
+        "directories": 111,
+        "bytes": 82813713
     }
 }
