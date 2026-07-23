@@ -2709,6 +2709,86 @@
             "size": 7419
         },
         {
+            "path": "6. Power Systems/6. Power System Operation & Control/1. Economic Operation/Economic Load Dispatch (ELD) including losses.md",
+            "hash": "8453026ac92bdcfd89e5a3dc37cd3738d0924b3584c5fb4a1fd0ce224c7d75c0",
+            "size": 5802
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/1. Economic Operation/Economic Load Dispatch (ELD) neglecting losses.md",
+            "hash": "2d13a07a02ccd24d11d17ad7b4a9450c98c83343ed88c7d69ef6998ebb989f19",
+            "size": 5775
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/1. Economic Operation/Incremental Cost Curve.md",
+            "hash": "5f8a169ea0c046e2481cc915a1d00b7b31395da98eeedf1aeab833fe36cd0d0b",
+            "size": 4049
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/1. Economic Operation/Penalty Factors and B-coefficients.md",
+            "hash": "58b1c5f9aaee71d346d46e3ce74cc843700ee33ad2b704617700d2c2557dbdc7",
+            "size": 5387
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/1. Economic Operation/Unit Commitment.md",
+            "hash": "a1b1b173ca6189463e8cb96bfdab0e8931cd1ee8461be64ea8140f2112763a83",
+            "size": 7360
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/2. Load Frequency Control (LFC)/Concept of Area Control Error (ACE).md",
+            "hash": "90325108becc4d36b744bc41561323b46c8d920791a29d320e268fef40755a90",
+            "size": 4677
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/2. Load Frequency Control (LFC)/Governor Control System.md",
+            "hash": "b294c76e5acd189acf39cae05c58c7cd0c46b1554db5d475598f3e891aa06675",
+            "size": 3984
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/2. Load Frequency Control (LFC)/Load Frequency Control (LFC).md",
+            "hash": "23af66bbeaad99f1df78e4f50fd6885f5f3cfdfd2c3fee5d4bcacade7964d5ae",
+            "size": 5300
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/2. Load Frequency Control (LFC)/Single Area Load Frequency Control (Uncontrolled and Controlled Case).md",
+            "hash": "78fce4c3a3978329b007bca95ef6375cc4fcf3600830235da2b6a61bbba55e06",
+            "size": 5015
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/2. Load Frequency Control (LFC)/Speed Regulation (Droop).md",
+            "hash": "a693540c77ba9b9d70fb9632aac9c6cd5a5ffc0c8c3dbf99cacf4734637b4528",
+            "size": 5571
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/2. Load Frequency Control (LFC)/Two-Area Load Frequency Control.md",
+            "hash": "c420f96fc8e376329746f4ac2a3e0d543c02da5756d23549d9e3f58e18a6855a",
+            "size": 4842
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/3. Voltage and Reactive Power Control/Automatic Voltage Regulator (AVR).md",
+            "hash": "0a5dac3b469fd3de890ef4bdd58c311292569086940c58b4993ab7aacb7ca6d8",
+            "size": 5590
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/3. Voltage and Reactive Power Control/Methods of Voltage Control.md",
+            "hash": "34ecee73e8237ff365a9e9c0feca289b88fa85aaa14395a81525e6fd755bd250",
+            "size": 5506
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/3. Voltage and Reactive Power Control/Reactive Power Compensation.md",
+            "hash": "6a44ae7cff9e98a563dc56db4efcaa5fd4b8c34cf71c17771dab0b2f5fa7662b",
+            "size": 6528
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/3. Voltage and Reactive Power Control/Relationship between Voltage, Power, and Reactive Power.md",
+            "hash": "7ca277642357a2e7e327b347568895b877f9791a5692acf214a53588ae5ea38f",
+            "size": 4847
+        },
+        {
+            "path": "6. Power Systems/6. Power System Operation & Control/3. Voltage and Reactive Power Control/Use of Tap-Changing Transformers.md",
+            "hash": "08dfb74b17e6ee62168057da7694222acfbb195ac945c351831b738956ddda17",
+            "size": 4621
+        },
+        {
             "path": "6. Power Systems/Power System.md",
             "hash": "7dd914b194572577abff18a3a8cb9d0bab907423aecc1bbc0ca27b9d5e06b845",
             "size": 6442
@@ -5665,8 +5745,8 @@
         }
     ],
     "statistics": {
-        "files": 1132,
-        "directories": 130,
-        "bytes": 83395408
+        "files": 1148,
+        "directories": 133,
+        "bytes": 83480262
     }
 }
