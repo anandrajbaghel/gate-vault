@@ -2459,6 +2459,41 @@
             "size": 5755
         },
         {
+            "path": "6. Power Systems/1. Power System Fundamentals/1. Basic Concepts/AC and DC Transmission Systems Comparison.md",
+            "hash": "4dd808dbb140d6206ba17c4d97ec1a2ad0d9d40c0488f88df707cb2c281d638a",
+            "size": 8687
+        },
+        {
+            "path": "6. Power Systems/1. Power System Fundamentals/1. Basic Concepts/Overview of Power Generation (Thermal, Hydro, Nuclear).md",
+            "hash": "a16ad75fb5c4fd497211b5efac39db602808a9c96135fabb449e397fb11da203",
+            "size": 8003
+        },
+        {
+            "path": "6. Power Systems/1. Power System Fundamentals/1. Basic Concepts/Per-Unit System.md",
+            "hash": "2281eed6ded69ad5f9782a681800eae6a2dc090786af52118acdb36d5ddc5047",
+            "size": 7289
+        },
+        {
+            "path": "6. Power Systems/1. Power System Fundamentals/1. Basic Concepts/Reactance and Impedance Diagrams.md",
+            "hash": "6ed8e7ac37199b0b5fc8b09a065b5b50949e6b332c832a3280470a465768fd98",
+            "size": 5987
+        },
+        {
+            "path": "6. Power Systems/1. Power System Fundamentals/1. Basic Concepts/Single Line Diagram Representation.md",
+            "hash": "d45d3339f1710fb5d6d9388cd11411b57437ebf9f066e1702ad5bb8eb1c41841",
+            "size": 6522
+        },
+        {
+            "path": "6. Power Systems/1. Power System Fundamentals/1. Basic Concepts/Structure of a Power System.md",
+            "hash": "86c5fd948462858d301933a0c4a942f656bbc6e4c1a97f574ff90e69bc61ab5b",
+            "size": 6140
+        },
+        {
+            "path": "6. Power Systems/1. Power System Fundamentals/Neutral Grounding.md",
+            "hash": "08f2be6f37edaeba20f8783de1966889382a9a12b3749b2848af73ee30ea53a5",
+            "size": 6066
+        },
+        {
             "path": "6. Power Systems/Power System.md",
             "hash": "7dd914b194572577abff18a3a8cb9d0bab907423aecc1bbc0ca27b9d5e06b845",
             "size": 6442
@@ -5415,8 +5450,8 @@
         }
     ],
     "statistics": {
-        "files": 1082,
-        "directories": 119,
-        "bytes": 83089004
+        "files": 1089,
+        "directories": 121,
+        "bytes": 83137698
     }
 }
