@@ -2574,6 +2574,46 @@
             "size": 4873
         },
         {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/1. Formulation/Bus Admittance Matrix (Y-bus) Formulation.md",
+            "hash": "028f52418ce4663f00858f8e89e63ac6ae961e2e7a189ffffb9f9ad62104bdaa",
+            "size": 7897
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/1. Formulation/Bus Classification (Slack, PQ, PV).md",
+            "hash": "8c439da1e62eae4799d33ab951fb4ca5d30e7e8927b7691d99046b88ebeb1843",
+            "size": 5670
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/1. Formulation/Kron Reduction.md",
+            "hash": "a87db7b5b1a108aac8eea0dafb52438c39f24552a912609ee50779a80a9a0df8",
+            "size": 6142
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/1. Formulation/Power Flow Equations.md",
+            "hash": "3e1ad6159acad0adedf2ff4d965d13e49c4ca6e4784418bf3c9454e1a06958b9",
+            "size": 4020
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/2. Solution Methods/Comparison of Load Flow Methods.md",
+            "hash": "3e5338e472e9e4e76c21b6bc59356d7039121471776e8c1b187835a237117fac",
+            "size": 5841
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/2. Solution Methods/Fast Decoupled Load Flow (FDLF).md",
+            "hash": "5f9bd40bb61f0b89012983842a04e081f93143fecd0ef5012348b98a205437b5",
+            "size": 5996
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/2. Solution Methods/Gauss-Seidel Method for Load Flow.md",
+            "hash": "c708ccd5d4df4fe49d029245ab97cb71c761615e2e9381c86b632ff3b88cf9d4",
+            "size": 5389
+        },
+        {
+            "path": "6. Power Systems/3. Power Flow Studies (Load Flow Analysis)/2. Solution Methods/Newton-Raphson Method for Load Flow.md",
+            "hash": "2b198c454697ccb97222ac2b8e09bc25abf84efabb23b79115ffd84636919e9b",
+            "size": 11220
+        },
+        {
             "path": "6. Power Systems/Power System.md",
             "hash": "7dd914b194572577abff18a3a8cb9d0bab907423aecc1bbc0ca27b9d5e06b845",
             "size": 6442
@@ -5530,8 +5570,8 @@
         }
     ],
     "statistics": {
-        "files": 1105,
-        "directories": 123,
-        "bytes": 83223675
+        "files": 1113,
+        "directories": 125,
+        "bytes": 83275850
     }
 }
