@@ -17,7 +17,21 @@ All notable changes to the GATE Vault are documented in this file.
 </p>
 
 ---
-### v0.1.2
+### v0.1.4
+
+> [!info] What's New in v0.1.4
+> - 🔥Uploaded Full Notes for [[Signals & Systems]].
+> - 🔥Uploaded Full Notes for [[Electrical Machines]].
+> - 🔥Uploaded Full Notes for [[Power System]].
+> - Added Dictionary folder as well. `Resources/Dictionary`
+> - Added Answer Key for some papers as well. `Resources/Question Paper/GATE/Answer Key`
+
+#### Issues
+
+- Image may not be available due to copyright issues.
+
+---
+### v0.1.2 - v0.1.3
 
 > [!info] What's New in v0.1.2
 > - Added Original Question Papers (PDF) (2007-2026).
