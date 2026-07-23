@@ -1644,6 +1644,56 @@
             "size": 4265
         },
         {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Convolution and Multiplication Properties of CTFT.md",
+            "hash": "aab22f55845a31ee5bd14a9e2cf0ff5e66f5ac68ea986c967a9f160ab498cf7b",
+            "size": 5038
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Correlation.md",
+            "hash": "ad862a48558bdc9d0e484bf747efc6e4d5347265249cf6e5b6e0eb41a8d0fa63",
+            "size": 7316
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Development of the Fourier Transform from Fourier Series.md",
+            "hash": "e29208bfd15b18a20bcec2bbcdff3f899c836b476d98ea6a14b57c239022bd11",
+            "size": 5775
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Differentiation and Integration Properties of CTFT.md",
+            "hash": "48d2dff3a637bf5507190116c4f06e937d824e7d0ca2f4f0a77b48090784eae7",
+            "size": 5515
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Fourier Transform of Aperiodic Signals.md",
+            "hash": "bc01e48ab191bb46db5521fdfb3a58832d0322bd0603019f27bf3069c0aa1efb",
+            "size": 6117
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Fourier Transform of Periodic Signals.md",
+            "hash": "6fe2d5f7bff482057872c6a589c94f9137ed9606bcfd03a49b082d58e085b86b",
+            "size": 5316
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/1. The Transform and its Properties/Properties of the CTFT.md",
+            "hash": "cdc65efc95548aae8e07aa4bd0ddf3304493b1fd1074e8809120bd574186c33e",
+            "size": 5568
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/2. Frequency Response/Bandwidth in Signals & Systems.md",
+            "hash": "0b7282c48e1d474bbc67fb35d4f796162d299854f1e2edc9bbb9c4c75ae68e0d",
+            "size": 4492
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/2. Frequency Response/Filtering Concepts.md",
+            "hash": "e7b55535e7338c0df37647d232e3653eff323495d03d654766379f94e23fe7b8",
+            "size": 4379
+        },
+        {
+            "path": "4. Signal & Systems/4. Continuous-Time Fourier Transform/2. Frequency Response/Frequency Response of LTI Systems.md",
+            "hash": "38e1f2865f42dd6214ae66ae2c8bfce122b735fc9e6487d9ab397291dab9e1b6",
+            "size": 5862
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
@@ -4610,8 +4660,8 @@
         }
     ],
     "statistics": {
-        "files": 921,
-        "directories": 86,
-        "bytes": 82161233
+        "files": 931,
+        "directories": 88,
+        "bytes": 82216611
     }
 }
