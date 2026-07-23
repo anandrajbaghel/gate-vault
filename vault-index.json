@@ -1489,6 +1489,96 @@
             "size": 2989
         },
         {
+            "path": "Resources/Dictionary/admittance.md",
+            "hash": "8d3c090869edb45e717d423e9b4eda0765be6abe713bae2a47b2da045b325801",
+            "size": 162
+        },
+        {
+            "path": "Resources/Dictionary/angular displacement.md",
+            "hash": "490ac34cc1b14791a790fd18a59eb101429e8c44f8247cfd2631f3a4f99acc08",
+            "size": 179
+        },
+        {
+            "path": "Resources/Dictionary/angular velocity.md",
+            "hash": "ec54e739f3790e4b153ae815e61e2e0b25fdb782cffb195718790ae51028bc7e",
+            "size": 161
+        },
+        {
+            "path": "Resources/Dictionary/annulus.md",
+            "hash": "4ea61c61078ac341116b6d73896ae237a52f72931feca3af9c23345b57f136a4",
+            "size": 163
+        },
+        {
+            "path": "Resources/Dictionary/asymptotes.md",
+            "hash": "0d357ed18437528cab9f5d2af11b6b05d4373be572db8377f3b3d7a9a9c4aca6",
+            "size": 214
+        },
+        {
+            "path": "Resources/Dictionary/asymptotically stable.md",
+            "hash": "efca8a9455613ab709dc8e8830ba6690179082b89f0b7ffb6ee465196d40a446",
+            "size": 219
+        },
+        {
+            "path": "Resources/Dictionary/attenuation.md",
+            "hash": "4a1782a6cd6a7f60e0fc06da2c69b594dae81a4c894b0b7c3f9991eac2255310",
+            "size": 167
+        },
+        {
+            "path": "Resources/Dictionary/axioms.md",
+            "hash": "77037905ccc773e007e161e46d0a4f8447c8165958912778d254bd8ab876bfb3",
+            "size": 157
+        },
+        {
+            "path": "Resources/Dictionary/bilateral.md",
+            "hash": "e5e0f4cf0db868f277b5d513113e674519fe58e297fa14ed5af04273f028defe",
+            "size": 166
+        },
+        {
+            "path": "Resources/Dictionary/black box.md",
+            "hash": "0530d77439dd38e506af65375150b520183efb37c6fbc4a90343f257c5f150ec",
+            "size": 148
+        },
+        {
+            "path": "Resources/Dictionary/braking torque.md",
+            "hash": "adfbd3c59b32bdd7aa4b24f029e565132a8be90f2043c5cd84263faa13c46959",
+            "size": 146
+        },
+        {
+            "path": "Resources/Dictionary/buchholz relay.md",
+            "hash": "e86d6e773855e274ec223bd8186aa4a65c5314c1f127085878510b1bcfcc511b",
+            "size": 268
+        },
+        {
+            "path": "Resources/Dictionary/bushing.md",
+            "hash": "e9c1f595de15f8e13e7050c9d1e930b91b406f8f386bdf54793af1582d52db0a",
+            "size": 164
+        },
+        {
+            "path": "Resources/Dictionary/centrifugal force.md",
+            "hash": "f9e81cb4629e95cc2e52895b5ebb86ae47a86716c4b385774343602b965d5d68",
+            "size": 231
+        },
+        {
+            "path": "Resources/Dictionary/centripetal force.md",
+            "hash": "771ebe333b5ee30099639c66cbf9a5858b6c373b66d6bbefb7fa6ceddc361fb6",
+            "size": 215
+        },
+        {
+            "path": "Resources/Dictionary/characteristic equation.md",
+            "hash": "278b8a7459fba3e201f5a89447dca999fc73a140871a5d3394d8bd9e99cd65cc",
+            "size": 350
+        },
+        {
+            "path": "Resources/Dictionary/cogging.md",
+            "hash": "7374166e56cdcd748c15afdf34ef467e1eb68ef07b400951bd542dc915fb5a24",
+            "size": 266
+        },
+        {
+            "path": "Resources/Dictionary/comparator.md",
+            "hash": "afc2902ccb141424fa2fa16d65d0ebd34806f63ab17287969e4ea91ad33e9fa2",
+            "size": 154
+        },
+        {
             "path": "Resources/Dictionary/holomorphic function.md",
             "hash": "cc53e6cb0499302cf8ed3a1111490c018c303f687591db7ab4d32047c5f5ab1f",
             "size": 166
@@ -3905,8 +3995,8 @@
         }
     ],
     "statistics": {
-        "files": 780,
+        "files": 798,
         "directories": 74,
-        "bytes": 81962421
+        "bytes": 81965951
     }
 }
