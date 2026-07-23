@@ -1484,6 +1484,11 @@
             "size": 6215
         },
         {
+            "path": "5. Electrical Machines/Electrical Machines.md",
+            "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
+            "size": 6358
+        },
+        {
             "path": "Caution.md",
             "hash": "8b1eafa116444c16aad1afa4df3efe6bcc7271d62c797a4c8de10321eddd3714",
             "size": 1038
@@ -4435,8 +4440,8 @@
         }
     ],
     "statistics": {
-        "files": 886,
-        "directories": 75,
-        "bytes": 81995089
+        "files": 887,
+        "directories": 76,
+        "bytes": 82001447
     }
 }
