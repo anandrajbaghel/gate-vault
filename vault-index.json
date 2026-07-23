@@ -1694,6 +1694,26 @@
             "size": 5862
         },
         {
+            "path": "4. Signal & Systems/5. Discrete-Time Fourier Transform/1. The Transform and its Properties/Convolution and Multiplication Properties of DTFT.md",
+            "hash": "27e0c545698b7ab35fec361797d9f5f707a9f1cb90896cbff7da46d75c9d5f43",
+            "size": 4609
+        },
+        {
+            "path": "4. Signal & Systems/5. Discrete-Time Fourier Transform/1. The Transform and its Properties/Frequency Response of Discrete-Time LTI Systems.md",
+            "hash": "8785f4f80622a0138b58cbc0e9b067d046ac48d7e25cf7636a89d04d39de6cc1",
+            "size": 5378
+        },
+        {
+            "path": "4. Signal & Systems/5. Discrete-Time Fourier Transform/1. The Transform and its Properties/Properties of the DTFT.md",
+            "hash": "f936bba1df6286fb9a969b17853ac92b687f2b6c3a760fc713c04a23d48643dd",
+            "size": 5761
+        },
+        {
+            "path": "4. Signal & Systems/5. Discrete-Time Fourier Transform/1. The Transform and its Properties/Representation of Aperiodic Discrete-Time Signals.md",
+            "hash": "5edafdf8b9e31b7c962a7e9849a804d481c295a9f652763cf09c611265def848",
+            "size": 8408
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
@@ -4660,8 +4680,8 @@
         }
     ],
     "statistics": {
-        "files": 931,
-        "directories": 88,
-        "bytes": 82216611
+        "files": 935,
+        "directories": 89,
+        "bytes": 82240767
     }
 }
