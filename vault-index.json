@@ -1554,6 +1554,66 @@
             "size": 4562
         },
         {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/1. Impulse Response and Convolution/Continuous-Time Convolution Integral.md",
+            "hash": "dd01e25a1a65ea5b884d0f5a9891683c52275b28b05003df261253efdfda39df",
+            "size": 6040
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/1. Impulse Response and Convolution/Discrete-Time Convolution Sum.md",
+            "hash": "0e0318225452c74fe4a089a2651fc15d5b8d361b107efef3bd4c58fdea9bda4e",
+            "size": 5316
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/1. Impulse Response and Convolution/Graphical and Analytical Convolution.md",
+            "hash": "4385bc913c5d5a46d19735bb47c4abf7cd24a3fa96cb4ac0b3fc3b9b2dbe271a",
+            "size": 5598
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/1. Impulse Response and Convolution/Impulse Response of an LTI System.md",
+            "hash": "c5bf442c78a069980626c67c9ad388073712d69647f484197d30ff6c3835215d",
+            "size": 4252
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/1. Impulse Response and Convolution/Properties of Convolution.md",
+            "hash": "16ba342e10219fd07cbb6bd1bcc626885c0ef3a88f06fbd12ec731dba2f00315",
+            "size": 3993
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/2. Properties of LTI Systems/Causality of LTI Systems in terms of Impulse Response.md",
+            "hash": "f69db559b8a0c9cda68767d782d2457191086d62b3f3d800ebc1ea799cb6d85f",
+            "size": 3585
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/2. Properties of LTI Systems/Invertibility of LTI Systems.md",
+            "hash": "fbca97433db9621802292d519bdfe1b187f9f46f840f0c62106377039fdf092a",
+            "size": 4194
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/2. Properties of LTI Systems/LTI Systems with and without Memory.md",
+            "hash": "1577b550bb0a81601c53b4e0104a47a5284f881fe9edc5ea93e584634fc09c4d",
+            "size": 3516
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/2. Properties of LTI Systems/Stability of LTI Systems in terms of Impulse Response.md",
+            "hash": "3f640d537cc019c228f2f7aacc3aeede91af751e790a8c778e0bfa8ec0c1cd44",
+            "size": 3730
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/3. LTI Systems Described by Equations/Linear Constant-Coefficient Difference Equations (DT).md",
+            "hash": "a19dcd473200990e224226837bea003e2fc434d076310229a0f122ab488424bc",
+            "size": 4939
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/3. LTI Systems Described by Equations/Linear Constant-Coefficient Differential Equations (CT).md",
+            "hash": "03e7103504ad88ab7792d9c6cf7c423ce965b001ed05cae3096fdc985099e2c6",
+            "size": 5144
+        },
+        {
+            "path": "4. Signal & Systems/2. Linear Time-Invariant (LTI) Systems/LTI.md",
+            "hash": "751c8aa9bc8d31534ac13f9a42e6f4555823205dec013b29e1c4dddd113c2893",
+            "size": 3986
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
@@ -4520,8 +4580,8 @@
         }
     ],
     "statistics": {
-        "files": 903,
-        "directories": 80,
-        "bytes": 82078593
+        "files": 915,
+        "directories": 84,
+        "bytes": 82132886
     }
 }
