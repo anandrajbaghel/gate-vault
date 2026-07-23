@@ -1964,6 +1964,61 @@
             "size": 175
         },
         {
+            "path": "Resources/Dictionary/switched waveform.md",
+            "hash": "4b8a5f436a778232167dd654149ea9dca22f3f19927b2e2df83e5e03827dec3d",
+            "size": 184
+        },
+        {
+            "path": "Resources/Dictionary/switched-mode power supply.md",
+            "hash": "fedfe4596fc975a596a6350aa073a91eaa23f8951643ee82e589c1d050c0eafe",
+            "size": 217
+        },
+        {
+            "path": "Resources/Dictionary/synchroscope.md",
+            "hash": "6f7685408674fa22287ef1669dbaf051fc95608091dbaa897587c3e6ddab6f6c",
+            "size": 167
+        },
+        {
+            "path": "Resources/Dictionary/transcendental function.md",
+            "hash": "017c590ce51a8a54ce2454c49950f7f6c7d5d9ff62d911a2c1980fca2ebcb3d3",
+            "size": 199
+        },
+        {
+            "path": "Resources/Dictionary/transducer.md",
+            "hash": "a2e7331b8e289ecbc59ca40a855e33bc20a9da0c69df09642f245d3b7c8b39a6",
+            "size": 159
+        },
+        {
+            "path": "Resources/Dictionary/transistor.md",
+            "hash": "f30ee14405477de44d80e7bfec002fac06ca70824fec4d4b694720cd7ff878a7",
+            "size": 174
+        },
+        {
+            "path": "Resources/Dictionary/trivial solution.md",
+            "hash": "f437275984fe7bed7ef64218f53ff8d847b3e3717331ebd63ddc1656699497aa",
+            "size": 344
+        },
+        {
+            "path": "Resources/Dictionary/upstream.md",
+            "hash": "e405b927a8a985350656b96c195e5bf618bd5087ba89e70ccd56023a09106e03",
+            "size": 322
+        },
+        {
+            "path": "Resources/Dictionary/voltage buffer.md",
+            "hash": "74098e53a623f78b39f281bac483d950717aecdf6e9f01739a9142944508e2b7",
+            "size": 200
+        },
+        {
+            "path": "Resources/Dictionary/weighted sum.md",
+            "hash": "7b59a8010d830fd25db34f1a5d2650564712676647342faaa22882da87a086bf",
+            "size": 258
+        },
+        {
+            "path": "Resources/Dictionary/windage loss.md",
+            "hash": "2b5665c00facf50983eb6c19cf16d3303706eb4942044bfdd11af4b0f841ec8f",
+            "size": 157
+        },
+        {
             "path": "Resources/Images/Question Paper/README.md",
             "hash": "b808f988eeea0bdd18d69c4280c6a2ae3ec3c668724a5f3e7ac7b0fdce4b9837",
             "size": 91
@@ -4375,8 +4430,8 @@
         }
     ],
     "statistics": {
-        "files": 874,
+        "files": 885,
         "directories": 74,
-        "bytes": 81986493
+        "bytes": 81988874
     }
 }
