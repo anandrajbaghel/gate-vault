@@ -2874,6 +2874,91 @@
             "size": 6442
         },
         {
+            "path": "6. Power Systems/archive/1. Deprecated/Fault Calculations.md",
+            "hash": "642177163201936bd1b12fb1deb3e9134f587419cb0d4d1bb03bd6bbb53b9504",
+            "size": 6672
+        },
+        {
+            "path": "6. Power Systems/archive/1. Deprecated/Power Flow Studies (Load Flow Analysis).md",
+            "hash": "f691915d645267f75c5c69acadc24ea6860902a07ea65350affe876d6c15ea12",
+            "size": 6608
+        },
+        {
+            "path": "6. Power Systems/archive/1. Deprecated/Protective Relaying Principles.md",
+            "hash": "e0cc8767c4c9468363f9850c728a8e35279d0acc5db8717332abe51bc1067642",
+            "size": 5320
+        },
+        {
+            "path": "6. Power Systems/archive/1. Deprecated/Solid Fault.md",
+            "hash": "a7990e261daaa107492be6a9e3b1b8326755d93dec425f6c6d304fd9c5ccfd6a",
+            "size": 4331
+        },
+        {
+            "path": "6. Power Systems/archive/1. Deprecated/Y-bus Matrix.md",
+            "hash": "34bc9a987abdea18b4ca8a2e1b469aa481b2cd92a363fcd68946ae8b5364886f",
+            "size": 5463
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/DC Load Flow Analysis.md",
+            "hash": "cfebae63232ab3adb5fe804567f0bddb4dfeb57e82a156fda70ba6d744dbb2fc",
+            "size": 4651
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Distribution Feeder Analysis.md",
+            "hash": "ddf085772dbfdc54c3abf3913037ab8c963a44b698a4a371da374cae029453a8",
+            "size": 4457
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Harmonic Analysis.md",
+            "hash": "2cdeff6a49af8a51410c4c27dc4c3f79ef686148eb51321663860d0d5a1d1b50",
+            "size": 5697
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Load Sharing.md",
+            "hash": "463e45ff928be75fbb2cb3a92e215057124056d7850ee260dbafbbe0296f7417",
+            "size": 6127
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Parallel Sources in Fault Analysis.md",
+            "hash": "2a52c62a96f92c20f85a1009d9760d511c44d931368b1f8738e13e130259ec4f",
+            "size": 5759
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Phase-Shifting Transformer Modeling.md",
+            "hash": "078a82a64af268ccf01c38fff66d0c679bb601294d4476f67881e3cc1b48eed5",
+            "size": 4841
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Power Distribution.md",
+            "hash": "61b3570a5f72678b5dbff66677f288a0dced060c51171394ec677e38733cd2db",
+            "size": 5372
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Power Quality.md",
+            "hash": "6db75200b82e8d68c28dd768061676e3b71fee1d05f63855c6f1ed4fd9fae281",
+            "size": 6054
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Small Signal Stability.md",
+            "hash": "e17ab3e74c219241f95d93d9e4a3c84570219dc69023f48422e3a6446294c828",
+            "size": 6074
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Sparsity.md",
+            "hash": "374d15b41c5f18b45c547c5b8d05a2a4a846183994b9c8e47e421484d2540e34",
+            "size": 4626
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Sub-Synchronous Resonance.md",
+            "hash": "427c206208c3f11dbe4f940b2fcd212116f24427c456e478a666e6ff2e33b54a",
+            "size": 5570
+        },
+        {
+            "path": "6. Power Systems/archive/2. Extra Topics/Z-bus Matrix.md",
+            "hash": "d767506824def7cbdc59c16c31f5ee71a9b4e87c624cb4a5d39f6050818f3dc0",
+            "size": 7636
+        },
+        {
             "path": "Caution.md",
             "hash": "8b1eafa116444c16aad1afa4df3efe6bcc7271d62c797a4c8de10321eddd3714",
             "size": 1038
@@ -5825,8 +5910,8 @@
         }
     ],
     "statistics": {
-        "files": 1164,
-        "directories": 137,
-        "bytes": 83574477
+        "files": 1181,
+        "directories": 139,
+        "bytes": 83669735
     }
 }
