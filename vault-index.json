@@ -1774,6 +1774,56 @@
             "size": 4233
         },
         {
+            "path": "4. Signal & Systems/7. Z-Transform/1. Definition and Region of Convergence (ROC)/Properties of the ROC for Z-Transform.md",
+            "hash": "42553c6c55fa13e8fd84a06dd6efb55b3d7062919253a6c9127099612dbff95c",
+            "size": 3516
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/1. Definition and Region of Convergence (ROC)/Region of Convergence (ROC) for the Z-Transform.md",
+            "hash": "6f1bfd535e61261f96464daf767feb022ba197ccf1202a62596c9074af0efca6",
+            "size": 4685
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/1. Definition and Region of Convergence (ROC)/The Z-Transform.md",
+            "hash": "346a709337dafc362d889e8abaf55f086e9138f669d103e8ff23ed5f5564282e",
+            "size": 6539
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/2. Properties and Inverse Transform/Inverse Z-Transform.md",
+            "hash": "d75f125c5ba4aad77e07cd01d249fb040f0e6eec524c7af94dde4266e3e207e8",
+            "size": 4799
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/2. Properties and Inverse Transform/Properties of the Z-Transform.md",
+            "hash": "212ef24e50f8d6b5693e1cc5fe6b40e1dbc06962bf4e017b0fc08ffc4217df6a",
+            "size": 4025
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/3. System Analysis using Z-Transform/Causality and Stability in the z-domain.md",
+            "hash": "81b31f141360172b492c19d2a8b9e59d97ff2d0e406d3c90892cac2305a01392",
+            "size": 3854
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/3. System Analysis using Z-Transform/Poles and Zeros in the z-domain.md",
+            "hash": "4711bba3000a0b3725bfd1a2a887a7f0719e614cd68b8d74a34da7345113cd70",
+            "size": 4718
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/3. System Analysis using Z-Transform/Solving Difference Equations using Z-Transform.md",
+            "hash": "8d454081f44608d61fe84ea74e5ad780bc27ad7fb1f48d713f7be6f0621334bb",
+            "size": 3273
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/3. System Analysis using Z-Transform/The Transfer Function H(z).md",
+            "hash": "b719b3d2ea61134a4835a9cbd60a62f661e8df735f9ce2a59ec6b61584d7e5d0",
+            "size": 4485
+        },
+        {
+            "path": "4. Signal & Systems/7. Z-Transform/3. System Analysis using Z-Transform/Unilateral Z-Transform.md",
+            "hash": "07fd350998e233884eb5f1b0a91e8d1d13df8303b4fe2c3b2c1b8c07d5c676cf",
+            "size": 3044
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
@@ -4740,8 +4790,8 @@
         }
     ],
     "statistics": {
-        "files": 947,
-        "directories": 92,
-        "bytes": 82305093
+        "files": 957,
+        "directories": 95,
+        "bytes": 82348031
     }
 }
