@@ -1934,6 +1934,101 @@
             "size": 5982
         },
         {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/All-Day Efficiency.md",
+            "hash": "04de1fc5c6576a14728675c942ab736bd75fe9832c2e96e85e37ccb30dbbc606",
+            "size": 4903
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Constructional Features of Transformers.md",
+            "hash": "6726d9a7731150461c3ab5b04f27cdc2553ae446d587cb9c503835abf0b80107",
+            "size": 6950
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Equivalent Circuit of a Transformer.md",
+            "hash": "3d20ce13826934b7845fe204b680cd8406ee87cd0bf67e7a566999c688b3bfd6",
+            "size": 4381
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Ideal and Practical Transformers.md",
+            "hash": "7c3aed51a4826df2980bc6ab59aa67e838d89568456ebb362e805bbdb686874a",
+            "size": 5821
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Losses and Efficiency in a Transformer.md",
+            "hash": "28cf7ce6f7893193415d75956d65fd9907913f20119e8b1b10f8a7a436bb664f",
+            "size": 7289
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Modeling of Transformers.md",
+            "hash": "1afd04ad5ea64ceea83fda41cbca7ccb20bf7f7d5d675f66444897d1474fd551",
+            "size": 4113
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Phasor Diagram of a Transformer.md",
+            "hash": "aab6cdf258b223330f8201eae6e4468eea05c97da49075206a372b0391215cf4",
+            "size": 4658
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Principle of Operation of a Transformer.md",
+            "hash": "7306d820a93bf452a53f2c6710fd3caf0dbdccfd8611c8f684fa8ac44066f8f9",
+            "size": 6123
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Transformer Tests.md",
+            "hash": "f159bb8d46bdd519dfe5d9bfab4eda988433a1827ca96b813e796d5c0d1bd55d",
+            "size": 6255
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/1. Single-phase Transformers/Voltage Regulation of a Transformer.md",
+            "hash": "04788ee34adb7ac05545ebea1ff2553e6c300b1ef77b6188cdc5a41f7aa21a9c",
+            "size": 6517
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/2. Three-phase Transformers/Harmonics in Transformers.md",
+            "hash": "56b80dd487e986cdd4d4e71f52e3e68fb3de454915ae97c712e9be3695a655ad",
+            "size": 4853
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/2. Three-phase Transformers/Parallel Operation of Transformers.md",
+            "hash": "a8b722940dc37e1671036fc0564421e5f21ccae3ca444c70bc19a21c27d36142",
+            "size": 5526
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/2. Three-phase Transformers/Three-Winding Transformers.md",
+            "hash": "e86e4885be3e4062b4fffcde972d869246657e5b37193ac7b61957a8366f637f",
+            "size": 4814
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/2. Three-phase Transformers/Three-phase Transformer Connections.md",
+            "hash": "72d8451face1b0a3ec19ceaf6053518f372c11ac8dcde293200420cfadf0616c",
+            "size": 4920
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/2. Three-phase Transformers/Vector Groups of Three-phase Transformers.md",
+            "hash": "5ec188d86f0b5c1df96c56852695784ee4c044bc9b8207aeedfd982cf63ddc9e",
+            "size": 5065
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/3. Autotransformers/Autotransformers.md",
+            "hash": "e9a075d7272c9d8526c2566ada0718e1bf50a26a9d5a08b87a252b3a63f32b85",
+            "size": 7903
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/3. Autotransformers/Conversion to Autotransformer.md",
+            "hash": "b291f329b862dc5538791da13170d03dd920ad91dfecdb698289a6cf6f78886a",
+            "size": 2564
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/3. Autotransformers/Copper Saving in Autotransformers.md",
+            "hash": "0d32070f3d8bf373607e760cd5863988057b9f79aa58c06fe063af220f66e9d6",
+            "size": 5314
+        },
+        {
+            "path": "5. Electrical Machines/2. Transformers/3. Autotransformers/Three-phase Autotransformer Connections.md",
+            "hash": "7d561970bcf5a59cd43f14b8f7146add1d05835786f4490528624121f10957f6",
+            "size": 5191
+        },
+        {
             "path": "5. Electrical Machines/Electrical Machines.md",
             "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
             "size": 6358
@@ -4895,8 +4990,8 @@
         }
     ],
     "statistics": {
-        "files": 978,
-        "directories": 100,
-        "bytes": 82449160
+        "files": 997,
+        "directories": 103,
+        "bytes": 82552320
     }
 }
