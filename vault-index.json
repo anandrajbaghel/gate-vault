@@ -2494,6 +2494,86 @@
             "size": 6066
         },
         {
+            "path": "6. Power Systems/2. Transmission Line/1. Line Parameters/Capacitance of Single-phase and Three-phase Lines.md",
+            "hash": "0379c17c39d0b4b3d8be29f0eee26c4a846268ebc3ebee3398a8ee918477f351",
+            "size": 6190
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/1. Line Parameters/Concept of GMD and GMR.md",
+            "hash": "5bb8e2d55af920f5534a65339c5d7f8ef79ccc97600b8a05806b44b3540d625e",
+            "size": 4495
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/1. Line Parameters/Effect of Earth on Capacitance.md",
+            "hash": "8a4419de49492bc45abda953d3792d5e5316a46d506ad26222f4bd18f4b49a23",
+            "size": 4237
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/1. Line Parameters/Inductance of Composite and Bundled Conductors.md",
+            "hash": "7c3c5d5eae8340195303fb5a0494c414e03faa099f7fe2a701f75a2d1986e96a",
+            "size": 4454
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/1. Line Parameters/Inductance of Single-phase and Three-phase Lines.md",
+            "hash": "d4337a893d11c39f767977562930eea47ddee693f8459bcfc1efb4a862be5a80",
+            "size": 5808
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/1. Line Parameters/Resistance of Transmission Lines.md",
+            "hash": "e88e85c086c6c8230a8b622f6da2b84e625e1afd6ab9b3a50888a679325948e8",
+            "size": 4121
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/ABCD Parameters (Generalized Circuit Constants).md",
+            "hash": "d816bc93d94996665beb1e6205139870ec575a43b394cd9e3e3da15a30f1fdc5",
+            "size": 6186
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Corona and its Effects.md",
+            "hash": "b27b6b2bfba2c29a1544f26730d759a82bd45f2ce3a9d524152c84d90f9e726b",
+            "size": 6611
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Ferranti Effect.md",
+            "hash": "6bffa04752f383ac2d70b2cdc223654b56ddfe7dd97f7bc606e27df9d6b4da4a",
+            "size": 4568
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Modeling of Long Transmission Lines.md",
+            "hash": "7a4f30bee55181f327e222e3f40ce2276ee954bdb95e7d541b1d85b0cb034654",
+            "size": 5041
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Modeling of Medium Transmission Lines.md",
+            "hash": "2566087bf18daf2268e7557bcff188a236bcb0e2c551057852994953861d444f",
+            "size": 4945
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Modeling of Short Transmission Lines.md",
+            "hash": "ab2b3c554c277a44c1602cc61f85bbaa76c0c06d3d2d617e92a96853407d4203",
+            "size": 4676
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Power Flow through a Transmission Line.md",
+            "hash": "75aed67f848984d1ddc295209e8e9bd283a0bc7ad62f3b630841422304041763",
+            "size": 6310
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Surge Impedance and Surge Impedance Loading (SIL).md",
+            "hash": "a316c017539c038227fa63d51db1e9b4e16d704fa4d1aa740975159e332cada9",
+            "size": 5653
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Underground Cables (Construction, Grading, Capacitance).md",
+            "hash": "22580a5bf2679f990bb46c5f99e0ad485829b7cc8cdcfb7745bdac6b5ffa77c2",
+            "size": 7809
+        },
+        {
+            "path": "6. Power Systems/2. Transmission Line/2. Performance of Transmission Lines/Voltage Regulation and Transmission Efficiency.md",
+            "hash": "fe8bd3e300c2d38f091df091289b1e75f097fb5e208f650784561d9ee75cde44",
+            "size": 4873
+        },
+        {
             "path": "6. Power Systems/Power System.md",
             "hash": "7dd914b194572577abff18a3a8cb9d0bab907423aecc1bbc0ca27b9d5e06b845",
             "size": 6442
@@ -5450,8 +5530,8 @@
         }
     ],
     "statistics": {
-        "files": 1089,
-        "directories": 121,
-        "bytes": 83137698
+        "files": 1105,
+        "directories": 123,
+        "bytes": 83223675
     }
 }
