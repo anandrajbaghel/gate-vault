@@ -1769,6 +1769,111 @@
             "size": 194
         },
         {
+            "path": "Resources/Dictionary/kelvin's law.md",
+            "hash": "ce6a233323d69ab9e8d60148a1d58e077902bcd5bc26eaef484ea212fc5fc641",
+            "size": 185
+        },
+        {
+            "path": "Resources/Dictionary/kronecker delta.md",
+            "hash": "94c46e7d78b2c43779cb7830f35a7607830fa3bd4b53c91cd1e8851c8d1f58d5",
+            "size": 182
+        },
+        {
+            "path": "Resources/Dictionary/lenz's law.md",
+            "hash": "2436b8e05a9f0deb1350dfa2646dbc6cb63717a8481876c971fc2f01d7021c65",
+            "size": 153
+        },
+        {
+            "path": "Resources/Dictionary/linear density function.md",
+            "hash": "0c86c4ad246989903b4fb0b8910cc20e6a76a6e0714ed77be3ef8cdaa1af524b",
+            "size": 160
+        },
+        {
+            "path": "Resources/Dictionary/lissajous pattern.md",
+            "hash": "6dbf9828be1e4a22297e490ab11656e2fe59b3abd6477612cda1e7c6fd5404b7",
+            "size": 187
+        },
+        {
+            "path": "Resources/Dictionary/lorentz force law.md",
+            "hash": "b742b5ba8b3589ee5b437d3894701d20f24d313ed62cc26c334e13378caf5531",
+            "size": 198
+        },
+        {
+            "path": "Resources/Dictionary/luminance.md",
+            "hash": "2fc1d330077839b1792db67223c35f0f9cef5ed487c81526985e084ec83edea9",
+            "size": 160
+        },
+        {
+            "path": "Resources/Dictionary/magnetic coupling.md",
+            "hash": "69f3861f174e9dd5fc5e16fcca4cbb7c824ef7f1d3ae921653ec9c459330c834",
+            "size": 161
+        },
+        {
+            "path": "Resources/Dictionary/magnetic flux.md",
+            "hash": "672a2bd007fee4bb97b1e7a8dfe5fb313a2f2e28161388ad13b593ad37c2dd0f",
+            "size": 181
+        },
+        {
+            "path": "Resources/Dictionary/magnetomotive force.md",
+            "hash": "f4691259b661dad1c49a7c7ee88d3cdf4eef0172fdb5dc2cd62944ef88ee9839",
+            "size": 290
+        },
+        {
+            "path": "Resources/Dictionary/maxterm.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "Resources/Dictionary/mechanical interlock.md",
+            "hash": "21158abe2f8f89e11e0b9c58dc1d8a381ffeaf0add8f983e7159e471094a1232",
+            "size": 157
+        },
+        {
+            "path": "Resources/Dictionary/meromorphic function.md",
+            "hash": "e6d9b41c8a0f1749b21c3ae3a95188b10031f8c302ca232ddd3429ee0a4cba6b",
+            "size": 215
+        },
+        {
+            "path": "Resources/Dictionary/minterm.md",
+            "hash": "d43b3d2c17fdbcbec9781963075d27a39acab29fcca3d3f1e1af1ff36c98d3b6",
+            "size": 228
+        },
+        {
+            "path": "Resources/Dictionary/multiplicity.md",
+            "hash": "1fed3079936d41435996c571f360ee0d77f3f5c11ccf38c1cf8b35b00fbddb95",
+            "size": 156
+        },
+        {
+            "path": "Resources/Dictionary/natural response.md",
+            "hash": "1402fec962453858681de1d7d9e7f809386ab5fc183a6f02a842a6502562618e",
+            "size": 172
+        },
+        {
+            "path": "Resources/Dictionary/nominal load.md",
+            "hash": "46ad2dcdcf90ad0fe77f1043a621a7dd4d714e5b0c2d528ce2110636c50f82d3",
+            "size": 157
+        },
+        {
+            "path": "Resources/Dictionary/nominal.md",
+            "hash": "c62389a985ad5ae7fb3f0659f3e86606dd3eefdbbf1e3d2373849e09f556e68c",
+            "size": 192
+        },
+        {
+            "path": "Resources/Dictionary/non-trivial solutions.md",
+            "hash": "cce651d626d3d0de1ceebc8b716d8646c1e8f3da2eca19c35de02e4f0c07ffda",
+            "size": 190
+        },
+        {
+            "path": "Resources/Dictionary/operator.md",
+            "hash": "04ebe718ca74d449e43d6239740f5b306f7e5b9071ce8e3c0d6f0ef80c49a2bf",
+            "size": 508
+        },
+        {
+            "path": "Resources/Dictionary/parameterize.md",
+            "hash": "b237c781b9b1e96aa8ebe00cf03895f63d21891f1c62f97d72f865a73855f781",
+            "size": 170
+        },
+        {
             "path": "Resources/Images/Question Paper/README.md",
             "hash": "b808f988eeea0bdd18d69c4280c6a2ae3ec3c668724a5f3e7ac7b0fdce4b9837",
             "size": 91
@@ -4180,8 +4285,8 @@
         }
     ],
     "statistics": {
-        "files": 835,
+        "files": 856,
         "directories": 74,
-        "bytes": 81977805
+        "bytes": 81981807
     }
 }
