@@ -1489,6 +1489,11 @@
             "size": 6358
         },
         {
+            "path": "6. Power Systems/Power System.md",
+            "hash": "7dd914b194572577abff18a3a8cb9d0bab907423aecc1bbc0ca27b9d5e06b845",
+            "size": 6442
+        },
+        {
             "path": "Caution.md",
             "hash": "8b1eafa116444c16aad1afa4df3efe6bcc7271d62c797a4c8de10321eddd3714",
             "size": 1038
@@ -4440,8 +4445,8 @@
         }
     ],
     "statistics": {
-        "files": 887,
-        "directories": 76,
-        "bytes": 82001447
+        "files": 888,
+        "directories": 77,
+        "bytes": 82007889
     }
 }
