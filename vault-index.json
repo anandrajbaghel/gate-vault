@@ -5619,136 +5619,6 @@
             "size": 1589
         },
         {
-            "path": "Resources/Question Paper/GATE/MD/README.md",
-            "hash": "85e0a0d7d02f354898971e341ec0252a8221e6ac78b8ecee3d382bf72dc15d49",
-            "size": 47
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2007.md",
-            "hash": "08839defa5c847c8bcd23ceb9547dc78dcf7d6d17078e974178582eba1807686",
-            "size": 36
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2008.md",
-            "hash": "91e8bec383e11c2c0a3f17eb79c3050c882cd90e0123fdddacacb44b7e6cc7e9",
-            "size": 36
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2009.md",
-            "hash": "2d46a4ee7b8f320a9f704f8a6d8f11223f82918ced219afdf874f1499f179003",
-            "size": 36
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2010.md",
-            "hash": "094077a308305d34009974f133efc31c1623c9bdef326468deb9626d0b8357dd",
-            "size": 39172
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2011.md",
-            "hash": "1a358634b7157cdb925285a2002ce76c37f5a2206eeafe12f39340e49c9ba392",
-            "size": 40995
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2012.md",
-            "hash": "73dec6739bb790ff18b2ec1d8e64c157bf8a372f36a560e818727f9a379a5051",
-            "size": 34551
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2013.md",
-            "hash": "421b38b6552c31b1b252a51ec10b0012c99a0fbf6e5152d4c8931c5ef8c9fe79",
-            "size": 37539
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2014(1).md",
-            "hash": "ede70c11f3737c5cf761a15a5e949a1c2fb2431c0c41b30d6d063f9493dad939",
-            "size": 38228
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2014(2).md",
-            "hash": "95e973a5dbce82282fd12433d0d9d592849c50e6332feab6d68445996cadd68f",
-            "size": 38129
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2014(3).md",
-            "hash": "22c76c5d637be0494627ef21a21aa1c3c6efd9bc36652053eff96df37027dcf6",
-            "size": 38274
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2015(1).md",
-            "hash": "4d62acc8651cfb2fa4476d6142ed07a8c81c06d192e0e572a44930b97873e2f8",
-            "size": 40539
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2015(2).md",
-            "hash": "7453b99ff26dda7e580d24d91060be4f72f02bb6ee79dee075e834606896a13c",
-            "size": 40979
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2016(1).md",
-            "hash": "4a44bbd0df9375b5ac13d43c0cf098c152f508188a01bed7947d59530b548bdd",
-            "size": 38721
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2016(2).md",
-            "hash": "ed9d899e0fd2ee6055563ddba3973d323d7bea8adc3ba97725edd049dbc0b4fe",
-            "size": 36950
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2017(1).md",
-            "hash": "f9c757e00ea3b3f66277256b8bc40184e6e5f2daa72a196100d78a2f0e280222",
-            "size": 40841
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2017(2).md",
-            "hash": "1f1354ec827ffdaf3d8c387ec326ced301ce49e5351b0fa76763594b82eb9195",
-            "size": 38786
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2018.md",
-            "hash": "c7082fee66ebdd3ce210fbafbeaf4abb7edd56e9b09cec27361ede3136bf7734",
-            "size": 40086
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2019.md",
-            "hash": "e56f118fbd3895b83c88ffa2918031950591d167282ba9c162cf8aaa7c7c31ec",
-            "size": 37309
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2020.md",
-            "hash": "160eead1c747ac2cc86cd09c6b41d626c0e45a428443b31668610d51fd10281c",
-            "size": 42136
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2021.md",
-            "hash": "2e10f0bdbf077dda31e1bcaac8e992fb8ccff24a6c7bcf80184d7b3f04fe10c2",
-            "size": 41233
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2022.md",
-            "hash": "7102dd13a43e3f2739bace6b9e48c327121779d41ade1a9540cdd15da0425189",
-            "size": 41127
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2023.md",
-            "hash": "caed990f0aae7e62d7c77ad8fa91f2894b8a072d042f4ad537368d3c7aeeffd4",
-            "size": 46425
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2024.md",
-            "hash": "f9714e87c2e9dcae52738b3e44ac4cc9520094a0e502242f34308e85f258b530",
-            "size": 43593
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2025.md",
-            "hash": "e0887ec0aea83c3af61b416ecf1bd2961f56e9d37bebd46fe40c7c812d97b43c",
-            "size": 42297
-        },
-        {
-            "path": "Resources/Question Paper/GATE/MD/ee_2026.md",
-            "hash": "1df296e3b4ebcc36d3930b4ca680767418eb7143a34e4fd762f1d14ba83ce429",
-            "size": 47995
-        },
-        {
             "path": "Resources/Question Paper/GATE/PDF/COPYRIGHT.md",
             "hash": "ae528f20af935f52927ed0762c5a5b893a45385358dfdb8ae5f68f1c0789ba7f",
             "size": 1177
@@ -5910,8 +5780,8 @@
         }
     ],
     "statistics": {
-        "files": 1181,
-        "directories": 139,
-        "bytes": 83669735
+        "files": 1155,
+        "directories": 138,
+        "bytes": 82783675
     }
 }
