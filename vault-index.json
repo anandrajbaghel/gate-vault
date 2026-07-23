@@ -1479,6 +1479,81 @@
             "size": 4617
         },
         {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/1. Continuous-Time (CT) and Discrete-Time (DT) Signals/Energy and Power Signals.md",
+            "hash": "5f3ccf0e3cec59dce0fe96442b2e4ecfc09e79a1c8bbfdb07262b954ac43ac62",
+            "size": 5161
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/1. Continuous-Time (CT) and Discrete-Time (DT) Signals/Signal Definition and Classification (CT vs DT).md",
+            "hash": "4d3a894b34e22e78d17bb71ed5d30e04e8c1b1f045904cd785bc709310946efd",
+            "size": 4986
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/1. Continuous-Time (CT) and Discrete-Time (DT) Signals/Signal Properties (Periodic & Aperiodic, Even & Odd).md",
+            "hash": "208eca51fd1aa6d4925345937203ceef9f8bb0d202d60e0589908714e9e46d45",
+            "size": 5260
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/1. Continuous-Time (CT) and Discrete-Time (DT) Signals/Transformations of the Independent Variable.md",
+            "hash": "01f3b613510b586d8266fd42d171a91a1c4698022803cb1a32e485a36badfaa1",
+            "size": 4313
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/2. Standard Signals/Continuous-Time Unit Impulse and Unit Step Functions.md",
+            "hash": "bdcc9a8f53e3d75bfbcdf219451ba79cd96ea9c5949db0b13f2775e93d4d37ea",
+            "size": 5108
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/2. Standard Signals/Discrete-Time Unit Impulse and Unit Step Sequences.md",
+            "hash": "0b90f4eabf3a45cec0b00686ec1acf1122f3a68e59c314b77768f3d8e5955e3a",
+            "size": 3882
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/2. Standard Signals/Exponential and Sinusoidal Signals.md",
+            "hash": "31a1f46f7ae0dc832c0ecde6a196b880131fd99f579533e53549d1876d590598",
+            "size": 4396
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/2. Standard Signals/Ramp, Signum, Rectangular Pulse, and Sinc Functions.md",
+            "hash": "1edac2a4c6e540c2b5b58d4ba6573533577770b511189fa8036af00cb8987716",
+            "size": 5421
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/Causality.md",
+            "hash": "92286ecfc412d1fe9d6e775707212ad4c19a4f2fc505cad62f694743e89aff3a",
+            "size": 3727
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/Invertibility and Inverse Systems.md",
+            "hash": "225710ffa6120ea7f26278f3d2987ffaae2a1a0cb9898a0dd3075f97adbaa3fc",
+            "size": 4317
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/Linearity.md",
+            "hash": "675fcce2872a77eb8c80773e459addea7a3bbc1378edf191d90f77578e67543d",
+            "size": 5743
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/Memory and Memoryless Systems.md",
+            "hash": "0f5a3abb4d81fc7608dc103a852e6d0ae8adef40d71cb1b5d7e0672c28d48ba3",
+            "size": 3740
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/Stability (BIBO Stability).md",
+            "hash": "8b5f0b1dc2df1e8599351b363cbf13278a5ba0a0783315cd39dead07431d4d28",
+            "size": 3966
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/System Definition and Classification.md",
+            "hash": "f63775afd71b015c4c4fd46dbfd847bc126f82bf078e4f789793829225520f7e",
+            "size": 6122
+        },
+        {
+            "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/3. System Properties/Time-Invariance.md",
+            "hash": "1b748b30cf69d4dbe584653eb3dc026833305915a821dba4e7c9fbe58af979fc",
+            "size": 4562
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
@@ -4445,8 +4520,8 @@
         }
     ],
     "statistics": {
-        "files": 888,
-        "directories": 77,
-        "bytes": 82007889
+        "files": 903,
+        "directories": 80,
+        "bytes": 82078593
     }
 }
