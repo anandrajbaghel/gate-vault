@@ -1614,6 +1614,36 @@
             "size": 3986
         },
         {
+            "path": "4. Signal & Systems/3. Fourier Series Representation of Periodic Signals/1. Continuous-Time Fourier Series (CTFS)/Concept of Frequency Spectrum.md",
+            "hash": "a531c351b2f5ddb7e22f2b20737c52ef6dcb0401c1152c946d57c5744e5daaaf",
+            "size": 4585
+        },
+        {
+            "path": "4. Signal & Systems/3. Fourier Series Representation of Periodic Signals/1. Continuous-Time Fourier Series (CTFS)/Exponential Fourier Series.md",
+            "hash": "c2103d3bd63454fa371c13ac63f773e854832ed66d0174c1fc0f5c393e75a3e9",
+            "size": 3976
+        },
+        {
+            "path": "4. Signal & Systems/3. Fourier Series Representation of Periodic Signals/1. Continuous-Time Fourier Series (CTFS)/Properties of Continuous-Time Fourier Series.md",
+            "hash": "4bbb81172b492f063c241c564cfc98ec710a2fb9216f51a0f0cc97cdcae506b6",
+            "size": 6620
+        },
+        {
+            "path": "4. Signal & Systems/3. Fourier Series Representation of Periodic Signals/1. Continuous-Time Fourier Series (CTFS)/Response of LTI Systems to Complex Exponentials.md",
+            "hash": "a4a2cfe4e4832b4cfd2f250b402ccc1e616dc06202609585932c5d3075745edf",
+            "size": 5078
+        },
+        {
+            "path": "4. Signal & Systems/3. Fourier Series Representation of Periodic Signals/1. Continuous-Time Fourier Series (CTFS)/Trigonometric Fourier Series.md",
+            "hash": "a3adfb1e1198111b1f1ce3c459f7cf5510de0529c73ef813c008ee27f0debfbf",
+            "size": 3823
+        },
+        {
+            "path": "4. Signal & Systems/3. Fourier Series Representation of Periodic Signals/2. Discrete-Time Fourier Series (DTFS)/Representation of Periodic Discrete-Time Signals.md",
+            "hash": "c5ed673b3df8f5ad820f54896ed6d8cc20e6dca1058fab2af75a9bb40c3230da",
+            "size": 4265
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
@@ -4580,8 +4610,8 @@
         }
     ],
     "statistics": {
-        "files": 915,
-        "directories": 84,
-        "bytes": 82132886
+        "files": 921,
+        "directories": 86,
+        "bytes": 82161233
     }
 }
