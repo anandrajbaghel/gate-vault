@@ -2359,9 +2359,104 @@
             "size": 5419
         },
         {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/1. Single-Phase Induction Motors/Equivalent Circuit of a Single-Phase Induction Motor.md",
+            "hash": "2e9c0dcb908ad7d71b259f2b79b20e0aea3681cb509f3224b983ed61fc7f35f4",
+            "size": 6826
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/1. Single-Phase Induction Motors/Principle of Operation of Single-Phase Induction Motor.md",
+            "hash": "ab68d9a873fe7648190824301f23776c1e31bfafd702659c786134064cd3e645",
+            "size": 6456
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/1. Single-Phase Induction Motors/Types of Single-Phase Induction Motors.md",
+            "hash": "d4fb572339cd2db2b7e4c412a2e0d6df603f18be62ac8897dc73ffaf587a753b",
+            "size": 9824
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/1. Single-Phase Induction Motors/Why Single-Phase Induction Motors are Not Self-Starting.md",
+            "hash": "070bb2dcb7dbe90427ab7947e2cf37e047027f3147f677b12d3a3578df571f1f",
+            "size": 5234
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/2. Special Machines/Brushless DC (BLDC) Motors.md",
+            "hash": "99b2c6a4a21a7ab4c7b685cc8b7f9b37ad5305536851cf60c2a1f4f4e160d121",
+            "size": 5922
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/2. Special Machines/Hysteresis Motor.md",
+            "hash": "7aa8a4c0f6d190b5f62f8dee9ddfceea54684204c93abcc2332b4577987853ba",
+            "size": 6398
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/2. Special Machines/Reluctance Motor.md",
+            "hash": "622d2e55490d5cdf6ca755853743964e5fa587fef6acda6c2f6b12d358d8a23b",
+            "size": 5956
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/2. Special Machines/Stepper Motors.md",
+            "hash": "a9d0832d39abd8547ad2767e995d5a2296fdfa3be9a5d6d13d2862c07d126881",
+            "size": 7483
+        },
+        {
+            "path": "5. Electrical Machines/6. Single-Phase Motors & Special Machines/2. Special Machines/Universal Motor.md",
+            "hash": "53b6bacfc22d0816a53800b5cd0d98d35eb1a596c5da8cbc9d3fda06b5cfd0c8",
+            "size": 4665
+        },
+        {
             "path": "5. Electrical Machines/Electrical Machines.md",
             "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
             "size": 6358
+        },
+        {
+            "path": "5. Electrical Machines/archive/1. Deprecated/AC Machines.md",
+            "hash": "d50bf4876bc3840e4f8e00f2ff9542785d89d1ae91ecfafb7b69cab51eefba33",
+            "size": 6332
+        },
+        {
+            "path": "5. Electrical Machines/archive/1. Deprecated/Speed Regulation.md",
+            "hash": "ad24183f035aa4ae098a0a8eacb07c3289341090a7a4415f8cb516586c458d79",
+            "size": 6243
+        },
+        {
+            "path": "5. Electrical Machines/archive/1. Deprecated/Transformers.md",
+            "hash": "1b2ca7acaa2c0f264b0de88b71ae72f517fd2c5a0a0341ace549bb7ea3886ed8",
+            "size": 4738
+        },
+        {
+            "path": "5. Electrical Machines/archive/1. Deprecated/Voltage Regulation.md",
+            "hash": "be8f400466d09b009096392bb7653a575f1af8557903bc5038a10533a28a7b9b",
+            "size": 5957
+        },
+        {
+            "path": "5. Electrical Machines/archive/2. Extra Topics/Clarke Transformation.md",
+            "hash": "5a579e89c068de415028bb7ccfbbd3b286207b40bfbc125f755b34714b5fc3df",
+            "size": 4770
+        },
+        {
+            "path": "5. Electrical Machines/archive/2. Extra Topics/Mitigation Techniques in Machines.md",
+            "hash": "e53dcffbd1078016d7dd48cca177adeaa470d0a4450f2bfcb5ec3712a773ae22",
+            "size": 7513
+        },
+        {
+            "path": "5. Electrical Machines/archive/2. Extra Topics/Modeling of Electrical Machines.md",
+            "hash": "11daa55c5f6a6f336f67a7d9e2f07aee2d6c23953915c8dc00ce582011f314a8",
+            "size": 5457
+        },
+        {
+            "path": "5. Electrical Machines/archive/2. Extra Topics/Park Transformation.md",
+            "hash": "c721e4eff3eba94a17ecf4daf03ecdbdc408e5b42f5bf40a5664c108b717b92d",
+            "size": 5429
+        },
+        {
+            "path": "5. Electrical Machines/archive/2. Extra Topics/Reference Frame Theory.md",
+            "hash": "4e8178f2226515428db63f66ce96b4d4b25b1fef87f0278da6fcd621e1de6a13",
+            "size": 5513
+        },
+        {
+            "path": "5. Electrical Machines/archive/2. Extra Topics/Vector Control of Drives.md",
+            "hash": "b357bca7c7529c12312475ed2f47cca4eed3033935c061c56b39e26da67e6ed3",
+            "size": 5755
         },
         {
             "path": "6. Power Systems/Power System.md",
@@ -5320,8 +5415,8 @@
         }
     ],
     "statistics": {
-        "files": 1063,
-        "directories": 115,
-        "bytes": 82972533
+        "files": 1082,
+        "directories": 119,
+        "bytes": 83089004
     }
 }
