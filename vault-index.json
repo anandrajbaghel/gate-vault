@@ -2239,6 +2239,126 @@
             "size": 5731
         },
         {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Armature Reaction and Synchronous Reactance.md",
+            "hash": "df00d13f726dd42d572303d286236289c47240172ea26eee24b28bb105a70c82",
+            "size": 5696
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Armature Winding Factors in Synchronous Machines.md",
+            "hash": "957d79d1f9faa4357d73672d18b8a596b31e82fa60d399c1091e5776e84ac8ac",
+            "size": 6992
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Constructional Features of Synchronous Machines.md",
+            "hash": "79b78e226f9205c26b8cde4e5d2fc89c8b0cfaad0e3fd6cba45d31c61412ec3e",
+            "size": 7420
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/EMF Equation of an Alternator.md",
+            "hash": "c20340b195da8380ba4a3b8177a040975c38483a97cd59c9a2976bc0470db644",
+            "size": 5640
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Internal EMF.md",
+            "hash": "fd2c30d2a1e53826b3d3664c95f856e506886c437eb47eef4466917a6d32fd91",
+            "size": 9653
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Principle of Operation as a Generator (Alternator).md",
+            "hash": "95b0b0e2325069d00509dc85fada6678dc1d7da8bf1b54aefa23df599fb86ee2",
+            "size": 5646
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Sub-transient Reactance.md",
+            "hash": "6b34c1ff625e3882bdb174801dbce21451ec212bd92a2b0d5d2a83f9afa74398",
+            "size": 6320
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/1. Fundamentals/Transient Reactance.md",
+            "hash": "87b0c7b91c13e4bfc1d4239a64815008fa4b51882a299908f8d60bd1c2158cff",
+            "size": 5159
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Equivalent Circuit and Phasor Diagram of an Alternator.md",
+            "hash": "b4604a751f322a6c8bab39b7eebe3c6c24a162ee21bab2156137f34314caab90",
+            "size": 7371
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Machine Excitation Convention.md",
+            "hash": "22da8e0da703110727e9ae95d39198d2149844c5130333d6861d13fdc259699d",
+            "size": 5079
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Open and Short Circuit Characteristics of an Alternator.md",
+            "hash": "d3e0e0ace100f0757b79fefec2765645e4ae3acd981c492e91bcfd74f61eeb3e",
+            "size": 7466
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Parallel Operation of Alternators and Synchronization.md",
+            "hash": "6deab2cc562b35ce904806ab90dd15ebca378eb549f1e169ff6533a839593cf2",
+            "size": 5980
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Power-Angle Characteristics for Synchronous Machines.md",
+            "hash": "b969dbd214735da004ed915bcdc0b2473f037c58f14303e1ec0fcbe03528b909",
+            "size": 7766
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Salient Pole Machines - Two Reaction Theory.md",
+            "hash": "ef08264ccabc23582678cf44ff9ecf7af6c9df40ff8e6332cb2e405eafe45ab9",
+            "size": 12500
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Voltage Regulation Methods.md",
+            "hash": "6934d2ede4beaf4484ccb1f520d57fc7a2e4857a5cbea4c2fe7ab33800ff16bf",
+            "size": 5892
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/2. Alternator/Voltage Regulation of an Alternator.md",
+            "hash": "00fed406ddb322c5edc263cc0b349fcebadd773019e4106eab4f026448460bb5",
+            "size": 4381
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/Effect of Excitation on Armature Current.md",
+            "hash": "b06e8938c494a7ef3b0514b07f5ff467c4d396594c3f81fbe420a492980185a1",
+            "size": 5260
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/Hunting in Synchronous Machines.md",
+            "hash": "934eac814a3998d8e3d97988ae817db16120e2ebe7550363fe43e1e03de13c67",
+            "size": 6490
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/Methods of Starting Synchronous Motors.md",
+            "hash": "c1f039f92f9c0de3c5263452cf1863b34149270e3c79998532d238e28b8e597d",
+            "size": 6083
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/Principle of Operation of Synchronous Motors.md",
+            "hash": "fc2d19bcac43caee26cd0f7bceccc0eceadbf146c758bf33b16560f959d6a3ff",
+            "size": 5187
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/Synchronous Condenser.md",
+            "hash": "89418a518841cd4013c54a865501064e7099b9120f2ab19e41d3e6cba33147bd",
+            "size": 5846
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/Synchronous Motors.md",
+            "hash": "25e19ca62152f769d994b8dff400aa3ac7f3298b85121fff96f99a1ad0e9edf8",
+            "size": 8896
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/3. Synchronous Motors/V-Curves.md",
+            "hash": "c52773eed596b31e7d35feb955c182546b91fa1ec493e2f8fb14e1f63e3625b4",
+            "size": 6678
+        },
+        {
+            "path": "5. Electrical Machines/5. Synchronous Machine/Synchronous Machines.md",
+            "hash": "eef1371007528ce3d8d85bc207bdf72d34f95d6f3240717636088ef6bc619eae",
+            "size": 5419
+        },
+        {
             "path": "5. Electrical Machines/Electrical Machines.md",
             "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
             "size": 6358
@@ -5200,8 +5320,8 @@
         }
     ],
     "statistics": {
-        "files": 1039,
-        "directories": 111,
-        "bytes": 82813713
+        "files": 1063,
+        "directories": 115,
+        "bytes": 82972533
     }
 }
