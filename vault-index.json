@@ -1679,9 +1679,94 @@
             "size": 184
         },
         {
+            "path": "Resources/Dictionary/eigenfunctions.md",
+            "hash": "f4ffa5279416d8ef61c1bc96571b689a6f27582ab7589ae623a611f172e25185",
+            "size": 568
+        },
+        {
+            "path": "Resources/Dictionary/electromagnetic force.md",
+            "hash": "3db169e2dd36f8252a3dc64cfd1bf3f257fe2ea656b7f8eadffa317d8d679bcc",
+            "size": 361
+        },
+        {
+            "path": "Resources/Dictionary/electromotive force.md",
+            "hash": "94f0f31ce75171081697596670057c6f42c3748affb80533562c53d0fc9bb3d7",
+            "size": 621
+        },
+        {
+            "path": "Resources/Dictionary/faraday’s law.md",
+            "hash": "c38405c0721443ae744fdb37bc9e24a4e1ccf742b2f1d5257df945f57954968a",
+            "size": 153
+        },
+        {
+            "path": "Resources/Dictionary/feeder.md",
+            "hash": "73e6f61a8f6d0127a04c4c6ee97d059f49138ad605190c6ab71bf583c8f813a1",
+            "size": 176
+        },
+        {
+            "path": "Resources/Dictionary/floating node.md",
+            "hash": "c0bcfc8b2a6220630827c2456d19f3f6e100ee1cde7a99426195618ba40120ed",
+            "size": 148
+        },
+        {
+            "path": "Resources/Dictionary/forced response.md",
+            "hash": "d1a5a3ff101c5c8bb24b8e59557f2460d4cebcb404bdef6fff23ef809c79c4cc",
+            "size": 158
+        },
+        {
+            "path": "Resources/Dictionary/fortescue theorem.md",
+            "hash": "530d50252350db929c00080efc2b56a67a4ba03160ae2a75c7e2f161e4bd2e70",
+            "size": 203
+        },
+        {
+            "path": "Resources/Dictionary/freewheeling diode.md",
+            "hash": "33a51fea4dbcea543b267f1d0f869f121a22c8a2b2334ac99b7d18df2c6f5512",
+            "size": 187
+        },
+        {
+            "path": "Resources/Dictionary/gain margin.md",
+            "hash": "22dd9a28054413bc2dd4065df2fe6fe95cb158e41def124af427e885c5beb20d",
+            "size": 250
+        },
+        {
+            "path": "Resources/Dictionary/galloping.md",
+            "hash": "e7bdc95e3da98ab33fb670c9d5768738153f338cae102ae423276f89ed50894f",
+            "size": 172
+        },
+        {
             "path": "Resources/Dictionary/holomorphic function.md",
             "hash": "cc53e6cb0499302cf8ed3a1111490c018c303f687591db7ab4d32047c5f5ab1f",
             "size": 166
+        },
+        {
+            "path": "Resources/Dictionary/horsepower.md",
+            "hash": "c83b080c73526781dd963a02191369694e89a3293aa5d1e6c6a34cb3d1bfdb59",
+            "size": 162
+        },
+        {
+            "path": "Resources/Dictionary/hunting.md",
+            "hash": "71955745319347131e76efa4a9932e4362018e945fc2e51b57f868565cbf5864",
+            "size": 803
+        },
+        {
+            "path": "Resources/Dictionary/impulse response function.md",
+            "hash": "4d83fe594e51c8fd7cf77a8de6560c70b2e6b0955e653995ee4296638c458895",
+            "size": 1727
+        },
+        {
+            "path": "Resources/Dictionary/iron losses.md",
+            "hash": "6f6ae4460248fb6111718fbe3e21cf425ec8a065afe9b3daa9a1e268504c8194",
+            "size": 156
+        },
+        {
+            "path": "Resources/Dictionary/joule's law.md",
+            "hash": "65072e240db0ac6c078503e8e8b291a85ec7d68bc284e1edc019d02e31f46fbb",
+            "size": 169
+        },
+        {
+            "path": "Resources/Dictionary/joule.md",
+            "hash": "8d05ffa1ea57b54faaf2a8d17b60390a2e43beddce22104a7f094f9da5a4752e",
+            "size": 194
         },
         {
             "path": "Resources/Images/Question Paper/README.md",
@@ -4095,8 +4180,8 @@
         }
     ],
     "statistics": {
-        "files": 818,
+        "files": 835,
         "directories": 74,
-        "bytes": 81971597
+        "bytes": 81977805
     }
 }
