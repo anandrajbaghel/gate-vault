@@ -1579,6 +1579,106 @@
             "size": 154
         },
         {
+            "path": "Resources/Dictionary/complementary power devices.md",
+            "hash": "03bc072a35b6ed9052063bc318a5f186392e42cd818c3624c0d802659f31a7fa",
+            "size": 200
+        },
+        {
+            "path": "Resources/Dictionary/conductance.md",
+            "hash": "029ceb4234852a17407673f65c341d4e1ae8acf251e7529026bb479014bb2559",
+            "size": 180
+        },
+        {
+            "path": "Resources/Dictionary/conjugate signal.md",
+            "hash": "3bc4e94c46db30df4fff7b211a61aec58e53d2234c6d0d0e2551179b6ad1175f",
+            "size": 393
+        },
+        {
+            "path": "Resources/Dictionary/conservative vector field.md",
+            "hash": "15b01f65c2bf3f50d17cfadcfc9864940423f78f7e97d007f1f2537d3fb2cff4",
+            "size": 294
+        },
+        {
+            "path": "Resources/Dictionary/converters.md",
+            "hash": "2a186ceb9f98eef569ca142f5720bd68339c15922c8529697a23458a502f472f",
+            "size": 223
+        },
+        {
+            "path": "Resources/Dictionary/copper losses.md",
+            "hash": "18b2b99b3882800530384b0265c61d2b320b196cea7d5f27d844061b405fa23c",
+            "size": 172
+        },
+        {
+            "path": "Resources/Dictionary/core losses.md",
+            "hash": "6b1615f9390e18117b119d2e716b82aea001facd0576f6aed8cba313915161c7",
+            "size": 155
+        },
+        {
+            "path": "Resources/Dictionary/crawling.md",
+            "hash": "0fc1d4e9ced9e886cccf42e03e207028a05f1e7ef466313a46bdbf49a1d77973",
+            "size": 144
+        },
+        {
+            "path": "Resources/Dictionary/critical point.md",
+            "hash": "7aee810a5a225aff551a183f759f9c485934c65ac271ea675008ded1ed5c34a3",
+            "size": 278
+        },
+        {
+            "path": "Resources/Dictionary/damper windings.md",
+            "hash": "aa08a2863a687b38efe5924cad07948dcc71f533f58e842c19ab25009a2bb023",
+            "size": 725
+        },
+        {
+            "path": "Resources/Dictionary/dc offset.md",
+            "hash": "f07853050c0c9732b8e2ceb471431d21ecef685736d9da1f5b33c17f5f3efe80",
+            "size": 267
+        },
+        {
+            "path": "Resources/Dictionary/dead time.md",
+            "hash": "51b4f0ccc439b4d6c522b5259ee0f6cfba6219f6083c952a62fb030e6a8767d3",
+            "size": 191
+        },
+        {
+            "path": "Resources/Dictionary/decibels (dB).md",
+            "hash": "ea47001904cf17aab7be25ca0b2015a7eecb3c4fe799476db47e93cf9197a420",
+            "size": 775
+        },
+        {
+            "path": "Resources/Dictionary/deterministic function.md",
+            "hash": "2dfdd84e02e16359301b7482433642008823e7743e81c359a78bdbc8b5536804",
+            "size": 189
+        },
+        {
+            "path": "Resources/Dictionary/disk.md",
+            "hash": "601ff71a097c23666c4440cd595fd99751491e4de3edb023449d30adabff3430",
+            "size": 179
+        },
+        {
+            "path": "Resources/Dictionary/distribution transformers.md",
+            "hash": "764f93e14f645da0990dd6e26fd73fec39091a23a59ae2298d63a3403321ecf0",
+            "size": 172
+        },
+        {
+            "path": "Resources/Dictionary/diversity factor.md",
+            "hash": "93f035e4ce0d75c268a1deae05f624d8e09024d76852afc762be1d4eca5db931",
+            "size": 187
+        },
+        {
+            "path": "Resources/Dictionary/doubling effect.md",
+            "hash": "50a48d833f2f89243b6aa048e475b06e5ccb37b1731a1942c344ddc58cbecd61",
+            "size": 402
+        },
+        {
+            "path": "Resources/Dictionary/downstream.md",
+            "hash": "1a67ddd2026204cf24f081551c3220a18623f8d23db3b27fc221ce1d5574ec99",
+            "size": 336
+        },
+        {
+            "path": "Resources/Dictionary/drooping.md",
+            "hash": "9ebee6150e94cfb7a84dc9d00d42b6940e14aaf2d7e5c9538bd72c5b689643d8",
+            "size": 184
+        },
+        {
             "path": "Resources/Dictionary/holomorphic function.md",
             "hash": "cc53e6cb0499302cf8ed3a1111490c018c303f687591db7ab4d32047c5f5ab1f",
             "size": 166
@@ -3995,8 +4095,8 @@
         }
     ],
     "statistics": {
-        "files": 798,
+        "files": 818,
         "directories": 74,
-        "bytes": 81965951
+        "bytes": 81971597
     }
 }
