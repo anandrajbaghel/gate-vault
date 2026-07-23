@@ -1909,6 +1909,31 @@
             "size": 4456
         },
         {
+            "path": "5. Electrical Machines/1. Fundamentals of Electromechanical Energy Conversion/Concept of Co-energy.md",
+            "hash": "8efb919cdaee89701f1ce24334d735b3fb933f42ef032d07b6cd2d7e6f3b120b",
+            "size": 5066
+        },
+        {
+            "path": "5. Electrical Machines/1. Fundamentals of Electromechanical Energy Conversion/Energy Balance in Electromechanical Systems.md",
+            "hash": "4387ce9e1b51f1005845703a981b6ff483617413c870f4601f3f2ef80155ebf2",
+            "size": 6294
+        },
+        {
+            "path": "5. Electrical Machines/1. Fundamentals of Electromechanical Energy Conversion/Force and Torque in Magnetic Field Systems.md",
+            "hash": "df9849984580a7f67b3a099a84c1ef2804f2d58df280bfbf4bc03f9dcb47205f",
+            "size": 6258
+        },
+        {
+            "path": "5. Electrical Machines/1. Fundamentals of Electromechanical Energy Conversion/Generated EMF and Torque Equations.md",
+            "hash": "8c5d9a585c404b772033bb8be906b5db19ac4cd2a3bfe3fbdcaca55d86b7b917",
+            "size": 5685
+        },
+        {
+            "path": "5. Electrical Machines/1. Fundamentals of Electromechanical Energy Conversion/Singly and Doubly Excited Systems.md",
+            "hash": "c38c87e793bc142178da176bb9586161cd02da79b01ca60c75173b0fd5ad9da5",
+            "size": 5982
+        },
+        {
             "path": "5. Electrical Machines/Electrical Machines.md",
             "hash": "2f5e795fe5ee8ac984905e2f05463b3f3dd0f0c3292898ce7d9de035d0e95f7c",
             "size": 6358
@@ -4870,8 +4895,8 @@
         }
     ],
     "statistics": {
-        "files": 973,
-        "directories": 99,
-        "bytes": 82419875
+        "files": 978,
+        "directories": 100,
+        "bytes": 82449160
     }
 }
