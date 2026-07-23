@@ -5624,6 +5624,51 @@
             "size": 30
         },
         {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2009.md",
+            "hash": "dd19c92b7f21117143df10ee5198ee67726f3b9633aac5dc72bc687ded60c8db",
+            "size": 16
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2009.png",
+            "hash": "50ac676071a78d62bf8408a171a495d618a99571c4ff04127f98a0d5b9c21286",
+            "size": 98977
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2010.md",
+            "hash": "293a83c219072267ad35e6ce39dfb5dd8ea7118ee5e6c3c25aba9cd048832207",
+            "size": 20
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2010.png",
+            "hash": "33ce2b0ba12d1303d6e9ba00f94c234038a43fb1535b72b6b2b5bed61c75aa51",
+            "size": 68199
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2022.pdf",
+            "hash": "b5ba905340a94a049e2b2023596590d2b2341e5aed2072b92bec4ca1870f5261",
+            "size": 555615
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2023.pdf",
+            "hash": "0de485479bd3aa968afa26124f37ebce15f1a3945c175fce20e6353c4e89eb0a",
+            "size": 103906
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2024.pdf",
+            "hash": "662beb396792ccb5906fee42f4aef83fe8b3535915c5c5e43a1abd8d084bd247",
+            "size": 312704
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2025.pdf",
+            "hash": "c1c1e0e1cff77344827809b3838893095116e3b120f0df17faa679ac89a2aedc",
+            "size": 208982
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/ak_ee_2026.pdf",
+            "hash": "355c6a0e07c59f99f181775c8efcc2d0604f420f41d1056a77170c49061d224c",
+            "size": 520210
+        },
+        {
             "path": "Resources/Question Paper/GATE/MD/README.md",
             "hash": "85e0a0d7d02f354898971e341ec0252a8221e6ac78b8ecee3d382bf72dc15d49",
             "size": 47
@@ -5915,8 +5960,8 @@
         }
     ],
     "statistics": {
-        "files": 1182,
+        "files": 1191,
         "directories": 140,
-        "bytes": 83672257
+        "bytes": 85540886
     }
 }
