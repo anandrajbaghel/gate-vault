@@ -1824,9 +1824,89 @@
             "size": 3044
         },
         {
+            "path": "4. Signal & Systems/8. Sampling/1. Sampling and Reconstruction/Effect of Undersampling (Aliasing).md",
+            "hash": "d1d15b2b23ea15d5b683d27f3821a6aebc4c993689763f2fe0e08f7fb9798d20",
+            "size": 4586
+        },
+        {
+            "path": "4. Signal & Systems/8. Sampling/1. Sampling and Reconstruction/Reconstruction from Samples using Interpolation.md",
+            "hash": "9cdf3124120c79918383ea16a9c77575c5b5920cef1b75b0d5f48a64d91f8ea2",
+            "size": 5128
+        },
+        {
+            "path": "4. Signal & Systems/8. Sampling/1. Sampling and Reconstruction/Representation of a CT signal by its Samples.md",
+            "hash": "a0fcaa3e7908ec4ca8583dfd2fc198e0418e46c8ee9d0dd02bed5b3e1952d451",
+            "size": 4991
+        },
+        {
+            "path": "4. Signal & Systems/8. Sampling/1. Sampling and Reconstruction/The Sampling Theorem (Nyquist-Shannon Theorem).md",
+            "hash": "5b195d90eceaae28575f223069cc5800a535053ce0684c170f4ca92a5fca936d",
+            "size": 5463
+        },
+        {
+            "path": "4. Signal & Systems/8. Sampling/1. Sampling and Reconstruction/Zero-Order Hold (ZOH).md",
+            "hash": "ecf83ef469d2ede061abf6ecb1181ed3064b0c9c5e3762df220d936c6a457cf3",
+            "size": 4655
+        },
+        {
             "path": "4. Signal & Systems/Signals & Systems.md",
             "hash": "8c7fbff439ccc6bb1fd69528706042aaa4eb5c5b0223adb5ddda0140880720cc",
             "size": 6215
+        },
+        {
+            "path": "4. Signal & Systems/archive/1. Deprecated/Complex Sinusoid.md",
+            "hash": "c66a70b33aca59a604b1c62cadb0ecbb0bc6ed12d6c6a0e0049e4d8ac8e8f5a8",
+            "size": 4215
+        },
+        {
+            "path": "4. Signal & Systems/archive/1. Deprecated/Frequency Domain Transfer Function.md",
+            "hash": "514adfe7cf5e7bd579849f53997f32340d5498664138da9eccc7750c01c4cd01",
+            "size": 3168
+        },
+        {
+            "path": "4. Signal & Systems/archive/1. Deprecated/Frequency Response.md",
+            "hash": "e6e476abf997816e94e4bad9aaee44a69b2f1313920d25bbdcba14cbe2fc39b0",
+            "size": 5256
+        },
+        {
+            "path": "4. Signal & Systems/archive/1. Deprecated/System Analysis.md",
+            "hash": "4709d02382e0f5294ab1c8835e5a1efd050dc0cf6e7b5e98c4e42718b3914ff0",
+            "size": 3495
+        },
+        {
+            "path": "4. Signal & Systems/archive/2. Extra Topics/All-Pass Filter.md",
+            "hash": "e566bc0bce052465b3c90dc35443db07567acdf9321d7d1d5f5a15180555a591",
+            "size": 4915
+        },
+        {
+            "path": "4. Signal & Systems/archive/2. Extra Topics/All-Pass Systems.md",
+            "hash": "2820804dd597ecb0531497338a67705efae85f9b4e2c12cc0c21e76caeb8d31f",
+            "size": 6713
+        },
+        {
+            "path": "4. Signal & Systems/archive/2. Extra Topics/Decimation.md",
+            "hash": "2140d8a83f99c88447956c973805395ef2f242da3255ab54d51c72d6e003df68",
+            "size": 3942
+        },
+        {
+            "path": "4. Signal & Systems/archive/2. Extra Topics/Eigen-signals of LTI Systems.md",
+            "hash": "409f2e8d715975d406a724a5f9a3cde67fdfb2875847ee1d422b258bd24228f2",
+            "size": 5478
+        },
+        {
+            "path": "4. Signal & Systems/archive/2. Extra Topics/Relation between DTFT and DFS.md",
+            "hash": "e09185828a2c1c0dccd5805fbedad616eaa3f67b2a02a503de481a5a08369e96",
+            "size": 4067
+        },
+        {
+            "path": "4. Signal & Systems/archive/2. Extra Topics/Signals visualization.md",
+            "hash": "a85d18d6b83e6bc527fdb37f13ad90a26e3a7fdbec2ffdc98db64999b136fa61",
+            "size": 1316
+        },
+        {
+            "path": "4. Signal & Systems/archive/3. Reference Tables/Z-Transform Table.md",
+            "hash": "d1f81271085ad89070dfb3ef373265497a46ed27227805f022a27b2365c237b5",
+            "size": 4456
         },
         {
             "path": "5. Electrical Machines/Electrical Machines.md",
@@ -4790,8 +4870,8 @@
         }
     ],
     "statistics": {
-        "files": 957,
-        "directories": 95,
-        "bytes": 82348031
+        "files": 973,
+        "directories": 99,
+        "bytes": 82419875
     }
 }
