@@ -5509,6 +5509,126 @@
             "size": 6436
         },
         {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/Schema.md",
+            "hash": "4fd4cb4f002fb9cde37b26be28535851d5bb7487d45f9b86607df06c1e06c289",
+            "size": 6543
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2010.json",
+            "hash": "eae69840a461c5e8c079333842788dbb5ffcfc31900936e7eebbdd55c0dbe52d",
+            "size": 5567
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2011.json",
+            "hash": "2bc7e85d550b26450af753bc3e195d6aad7ec4b9f06640f5bb1ec23e555431ca",
+            "size": 5523
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2012.json",
+            "hash": "cdd1fe1870eee3472613193ca115561eb1e03ae6da67a7b0462a329e268734f1",
+            "size": 5479
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2013.json",
+            "hash": "f437a396f7b003115e9c0972f9101b922c7f0f5a9480d83226312972193b0072",
+            "size": 5501
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2014(1).json",
+            "hash": "9c25e9b04972a2119be50541d9d42839a9594d75f3409783d0923cc8c816cdbf",
+            "size": 6124
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2014(2).json",
+            "hash": "71802c374434c1d2187ebc64ddb8a13cc8523825b42499c9c8390d0d170bac9d",
+            "size": 6191
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2014(3).json",
+            "hash": "b25353d33a0ce24677f10bb393a7c259b586fd79e56034a3b8d60b33e3fba7e2",
+            "size": 6039
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2015(1).json",
+            "hash": "00e875337b5e6638ac174f9cfde1f4f87a55a49a8780db98377d094cfa9894f9",
+            "size": 6188
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2015(2).json",
+            "hash": "c5cd8b8a88f98b326a13525b247d4b464344b16bd4f3bb4df4b8be3b2b1d650a",
+            "size": 6168
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2016(1).json",
+            "hash": "cb68a4200ae8b63d51ee3b4941db3a9d63adc74fadc8dd4a0bf777f3a6cb2ebb",
+            "size": 6295
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2016(2).json",
+            "hash": "5fede97931b600575a43818950b8f763a28d8b5108f1a6b410b016f9c1d0b746",
+            "size": 6391
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2017(1).json",
+            "hash": "66274ab74057bce1058fab1eb89e001b97141eb15ddee142421496ea4b27f540",
+            "size": 6169
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2017(2).json",
+            "hash": "b1e87d81b9f76ece08f01a4c4f2017a2d9f2375f7351bd0e5bb621351388dea1",
+            "size": 5824
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2018.json",
+            "hash": "5e1eee5cfde069a790b1aefbdfe7fd28673e09d05a3fb949f649977eb353856f",
+            "size": 6264
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2019.json",
+            "hash": "66d0ae28447d4988cd4dec411264ae1f72d61536b3c09d99c23c16cddf150203",
+            "size": 6298
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2020.json",
+            "hash": "d6d73f7a4d367e066bc9f69454195ec41dfd1237c4c0e811a1fa709906788078",
+            "size": 6094
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2021.json",
+            "hash": "052d5fc569c47439e22479cdb05a6c389cbb890a4151ac787ce92a8d6179956c",
+            "size": 6447
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2022.json",
+            "hash": "6f958adcf5d0378d0810fd42cd5389cc567934323fd956067860e216e609b56e",
+            "size": 6706
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2023.json",
+            "hash": "75860e0834a9be8fb705cbd3792c4e7a1632a3897dde9e59f4d80e72f7d4759e",
+            "size": 7165
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2024.json",
+            "hash": "12414fe2fd0bf1fdc8d946b85eb0996191c67dddc1d591a35b116139917f4556",
+            "size": 6362
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2025.json",
+            "hash": "bed8d3c9f7e38d4f6b4f357744546dddd8174268dbb8910753327fa318c8aebc",
+            "size": 6692
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2026.json",
+            "hash": "0c923af301fb4f7ec86d05a06227c020a4d947aea64bb780bdae46bb35873c06",
+            "size": 6064
+        },
+        {
+            "path": "Resources/Question Paper/GATE/Answer Key/JSON/💀 DO NOT EDIT.md",
+            "hash": "6ac96525a0600fb45f3395259f2a1bc18344202fdcfc4b281df13dbb5195dae8",
+            "size": 150
+        },
+        {
             "path": "Resources/Question Paper/GATE/Answer Key/README.md",
             "hash": "b4f60cbfa06c0c58145ec115a99afff8b8611af6962667a551e9f0cb0d7d9cd7",
             "size": 30
@@ -5975,8 +6095,8 @@
         }
     ],
     "statistics": {
-        "files": 1194,
+        "files": 1218,
         "directories": 145,
-        "bytes": 85565976
+        "bytes": 85708220
     }
 }
