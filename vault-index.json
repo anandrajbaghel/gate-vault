@@ -5789,11 +5789,6 @@
             "size": 48182
         },
         {
-            "path": "Resources/Question Paper/GATE/MD/ee_2007.md",
-            "hash": "08839defa5c847c8bcd23ceb9547dc78dcf7d6d17078e974178582eba1807686",
-            "size": 36
-        },
-        {
             "path": "Resources/Question Paper/GATE/MD/ee_2008.md",
             "hash": "91e8bec383e11c2c0a3f17eb79c3050c882cd90e0123fdddacacb44b7e6cc7e9",
             "size": 36
@@ -6075,8 +6070,8 @@
         }
     ],
     "statistics": {
-        "files": 1214,
+        "files": 1213,
         "directories": 141,
-        "bytes": 86439450
+        "bytes": 86439414
     }
 }
