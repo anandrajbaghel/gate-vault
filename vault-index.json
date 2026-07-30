@@ -5509,11 +5509,6 @@
             "size": 6446
         },
         {
-            "path": "Resources/Question Paper/GATE/Answer Key/JSON/Schema.md",
-            "hash": "4fd4cb4f002fb9cde37b26be28535851d5bb7487d45f9b86607df06c1e06c289",
-            "size": 6543
-        },
-        {
             "path": "Resources/Question Paper/GATE/Answer Key/JSON/ak_2010.json",
             "hash": "eae69840a461c5e8c079333842788dbb5ffcfc31900936e7eebbdd55c0dbe52d",
             "size": 5567
@@ -6095,8 +6090,8 @@
         }
     ],
     "statistics": {
-        "files": 1218,
+        "files": 1217,
         "directories": 145,
-        "bytes": 85708230
+        "bytes": 85701687
     }
 }
