@@ -5559,11 +5559,6 @@
             "size": 148
         },
         {
-            "path": "Resources/Question Paper/GATE/MD/Subject/onlyQ - Mathematics.md",
-            "hash": "bfde256e868c5d7b4de60edff67ebfa6bda700b0ab0b69b247f5aba09bbe81ad",
-            "size": 5194
-        },
-        {
             "path": "Resources/Question Paper/GATE/MD/Year/README.md",
             "hash": "9fa9687d6fbd766f484575ccf89846b894d8f97396f590fe35bd5f2b1c53f1b3",
             "size": 247
@@ -5687,6 +5682,11 @@
             "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/README.md",
             "hash": "a50323aac93f3cb8a1a970a49f2ca4c78c2ac2b4a2458a11d8781d5faff7fd03",
             "size": 314
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Mathematics.md",
+            "hash": "bfde256e868c5d7b4de60edff67ebfa6bda700b0ab0b69b247f5aba09bbe81ad",
+            "size": 5194
         },
         {
             "path": "Resources/Question Paper/GATE/MD/onlyQ/Year/README.md",
@@ -5971,7 +5971,7 @@
     ],
     "statistics": {
         "files": 1193,
-        "directories": 145,
+        "directories": 144,
         "bytes": 85559540
     }
 }
