@@ -1,3 +1,5 @@
+# Schema
+
 ### GATE Vault Answer Key Schema (Version 1)
 
 > **Status:** Stable
