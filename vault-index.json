@@ -5669,6 +5669,11 @@
             "size": 520210
         },
         {
+            "path": "Resources/Question Paper/GATE/MD/Year/README.md",
+            "hash": "9fa9687d6fbd766f484575ccf89846b894d8f97396f590fe35bd5f2b1c53f1b3",
+            "size": 247
+        },
+        {
             "path": "Resources/Question Paper/GATE/PDF/COPYRIGHT.md",
             "hash": "ae528f20af935f52927ed0762c5a5b893a45385358dfdb8ae5f68f1c0789ba7f",
             "size": 1177
@@ -5830,8 +5835,8 @@
         }
     ],
     "statistics": {
-        "files": 1165,
-        "directories": 139,
-        "bytes": 84652770
+        "files": 1166,
+        "directories": 140,
+        "bytes": 84653017
     }
 }
