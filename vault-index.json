@@ -5800,8 +5800,8 @@
         },
         {
             "path": "Resources/Question Paper/GATE/MD/onlyQ/README.md",
-            "hash": "19e70bc7d93a1e27220ef9091d3930d57c8abf65dc90048a1456766ab25bcb56",
-            "size": 56
+            "hash": "9609ccf380f369efc93576ed8162e457b83a7a2aab3033ecd7f017df98c7d20e",
+            "size": 94
         },
         {
             "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/README.md",
@@ -6097,6 +6097,6 @@
     "statistics": {
         "files": 1218,
         "directories": 145,
-        "bytes": 85701743
+        "bytes": 85701781
     }
 }
