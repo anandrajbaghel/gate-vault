@@ -5504,121 +5504,6 @@
             "size": 59484
         },
         {
-            "path": "Resources/OnlyQ/README.md",
-            "hash": "15db755843eefec7fba9e0df8b357d00c5c805f11cc70ca91da2effff5b71753",
-            "size": 75
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2010.md",
-            "hash": "71b9737d148ac3e907eaff0a44aa2e52316e0763ef0397d53198dbae71929a0a",
-            "size": 1590
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2011.md",
-            "hash": "cd93a39ed0096baa3746f0e3798a07e216f8e3bcef8edcb738d5c6d6a34d9a74",
-            "size": 1590
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2012.md",
-            "hash": "375c967b13b0be323036516364579683c4f2b6280e00cf340274d6e66dd5481d",
-            "size": 1590
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2013.md",
-            "hash": "376bd0f9efeeffed4c55ab0f9a02e55a2b34d9a84d995848afdc42fcee246353",
-            "size": 1590
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2014(1).md",
-            "hash": "76970253781e099bcd30c507c291c63f0f87057bc7eee8cbd6b6cf9fdbf0a056",
-            "size": 1783
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2014(2).md",
-            "hash": "dbd2227ee9804cad50d52837ff9b9fed4a42a053a0eb76eff55da7c5c9897086",
-            "size": 1783
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2014(3).md",
-            "hash": "dee7ad137416819ad07d50d17714ca40e9868f948817af3a9e947a151f41a372",
-            "size": 1783
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2015(1).md",
-            "hash": "e3559cd42b3a35124169239b947471c58995703a50a14019da9643c9e2d51e30",
-            "size": 1792
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2015(2).md",
-            "hash": "36ce96ea1af90b21dbdcc25d60d99ff0d4beafdcc3076605e84e3d0ec6fcbc2e",
-            "size": 1792
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2016(1).md",
-            "hash": "3d5755a6debfb34c0da472a4a910ea02720edb69ee71ada4712ecbc6cedcc4fb",
-            "size": 1783
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2016(2).md",
-            "hash": "ca3cfcd2a842d0c699dabaa2385196925b2cae0124f1e620cb66de58eacab4f3",
-            "size": 1783
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2017(1).md",
-            "hash": "238a7c5803df58eb13a6ea78f6346dbaccf39d60de2a25be435efe986fb78840",
-            "size": 1793
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2017(2).md",
-            "hash": "f52102f6fc4bc67281f2ff459a749030877ee7b4451ce40ec9aa9283ada14abc",
-            "size": 1793
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2018.md",
-            "hash": "66110009af9602900e23c81405cbb81b092dde993be4ae4849a70c8751175313",
-            "size": 1580
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2019.md",
-            "hash": "50acd6c8368b30f583f683357b431b87e3e426baaf705041e0347d2afee060dd",
-            "size": 1580
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2020.md",
-            "hash": "27597836401328bdaa7704eee359d74765907ded4105c095bd6f735f55f1e2ed",
-            "size": 1580
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2021.md",
-            "hash": "d88abf8f3f1d6749682a89f149f915f31ad00ad67ed833590940899eb8befdeb",
-            "size": 1580
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2022.md",
-            "hash": "3f8472cc88954cf71d612eb0b079e014d0415c3c014450143278aa0eb46739c3",
-            "size": 1589
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2023.md",
-            "hash": "c540e664c71887e8c103ba7ace926a0873d2cc1af17da39dfe3cc28a551d0134",
-            "size": 1589
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2024.md",
-            "hash": "ff2c01c548598ffda8bc6c25ccda3b0a9a1f4e56474b376229944e15040cb4ea",
-            "size": 1589
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2025.md",
-            "hash": "979d1f80f8efb4bda87263cd1d4a7937ab6c9e82b509903e69624d3f18bc80d1",
-            "size": 1589
-        },
-        {
-            "path": "Resources/OnlyQ/onlyQ_ee_2026.md",
-            "hash": "32b1a4cc82f48352210805afc30e05fcd399de3bd2e6c2ed40936d219a5ac644",
-            "size": 1589
-        },
-        {
             "path": "Resources/Question Paper/GATE/Answer Key/README.md",
             "hash": "b4f60cbfa06c0c58145ec115a99afff8b8611af6962667a551e9f0cb0d7d9cd7",
             "size": 30
@@ -5955,8 +5840,8 @@
         }
     ],
     "statistics": {
-        "files": 1190,
-        "directories": 142,
-        "bytes": 84692439
+        "files": 1167,
+        "directories": 141,
+        "bytes": 84655654
     }
 }
