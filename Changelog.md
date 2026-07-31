@@ -17,6 +17,17 @@ All notable changes to the GATE Vault are documented in this file.
 </p>
 
 ---
+### v0.1.5
+
+> [!info] What's New in v0.1.5
+> - All questions are now complete
+> - Added JSON format answer keys for `GATE Simulator` Plugin
+
+#### Issues
+
+- Notes images may not be available due to copyright issues.
+
+---
 ### v0.1.4
 
 > [!info] What's New in v0.1.4
