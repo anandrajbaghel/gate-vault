@@ -2965,8 +2965,8 @@
         },
         {
             "path": "Changelog.md",
-            "hash": "dedd8e925b5cbccfc02a110ff0af287d67d35536c642caf7dab37caa503b3d67",
-            "size": 3425
+            "hash": "e544529160264dbdae1abe9ad53b79c95776582b644f9c4ad977caf59b8c3bef",
+            "size": 3645
         },
         {
             "path": "Resources/Dictionary/admittance.md",
@@ -7552,6 +7552,6 @@
     "statistics": {
         "files": 1509,
         "directories": 146,
-        "bytes": 95428811
+        "bytes": 95429031
     }
 }
