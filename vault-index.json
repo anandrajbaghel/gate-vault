@@ -4744,6 +4744,11 @@
             "size": 7383
         },
         {
+            "path": "Resources/Image/Question Paper/gate-2014-ee-set3-q53-c.png",
+            "hash": "4c1a3f9b6c4952af6dfcf8e161e93638a355e15cb1448a2d3a7e4ada6813b241",
+            "size": 11192
+        },
+        {
             "path": "Resources/Image/Question Paper/gate-2014-ee-set3-q53-d.png",
             "hash": "e44416875081c50da0848b62653ea42248a7137405240249ea8c83bcc33386c4",
             "size": 6430
@@ -5595,8 +5600,8 @@
         }
     ],
     "statistics": {
-        "files": 1118,
+        "files": 1119,
         "directories": 146,
-        "bytes": 76141074
+        "bytes": 76152266
     }
 }
