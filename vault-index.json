@@ -1479,6 +1479,11 @@
             "size": 4617
         },
         {
+            "path": "3. Electromagnetic Fields/Electromagnetic Fields.md",
+            "hash": "c505223cfe56bc1faaed42ac950fe4702d4dce004b18f360a0ea9f4f79b71ad8",
+            "size": 3418
+        },
+        {
             "path": "4. Signal & Systems/1. Signals and Systems - Fundamentals/1. Continuous-Time (CT) and Discrete-Time (DT) Signals/Energy and Power Signals.md",
             "hash": "5f3ccf0e3cec59dce0fe96442b2e4ecfc09e79a1c8bbfdb07262b954ac43ac62",
             "size": 5161
@@ -7550,8 +7555,8 @@
         }
     ],
     "statistics": {
-        "files": 1509,
-        "directories": 146,
-        "bytes": 95429031
+        "files": 1510,
+        "directories": 147,
+        "bytes": 95432449
     }
 }
