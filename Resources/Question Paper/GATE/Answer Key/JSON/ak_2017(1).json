@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "year": 2017,
+  "subject": "EE",
+  "set": 1,
+  "questions": {
+    "q1": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 1
+    },
+    "q2": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "q3": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 1
+    },
+    "q4": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 1
+    },
+    "q5": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "q6": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "q7": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "q8": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 1
+    },
+    "q9": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 1
+    },
+    "q10": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 1
+    },
+    "q11": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "q12": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 1
+    },
+    "q13": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 1
+    },
+    "q14": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 1
+    },
+    "q15": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "q16": {
+      "type": "MTA",
+      "marks": 1
+    },
+    "q17": {
+      "type": "NAT",
+      "ranges": [
+        [0.99, 1.01]
+      ],
+      "marks": 1
+    },
+    "q18": {
+      "type": "NAT",
+      "ranges": [
+        [248, 252]
+      ],
+      "marks": 1
+    },
+    "q19": {
+      "type": "NAT",
+      "ranges": [
+        [2.9, 3.1]
+      ],
+      "marks": 1
+    },
+    "q20": {
+      "type": "NAT",
+      "ranges": [
+        [835, 842]
+      ],
+      "marks": 1
+    },
+    "q21": {
+      "type": "NAT",
+      "ranges": [
+        [14, 14]
+      ],
+      "marks": 1
+    },
+    "q22": {
+      "type": "NAT",
+      "ranges": [
+        [1.01, 1.06]
+      ],
+      "marks": 1
+    },
+    "q23": {
+      "type": "NAT",
+      "ranges": [
+        [4, 4.1]
+      ],
+      "marks": 1
+    },
+    "q24": {
+      "type": "NAT",
+      "ranges": [
+        [196, 200]
+      ],
+      "marks": 1
+    },
+    "q25": {
+      "type": "NAT",
+      "ranges": [
+        [8.5, 9.5]
+      ],
+      "marks": 1
+    },
+    "q26": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "q27": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 2
+    },
+    "q28": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "q29": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 2
+    },
+    "q30": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "q31": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 2
+    },
+    "q32": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 2
+    },
+    "q33": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 2
+    },
+    "q34": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 2
+    },
+    "q35": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 2
+    },
+    "q36": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 2
+    },
+    "q37": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "q38": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 2
+    },
+    "q39": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "q40": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 2
+    },
+    "q41": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 2
+    },
+    "q42": {
+      "type": "NAT",
+      "ranges": [
+        [10, 10]
+      ],
+      "marks": 2
+    },
+    "q43": {
+      "type": "NAT",
+      "ranges": [
+        [3, 3.1]
+      ],
+      "marks": 2
+    },
+    "q44": {
+      "type": "NAT",
+      "ranges": [
+        [0.65, 0.75]
+      ],
+      "marks": 2
+    },
+    "q45": {
+      "type": "NAT",
+      "ranges": [
+        [145, 155]
+      ],
+      "marks": 2
+    },
+    "q46": {
+      "type": "NAT",
+      "ranges": [
+        [0.7, 0.79]
+      ],
+      "marks": 2
+    },
+    "q47": {
+      "type": "NAT",
+      "ranges": [
+        [9.5, 12]
+      ],
+      "marks": 2
+    },
+    "q48": {
+      "type": "NAT",
+      "ranges": [
+        [620, 630]
+      ],
+      "marks": 2
+    },
+    "q49": {
+      "type": "NAT",
+      "ranges": [
+        [548, 552]
+      ],
+      "marks": 2
+    },
+    "q50": {
+      "type": "NAT",
+      "ranges": [
+        [0.550, 0.556]
+      ],
+      "marks": 2
+    },
+    "q51": {
+      "type": "NAT",
+      "ranges": [
+        [0.09, 0.10]
+      ],
+      "marks": 2
+    },
+    "q52": {
+      "type": "NAT",
+      "ranges": [
+        [170, 174]
+      ],
+      "marks": 2
+    },
+    "q53": {
+      "type": "NAT",
+      "ranges": [
+        [220, 230]
+      ],
+      "marks": 2
+    },
+    "q54": {
+      "type": "NAT",
+      "ranges": [
+        [0.1, 0.1]
+      ],
+      "marks": 2
+    },
+    "q55": {
+      "type": "NAT",
+      "ranges": [
+        [1.20, 1.24]
+      ],
+      "marks": 2
+    },
+    "qga56": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 1
+    },
+    "qga57": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "qga58": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 1
+    },
+    "qga59": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 1
+    },
+    "qga60": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 1
+    },
+    "qga61": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "qga62": {
+      "type": "MCQ",
+      "answer": "A",
+      "marks": 2
+    },
+    "qga63": {
+      "type": "MCQ",
+      "answer": "B",
+      "marks": 2
+    },
+    "qga64": {
+      "type": "MCQ",
+      "answer": "D",
+      "marks": 2
+    },
+    "qga65": {
+      "type": "MCQ",
+      "answer": "C",
+      "marks": 2
+    }
+  }
+}
