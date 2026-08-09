@@ -3749,6 +3749,141 @@
             "size": 1297011
         },
         {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/BJT Biasing and Thermal Stability.md",
+            "hash": "179f4b415112d9e0b785ee2fcf4669a41e3bf7ac846580220a98e1f4bd9d1159",
+            "size": 5603
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/BJT Configurations.md",
+            "hash": "25768cc1e71f296c4fb1f4c2565492a070b966e0cd55d78aa6e5ea2591162898",
+            "size": 5289
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/Bipolar Junction Transistor (BJT).md",
+            "hash": "c8070b180ebf8b1764be705d58f7feddfb1bf33c2c978584925af7b11ef3c6a1",
+            "size": 7909
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/Clipper and Clamper Circuits.md",
+            "hash": "bd77bec350c687a30a352fe7949f0a0dd60af2356e742bd9baa7ef412e834800",
+            "size": 7308
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/Junction Field Effect Transistor (JFET).md",
+            "hash": "77ec04e57a64d47dbda2431e3124ffb81389db6248c0ec0733f8dd8a00ab4a7e",
+            "size": 5393
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/MOSFET.md",
+            "hash": "6dd1620bf4a18add324b446bf0c5fb3de9230ccad4be9be89839b06a9dee65b9",
+            "size": 5106
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/P-N Junction Diode.md",
+            "hash": "cb658dbe4893064bcac18455880e6c359fb0942874c038c6a381acf1599e9c3e",
+            "size": 7107
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/Rectifier Circuits.md",
+            "hash": "a32a82383e14380cbd95dddbef90bdc48c81cfe4f9a2f1958c92a743d5f3d838",
+            "size": 6305
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/Rectifier Smoothing Filters.md",
+            "hash": "d8254bbaabe9c91a0d60f9f46d513d657f61e7508c5fa3fb74fdabf07ee996cd",
+            "size": 6246
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/Zener Diode.md",
+            "hash": "a103d8f129e4c4daab439154588f7cd63559f5df41836466eb39679df9cb1778",
+            "size": 5732
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Differential Amplifiers.md",
+            "hash": "a1ee16c401a944c542a6a2b66a8dd7ef139423552867b32cc6383b471a6a3809",
+            "size": 4078
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Feedback in Amplifiers.md",
+            "hash": "7cca81743485bd6ae0a521631914d065b4c390995e562d18178cb34186fd2060",
+            "size": 6121
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Frequency Response of Amplifiers (Low-frequency and High-frequency analysis).md",
+            "hash": "37e1bd70c2d1c12713778685edbc3d531b0004adbb3c8294c43fb54c83c4eeec",
+            "size": 5969
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Multi-stage Amplifiers.md",
+            "hash": "8aba76c745b9d2848413a53f223c1536c03f09adf3b66026b447fb860604d17b",
+            "size": 4864
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Power Amplifiers (Class A, B, AB, C).md",
+            "hash": "b831c56bbcfbd1602a6f33d502a99ffd1cc8c1792d653b0e944aeec43dd34518",
+            "size": 5630
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Small Signal Analysis of BJT Amplifiers.md",
+            "hash": "8fc94f8dbcc024a54dfebafd05fc557f905db602b0068cd16de85a2e30ee3d3f",
+            "size": 5602
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/2. Amplifiers/Small Signal Analysis of JFET or MOSFET Amplifiers (gm-rd model).md",
+            "hash": "c05369bb520bfb3a5c553a6f8c7fd044a12d26ee4bbf7da901f15d90daf55690",
+            "size": 5538
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Active Filters (First and Second Order).md",
+            "hash": "bebb110543195da4fc1070224d67ece8910fa08e3d5815fb8228a84f42f507d3",
+            "size": 4835
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Comparators and Schmitt Triggers.md",
+            "hash": "665fe3d9b03a0eb26d3efdbe9218791f0f1d0312c2d47a5f8e40a6d1a962edb6",
+            "size": 4773
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Ideal Op-Amp.md",
+            "hash": "b5b5c188ba34f1162e8f0a36df86bab04e1650404a6c8240fd7401814f99ae42",
+            "size": 4289
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Instrumentation Amplifier.md",
+            "hash": "4eb305fdf44de98b293b7643206cc059fc567669bc8707f26bf0372606baa789",
+            "size": 4643
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Op-Amp Applications - Inverting and Non-inverting Amplifiers.md",
+            "hash": "874683dbbfdab68bb7fd2865b770dbcce90978b8f5428f113cbe16863d149b8b",
+            "size": 4622
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Op-Amp Circuits.md",
+            "hash": "1c3d18d02579741db1579e440583ce1d2c9e1179967818ab815793b2533f5d68",
+            "size": 5499
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Practical Op-Amp Characteristics.md",
+            "hash": "ef89265870f98fecf89bcfc7c9bea6268cd7a71d951e377a01ba8d8cd7d19fa8",
+            "size": 5240
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Waveform Generation - Multivibrators (Astable, Monostable).md",
+            "hash": "506ff27614f838cf4a6f041c9857d0e83afd2f96a9a183ef8cbd191fa6f117ad",
+            "size": 5340
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/3. Operational Amplifiers (Op-Amps)/Waveform Generation - Sinusoidal Oscillators (RC Phase Shift, Wien Bridge).md",
+            "hash": "6e9714fbd04f153696a616a1b00c0586c0721fa4b37c932b2c7734bbb2b4d6fa",
+            "size": 4383
+        },
+        {
+            "path": "9. Analog & Digital Electronics/1. Analog Electronics/Analog Electronics.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
             "path": "9. Analog & Digital Electronics/Analog & Digital Electronics.md",
             "hash": "798171f126cd862f282d8b2fcd31d650cd002c31cb82b87ab024604fe3b6ba60",
             "size": 2695
@@ -8345,8 +8480,8 @@
         }
     ],
     "statistics": {
-        "files": 1668,
-        "directories": 182,
-        "bytes": 97553468
+        "files": 1695,
+        "directories": 186,
+        "bytes": 97696892
     }
 }
