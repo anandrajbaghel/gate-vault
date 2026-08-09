@@ -1,0 +1,29 @@
+properties:
+  file.name:
+    displayName: .md
+  note.original:
+    displayName: original
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Resources/Question Paper/GATE/MD/year")
+    order:
+      - file.name
+      - attempted
+      - original
+      - answer key
+      - institute
+    sort:
+      - property: original
+        direction: DESC
+      - property: attempted
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 111
+      note.attempted: 115
+      note.original: 137
+      note.answer key: 155

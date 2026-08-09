@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("2. Electric Circuits")
+    order:
+      - confidence
+      - file.name
+      - file.folder
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: confidence
+        direction: DESC
+    columnSize:
+      note.confidence: 47

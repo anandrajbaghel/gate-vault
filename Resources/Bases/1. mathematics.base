@@ -1,0 +1,19 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("1. Mathematics")
+    order:
+      - file.size
+      - file.name
+      - file.folder
+    sort:
+      - property: file.folder
+        direction: DESC
+      - property: file.size
+        direction: ASC
+    columnSize:
+      file.size: 70
+      file.name: 386
+      file.folder: 535

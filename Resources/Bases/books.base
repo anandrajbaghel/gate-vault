@@ -1,0 +1,14 @@
+properties:
+  file.name:
+    displayName: book name
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("resources/books")
+    order:
+      - file.name
+    sort:
+      - property: author
+        direction: DESC

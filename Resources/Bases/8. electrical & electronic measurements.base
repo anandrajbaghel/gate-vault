@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("8. Electrical and Electronic Measurements")
+    order:
+      - file.name
+      - file.folder

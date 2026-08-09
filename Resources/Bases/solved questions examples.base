@@ -1,0 +1,26 @@
+properties:
+  file.name:
+    displayName: solution
+  note.question paper:
+    displayName: question MD
+  note.original:
+    displayName: original PDF
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "resources/example"
+    order:
+      - file.name
+      - question
+      - question paper
+      - original
+    sort:
+      - property: question
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    columnSize:
+      note.question: 160
+      note.question paper: 115

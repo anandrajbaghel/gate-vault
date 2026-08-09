@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("5. Electrical Machines")
+    order:
+      - confidence
+      - file.name
+      - file.folder
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: confidence
+        direction: DESC
+    columnSize:
+      note.confidence: 48
+      file.name: 386

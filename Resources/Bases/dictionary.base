@@ -1,0 +1,12 @@
+properties:
+  file.name:
+    displayName: word
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("resources/dictionary")
+    order:
+      - file.name
+      - file.backlinks
