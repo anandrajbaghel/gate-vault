@@ -2109,6 +2109,11 @@
             "size": 637
         },
         {
+            "path": "14. Reading List 📃/list1.md",
+            "hash": "9ef53785cf798d6b18151b8fd0e5fff5f21652307dae1b9e9b9be3a4fbd1b08f",
+            "size": 251
+        },
+        {
             "path": "15. Master/Control System Repeated Generic Notes.md",
             "hash": "3b84f489adf225f3854e2ab9531f0bc57c2dc8d3870683d147be5a4960311ccb",
             "size": 708
@@ -9970,8 +9975,8 @@
         }
     ],
     "statistics": {
-        "files": 1993,
-        "directories": 212,
-        "bytes": 98646173
+        "files": 1994,
+        "directories": 213,
+        "bytes": 98646424
     }
 }
