@@ -3334,6 +3334,96 @@
             "size": 3523
         },
         {
+            "path": "7. Control Systems/archive/Block Diagram Reduction.md",
+            "hash": "6d3a869dba65dcb9f5f4a975da3c1a1c38406044a7791e45131b922f578ce02c",
+            "size": 4205
+        },
+        {
+            "path": "7. Control Systems/archive/Bode Plot Construction Example.md",
+            "hash": "5c19fb14833494e5cf0f6236aa27c590dba276820cd9f3cbec99657b41ecc7b8",
+            "size": 2437
+        },
+        {
+            "path": "7. Control Systems/archive/Closed-Loop Poles.md",
+            "hash": "4993d61bbcfb9f3284b3fee8e0ee5bb5b915a53399093acc53c124b8de62d05e",
+            "size": 5628
+        },
+        {
+            "path": "7. Control Systems/archive/Closed-Loop Transfer Function (CLTF).md",
+            "hash": "141c1ceecdde03099c209ee2ed9e8fc200832ad639297fa205b8c73a102a5491",
+            "size": 5539
+        },
+        {
+            "path": "7. Control Systems/archive/DC Motor Modeling.md",
+            "hash": "a75e3ebecd5050940571b08547ceecf577a780959d19e76f9b87363fd93c5781",
+            "size": 5280
+        },
+        {
+            "path": "7. Control Systems/archive/Location of Poles vs Stability.md",
+            "hash": "8dccf24752e81a12e3b7ebd6bd9d64524019cf5f6519e044b216c4373c2da1dc",
+            "size": 2413
+        },
+        {
+            "path": "7. Control Systems/archive/Lyapunov Stability.md",
+            "hash": "76e04df2884bf8f78dac1e06b00847f699184b93311a462891cf4449eec61b8c",
+            "size": 5332
+        },
+        {
+            "path": "7. Control Systems/archive/Minimum Phase Systems.md",
+            "hash": "33e4df5f416aee4aab9509a5e38a35e6039bbce15eef0df9f25b88464755c6ab",
+            "size": 5245
+        },
+        {
+            "path": "7. Control Systems/archive/Non-Minimum Phase Systems.md",
+            "hash": "0daa1ee3bf63715e221b9c6f7a8a32a7b3fc986b1087f1884e0a2b21a5c6000d",
+            "size": 6191
+        },
+        {
+            "path": "7. Control Systems/archive/Open-Loop Transfer Function (OLTF).md",
+            "hash": "cc3ad5a89bc39245b496b3e695458e5dab9a650f92a1658a44435ec0c5dd2024",
+            "size": 5126
+        },
+        {
+            "path": "7. Control Systems/archive/RH example.md",
+            "hash": "a5a4e620f470d0d4d91332d27d4567bf31f00fc8a93963ca48ddabbc1cbcff91",
+            "size": 10365
+        },
+        {
+            "path": "7. Control Systems/archive/Routh-Hurwitz Special Case-1.md",
+            "hash": "2f872b68c09b734cf2ceebd80dda4f62659b850676d34d6f07bc988ff5a7adb0",
+            "size": 2613
+        },
+        {
+            "path": "7. Control Systems/archive/Routh-Hurwitz Special Case-2.md",
+            "hash": "c10ab10af04987c0973653df408ee28b5709eb3bb1ce00c0770ed48c345fcdf4",
+            "size": 10097
+        },
+        {
+            "path": "7. Control Systems/archive/Steady State Error for Non-Unity Feedback System.md",
+            "hash": "3d1b308aa9d9102652ec3833e8c5a94f357e76e851ba96efc61b2063ce14a585",
+            "size": 6632
+        },
+        {
+            "path": "7. Control Systems/archive/Time Delay Systems.md",
+            "hash": "fd12a0efee5fc1f3dedea932dae85ef4dd9c0e94f64f5c119455ddf80efa3d5e",
+            "size": 5657
+        },
+        {
+            "path": "7. Control Systems/archive/Type and Order of Control Systems.md",
+            "hash": "fce7beb8eee40014bfb8c61f5fc92339e52d1008d60254ae5c59d93b14bc563c",
+            "size": 5733
+        },
+        {
+            "path": "7. Control Systems/archive/graphs.md",
+            "hash": "92c298198032025fb5a4efd274d0c6f9ab1ef7f82f5ab29859e1ab7f5fbad3ca",
+            "size": 186
+        },
+        {
+            "path": "7. Control Systems/archive/res/Nyquist Flowcart.png",
+            "hash": "68446bdd4350150bf5134ab6443a6ddeb7de294301b6b744a9cbd6acff3f5317",
+            "size": 1297011
+        },
+        {
             "path": "Caution.md",
             "hash": "8b1eafa116444c16aad1afa4df3efe6bcc7271d62c797a4c8de10321eddd3714",
             "size": 1038
@@ -7925,8 +8015,8 @@
         }
     ],
     "statistics": {
-        "files": 1584,
-        "directories": 165,
-        "bytes": 95842521
+        "files": 1602,
+        "directories": 167,
+        "bytes": 97228211
     }
 }
