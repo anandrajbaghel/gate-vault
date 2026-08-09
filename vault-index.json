@@ -3144,6 +3144,191 @@
             "size": 9855
         },
         {
+            "path": "7. Control Systems/5. Frequency Response Analysis/1. Frequency Domain Concepts/Correlation between Time and Frequency Response.md",
+            "hash": "c010c688a77d16d271f5a7eb13b39e3ded45eff9428e6de81c1bca3a7e555cba",
+            "size": 4844
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/1. Frequency Domain Concepts/Frequency Response from Transfer Function.md",
+            "hash": "d5f8938e4613e301a144c016de9047c05b4fc0a339161364f51be6802298edfe",
+            "size": 7083
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Bode Plots.md",
+            "hash": "863164b0eba95add368127471f5e7062fd23182ca755c031701c42bb3a2f471d",
+            "size": 10936
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Nyquist Plots.md",
+            "hash": "9fd129722b9112e3d32435a582344323141bf48d85d93cb4badad200049e2b99",
+            "size": 6468
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Nyquist Stability Criterion.md",
+            "hash": "27e621f8df39f90a8c3af4630217a06c594bb481e10404e0dfdd36df9b910c60",
+            "size": 6143
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Polar Plots.md",
+            "hash": "080fe23278b6d450f33643e54bbaa3a01b3e9545a53d2d473e0894e531868baa",
+            "size": 5138
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Principle of Argument.md",
+            "hash": "2af00bc101cd62df15bd7293e1e25e0b3299bcafbd641433fcf67928bfb5f196",
+            "size": 4891
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Procedure for Drawing Bode Plots.md",
+            "hash": "4b79f811bf072c733dde166a03874ea0ba177578a5e8e610c553a770b0540995",
+            "size": 5759
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Stability Analysis from Bode Plots.md",
+            "hash": "84c85f931e760c6192226ed4884eddcd9b34c68a836e4a6610a9b51a406cf19c",
+            "size": 3579
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/2. Graphical Methods/Transfer Function from Bode Plot.md",
+            "hash": "a6ac89400bf9e1f4e867ea63ce7254a93c104a22ee42507bd12309b8f9c9e801",
+            "size": 2927
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/3. Stability Margins/Calculation of GM and PM from Bode, Polar, and Nyquist Plots.md",
+            "hash": "246beef7088c99b30d12cb8e46f4010c5df72c0e5e8fca9ffbef34851109af18",
+            "size": 5011
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/3. Stability Margins/Gain Margin (GM).md",
+            "hash": "9bf9363792789a8c57a4a68575b7fee62f16112a09c38264eaaf50732a63036b",
+            "size": 4901
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/3. Stability Margins/M-Circles and N-Circles.md",
+            "hash": "04c010e1eed98e27477fc3c1a4998ac8eda55a93a3d6a961230e53338c2d727a",
+            "size": 4335
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/3. Stability Margins/Nichols Chart.md",
+            "hash": "4aefbf9b922be7791451bb8675f17b944dadd71f5307d1c6fbafab06c7772603",
+            "size": 4703
+        },
+        {
+            "path": "7. Control Systems/5. Frequency Response Analysis/3. Stability Margins/Phase Margin (PM).md",
+            "hash": "178c3f45f8174fbdc5b1dbd95278b9a15bc8c5e76578908e883bdebd64d26658",
+            "size": 5615
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/1. Controllers/Proportional (P) Controller.md",
+            "hash": "56b95bdb29373fea43def23f78079fdcce6012ac7543076cdbb9d916df8cbf50",
+            "size": 6955
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/1. Controllers/Proportional-Derivative (PD) Controller.md",
+            "hash": "e071ee63cbd8033701073ff40e11c0337d9931cf05d7499e352f40df32df15ef",
+            "size": 5902
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/1. Controllers/Proportional-Integral (PI) Controller.md",
+            "hash": "1b5e9332e7bc0cee1a3c63cefdc6a8c4f54d4a5ce54b65037be60892aaaa2e09",
+            "size": 5909
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/1. Controllers/Proportional-Integral-Derivative (PID) Controller.md",
+            "hash": "944522994169cc14ee4699e34fb31dac2a037ba0189242236321535a38c20541",
+            "size": 6666
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/1. Controllers/Tuning of PID Controllers.md",
+            "hash": "4a5ce713fc82f3723221434d664618b4db41f93ec3607a513736e7262eadf12b",
+            "size": 6396
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/2. Compensators/Lag Compensator.md",
+            "hash": "7587948089ea9b6267d7496e5addf93b1ba016bf7d591284ffd0c2dde27bcfbe",
+            "size": 5485
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/2. Compensators/Lag-Lead Compensator.md",
+            "hash": "2f25e96c4a6eb8e6fbacb659a632210a31e4932d3832dc65a803c412e56885d4",
+            "size": 5778
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/2. Compensators/Lead Compensator.md",
+            "hash": "054f82f2f310c10915001768b5df67254709e375367533f4a178cf10e203db1b",
+            "size": 7001
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/2. Compensators/Need for Compensation.md",
+            "hash": "0d96e79e4c5b4b7819e6e692e766edebd4995415e31c1960958b56aa849dd36e",
+            "size": 6734
+        },
+        {
+            "path": "7. Control Systems/6. Controllers and Compensators/2. Compensators/Realization of Compensators using Electrical Networks.md",
+            "hash": "8140e5680ea4c47cdec897e75d862753b4138c14769ae97f0aefb6c772d71bfa",
+            "size": 5399
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/Concepts of State, State Variables, and State Model.md",
+            "hash": "e48c7363b14273fa2e7e3dbf99a122f7c7a0b7416077236bd846c4666fee5c55",
+            "size": 6107
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/Phase Variable and Canonical Forms (Controllable, Observable).md",
+            "hash": "f0c785666fb3b1991d55fa41858c0d0a62ec243b044ffc0fd95c82bca3a6ac50",
+            "size": 3925
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/State-Space Model from Transfer Function.md",
+            "hash": "1111399d136014ff2c4813bcc4668bcfcb0b01f1a16aabfbd5d530faaac93590",
+            "size": 4936
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/State-Space Representation of LTI Systems.md",
+            "hash": "26a422cfcfee22cfc6cd558d8178d20aa1e48b4d330b01412e40611663bc3d31",
+            "size": 9177
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/State-Space Transformation.md",
+            "hash": "2950ae70139e548dcd8a76968fec379a558f476146844eeb33c867718d60c614",
+            "size": 6390
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/State-Variable Analysis and Design.md",
+            "hash": "35fe06318451fab6bfd4574ddf4e6068f51cd0fad0e262d9f0704cafcb247074",
+            "size": 6556
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/1. State Variable Modeling/Transfer Function from State Space Model.md",
+            "hash": "b8e4f0baa134e9d2fffa02203c4f4bf1e65247943ff5df2b473a93813fc6c3f0",
+            "size": 6215
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/2. System Analysis in State Space/Solution of State Equations.md",
+            "hash": "c69d70da456297128990c58dde5e7c2a8b2d409536cebf0a6b212f3154c0f44d",
+            "size": 5336
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/2. System Analysis in State Space/State Transition Matrix (STM).md",
+            "hash": "13d7827d513dc3a7cba28e284b5089a944d6373d36decce38e5db0f95243b7d6",
+            "size": 6944
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/3. Controllability and Observability/Controllability.md",
+            "hash": "12a0f65744b25ba02bb5c870001b4ba6c968849d61fdfbb68a6d64588a6f3f50",
+            "size": 5058
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/3. Controllability and Observability/Observability.md",
+            "hash": "3c7979972bb67796dc45f9d51074618f8ba25b2ce6751b3d065f1d03ed04a269",
+            "size": 4744
+        },
+        {
+            "path": "7. Control Systems/7. State Space Analysis/3. Controllability and Observability/Principle of Duality.md",
+            "hash": "f6dd7ea8cdcdd37183c1da22ca222854ad2414f31666f243c9a669026f18185f",
+            "size": 4122
+        },
+        {
             "path": "7. Control Systems/Control Systems.md",
             "hash": "5f476c1779a402c8815867c3e1b86ebb4629a4d2a932412100ec2d4e091ba171",
             "size": 3523
@@ -7740,8 +7925,8 @@
         }
     ],
     "statistics": {
-        "files": 1547,
-        "directories": 157,
-        "bytes": 95628453
+        "files": 1584,
+        "directories": 165,
+        "bytes": 95842521
     }
 }
