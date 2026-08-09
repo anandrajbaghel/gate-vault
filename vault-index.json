@@ -5334,6 +5334,81 @@
             "size": 3645
         },
         {
+            "path": "Resources/Bases/1. mathematics.base",
+            "hash": "0bf73922fd8a6888cf3a437eef0711909805a0458ebfcc65484378191ad9ed2f",
+            "size": 367
+        },
+        {
+            "path": "Resources/Bases/10. power electronics.base",
+            "hash": "75e2b986e2ad65ce04fdabcb656240b026cfd46ec8ecc9d573c788a73f885526",
+            "size": 224
+        },
+        {
+            "path": "Resources/Bases/2. electric circuits.base",
+            "hash": "477a2c085365c80c0fdad6a9b702c0f1aad3106da40da85c89e25b2d40143812",
+            "size": 337
+        },
+        {
+            "path": "Resources/Bases/3. electromagnetic fields.base",
+            "hash": "f3f5097b058bc17e71999e9bd9fbeb85b27fa8c09de156c22cb5ffb528750dd4",
+            "size": 341
+        },
+        {
+            "path": "Resources/Bases/4. signals & systems.base",
+            "hash": "995d410230122572f323ad862d8fe51887e54aef13e1b7a97b2b139681a90443",
+            "size": 336
+        },
+        {
+            "path": "Resources/Bases/5. electrical machines.base",
+            "hash": "a197b1c79d7f6a768e07455908126d9087d12fd9b0c7be950cc4fe7f9d72e05f",
+            "size": 360
+        },
+        {
+            "path": "Resources/Bases/6. power systems.base",
+            "hash": "a3c462484280a78f06e04394150b859688852d8ea3036d903fe7bcd3bd04b0cb",
+            "size": 218
+        },
+        {
+            "path": "Resources/Bases/7. control systems.base",
+            "hash": "60ca325b1331795c77375544e9b62f26bebb4df7dc5d4ce3513b8d1833cf7a2d",
+            "size": 221
+        },
+        {
+            "path": "Resources/Bases/8. electrical & electronic measurements.base",
+            "hash": "67675afa957051b96a18ee55883d3f50d5ac4c39b2cbbd2068327ba458d34899",
+            "size": 181
+        },
+        {
+            "path": "Resources/Bases/9. analog & digital electronics.base",
+            "hash": "b9ee7b780f671d8e5450f777e6625746b937bae2952c2e6e3a1f16465e9cd627",
+            "size": 171
+        },
+        {
+            "path": "Resources/Bases/all zettelkasten.base",
+            "hash": "d8961a2b853564c5b3a060fd562a38e448c151c05871980abafadb37e360a7fd",
+            "size": 867
+        },
+        {
+            "path": "Resources/Bases/books.base",
+            "hash": "18273c139cbf9b393ec175576d7e258ef42b8aca70e35a6335bf9f306725a4e3",
+            "size": 246
+        },
+        {
+            "path": "Resources/Bases/dictionary.base",
+            "hash": "0c54f455e8533f8c7a67eff97793ac6c93e4a4e6f7122b6efa70ad723396fe7f",
+            "size": 210
+        },
+        {
+            "path": "Resources/Bases/question papers.base",
+            "hash": "7595b5adfe98be55636e1c4deed908229be93cee680e1c744195cfa522c26854",
+            "size": 598
+        },
+        {
+            "path": "Resources/Bases/solved questions examples.base",
+            "hash": "f95411cf9b1cf40cda88a37164ad1edfde056460cd809f98c2a58e1e7f843872",
+            "size": 529
+        },
+        {
             "path": "Resources/Dictionary/admittance.md",
             "hash": "8d3c090869edb45e717d423e9b4eda0765be6abe713bae2a47b2da045b325801",
             "size": 162
@@ -9990,8 +10065,8 @@
         }
     ],
     "statistics": {
-        "files": 1997,
-        "directories": 214,
-        "bytes": 99534428
+        "files": 2012,
+        "directories": 215,
+        "bytes": 99539634
     }
 }
