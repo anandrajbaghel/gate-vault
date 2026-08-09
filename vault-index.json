@@ -1694,6 +1694,116 @@
             "size": 3550
         },
         {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/1. Faraday's Law of Induction/Faraday's Law in Integral and Point Form.md",
+            "hash": "1544c35d7712d0bde8bd9c829913bf3e8d824d16076658e0e2b15732865256f2",
+            "size": 5786
+        },
+        {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/1. Faraday's Law of Induction/Motional EMF.md",
+            "hash": "74a3d6f34534749363f6b1e73cb6702a0c5f5593729b82bfe6138902b91368f5",
+            "size": 6219
+        },
+        {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/1. Faraday's Law of Induction/Transformer EMF.md",
+            "hash": "4a6e13b4603a9d8952445c584b822d0494a4707b6470fa68c3e394956dc34428",
+            "size": 6412
+        },
+        {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/2. Displacement Current and Maxwell's Equations/Concept of Displacement Current (Jd).md",
+            "hash": "dd759fed692f66e03ef3483df118c9d659b75db80e3c76328612ca00bcace0c4",
+            "size": 6741
+        },
+        {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/2. Displacement Current and Maxwell's Equations/Conduction Current vs. Displacement Current.md",
+            "hash": "4cc801a2ebad1e3a01afa2695fba313e02c31d7dd8f1b279e911bff440d36e27",
+            "size": 6569
+        },
+        {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/2. Displacement Current and Maxwell's Equations/Inconsistency of Ampere's Law for Time-Varying Fields.md",
+            "hash": "e88360fe75ad78b68fb23d8c4810bdb51484db2a8ce45294b38a4d80c9a35014",
+            "size": 4345
+        },
+        {
+            "path": "3. Electromagnetic Fields/4. Time-Varying Fields and Maxwell's Equations/2. Displacement Current and Maxwell's Equations/Maxwell's Equations in Final Form.md",
+            "hash": "7990bde364ccb7936ed0e237fa4068f522f3bf8788eb741840a70f3f472a8511",
+            "size": 7393
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/1. Wave Propagation/Uniform Plane Waves.md",
+            "hash": "6cf965e874ec71fd04911578f6718a2f471956d9e938c0248f6b6c659691362d",
+            "size": 6397
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/1. Wave Propagation/Wave Equation Derived from Maxwell's Equations.md",
+            "hash": "78b341689069ba7c4abc4431a0ca2498e8d3d32a43ad4cc7f801fc98aac35c1c",
+            "size": 6238
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/1. Wave Propagation/Wave Propagation in Free Space.md",
+            "hash": "1d346798c7ac6c6bad63ee5448d2a6c7ff7a4f850642f0728ab03892ae737c97",
+            "size": 4188
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/1. Wave Propagation/Wave Propagation in Good Conductors.md",
+            "hash": "341eb401cd538ff1130c098370955cf5bdeaa26572cd70ba20c2f9e4a3bdb89b",
+            "size": 4887
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/1. Wave Propagation/Wave Propagation in Lossless Dielectrics.md",
+            "hash": "ba4022c874fc4d8567731e5fdd85c537884fb7bcd233326d037eff4f15645a91",
+            "size": 5298
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/1. Wave Propagation/Wave Propagation in Lossy Dielectrics.md",
+            "hash": "9b378c19b28e3c3b9b936809215c5d9e588918f2bad2c0daa1bc03cb8a552828",
+            "size": 5735
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/2. Wave Characteristics/Intrinsic Impedance of a Medium.md",
+            "hash": "f353283a7ccff514f487ff81cc73d539017479acbe2dc0969d561643d679f4b3",
+            "size": 4256
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/2. Wave Characteristics/Phase Velocity and Group Velocity.md",
+            "hash": "1ffb2e517f35992bd477b01f9980a40e70ab3d1f4228ef5fd0f82f68e646bd8c",
+            "size": 5471
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/2. Wave Characteristics/Propagation Constant, Attenuation Constant, and Phase Constant.md",
+            "hash": "1d86c446315b1eac8b0a4296278901e64296b955bc1cd71b6ca20f699b29cbdf",
+            "size": 5589
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/2. Wave Characteristics/Wave Polarization.md",
+            "hash": "5b920091deccf12c9a5ad2bd15e18e3d8c8e4c1b8ed4b3d3b11278531ec785d3",
+            "size": 6769
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/3. Power Flow and Reflection/Power Flow in an Electromagnetic Wave.md",
+            "hash": "8d6864f8f5ea533b277cc69fe3afca5d522ca01106d46ebaedc0e5df166aafdf",
+            "size": 4443
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/3. Power Flow and Reflection/Poynting Theorem.md",
+            "hash": "b2f832d3316daff8c405d41e9f66e89afc952e1cc9ae7334e606f7a9fe1bfa4e",
+            "size": 4539
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/3. Power Flow and Reflection/Poynting Vector.md",
+            "hash": "a710b5d838ef642293fd36cb01edd308b7d551a34bbda0a1f08dc0883aa612c2",
+            "size": 4024
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/3. Power Flow and Reflection/Reflection and Refraction of Plane Waves at Normal Incidence.md",
+            "hash": "9e73e3507553f23157cc15437d0e5256b3a738753519735e335b8a3690172052",
+            "size": 5731
+        },
+        {
+            "path": "3. Electromagnetic Fields/5. Electromagnetic Waves/3. Power Flow and Reflection/Standing Wave Ratio (SWR).md",
+            "hash": "fa9735fafc934e35ced07cafd02abc90880a8a71c8d5dd5f0307a92b7e6ee213",
+            "size": 5298
+        },
+        {
             "path": "3. Electromagnetic Fields/Electromagnetic Fields.md",
             "hash": "c505223cfe56bc1faaed42ac950fe4702d4dce004b18f360a0ea9f4f79b71ad8",
             "size": 3418
@@ -8230,8 +8340,8 @@
         }
     ],
     "statistics": {
-        "files": 1645,
-        "directories": 176,
-        "bytes": 97428445
+        "files": 1667,
+        "directories": 181,
+        "bytes": 97550773
     }
 }
