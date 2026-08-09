@@ -1,6 +1,9 @@
 ---
+created: 2026-08-09T09:38:35
 error:
   - "[[error - Bode Plots]]"
+subject:
+  - "[[Control Systems]]"
 parent:
   - "[[Bode Plots]]"
   - "[[Gain Margin (GM)]]"
@@ -10,6 +13,7 @@ tags:
   - phase-margin
 aliases:
   - All questions from Bode Plots | See trends 🔥 🚀
+modified: 2026-08-09T09:38:35
 ---
 1. [x] [[ee_2026#^q29]] #frequency-response 
 2. [ ] [[ee_2025#^q65]] #compensator-design #phase-margin 
@@ -24,7 +28,7 @@ aliases:
 11. [x] [[ee_2016(1)#^q30]] #frequency-response #revise 
 12. [x] [[ee_2015(1)#^q34]] #frequency-response 
 13. [ ] [[ee_2014(3)#^q46]] #frequency-response #lead-lag #gap 
-14. [x] [[ee_2014(2)#^q55]] #frequency-response #revise 
-15. [ ] [[ee_2014(1)#^q55]] #frequency-response #gap 
-16. [ ] [[ee_2014(1)#^q61]] #op-amps #active-filters 
+14. [x] [[ee_2014(2)#^q45]] #frequency-response #revise 
+15. [ ] [[ee_2014(1)#^q45]] #frequency-response #gap 
+16. [ ] [[ee_2014(1)#^q51]] #op-amps #active-filters 
 17. [x] [[ee_2013#^q15]] #frequency-response 
