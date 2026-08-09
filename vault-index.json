@@ -1919,6 +1919,196 @@
             "size": 1198
         },
         {
+            "path": "12. PYQs Pattern Book/trends - Region of Convergence.md",
+            "hash": "cef38f831343df6b6f1583de892035b863e8bb88696f79147dda7a0ceedd33b5",
+            "size": 683
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Resonance.md",
+            "hash": "b0ce21b57f09d1da36694c32e3dc5c6f3e83a935b4b475ed20979f72c2e9a55d",
+            "size": 677
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Root Locus.md",
+            "hash": "685a68e943cb85898c80758da52af3433b27c0a321e6910e895665ed258add98",
+            "size": 720
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Sampling.md",
+            "hash": "46e3b72791c0cdb9a650ba838c31bae8570c7d5e07da3b5a5c1ab58fe417f27e",
+            "size": 419
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Second-Order DEs.md",
+            "hash": "fe10166fc5cbe0b6af61086318ba699bac13f9439622f7fb1d9632f49fac7b5a",
+            "size": 372
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Sequential Circuits.md",
+            "hash": "6c72fe2572fd979e232c9410bb14332e62f906b3c35aaa6c9c6bf2c1beb2aee7",
+            "size": 1150
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Shift Registers and Counters.md",
+            "hash": "2fd8622e17e43c46275e90c306ce46ecd973f2c8e34ad5d67f551732cd5beb8e",
+            "size": 396
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Signal Flow Graphs.md",
+            "hash": "ffc78efc33e892e397a72a148678b6054ff752f977b4935194da24b11a83cfbc",
+            "size": 516
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Signal Properties.md",
+            "hash": "b2aaa6aa14a91924a44079a929e4930b85ee195c8cc7d381b40c7b7f08533e44",
+            "size": 559
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Single Phase Induction Motors.md",
+            "hash": "c51d2b62866b3bd8c5e8087369a4420c46e76e96ed6ba72fb8e0c118fa2766b3",
+            "size": 359
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Special Macines.md",
+            "hash": "dc4c4bf88cca3a4aecdb59e8435398eaeb1485b3473bd8bf9c99aeb1e468c53d",
+            "size": 369
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Speed Control.md",
+            "hash": "2082d4429838cbffb61bd091f79fbd775f45e959fd3808f74c73e6cd069b3972",
+            "size": 967
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Speed Regulation.md",
+            "hash": "665fc9f72dbda679a980df48e4d64c89a29de64e7a9e36c912060d53d9e1a57c",
+            "size": 422
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Stability Analysis.md",
+            "hash": "65525f818168109ebc9b526475bf1d0f5420b19ad90614122c6dd3a6d495002e",
+            "size": 1728
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Stability Routh-Hurwitz.md",
+            "hash": "c7f6f1d4934623ea846482f42a34a8d149ee5e31329ea04247689342172e17dc",
+            "size": 1071
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Stability in Power Systems.md",
+            "hash": "f1c334953c825232279815233ec52875db1f3eac2dcc658601799e728b52ea87",
+            "size": 896
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - State Transition Matrix.md",
+            "hash": "0c2155ca25669b85730349ff0d9644c82e02d9e2aa9f0960906b8caa47d5cb0c",
+            "size": 343
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - State-Space Analysis.md",
+            "hash": "61b13cbb02dbbac23a863542acb0502e85b2da36f1221c95467832faf27fa293",
+            "size": 1825
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Steady-State Error.md",
+            "hash": "84c9f1ea3a874e024bfa7aa837bbd9d88c0b8b1d3d7905be6f5706afc95fe505",
+            "size": 629
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Superposition Theorem.md",
+            "hash": "066bb3fca815abc66abc9e460c88825a422bd445916fd7eab4d551d931a37017",
+            "size": 368
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Swing Equation.md",
+            "hash": "af0a48ba5008c74f708cffa0924bce620f017f5949abd245cc9bc5acb6b7e1bf",
+            "size": 397
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Symmetrical Components.md",
+            "hash": "1059f1eef0f789d88a41108f4569a0bd112c71063744b34b89184d5285dfa741",
+            "size": 371
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Synchronous Machines.md",
+            "hash": "b5a8be59679308c34608af7f0467b07685f3d34a328db3052299f676124bad08",
+            "size": 2256
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Testing of Machines.md",
+            "hash": "203e3ed1c4498a48107c5eb0e85bd33804190b91c7f7a2df19a46c5f2f564f61",
+            "size": 351
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Thevenin.md",
+            "hash": "56e816091714c6aa36e5a41b95749807e7bc68a6c2c1a305812a6bfc9cb566cf",
+            "size": 1468
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Three-Phase Circuits.md",
+            "hash": "03c1d7c4215fd99e94021082e09ce111e8b0441a4f702db51ee1d01553ddbdb0",
+            "size": 880
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Time Response Analysis.md",
+            "hash": "99c719a5b7df3d5082862c956398b7e4e1c3069b432ca3dbdc9731bd772c7f92",
+            "size": 823
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Time Response First Order.md",
+            "hash": "d2e96ecdce0c2dbfedf7508f5879c073792d9045c24287ee185fd37d76eab6a1",
+            "size": 497
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Time Response Second Order.md",
+            "hash": "b4483ff692da9a2d14def95cd991a9e871649da4697f25501b62662f609a3460",
+            "size": 668
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transformers.md",
+            "hash": "4947d142635fd9f7d7b851d118476cc2ee5b377aee29e8329ba24c07a1280724",
+            "size": 2005
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transient Analysis.md",
+            "hash": "d288af54fb9217951ef06918fb11b5381e97c70bb3bde9833700952bc867dac5",
+            "size": 1145
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transmission Lines.md",
+            "hash": "5c40cdca42c5a5c0d93c56860d806cb58e0a4acdc4c68161b8bb0f156d513562",
+            "size": 1275
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Two-Port Networks.md",
+            "hash": "d8fa2938bd447c71a1917e0b6c110dae53be79d60155926007cddd6f91373c7c",
+            "size": 807
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Vector Calculus.md",
+            "hash": "73d18f0b673fd71a93ef867aac631ecf750ead83a9b7ab220bc1dbe258b3aa4d",
+            "size": 323
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltage Regulation.md",
+            "hash": "ad5be7172dfd35618b518e65990a35bb09c39c8053f4c5a72d1704a87c6e6b17",
+            "size": 607
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltage and Frequency Control.md",
+            "hash": "be95589aef1e84f35f193ac2a706cb8cb4693bb140a0e30650bf752d3cb545cc",
+            "size": 359
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Wheatstone Bridge.md",
+            "hash": "3dac78c937fd7619aae00534839269c17e8e27a2f950491558dd540e4384d603",
+            "size": 743
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Z Transform.md",
+            "hash": "dd195aaa6d4ea61b6c8dab56428002df365c5c0d4c78fb63a46cff857f571ef0",
+            "size": 637
+        },
+        {
             "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Capacitors.md",
             "hash": "83427b88eab8a75376bf38ac2240f1786cd992d49d867640bd9453f0861e009c",
             "size": 4355
@@ -9705,8 +9895,8 @@
         }
     ],
     "statistics": {
-        "files": 1940,
+        "files": 1978,
         "directories": 211,
-        "bytes": 98572787
+        "bytes": 98602868
     }
 }
