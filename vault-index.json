@@ -959,6 +959,11 @@
             "size": 4073
         },
         {
+            "path": "10. Power Electronics/Power Electronics.md",
+            "hash": "6e6ac736948f8bbf96f11b8a864eaccb8242a05e949b27f19166f86676e075cb",
+            "size": 3520
+        },
+        {
             "path": "11. ERROR Logbook/error - Bode Plots.md",
             "hash": "6b305b2289d430ac2ef8e6b46793da6338c96f0dd75f02783c2f3dc96bf5b310",
             "size": 128
@@ -8755,8 +8760,8 @@
         }
     ],
     "statistics": {
-        "files": 1750,
-        "directories": 193,
-        "bytes": 97986180
+        "files": 1751,
+        "directories": 194,
+        "bytes": 97989700
     }
 }
