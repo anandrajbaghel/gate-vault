@@ -2964,6 +2964,186 @@
             "size": 7636
         },
         {
+            "path": "7. Control Systems/1. Control System Modeling/1. Basic Concepts/Effect of Feedback on System Performance.md",
+            "hash": "a1bfb4b985efa97d597971cfc0be5038c8c071c6bec24ce76db39ee539ff1a7e",
+            "size": 6750
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/1. Basic Concepts/Feedback Principle.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/1. Basic Concepts/Mathematical Modeling of Physical Systems (Mechanical, Electrical).md",
+            "hash": "beccc32cdb9f0712932a68d91e7801de0dfb6ee05e74791e9ef4f367210f0e97",
+            "size": 5939
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/1. Basic Concepts/Open-Loop and Closed-Loop (Feedback) Control Systems.md",
+            "hash": "ddb35fcc649d7310824019d55f00f494fd41fbfbb50e58a235dc3f09df171b8c",
+            "size": 5847
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/2. Transfer Function and System Representation/Block Diagram Reduction Techniques.md",
+            "hash": "5b1789c88361f1d9edbb3f2828c0887831fdad021e7064a13b1df259bc1ad767",
+            "size": 4035
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/2. Transfer Function and System Representation/Block Diagram Representation.md",
+            "hash": "8eee1987a0d9c913a4c98fa1ad9d90eb0d32a9222262e58a35e71bf53d0dcd84",
+            "size": 4603
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/2. Transfer Function and System Representation/DC Gain.md",
+            "hash": "0d94da3cb2a4a91af5b439178f36d424178af59a17732e8b0e2f03d6b304f570",
+            "size": 4518
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/2. Transfer Function and System Representation/Mason's Gain Formula.md",
+            "hash": "0dcda113dd0977d458fc68bc5a66fdfbc8462d71f0f07fb2f6a030a8ecb33022",
+            "size": 4986
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/2. Transfer Function and System Representation/Signal Flow Graph (SFG).md",
+            "hash": "3124f0096d0d0fd372fb7a52060d7ca54e70519fee832fcd1fc9f4e6b0c0673d",
+            "size": 4285
+        },
+        {
+            "path": "7. Control Systems/1. Control System Modeling/2. Transfer Function and System Representation/Transfer Function and Impulse Response.md",
+            "hash": "f4cbd5c2e6fb8ec5e732a793e96095ede74f2a7c612941640145758d57afcad8",
+            "size": 6469
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/1. Standard Test Signals/Unit Step, Ramp, Parabolic, and Impulse Signals.md",
+            "hash": "3ff84f4b6f2b65b03f8d3d8d7e22446bef221c67ea8fc066593572e04f248161",
+            "size": 4654
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/2. Transient Response of Systems/Analysis of Time-Domain Specifications for Second-Order Systems.md",
+            "hash": "226c8f063d74fc4daa08c9da577ea6337dad39756f8ca71a99727625deb3b57f",
+            "size": 6551
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/2. Transient Response of Systems/Effect of Adding Poles and Zeros on System Response.md",
+            "hash": "5260e2f459f7d016711102585b5cad9a51a6d3acb3977741894b629863ebe2b5",
+            "size": 6616
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/2. Transient Response of Systems/First-Order System Response.md",
+            "hash": "dc2bc18259d8dcc6ad02298d9b6fb274e8a66b08fda49f070440a4cd9271a5f9",
+            "size": 4578
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/2. Transient Response of Systems/Second-Order System Response.md",
+            "hash": "24ee74645db56df854e7f7859688ccc60dac48cf9f65aa931f38ab46fde52974",
+            "size": 6975
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/2. Transient Response of Systems/Time-Domain Specifications.md",
+            "hash": "2124a622fdab762b8da786caee07fd753ae3904f75808cb2847a9b7061efe09f",
+            "size": 6298
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/3. Steady-State Response/Error Analysis for different System Types (Type 0, 1, 2).md",
+            "hash": "87fa2818e00d1a1d452736f0ec10075cb6e36fe928c112336a26f373e4e60dcf",
+            "size": 5399
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/3. Steady-State Response/Generalized Error Series.md",
+            "hash": "755ca2667fafff1028eb6768c474f09c7e1affe425f3e1956785c466165a0535",
+            "size": 3892
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/3. Steady-State Response/Static Error Constants.md",
+            "hash": "d1d6bbed4a102a822c9d0b72325e27e2168cd81029db3ae1a23e79e89648c7cf",
+            "size": 4462
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/3. Steady-State Response/Steady-State Error for Disturbances.md",
+            "hash": "34c111145a2cc665fdd05387dcd73bfbc4403d0e9551c4ab1b458190cd8c1dc6",
+            "size": 5415
+        },
+        {
+            "path": "7. Control Systems/2. Time Response Analysis/3. Steady-State Response/Steady-State Error.md",
+            "hash": "cba4d9fd2fe5b6b074653b5253f0e71af814dd6ea97a83fc3c03ab23da60fed7",
+            "size": 8404
+        },
+        {
+            "path": "7. Control Systems/3. Stability Analysis/1. Concept of Stability/Asymptotic Stability.md",
+            "hash": "01f05ac9d7c0a7f393e4ab091f9b968f28080a5e23e4844e3472246164f7a4dd",
+            "size": 4225
+        },
+        {
+            "path": "7. Control Systems/3. Stability Analysis/1. Concept of Stability/BIBO Stability.md",
+            "hash": "cf864bd37e3b7a4ebc5c3c2b5ce4bcadaaad7e7e0fb09e54108f33676235713c",
+            "size": 4386
+        },
+        {
+            "path": "7. Control Systems/3. Stability Analysis/1. Concept of Stability/Relationship between Pole Location and System Stability.md",
+            "hash": "e912f438cbe135f9a1eba5f629137a82507e4372b209f54e6cda5996cd55fd5d",
+            "size": 7146
+        },
+        {
+            "path": "7. Control Systems/3. Stability Analysis/2. Stability Criteria/Relative Stability Analysis.md",
+            "hash": "fc4a0c41a2b28d481e29c166b0ac039f808723bf1bf4d26edede73679ba31c73",
+            "size": 5291
+        },
+        {
+            "path": "7. Control Systems/3. Stability Analysis/2. Stability Criteria/Routh-Hurwitz Stability Criterion.md",
+            "hash": "f0cdedc80bb675ac465cf95f5d106a415ccdf7ec3130dec0fa6b202e213a0cbe",
+            "size": 7619
+        },
+        {
+            "path": "7. Control Systems/3. Stability Analysis/2. Stability Criteria/Special Cases in Routh Array.md",
+            "hash": "b21195fec099a7283744503f4d3401e884ad98fa43c704faacea6cac1a30f5e6",
+            "size": 4729
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/1. Fundamentals/Angle and Magnitude Conditions.md",
+            "hash": "4d9360eea6009a55c1fdf39e3540cc6f8f80e31bdf562a838db8f23d1cb50310",
+            "size": 4278
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/1. Fundamentals/Concept and Definition of Root Locus.md",
+            "hash": "3d2a70f21c6bd7ecc9be4a6afc64320c1d097a7dc19a6d5040d2672fc8c6618d",
+            "size": 6086
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Angle of Departure and Angle of Arrival.md",
+            "hash": "502c85d7f7c48dc98cfdc64afac1b42b26ef5ab56ad8bc6df87d786943ada426",
+            "size": 5933
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Breakaway and Break-in Points.md",
+            "hash": "bc1d795ccdda7754ac043a01b708c5116a2703d243e0e6771156ed73589bb551",
+            "size": 4231
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Centroid and Asymptotes.md",
+            "hash": "a9e497219a58be9d1f6c1683d2e8605f1ee763ecaed86eb386ddc883acb3ca87",
+            "size": 3958
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Complementary (Zero-Degree) Root Locus.md",
+            "hash": "a5545d4538efbc9d8425e5a33d60b85dcf09b3988c18e721934d9a835a5dbefc",
+            "size": 3761
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Effect of Adding Poles and Zeros on the Root Locus.md",
+            "hash": "a9ee90bb029c8a84c22377c942ae4c3c4e140cc9f378151d59b5a53b071789b6",
+            "size": 5343
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Intersection with the Imaginary Axis.md",
+            "hash": "1d13708dc2ecb9ab12df2928bd389065fb50b0d18752adea7931dc1dfe2f6a44",
+            "size": 4964
+        },
+        {
+            "path": "7. Control Systems/4. Root Locus Analysis/2. Construction of Root Locus/Rules for Constructing the Root Locus.md",
+            "hash": "ad51f1fccd2d6fa8e46ced522802f00bbf8de4408b146b8391b6280fe17d23b8",
+            "size": 9855
+        },
+        {
             "path": "7. Control Systems/Control Systems.md",
             "hash": "5f476c1779a402c8815867c3e1b86ebb4629a4d2a932412100ec2d4e091ba171",
             "size": 3523
@@ -7560,8 +7740,8 @@
         }
     ],
     "statistics": {
-        "files": 1511,
-        "directories": 148,
-        "bytes": 95435972
+        "files": 1547,
+        "directories": 157,
+        "bytes": 95628453
     }
 }
