@@ -1244,6 +1244,216 @@
             "size": 3520
         },
         {
+            "path": "10. Power Electronics/archive/AC Voltage Controllers.md",
+            "hash": "df4be5bf2cbdb94dfef6bc183bc2773009a96545b33f83f1b87f1d272e6df853",
+            "size": 4622
+        },
+        {
+            "path": "10. Power Electronics/archive/BJT Switching Performance.md",
+            "hash": "50f3ee1cbdbcdaf9108560f4d7fb07b5b00c70d87bff1aa7675b36f83ba73edd",
+            "size": 4339
+        },
+        {
+            "path": "10. Power Electronics/archive/Bipolar junction transistors (BJTs).md",
+            "hash": "5ad0eb536b16e9a0db42951148d066dc2aa088f42759fddd98c8e31183f2bf93",
+            "size": 6083
+        },
+        {
+            "path": "10. Power Electronics/archive/Capacitor Ampere-Second Balance.md",
+            "hash": "82b0649caf1d245a04a8b4c9ed57df4091b43b128994910f4035b86d19256834",
+            "size": 4530
+        },
+        {
+            "path": "10. Power Electronics/archive/Center-Tapped Rectifier.md",
+            "hash": "ca46328649616bd24f4277865fd0c746403f55cadeacea51d693bf83a6a8de7e",
+            "size": 4729
+        },
+        {
+            "path": "10. Power Electronics/archive/Choppers.md",
+            "hash": "769f92d0236c342c09c4d05932cfe501c912fc728846d6ecf1e51e08e23dc5fa",
+            "size": 3739
+        },
+        {
+            "path": "10. Power Electronics/archive/Commutation Failure and Overlap.md",
+            "hash": "02fea60df9de0c28939726f8ec01b1bcb5c9fd74a57c31c7d6201ca09cd03305",
+            "size": 5370
+        },
+        {
+            "path": "10. Power Electronics/archive/Conduction Modes in Power Electronics.md",
+            "hash": "ee27d85752fd9b5825ec9626dde2ab18ea8aef3e93338c28dd953c2df85ff116",
+            "size": 5934
+        },
+        {
+            "path": "10. Power Electronics/archive/Control Strategies for Choppers.md",
+            "hash": "81c331886f973aac5850436885c055454544c6ca6b7f75d621be622306f79d86",
+            "size": 3150
+        },
+        {
+            "path": "10. Power Electronics/archive/Current-Commutated Choppers.md",
+            "hash": "6953bfe8620bc0e4005ba785f5109594fa4ae2c6eafa5b9d32fbf263beee70e6",
+            "size": 1789
+        },
+        {
+            "path": "10. Power Electronics/archive/DC Motor Drives.md",
+            "hash": "30bfbd9d3bd7014bb627572a2ddbd49341ac0da78a0ce2d40366d0cb7992ebe1",
+            "size": 5631
+        },
+        {
+            "path": "10. Power Electronics/archive/Diodes.md",
+            "hash": "f9dab1da1654adc2c7b30cb19f5643127270b4a9ce8a5f9ca0d6d4fc4c646c82",
+            "size": 8542
+        },
+        {
+            "path": "10. Power Electronics/archive/Distortion Power and True Power Factor.md",
+            "hash": "46f5c856aa5617e3b0caf367949b3959e7080c7b285d961318ee98af7547398d",
+            "size": 2059
+        },
+        {
+            "path": "10. Power Electronics/archive/Forced Commutation.md",
+            "hash": "4157c9bce6c1f3ca8d75136c7ab6f2f80ae31ca950b4fbed1bf5da226dfa27a9",
+            "size": 7104
+        },
+        {
+            "path": "10. Power Electronics/archive/Fourier Analysis of Input Current.md",
+            "hash": "8bd659a814bf5cef569c6d01183158b9d50f318497302e7e267e45bce6e0e690",
+            "size": 5967
+        },
+        {
+            "path": "10. Power Electronics/archive/IGBT.md",
+            "hash": "f86343d409d7f2350913a1fc7689643026b61bbc9fc772199a2ace828c9c82f2",
+            "size": 1974
+        },
+        {
+            "path": "10. Power Electronics/archive/Impedance Matching in Power Electronics.md",
+            "hash": "b0daf93e3e287dd5cd5a95f5d4e35823ee67eaac0bea6664d25e6baacdd678bf",
+            "size": 5697
+        },
+        {
+            "path": "10. Power Electronics/archive/Inductor Ripple Current.md",
+            "hash": "d3e2d3fb373a5d102f8f534a4cd89d0e8c01936c8e73487a498291a64855c387",
+            "size": 5176
+        },
+        {
+            "path": "10. Power Electronics/archive/Inductor Volt-Second Balance.md",
+            "hash": "ba07e854c893a4a33d0c7e52c444481b034202b7fc8d9e2c109af34fc93a7c25",
+            "size": 5110
+        },
+        {
+            "path": "10. Power Electronics/archive/Input Current Harmonics.md",
+            "hash": "31ea1c20932827e37b1eb93194446146894c69036ddb7838f7c2b36bfe6b4659",
+            "size": 7559
+        },
+        {
+            "path": "10. Power Electronics/archive/Inverter Mode of Operation.md",
+            "hash": "346fc4518e99fbc1f17d8a8bf2524c05904d717dd96ddf9c1e1080068c075a74",
+            "size": 5268
+        },
+        {
+            "path": "10. Power Electronics/archive/Maximum Power Point Tracking (MPPT).md",
+            "hash": "bdf010da050ce816097e9058ddce14bb29fadf23db9b0231172aebdd4e5e5369",
+            "size": 6195
+        },
+        {
+            "path": "10. Power Electronics/archive/Natural Commutation.md",
+            "hash": "43fa6a11696723c6c899037bd7cffce02fdd73e93ee9a86f6ee4c74cd0b53b15",
+            "size": 5840
+        },
+        {
+            "path": "10. Power Electronics/archive/Phase-Controlled Rectifiers.md",
+            "hash": "f70069b1918dd49fccf4e848ec584eeeb51e96f737968666ee2a5bd83e3f0346",
+            "size": 5379
+        },
+        {
+            "path": "10. Power Electronics/archive/Power Factor of Rectifiers.md",
+            "hash": "ccbfc0dea720886aa3a951db058d6d8de1d511e1a461b6d081ad4898978082ed",
+            "size": 5236
+        },
+        {
+            "path": "10. Power Electronics/archive/Power MOSFETs.md",
+            "hash": "ef61625b988b4e8ede32823170a6e54fd5cddd321177c5621e9dd5ba943aecd0",
+            "size": 5032
+        },
+        {
+            "path": "10. Power Electronics/archive/Power Thyristors.md",
+            "hash": "3bbd909c04ce1ddc80024ea3122a61f06d810ae345f690a994fd2642ca0e4ef5",
+            "size": 843
+        },
+        {
+            "path": "10. Power Electronics/archive/Single-Phase Uncontrolled Rectifiers.md",
+            "hash": "63ee23c88d6ce43becf9e228975f8b96ffc35e1e780e183ada3260d635a24d07",
+            "size": 6819
+        },
+        {
+            "path": "10. Power Electronics/archive/Space Vector PWM (SVPWM).md",
+            "hash": "27f220b4d6fed8e382846804df0f65e5559240760508a9f0f660ed7ea640bf87",
+            "size": 5267
+        },
+        {
+            "path": "10. Power Electronics/archive/Static V-I Characteristics of PMOSFET.md",
+            "hash": "cae266be7c8eaf83cbed99cd07781f52836fcc900b6b31878b54707332361a66",
+            "size": 5363
+        },
+        {
+            "path": "10. Power Electronics/archive/Static V-I Characteristics of Thyristor.md",
+            "hash": "497c7325b1fe097caba99951c673ecb55d1f701a9a67013f753871ee22f733d0",
+            "size": 3789
+        },
+        {
+            "path": "10. Power Electronics/archive/Step-up Choppers.md",
+            "hash": "f539ed3c52e4642fe7ba1cac2b33fd31d2e6b587de79b9a31f158bbe10a201fc",
+            "size": 2628
+        },
+        {
+            "path": "10. Power Electronics/archive/Switching Characteristics of Thyristor.md",
+            "hash": "ffa92647591766a45d74ecd437342d49f1ff6de4859d5da6022d7409e12003ee",
+            "size": 4556
+        },
+        {
+            "path": "10. Power Electronics/archive/Three-Phase Uncontrolled Rectifiers.md",
+            "hash": "0b1d353c3272246a119406b4223fdc8db15b7a27c81ed65a16a39520fe8281ce",
+            "size": 6376
+        },
+        {
+            "path": "10. Power Electronics/archive/Thyristor Turn-On Methods.md",
+            "hash": "a65f69fda09c9e6cb8992a7a5fd25d3760ecd2dc197c9f24603cb02479e86fbc",
+            "size": 5250
+        },
+        {
+            "path": "10. Power Electronics/archive/Type-A Chopper.md",
+            "hash": "e109e54589b0c2991bf5f449ad030ea5b18c008218f1654d7fb872f0162abfec",
+            "size": 816
+        },
+        {
+            "path": "10. Power Electronics/archive/Type-B Chopper.md",
+            "hash": "4f7007c22cb5de4407643c8e8b6df732cce82fc6b4b4b5d654b54017bc743e0f",
+            "size": 1056
+        },
+        {
+            "path": "10. Power Electronics/archive/Type-C Chopper.md",
+            "hash": "e2bc16afc6a098ab737d8a75923c57a1adf6d94e91ca7966998cef6a977878ec",
+            "size": 1510
+        },
+        {
+            "path": "10. Power Electronics/archive/Type-D Chopper.md",
+            "hash": "1008315a2ad96003f137268a177af3c2e87bc71eda8eadd34976cb136acb9abf",
+            "size": 1283
+        },
+        {
+            "path": "10. Power Electronics/archive/Type-E Chopper.md",
+            "hash": "8390f0463f66b982846257d016ee8ab3c56a7ca7de30c858d99f717e46ccd81d",
+            "size": 1965
+        },
+        {
+            "path": "10. Power Electronics/archive/Uncontrolled Rectifiers.md",
+            "hash": "a9314a8c0dd4e663a8bee17e1b6bbb5d8e47eb842413b8344ddb32f8aa4c3640",
+            "size": 7792
+        },
+        {
+            "path": "10. Power Electronics/archive/Voltage-Commutated Chopper.md",
+            "hash": "539339da289aa5966376457eeb9056d3de228ab3ff96a54031a184a9b6b7e127",
+            "size": 5578
+        },
+        {
             "path": "11. ERROR Logbook/error - Bode Plots.md",
             "hash": "6b305b2289d430ac2ef8e6b46793da6338c96f0dd75f02783c2f3dc96bf5b310",
             "size": 128
@@ -9040,8 +9250,8 @@
         }
     ],
     "statistics": {
-        "files": 1807,
-        "directories": 210,
-        "bytes": 98313222
+        "files": 1849,
+        "directories": 211,
+        "bytes": 98506167
     }
 }
