@@ -1134,6 +1134,111 @@
             "size": 5304
         },
         {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/1. Single-Phase Inverters/Current Source Inverters (CSI).md",
+            "hash": "cd5a7f11630df985d9ad04c6cf6cfbed340d2351f9527c19e3d611269f79945f",
+            "size": 7175
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/1. Single-Phase Inverters/Performance Parameters of Inverters.md",
+            "hash": "0fcf1e0a8fe5553c0ca83d038a14848bf44198d3703db764fd7b0467ca8f4c5a",
+            "size": 5107
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/1. Single-Phase Inverters/Principle of Operation of an Inverter.md",
+            "hash": "0a12125efac2c0bc6b801a39e54dcb9999cdbd295d949b85d25adaaf5737a672",
+            "size": 5060
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/1. Single-Phase Inverters/Single-Phase Full-Bridge Voltage Source Inverter (VSI).md",
+            "hash": "260ec70c8c0fc6e517a080d59101f5f8528a7d883f64545301e551f7f618a7f6",
+            "size": 6189
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/1. Single-Phase Inverters/Single-Phase Half-Bridge Voltage Source Inverter (VSI).md",
+            "hash": "c296b91e05483e9d1d9421319e20e0a5bcdbcd340012e279a54bdee3dc259d65",
+            "size": 4734
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/2. Three-Phase Inverters/120-degree Conduction Mode.md",
+            "hash": "82e88df7cb04cf797a9e459fbfbb6866564a73a348ebf25906e030a6a2e56be2",
+            "size": 4806
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/2. Three-Phase Inverters/180-degree Conduction Mode.md",
+            "hash": "311e9ca02f3d0f615759e23b50a33a8067e92f6f6af3f66ceecc405118356a8c",
+            "size": 4625
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/2. Three-Phase Inverters/Three-Phase Voltage Source Inverter (VSI).md",
+            "hash": "6dd6db7ae81053cc9bcdb7e57a59ac8c606cfd95ecc5660cbb5f681879e58e2f",
+            "size": 4259
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/3. Voltage and Harmonic Control/Harmonic Reduction Techniques.md",
+            "hash": "9e984bb085ec22b8e24f840f521c9755198519788cf26968c33cfe45c4544e60",
+            "size": 5276
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/3. Voltage and Harmonic Control/Multiple-Pulse Width Modulation.md",
+            "hash": "e51f747e1fb37d3be7f88589efe508697a27ce209bff81d353431fb60289365b",
+            "size": 4553
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/3. Voltage and Harmonic Control/Pulse Width Modulation (PWM) Techniques.md",
+            "hash": "1bccd8adb219e7cb1916bf428405c70fe1c24326a5804944c44203c8765fb857",
+            "size": 6631
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/3. Voltage and Harmonic Control/Single-Pulse Width Modulation.md",
+            "hash": "100099782df87c9025b8cadec91ec23b33b6c70e21ec385310e218b2c24c6097",
+            "size": 4085
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/3. Voltage and Harmonic Control/Sinusoidal Pulse Width Modulation (SPWM).md",
+            "hash": "334a19f154b082e4a15800f2e42c775c625014677eb96d1cfba571e22a0c8f7e",
+            "size": 5470
+        },
+        {
+            "path": "10. Power Electronics/4. DC-AC Converters (Inverters)/3. Voltage and Harmonic Control/Voltage Control of Single-Phase Inverters.md",
+            "hash": "9b9a69f58c1cc2ff08431b98881c8ccbb3a7727f7d839d5a8d0a1d3ea1394de9",
+            "size": 3415
+        },
+        {
+            "path": "10. Power Electronics/5. AC-AC Converters/1. AC Voltage Controllers/Principle of On-Off Control and Phase Control.md",
+            "hash": "25a9a55df44f3df791db489cccaec7c6a96d400ae17ed8011c68740b53debbc9",
+            "size": 5047
+        },
+        {
+            "path": "10. Power Electronics/5. AC-AC Converters/1. AC Voltage Controllers/Single-Phase AC Voltage Controller with R and RL Loads.md",
+            "hash": "127006ed2f1eb3eae0db9cc7c7a1b8b8865fb5f4c40774e39d6c90bdf581f84e",
+            "size": 4700
+        },
+        {
+            "path": "10. Power Electronics/5. AC-AC Converters/1. AC Voltage Controllers/Three-Phase AC Voltage Controller.md",
+            "hash": "52b7aa5b3a3261b39c74cd78e016fe75c6648babf67ebe70ee2918d257d1f9d7",
+            "size": 5752
+        },
+        {
+            "path": "10. Power Electronics/5. AC-AC Converters/2. Cycloconverters/Principle of Operation of Cycloconverters.md",
+            "hash": "215b3e0c8bf7b281cce7071786d441f040a0c55c3c9aa3714dced6c63e6d9c4a",
+            "size": 5699
+        },
+        {
+            "path": "10. Power Electronics/5. AC-AC Converters/2. Cycloconverters/Single-Phase to Single-Phase Cycloconverter.md",
+            "hash": "5f769dd228b1204fd17e28a22f100d15822403eb19d0ec7619ef07b709f8138d",
+            "size": 5140
+        },
+        {
+            "path": "10. Power Electronics/5. AC-AC Converters/2. Cycloconverters/Step-Up and Step-Down Cycloconverters.md",
+            "hash": "f9a177eb0b4478678dc48c50eac7ea2342eff91de77238b001262d666506c749",
+            "size": 5804
+        },
+        {
+            "path": "10. Power Electronics/6. AC-DC Converters (Uncontrolled Rectifiers)/Full-Bridge Uncontrolled Rectifier.md",
+            "hash": "8a617ca15a3de2733f4a88b9583853e21ce91df69cdd8f441e29cd1f18709a74",
+            "size": 6454
+        },
+        {
             "path": "10. Power Electronics/Power Electronics.md",
             "hash": "6e6ac736948f8bbf96f11b8a864eaccb8242a05e949b27f19166f86676e075cb",
             "size": 3520
@@ -8935,8 +9040,8 @@
         }
     ],
     "statistics": {
-        "files": 1786,
-        "directories": 204,
-        "bytes": 98203241
+        "files": 1807,
+        "directories": 210,
+        "bytes": 98313222
     }
 }
