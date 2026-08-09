@@ -1479,6 +1479,221 @@
             "size": 4617
         },
         {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/1. Coordinate Systems/Cartesian Coordinate System.md",
+            "hash": "107fd6ba8a4ba59f0b3dd4ca00ded782107f3f2999629b479991e4421ffe00d1",
+            "size": 5529
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/1. Coordinate Systems/Coordinate Transformations.md",
+            "hash": "cc162fc6793a22f6450f16420a39ded137d5c76ff70d0315d1b0f41dd1df3ac2",
+            "size": 4260
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/1. Coordinate Systems/Cylindrical Coordinate System.md",
+            "hash": "a5a88e8933e2f0236b85b9d39ab02df485ddb9d1c22d76d959719767ec43f61a",
+            "size": 4889
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/1. Coordinate Systems/Spherical Coordinate System.md",
+            "hash": "0aeb5f0e83955625203acc23f5dd8519fa912f0fb92bcb483c77ee2af43b3835",
+            "size": 6203
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/2. Vector Calculus/Curl of a Vector Field.md",
+            "hash": "486763a885380bf677e916ac4a21ed7317d5d2955f654ad1ba80ac1a6000ea80",
+            "size": 4680
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/2. Vector Calculus/Divergence of a Vector Field.md",
+            "hash": "ecf0089041f34017831e66e4a7d0131b48151156c38c03755dcddc253aa61c0b",
+            "size": 5082
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/2. Vector Calculus/Gradient of a Scalar Field.md",
+            "hash": "b7d8a984694c8e93d1767c2665e5802fb03689cebe4ec0a01080914cdf7517aa",
+            "size": 3764
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/2. Vector Calculus/Laplacian of a Scalar Field.md",
+            "hash": "615db00bdb76b0531fe9ce9a7de8970d83c26a8fd1d6254967216c0c524d2fb8",
+            "size": 4090
+        },
+        {
+            "path": "3. Electromagnetic Fields/1. Vector Analysis and Coordinate Systems/2. Vector Calculus/Vector Operations.md",
+            "hash": "47cddd1f5351810dd944fbbf07309204d2ca09535e513a7fa4915d3cf1753f83",
+            "size": 4531
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/1. Fundamental Laws/Coulomb's Law.md",
+            "hash": "1db14dfe66a270dee72f27ee40fcf6bed0bcda13feaca1531d05e7c498b5b11d",
+            "size": 4472
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/1. Fundamental Laws/Electric Field Intensity (E).md",
+            "hash": "e8f1297ba04e5ee239dc226bdfd4638c5f0e19177d1f8bcf2fe03b1490a5169c",
+            "size": 4371
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/1. Fundamental Laws/Electric Field due to Continuous Charge Distributions.md",
+            "hash": "0759d2c83c61bdbfdf666e119bac93c7ff713485fcc9f36ca512aa63ed3778b8",
+            "size": 4548
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/1. Fundamental Laws/Electric Flux Density (D).md",
+            "hash": "abdb2118b01f04d58bf6746ffa3eb5a213b60a28cfeafb14f277b41798fa0c1c",
+            "size": 3691
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/1. Fundamental Laws/Gauss's Law.md",
+            "hash": "e6318bb4cb1fad3700cfaef1da8f5d2f43631648a694f6214a90265fc9a621a9",
+            "size": 4755
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/1. Fundamental Laws/Maxwell's First Equation (Electrostatics).md",
+            "hash": "f296039e35b5429bcb0446dbce621b75dceaf45fa322bb21286925cf33c0d506",
+            "size": 4744
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/2. Electric Potential and Energy/Electric Dipole and Dipole Moment.md",
+            "hash": "784dec87a3e5d9aeb7f9ef5e58bb7b8e7e6b6fc6bc989fe77c7edb9d8655c6cd",
+            "size": 3663
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/2. Electric Potential and Energy/Electric Potential and Potential Difference (V).md",
+            "hash": "5b44616474968ad63e5e8318ad798ddb7c4f6cac141ccbc3d69e65e52dfc1835",
+            "size": 4087
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/2. Electric Potential and Energy/Energy Density in an Electrostatic Field.md",
+            "hash": "5e7e23b2f1be038e5e63f0960748e9d06a2405e3e86d8f3dade04116b1ed66bf",
+            "size": 4330
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/2. Electric Potential and Energy/Relationship between Electric Field and Potential.md",
+            "hash": "6b1c859c07e992424bc4c72f1de7ff445d7080a2f0591b993cb8f6662b4d4e0b",
+            "size": 3898
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/3. Conductors and Dielectrics/Boundary Conditions for Electrostatic Fields.md",
+            "hash": "4edd413ded682c42c0b40f15198c885dc7079cfd5341ee771fb0dcdc03a1efdb",
+            "size": 5871
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/3. Conductors and Dielectrics/Capacitance and Calculation of Capacitance.md",
+            "hash": "f4e1381e9af165f067c59078cc77fea0190a774c5e6f27cebb785416723fbe95",
+            "size": 5984
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/3. Conductors and Dielectrics/Dielectric Materials and Polarization.md",
+            "hash": "269bf4b82b542ec555fe12468ed7708fba70499fe2ca296530697c6e5912458f",
+            "size": 5533
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/3. Conductors and Dielectrics/Properties of Conductors in an Electrostatic Field.md",
+            "hash": "4ee1a43c4b5253931bee5ad839d7ea25545f15ef0f31709b2c901d4b85575282",
+            "size": 6672
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/4. Special Topics/Method of Images.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/4. Special Topics/Poisson's Equation.md",
+            "hash": "33a64ceb9bdc1dba6545e862700cfd15f2f090501f01d359d6164fecd6afcc2d",
+            "size": 4984
+        },
+        {
+            "path": "3. Electromagnetic Fields/2. Electrostatics/4. Special Topics/Uniqueness Theorem.md",
+            "hash": "c0d212753895f2a068e0c5ccd5c7cd43b9200e33374cd6705cd7fce3dc29ae09",
+            "size": 4256
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/1. Fundamental Laws/Ampere's Circuital Law.md",
+            "hash": "fcd6a2c0f7dcbe1f309d37760f7fcd0d6e7d79af6b951c01d3f67f9ce507e88d",
+            "size": 6020
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/1. Fundamental Laws/Biot-Savart's Law.md",
+            "hash": "40b94a3a96cc5a8470f1c353811728ae1dac6a7a08e09b397ae3701107bc3b90",
+            "size": 4354
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/1. Fundamental Laws/Magnetic Field Intensity (H).md",
+            "hash": "3744180510b0cc309ba9ee4f4947666b69e69d333c0c030869dc94186592cd6d",
+            "size": 5681
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/1. Fundamental Laws/Magnetic Field of Finite and Infinite Conductors.md",
+            "hash": "9c45d103095b85149bb006b69abdeb456fb36ca9ac1be9ba9dec37b7b4e1af27",
+            "size": 4030
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/1. Fundamental Laws/Maxwell's Equation from Ampere's Law.md",
+            "hash": "87b3edfa1aea5da2942cb8cea059bdadd58c058f2fd59d3afa919417d2ba658a",
+            "size": 4298
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/2. Magnetic Flux and Potentials/Magnetic Flux Density (B).md",
+            "hash": "637693bb5f8698ecf375df4ba97a289c37a744a6f8cb76e1f3d78f11dd3e9fa0",
+            "size": 5061
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/2. Magnetic Flux and Potentials/Magnetic Scalar Potential (Vm).md",
+            "hash": "f46a1eab253fa92a994ea823563eff08b44918ef7b18a7cfc34ec86d87cae032",
+            "size": 4910
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/2. Magnetic Flux and Potentials/Magnetic Vector Potential (A).md",
+            "hash": "756d765e18cf04be4cc60a9fa1c87a9fdaa78b369b0b2cd634cc3106dd163f54",
+            "size": 4585
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/2. Magnetic Flux and Potentials/Maxwell's Equation for Magnetostatics.md",
+            "hash": "1d5342a63eb64fabfaf051f4d4d64de53fba0a32a38eddf49e6033285bef405a",
+            "size": 4379
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/2. Magnetic Flux and Potentials/Relationship between B and H.md",
+            "hash": "11f772f4d5708db2c24cf1d41dc060d49e672f8d5ca7c4afb624b9afc63fe082",
+            "size": 6167
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Force between Differential Current Elements.md",
+            "hash": "88efa4d569f746308531a4b91f58b0460a547b6ad68288a5cf65744033895841",
+            "size": 3901
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Force on a Differential Current Element.md",
+            "hash": "5b657be7aef21eec98909505f2d0e59e44329f8cf4ef757282feb3727aa882f0",
+            "size": 4340
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Force on a Moving Charge.md",
+            "hash": "a00b2524dac4e63b234ec27df07ea7b2ca79e770dfdefdd3911ac056ea8e1c62",
+            "size": 4783
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Inductance and Mutual Inductance.md",
+            "hash": "af201f42e9dd6e4f58fef9f07b865e8b9295f6e8fdcc9e396a5475a35696acc0",
+            "size": 6487
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Lorentz Force Equation.md",
+            "hash": "391d4ce844ae48738bf292d8ac2ba252a5b4288bf7f5993409fbd55f07b1bb99",
+            "size": 4797
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Magnetic Boundary Conditions.md",
+            "hash": "7d7f2a766b71f37ca38e1996d24f07dad977f93aad1f04b0c54c8e0d30e7feac",
+            "size": 4004
+        },
+        {
+            "path": "3. Electromagnetic Fields/3. Magnetostatics/3. Magnetic Forces, Materials, and Inductance/Magnetic Energy and Energy Density.md",
+            "hash": "85d5b23d1261cacff1e6078c9c0f43959c9fcf2079d95a949c4776c87046e51a",
+            "size": 3550
+        },
+        {
             "path": "3. Electromagnetic Fields/Electromagnetic Fields.md",
             "hash": "c505223cfe56bc1faaed42ac950fe4702d4dce004b18f360a0ea9f4f79b71ad8",
             "size": 3418
@@ -8015,8 +8230,8 @@
         }
     ],
     "statistics": {
-        "files": 1602,
-        "directories": 167,
-        "bytes": 97228211
+        "files": 1645,
+        "directories": 176,
+        "bytes": 97428445
     }
 }
