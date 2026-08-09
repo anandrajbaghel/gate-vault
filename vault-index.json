@@ -2109,6 +2109,21 @@
             "size": 637
         },
         {
+            "path": "15. Master/Control System Repeated Generic Notes.md",
+            "hash": "3b84f489adf225f3854e2ab9531f0bc57c2dc8d3870683d147be5a4960311ccb",
+            "size": 708
+        },
+        {
+            "path": "15. Master/Digital Electronics Repeated.md",
+            "hash": "fd2bfb04b49d163a50c6e920d7c5a2484eb4c299576b1e36456ffcb8c6172769",
+            "size": 1720
+        },
+        {
+            "path": "15. Master/Electromagnetic Fields Repeated Generic Notes.md",
+            "hash": "f5e611919cf005aacc70cee60b32d572e933af6b50127b3d1a3f9f3ed73c6d09",
+            "size": 269
+        },
+        {
             "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Capacitors.md",
             "hash": "83427b88eab8a75376bf38ac2240f1786cd992d49d867640bd9453f0861e009c",
             "size": 4355
@@ -9955,8 +9970,8 @@
         }
     ],
     "statistics": {
-        "files": 1990,
-        "directories": 211,
-        "bytes": 98643476
+        "files": 1993,
+        "directories": 212,
+        "bytes": 98646173
     }
 }
