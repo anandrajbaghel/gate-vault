@@ -9609,6 +9609,71 @@
             "size": 314
         },
         {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Analog & Digital Electronics.md",
+            "hash": "b4a5a18c512bc45c44bcde8907907c2f38ac621ab2d796ec907ff7832fe4d8e5",
+            "size": 3989
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Analog Electronics.md",
+            "hash": "bde1a19bc6f5b3db02c301a3bc59ab56a0bf0816367867e32a145de32d576a39",
+            "size": 2511
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Control Systems.md",
+            "hash": "a75b58d1a43419bee10f73634df015a0123e00d7f843d79f09d21832b33e6a16",
+            "size": 3686
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Digital Electronics.md",
+            "hash": "3d10b71e7a219ae7250ac6b8d5284edc92cd4ce8781efcfa3ca55b1cbd7e3338",
+            "size": 2242
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Electric Circuits.md",
+            "hash": "88fd0af4af27bc741343b0d266d18c842d3a35480fe9e5bd8fa7d0af5ac31a2a",
+            "size": 4293
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Electrical & Electronic Measurements.md",
+            "hash": "081146d3288e810765e3264cf340459d1a6eb0d85f0cf097deea0c7a0241e21d",
+            "size": 2147
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Electrical Machines.md",
+            "hash": "8e5222b3e50785539191e833a178948c070c3f922d8919fc986e64a86410d09d",
+            "size": 3948
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Electromagnetic Fields.md",
+            "hash": "63d35c714d2ef7259341aa9a9ae9dc383ac458ef4559d351486c64042ba47e6d",
+            "size": 1997
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - General Aptitude.md",
+            "hash": "d9f1b4bcf98445437419179076bd65d86b243ae4cc966cd884c88bbd4d53e1e9",
+            "size": 4142
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Mathematics.md",
+            "hash": "6f096e4230dad90760d955e6fb5e5769678fda54e906322a85202cc057e9b2e6",
+            "size": 5211
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Power Electronics.md",
+            "hash": "cb29cbd846826a13696dd59c1d2f72a4fac169976d00333c9f946f0531546687",
+            "size": 3985
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Power Systems.md",
+            "hash": "fea94ca05cb6ae480028f73d42b9601b00ec0cdab9b4e186d29e8dc7cb5c4228",
+            "size": 4037
+        },
+        {
+            "path": "Resources/Question Paper/GATE/MD/onlyQ/Subject/onlyQ - Signal & Systems.md",
+            "hash": "3b3ba0736f5e6e2f33e2eef4edc9a5fd315a129c47d6e5f1484e4b14f0512f3e",
+            "size": 3494
+        },
+        {
             "path": "Resources/Question Paper/GATE/MD/onlyQ/Year/README.md",
             "hash": "b9d21747361d2e742fe78e93a6805613f53349b807e4bfe26b15d60123651a56",
             "size": 311
@@ -9890,8 +9955,8 @@
         }
     ],
     "statistics": {
-        "files": 1977,
+        "files": 1990,
         "directories": 211,
-        "bytes": 98597794
+        "bytes": 98643476
     }
 }
