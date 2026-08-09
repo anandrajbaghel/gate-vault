@@ -4039,6 +4039,131 @@
             "size": 2695
         },
         {
+            "path": "9. Analog & Digital Electronics/archive/BJT Amplifiers.md",
+            "hash": "30fdd8264374e891e17d75bac9517e2ca33bd20d4ef6f316f610400d608a4dd1",
+            "size": 7158
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/BJT DC Analysis.md",
+            "hash": "51ca7178e47c46d4d013813423733057f5a4b96777d786e5b864544881ff8384",
+            "size": 4935
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/BJT Small-Signal Model.md",
+            "hash": "c93483eb46f2821d3c12a1f8c0808879139f69bf95f0626fa193735cb0c68998",
+            "size": 4045
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/BJT.md",
+            "hash": "7ab03c50d3efa0e0e7b4c00496fd7f67ff3c31584eed9fb36b7f7bf2a9fd87c6",
+            "size": 6174
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Bandpass Filter.md",
+            "hash": "f52387d24c149f0115434cbeba63d47b4c176a000b723a85b512b4f5d56a9627",
+            "size": 5155
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Cascode Amplifier.md",
+            "hash": "6f51d559dcc8da37a78f066ba8b08cf48f32d6c1862215bc308bf7c06c0b3ad8",
+            "size": 4575
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Circuit Analysis Techniques in Analog & Digital Electronics.md",
+            "hash": "5aeb6cb3f0cab75f5708e3ae1f698690cb2e4b000078faf5c5649c737083f1a6",
+            "size": 4892
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Base Amplifier.md",
+            "hash": "f1ed0fbbc4c33cc1a227b3fd7a82f2d132eba50b865631b88de3fdcd83cf71ad",
+            "size": 4350
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Collector Amplifier.md",
+            "hash": "b613ef8da5acfceb8b596b2cf32b729b181cf8c15ce6b68165a17b12a1f5678d",
+            "size": 5047
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Drain Amplifier.md",
+            "hash": "772b0872252e42314190254699969dee748b1adb4e91024a85aa6255995f9ffe",
+            "size": 3485
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Emitter Amplifier.md",
+            "hash": "6cc4d0117c08c62464836e7dec6b3708d6a2c2b10650e1f3feaa83195de2695b",
+            "size": 5186
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Gate Amplifier.md",
+            "hash": "4b3a630fa626f8cddbbe6ce8566eb374597927da34ec1fb54802548b9eb96259",
+            "size": 4285
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Source Amplifier.md",
+            "hash": "863835ce857dfaeb8bc9aa2e5224ed4b7ad3ed88df0e4dd3c91b37ea238027ff",
+            "size": 5645
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Common Source Configuration.md",
+            "hash": "66311eb820599119a94c36aeec3a39bf3d34a5d619e521606545749d59a148da",
+            "size": 5622
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Diode Circuits.md",
+            "hash": "c72adc25db197984c8eb7405ab30747ddee6bfb119255a61aa4cef4f78d58a05",
+            "size": 6942
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Filter Characteristics.md",
+            "hash": "7a77bd8b84420e372e43194d3d470a708abf56d0e289139f02d041b4d1ebec09",
+            "size": 5587
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Half-Wave Rectifier.md",
+            "hash": "73b345a05fd57f052a0ae61d4698d6f126ba418c38e185a9dd572e6cfc1ca9ff",
+            "size": 6239
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/High-Pass Filter.md",
+            "hash": "ae5cd2b80181a2d41ffcf8ce17c4fdae418b4e27343cde6777b1280f2792493e",
+            "size": 5568
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Low-Pass Filter.md",
+            "hash": "4943665c7b2879e71b290205c23087b92733c4458d5dd10486fc0a9841d58620",
+            "size": 4937
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/MOSFET Amplifiers.md",
+            "hash": "15bca0c0553fdfd4b5de2555e94d965d8ec326f42efbd2f851d58a6476ed4560",
+            "size": 6648
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Miller Effect.md",
+            "hash": "0fae25e6b9d723c307b90a55c78e0cd3958a3c3e17c62756dbaa23f62df5eefe",
+            "size": 4525
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Notch Filter.md",
+            "hash": "00e25f715af3305a5acbb837a956e6ecccc345b41d7adc89bfc978bc8e6c1800",
+            "size": 5225
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Nullor.md",
+            "hash": "b6c2cd667239d5beffebd31d6ac83602216059103c7125aef9a07dad06ed0a67",
+            "size": 3926
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Small Signal Analysis.md",
+            "hash": "8ed7c2073e6a55ebf764be43c21429a8c054f90596fb028fd495b254cb48eae1",
+            "size": 5212
+        },
+        {
+            "path": "9. Analog & Digital Electronics/archive/Transistor Biasing.md",
+            "hash": "955eb85304ae8699901e60447687d58da10ce2f4ad66d8063139c0f1c4d306f5",
+            "size": 5396
+        },
+        {
             "path": "Caution.md",
             "hash": "8b1eafa116444c16aad1afa4df3efe6bcc7271d62c797a4c8de10321eddd3714",
             "size": 1038
@@ -8630,8 +8755,8 @@
         }
     ],
     "statistics": {
-        "files": 1725,
-        "directories": 192,
-        "bytes": 97855421
+        "files": 1750,
+        "directories": 193,
+        "bytes": 97986180
     }
 }
