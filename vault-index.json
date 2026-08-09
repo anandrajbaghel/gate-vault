@@ -959,6 +959,181 @@
             "size": 4073
         },
         {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/1. Device Characteristics and Operation/Comparison of Power Semiconductor Devices.md",
+            "hash": "530d9611a2b30b57ea1aac972047b33eabe9a924d46529f34fa8fcb107051c6d",
+            "size": 7692
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/1. Device Characteristics and Operation/Gate Turn-Off Thyristor (GTO) and TRIAC.md",
+            "hash": "f0cf276be458588b513499e8107172a25364ce171042f87d69aa48329a9520a0",
+            "size": 6595
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/1. Device Characteristics and Operation/Power BJT, Power MOSFET, and IGBT.md",
+            "hash": "5628e416b8328e6c3b240973748f209eb6f182550c6267f450fe98bb375458db",
+            "size": 7868
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/1. Device Characteristics and Operation/Silicon Controlled Rectifier (SCR).md",
+            "hash": "9210f115f123b399c5d61d84769df0168d6f7589801e85873ebb586ab1b9876a",
+            "size": 7594
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/1. Device Characteristics and Operation/Static and Dynamic Characteristics of Thyristors (Turn-on and Turn-off).md",
+            "hash": "afa375d1d2159df17e954a063c2ccce644287085f2079dae16b392c211b89c1c",
+            "size": 6632
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/2. Device Control and Protection/Gate Drive Circuits for MOSFET and IGBT.md",
+            "hash": "0bf1783f4d45cd403782e8726fdae763baa7a8ca4d1d12e2cc63cd27688e21e1",
+            "size": 6812
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/2. Device Control and Protection/Protection of Thyristors - Overvoltage (Snubber Circuit), Overcurrent (Fuses, Crowbar).md",
+            "hash": "050719f82f8b13d03981c5bee7fda32d34f3630006099c5e55532683dbc8f324",
+            "size": 6159
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/2. Device Control and Protection/Series and Parallel Operation of Thyristors.md",
+            "hash": "350863ad8565a6d0d1da7d31895846de2f8a290e0a32a133c0ebed756517e47a",
+            "size": 6232
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/2. Device Control and Protection/Thermal Design and Heat Sinks.md",
+            "hash": "ac986503ad24e76d0ca3d122735b37b7339d859dc05d2275368d5861512559e1",
+            "size": 6467
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/2. Device Control and Protection/Thyristor Commutation Techniques.md",
+            "hash": "926d33055ddb5b7bcb2265cac5ccf2ab0bc23769b536f9cdb81bdb9737ccccbc",
+            "size": 6876
+        },
+        {
+            "path": "10. Power Electronics/1. Power Semiconductors Devices/2. Device Control and Protection/Thyristor Firing (Triggering) Circuits (R, RC, UJT).md",
+            "hash": "b8137a126b506390c68074702a12779c4ef7d7d01dd61e51cd6591d7c57a8d52",
+            "size": 6072
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/1. Single-Phase Converters/Effect of Source Inductance (Commutation Overlap).md",
+            "hash": "d3bd9874191ef0a780fe3e0a21be492c2dbecda8a46290d6bc54123634f4d5bd",
+            "size": 5451
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/1. Single-Phase Converters/Single-Phase Full-Wave Bridge Controlled Rectifier.md",
+            "hash": "fb7b33642a93b420d35a6674f7dbfa38d2e952d4b510bd167ab3ad13a5e7fd7a",
+            "size": 10158
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/1. Single-Phase Converters/Single-Phase Full-Wave Center-Tapped Controlled Rectifier.md",
+            "hash": "d03317414412dc32d69d1f4f3f3c3391a79990e86633e289d1a6838771c28a74",
+            "size": 6478
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/1. Single-Phase Converters/Single-Phase Half-Wave Controlled Rectifier.md",
+            "hash": "81ffbf473cbcc389636c46318808c26bb154e1dfcb6c97488edff67564fd921d",
+            "size": 6927
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/1. Single-Phase Converters/Single-Phase Semi-Converter.md",
+            "hash": "9cc98439dbba790b6a674ed9bc9a4145ab024f1f76c790a3463098c06db7c8b2",
+            "size": 6045
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/2. Three-Phase Converters/Effect of Source Inductance in Three-Phase Converters.md",
+            "hash": "d06245250387bf30552ce102f933f25a7a9a8d92bf90834e0b1e0b55127d046e",
+            "size": 5430
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/2. Three-Phase Converters/Three-Phase Full-Bridge Controlled Rectifier.md",
+            "hash": "aed6994d01c3bfc138dbbbf79b0f93e5cc8bacf514a43b2ab86b30b9cdc37872",
+            "size": 5941
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/2. Three-Phase Converters/Three-Phase Half-Wave Controlled Rectifier.md",
+            "hash": "18d02d2e51e1daab329a327f164418591ab9bbd5948943e9302697c5d2ce627b",
+            "size": 6299
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/2. Three-Phase Converters/Three-Phase Semi-Converter.md",
+            "hash": "76e7c92a3f9b696f745b3bcfd886c1a85d07465b7c83f0ea4572ce49c6f531dc",
+            "size": 4856
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/3. Converter Performance and Operation/Dual Converters (Circulating and Non-Circulating Current Modes).md",
+            "hash": "e8ff0542a6db59d239a30178a8a79ee7785549df92ae73f82e9f688902fececd",
+            "size": 5170
+        },
+        {
+            "path": "10. Power Electronics/2. Phase-Controlled Rectifiers (AC-DC Converters)/3. Converter Performance and Operation/Performance Metrics.md",
+            "hash": "8628d9f1e062442cf81a8cf27230d7c709d76fd1a7ef2fbed810030bc327d46b",
+            "size": 6108
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/1. Step-Down (Buck) Converter/Buck Converter in Continuous Conduction Mode (CCM).md",
+            "hash": "2d798c963bc1db7364932761a71ad8a3744a045eb4930413e9787bb648f805be",
+            "size": 6460
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/1. Step-Down (Buck) Converter/Buck Converter in Discontinuous Conduction Mode (DCM).md",
+            "hash": "3c7cd9f4f2ac11d92e6ba4b45952d9fc5ab1c77d3e9c4c7a2c816e274b2effc3",
+            "size": 5563
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/1. Step-Down (Buck) Converter/Buck Converter.md",
+            "hash": "efb7c9d3faf26a18286b548a610a6391dc0155bab8f84c5feff9e26823d1038f",
+            "size": 9925
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/1. Step-Down (Buck) Converter/Output Voltage Ripple Calculation.md",
+            "hash": "93242b4d4e8de436de89ab2a380044dfa4ea56e7c91b41b006fcd2817a0b5ddf",
+            "size": 5503
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/2. Step-Up (Boost) Converter/Boost Converter in Continuous Conduction Mode (CCM).md",
+            "hash": "e02ede4e544fc1834661dcc5deecbf8416f396d48d1de5f2387dc9026c4f4a77",
+            "size": 4151
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/2. Step-Up (Boost) Converter/Boost Converter in Discontinuous Conduction Mode (DCM).md",
+            "hash": "30c784bcdd753bb51f2407ad52a6ed70fddeb27fb3504f6bf68352d6f8d922c3",
+            "size": 4056
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/2. Step-Up (Boost) Converter/Boost Converter.md",
+            "hash": "055a53ee0b7226729d216c5a221c334b04b2e22dd2e81f829b0dca930acc8871",
+            "size": 6565
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/3. Step-Down & Step-Up (Buck-Boost) Converter/Buck-Boost Converter in Continuous Conduction Mode (CCM).md",
+            "hash": "491847eea0d40b326d45232bfd457b1731a4e3bc291f5349ead6e233c0ae484b",
+            "size": 4277
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/3. Step-Down & Step-Up (Buck-Boost) Converter/Buck-Boost Converter.md",
+            "hash": "931065bff0c2fb66638ab65ec49bacec92bd888f56bb7696396f260b69c9c829",
+            "size": 8762
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/4. Other Converter Topologies/Cuk Converter (Introduction).md",
+            "hash": "0763b3a541c76fedf004437c4257a1579b354e8f25470173fba2a01430adbee7",
+            "size": 4442
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/4. Other Converter Topologies/Full-Bridge DC-DC Converter (Introduction).md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/5. Control Strategies/Current Limit Control.md",
+            "hash": "e6612b8aa98db977fdbdf7589b41a0afcd948a1db2c40489e3f5f57031b2faf5",
+            "size": 4671
+        },
+        {
+            "path": "10. Power Electronics/3. DC-DC Converters (Choppers)/5. Control Strategies/Time Ratio Control (Constant Frequency, Variable Frequency).md",
+            "hash": "0e7ff248623f9b89cefc19bfb1e7fb9fa78318ce3c7df0b0e0f946af0363813f",
+            "size": 5304
+        },
+        {
             "path": "10. Power Electronics/Power Electronics.md",
             "hash": "6e6ac736948f8bbf96f11b8a864eaccb8242a05e949b27f19166f86676e075cb",
             "size": 3520
@@ -8760,8 +8935,8 @@
         }
     ],
     "statistics": {
-        "files": 1751,
-        "directories": 194,
-        "bytes": 97989700
+        "files": 1786,
+        "directories": 204,
+        "bytes": 98203241
     }
 }
