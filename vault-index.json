@@ -9969,14 +9969,29 @@
             "size": 349
         },
         {
+            "path": "Resources/Syllabus/GATE_ee_24.pdf",
+            "hash": "1cb0073e5c56cf14de9cb2d36369fc822c30e2f20540ee01a84b7e774b1672fd",
+            "size": 126180
+        },
+        {
+            "path": "Resources/Syllabus/GATE_ee_25.pdf",
+            "hash": "2c9abd199b65251b9e651f9892a789daf714b8f62e479de3ccaa4bf9e5c3c16d",
+            "size": 218453
+        },
+        {
+            "path": "Resources/Syllabus/GATE_ee_26.pdf",
+            "hash": "2fe7a936ec3f23a519fe2e788bc2ebfd6d0e5c9b3064fd466b45392bbe431d44",
+            "size": 543371
+        },
+        {
             "path": "vault-manifest.json",
             "hash": "923d4d538f9563d41b117b6617e2d514a33512a758db760258265bd1a9f5e20c",
             "size": 541
         }
     ],
     "statistics": {
-        "files": 1994,
-        "directories": 213,
-        "bytes": 98646424
+        "files": 1997,
+        "directories": 214,
+        "bytes": 99534428
     }
 }
