@@ -10214,14 +10214,29 @@
             "size": 543371
         },
         {
+            "path": "Resources/practiceQ/Conditional Expectation Practice Questions.md",
+            "hash": "45b5fd719dd89026df695cac4d1f63070b8432a64db0133b391864e31efaf199",
+            "size": 1389
+        },
+        {
+            "path": "Resources/practiceQ/Single Line-to-Ground (LG) Fault Analysis Practice Question.md",
+            "hash": "730be015a491cbb1ba3663573a59b35c1ca32f06c75dcafef46508def647c8f6",
+            "size": 3123
+        },
+        {
+            "path": "Resources/practiceQ/Three-Phase Fault Analysis Practice Question.md",
+            "hash": "391138d964da2734f7fa7894eb085421179961391fffa59946b834d06910e989",
+            "size": 2789
+        },
+        {
             "path": "vault-manifest.json",
             "hash": "923d4d538f9563d41b117b6617e2d514a33512a758db760258265bd1a9f5e20c",
             "size": 541
         }
     ],
     "statistics": {
-        "files": 2043,
-        "directories": 216,
-        "bytes": 99601893
+        "files": 2046,
+        "directories": 217,
+        "bytes": 99609194
     }
 }
