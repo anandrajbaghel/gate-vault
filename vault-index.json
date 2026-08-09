@@ -1459,9 +1459,219 @@
             "size": 128
         },
         {
+            "path": "12. PYQs Pattern Book/trends - AC Circuits.md",
+            "hash": "226f71f4f7a69556f9b96866f2bb5679c4fa0bee7853b5a1c423c9453e3ab4e5",
+            "size": 1624
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - AC Voltage Controllers.md",
+            "hash": "cba22dfcb162548ed54d2d7af3e6b12e339d1fa2e3ddccc3f0ec909dfebad2ea",
+            "size": 606
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - AC to DC Converters.md",
+            "hash": "3d447f30ad7cb62cb78e35b7d403d7fb8dc2308c03cbf3bca271d40aef445f29",
+            "size": 1076
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - ADC and DAC.md",
+            "hash": "37a3b4d8960fd9974110b54622f85c2043a349915f42e8d9d9e4ed50ea3f4747",
+            "size": 578
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Active Filters.md",
+            "hash": "937e3666c3e28b1a7304fc2017ed0fc56c5f85fc6746cd170921a2f790d8d943",
+            "size": 472
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Analog Circuits.md",
+            "hash": "709fbe391ecebfc55bf9b6cfd36efe25a603e35cf6f1f7ff3fb5d3ce12c1d15d",
+            "size": 371
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Autotransformers.md",
+            "hash": "2d31da29a8a0352574c5c003d62888fb363106ad3c37a32cc0b72e60ae0e7369",
+            "size": 583
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - BJT Amplifiers.md",
+            "hash": "0f8974cb08f42f2eec6efa422e8dbcc95f4123209b37bf3c5ed3c16b55dd7c0a",
+            "size": 337
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Bandwidth and Rise Time.md",
+            "hash": "758fc7e9fe4451db6ab3dc23c483d364df3be19588bad8bf56bbb349e7eeaf79",
+            "size": 560
+        },
+        {
             "path": "12. PYQs Pattern Book/trends - Bode Plots.md",
-            "hash": "f2e55418269af2fd5ca4df317fde857aaff7b7a83d32915b8151631909bfa64e",
-            "size": 1110
+            "hash": "38cedb1b53b8b2125000d19ab7347d4a402e21af27f534b24eb48535d7cc678e",
+            "size": 1203
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Boolean Algebra and Logic Gates.md",
+            "hash": "1e4c5a0d90ea732278e4b42bed1c605dcc014f29935df67643e7261c34e20f99",
+            "size": 1212
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Bridge Rectifiers.md",
+            "hash": "1eb60133c82dfac8c8b1171e111614f71a0327f71c919e51eace028540787a8f",
+            "size": 415
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Bus Admittance Matrix.md",
+            "hash": "e728cb2f7f68b9b6110d87b666d2a8e7899e139164b35eeb55b213bab6de40b1",
+            "size": 432
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Calculus.md",
+            "hash": "cf7b036e4c50a281ad2448e15726caad3e38d7c6606982c73eca09a1c44c221a",
+            "size": 341
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Choppers.md",
+            "hash": "89037dfe4881631766e76da1a9ebd976384ef5abf0b4805947fdd9f20963a73e",
+            "size": 633
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Circuit Breakers.md",
+            "hash": "843e3a80165a01906ffdf37c4fd2752c19bc22e60a74173d00199ed83324c2d7",
+            "size": 368
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Combinational Logic.md",
+            "hash": "4034d2f6b200310822560dd1ef50c15b95cec8eca40df0aab03da02449ac3bb3",
+            "size": 559
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Commutation Techniques.md",
+            "hash": "66bde638becaf8364e3308fa7e278f449c898a828ccab3ee8e76d5dc77d205c0",
+            "size": 496
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Compensator.md",
+            "hash": "4831bee14d863803f9d2391f0f0c425b2575b74016fbb8009a1df0891754291e",
+            "size": 877
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Complex Variables.md",
+            "hash": "111915d76cf373f7db88d95694190776a4b5fdaf489bd26d41c08e8ac395c4d2",
+            "size": 756
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Controlled Rectifiers.md",
+            "hash": "9dedeb46993c297b757a59479f2905d265f1eb435064be2d7705b46f1cde5fcc",
+            "size": 871
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Controller.md",
+            "hash": "8a8dd4a37c22435df0a256e75683544f0c0d493be655577075880fad0349887c",
+            "size": 370
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Convolution.md",
+            "hash": "7fac5439f1c883e76a4aa2745e46bd033877ab9752d59ca015a8021d089c65f2",
+            "size": 861
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Cycloconverters.md",
+            "hash": "d101a90eee8d48ce0ad81ef0868dfc2d25461e6376ad95ef9ac3c07d7d087da1",
+            "size": 329
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - DC Analysis.md",
+            "hash": "8ed4950d5fbcc6370f375c961618099f79af4f4dac8917a031df1526c166260a",
+            "size": 692
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - DC Circuits.md",
+            "hash": "0539228da93277b61bfe5592350562c7ff0494c38cf09739c2d3fc0772f94239",
+            "size": 960
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - DC Machines.md",
+            "hash": "ad0d68be02a62559ed25e5f9a5df55d23080a25108406caca798d1b401f1d544",
+            "size": 487
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - DC Motors.md",
+            "hash": "1c5a26a9f8bda38ed8eb7fcbd51f1aa4b4adc1255148eb774658bbfea772cbc4",
+            "size": 1551
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - DC-DC Converters.md",
+            "hash": "f9c6188254f92bd1d87bcd9189e7fa8c468a9823b53b7f6f9fb14feef59310ef",
+            "size": 1624
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Dependent Sources.md",
+            "hash": "eaa9b9ff1c65242b78323ee8311d2c7ba72d569516bed7fdc14d16d5c0ab9b4e",
+            "size": 810
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Differential Equations.md",
+            "hash": "b105ee7a096325b90bc576b20952238122d97725fea5929196cc7ca2aac47a80",
+            "size": 1051
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Digital Circuits.md",
+            "hash": "63fd5e11b688914301ca55845c83f7c60e963c73df08c6da28e9c6e2c191df69",
+            "size": 393
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Digital Voltmeters and Multimeters.md",
+            "hash": "44f8d153ad04584f0c34a9ae41d54db9f6bc40641d14e6c6c5458858ea5526d2",
+            "size": 386
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Diode Circuits.md",
+            "hash": "801fd15124d5d98912eb6468a95deb0a6342209694c67553e6c7d7b87e403047",
+            "size": 575
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Distribution Systems.md",
+            "hash": "125d1628b14d9a1b8a06bfd4900775d8e01bd09352b0e6f47a49623eac1658e0",
+            "size": 335
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Economic Operation.md",
+            "hash": "d0a3db010844bcdf82d76e8d7e81f6369240f15b291832074c7b2c9dfa149810",
+            "size": 919
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Electric Fields and Potential.md",
+            "hash": "3fbc8702f0e48f4499ece2d63c258805c0e1009d3f951260b7228b540169bd7c",
+            "size": 362
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Electromagnetic Waves.md",
+            "hash": "16516ce2637e0a73fa21ee9787093ac1dc69eccfa54205538c4ec6a6fd68f1d8",
+            "size": 372
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Electrostatics.md",
+            "hash": "31d7ccd99ac4cc4ccdf362631db4af3ea66884337d1de2f6dfae0d7123fc9354",
+            "size": 1261
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Embedded Systems and Microcontrollers.md",
+            "hash": "42859fdc85fb2f12a8629903a844bf7f04aeacd4c17585704818499ce0316ee1",
+            "size": 780
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Energy and Power Measurement.md",
+            "hash": "362a1daa31bc736c82e187896e55f1592fa358d1e61368acaaa8a874593f9d6e",
+            "size": 402
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Equal Area Criterion.md",
+            "hash": "55fb18be39daa6ed0bbb574207527bb56abc8d6bee0c00cf314003912cc70752",
+            "size": 514
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Equivalent Circuit of Transformers.md",
+            "hash": "273927869ffadad53716a0986f97038636cb96b221e6f395efb487b15167e489",
+            "size": 369
         },
         {
             "path": "2. Electric Circuits/1. Network Fundamentals/1. Circuit Elements/Capacitors.md",
@@ -9250,8 +9460,8 @@
         }
     ],
     "statistics": {
-        "files": 1849,
+        "files": 1891,
         "directories": 211,
-        "bytes": 98506167
+        "bytes": 98534830
     }
 }
