@@ -10044,6 +10044,161 @@
             "size": 349
         },
         {
+            "path": "Resources/Solution/solution - DTFT and DFS.md",
+            "hash": "0ee24a7b8abcf1502353abd1bed872c9cea61604071e78d4b09d4f146bbf3a2a",
+            "size": 1641
+        },
+        {
+            "path": "Resources/Solution/solution - ROC Z-Transform.md",
+            "hash": "b70ced09b92022a6d081e21cbc33dd88becd9de861f4730d0346d3d0988f3649",
+            "size": 1450
+        },
+        {
+            "path": "Resources/Solution/solution - bibo stability check.md",
+            "hash": "58c179e15635723776154de24f611040d41a1f672846ea3813b04ea2e7bc2126",
+            "size": 1400
+        },
+        {
+            "path": "Resources/Solution/solution - bjt.md",
+            "hash": "e5f1035dfafb88ecdd22aefeffdf95f05b85341b1279f4263da0092d27abf1a1",
+            "size": 1660
+        },
+        {
+            "path": "Resources/Solution/solution - convolution.md",
+            "hash": "1ffe77404993b50f84ff73c0decb2326892256aed0327095092a4e015443f844",
+            "size": 6468
+        },
+        {
+            "path": "Resources/Solution/solution - discrete convolution.md",
+            "hash": "62b80d4c4131ddd9d3b0c11cdca763177c10c1bfe39da00c90de43923ed3a56b",
+            "size": 1750
+        },
+        {
+            "path": "Resources/Solution/solution - discrete time fourier series.md",
+            "hash": "3f00c6c4577449801520db2d4594bd51740a3a581dad87cdff3897a2bbd74d5a",
+            "size": 1415
+        },
+        {
+            "path": "Resources/Solution/solution - discrete time signal time period.md",
+            "hash": "d1603350fc98605fae3f3e40a0516df1ff4d1a982c9967f997e7756412a21e02",
+            "size": 1144
+        },
+        {
+            "path": "Resources/Solution/solution - disturbance in control system.md",
+            "hash": "1f23e301f55aa84ce9a3987178f747f6e66c17587579e023e2c42cff8b357880",
+            "size": 1798
+        },
+        {
+            "path": "Resources/Solution/solution - fourier transform derivative.md",
+            "hash": "4901df292233e2ec7caad8c6edb2b845f5733f0cc80d78f06ac526585cf3a22c",
+            "size": 1331
+        },
+        {
+            "path": "Resources/Solution/solution - high-pass filter square wave.md",
+            "hash": "1ab4735b36df3288ba0bfd78889fc8d7732f3ff48addf6f26047d17f8bfe65bc",
+            "size": 2751
+        },
+        {
+            "path": "Resources/Solution/solution - linearity time-invariance and causality.md",
+            "hash": "f791548d8111b3d259d3c4b29c5298a49c0bcacabb8aedbd7e237ed2270eaa8e",
+            "size": 1729
+        },
+        {
+            "path": "Resources/Solution/solution - load frequency control.md",
+            "hash": "be1c790f304a216623e29602b380173f55d30367fbdfe0afa8f37d4114adf374",
+            "size": 957
+        },
+        {
+            "path": "Resources/Solution/solution - long transmission line MPT.md",
+            "hash": "ac2d2cb9ef72159236bc62b3ac3d667c70b3bc472d61a21b33c05b52466c065c",
+            "size": 1662
+        },
+        {
+            "path": "Resources/Solution/solution - lossless line power transfer.md",
+            "hash": "f3f36e92220435804a7cd6a2019f6839998e8af502361a05a89ac2a7a2194990",
+            "size": 1531
+        },
+        {
+            "path": "Resources/Solution/solution - nodal analysis in power system.md",
+            "hash": "15b5fb1c83ccc16b9e76131291ecee16ce4fd4bf5fd8bedf9c5701eead1d2f7e",
+            "size": 2330
+        },
+        {
+            "path": "Resources/Solution/solution - nodal analysis.md",
+            "hash": "4d0b491433c633578c0ffbae09075eef0f4598fe26220909704b17d09cc72fb7",
+            "size": 1266
+        },
+        {
+            "path": "Resources/Solution/solution - power flow for small angle.md",
+            "hash": "5877dfeacffe928e3da106a2252773fd8159217f5804f326296c5272020e632a",
+            "size": 1553
+        },
+        {
+            "path": "Resources/Solution/solution - removing a loop in sfg.md",
+            "hash": "978dc7181450b108be541dc41aabb7ba9863fae592a831b1fa162be869581f34",
+            "size": 845
+        },
+        {
+            "path": "Resources/Solution/solution - sequence components.md",
+            "hash": "4b060269101ce9f110629f0a7ff193b787c4e44c1b987d2847c4b51aa8ebabb5",
+            "size": 2219
+        },
+        {
+            "path": "Resources/Solution/solution - state space analysis (stm).md",
+            "hash": "8ffe390f32a3ec3600228a2e5a04bc0d96ac8e1959d02fa54e588f66d5d34413",
+            "size": 1106
+        },
+        {
+            "path": "Resources/Solution/solution - static stability limit.md",
+            "hash": "1c0448403d89f29415058698f605ebd2db228c6b4864f45ff96e89286fbecfa2",
+            "size": 2010
+        },
+        {
+            "path": "Resources/Solution/solution - swing equation.md",
+            "hash": "dcf343aa6a69d8874565351a5165b0431c2b0e0c16e246fcc384e09728067604",
+            "size": 1562
+        },
+        {
+            "path": "Resources/Solution/solution - synchronous machine pf calculation.md",
+            "hash": "b77ac97e4268551781651acc2769af8d3e97ec29f0fd67c07c10fea5eb4f5a2a",
+            "size": 1594
+        },
+        {
+            "path": "Resources/Solution/solution - synchronous motor excitation voltage calculation.md",
+            "hash": "e6f958e5fcd4d68a59ae74cf25d1b42296d6103cd266b8a32c274724ce970a86",
+            "size": 2772
+        },
+        {
+            "path": "Resources/Solution/solution - transformer.md",
+            "hash": "1b0eb4bdedc3c1bea08f6858a6524a8149823cb639d406ec712dd9a75d53f9af",
+            "size": 970
+        },
+        {
+            "path": "Resources/Solution/solution - transient analysis.md",
+            "hash": "beca6833a5b9d171d31fcb6dffe0a7e58a9e39a760b2cc2a437c1afd45f4429d",
+            "size": 3970
+        },
+        {
+            "path": "Resources/Solution/solution - transient stability.md",
+            "hash": "e861430fd91abaa470d3924b51831641f348cf8b6fbb004a1bbc2e87399977df",
+            "size": 2882
+        },
+        {
+            "path": "Resources/Solution/solution - voltage regulation.md",
+            "hash": "b0c695e801695cece675978b09a27f1edf59675d1f436aad80015d62960df4be",
+            "size": 1020
+        },
+        {
+            "path": "Resources/Solution/solution - y-bus matrix formulation.md",
+            "hash": "664ae4f99b7c85179615cebb26d7bfb01e1bf634d7d2f2d0b979fe7b54284abd",
+            "size": 2535
+        },
+        {
+            "path": "Resources/Solution/solution example 2011eeq6.md",
+            "hash": "90d163a0a5720c8da715cd296a8200e53bba93c906f110e416abaa839ea1befc",
+            "size": 4938
+        },
+        {
             "path": "Resources/Syllabus/GATE_ee_24.pdf",
             "hash": "1cb0073e5c56cf14de9cb2d36369fc822c30e2f20540ee01a84b7e774b1672fd",
             "size": 126180
@@ -10065,8 +10220,8 @@
         }
     ],
     "statistics": {
-        "files": 2012,
-        "directories": 215,
-        "bytes": 99539634
+        "files": 2043,
+        "directories": 216,
+        "bytes": 99601893
     }
 }
