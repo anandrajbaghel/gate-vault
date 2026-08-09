@@ -3884,6 +3884,156 @@
             "size": 0
         },
         {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/Binary Codes (BCD, Gray Code, Excess-3).md",
+            "hash": "a7c1a307a09c8e8b2561f43a7f62f05982ba4cbe0ad4a9bc4f118dbded81afcb",
+            "size": 7017
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/Boolean Algebra and Logic Gates.md",
+            "hash": "f5240327dfe0c97832c7ed6323b2e19b8732c5817d3be67c02ca038423634a5a",
+            "size": 5577
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/De Morgan's Theorem.md",
+            "hash": "f73470a102a1bb26028464f988fa52e4a77de7f3b51672c8d3a4c5d8e1a29884",
+            "size": 5146
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/Logic Minimization using Karnaugh Maps (K-Map).md",
+            "hash": "fbdbd9a5806cfa6b49d6baaecf8412499d77247a42e4c6fb5c808edbc17a01d1",
+            "size": 6421
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/Number Systems.md",
+            "hash": "ea6fa0e07d4f42a335163ef70c6aaa712484efb2cf73ba2598844df5fab8fdbf",
+            "size": 6857
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/Sum of Products (SOP) and Product of Sums (POS).md",
+            "hash": "ef8d3865392e8fbcd5e35a81e750f2ab010fcbc2044e058a406582e1bf1f530c",
+            "size": 5754
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/1. Number Systems and Boolean Algebra/Universal Gates (NAND and NOR).md",
+            "hash": "08a3ad81c0ded6c5e3971e7d9bf3b34996a20e65ce49cbb21a6169f861c84abf",
+            "size": 5840
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Arithmetic Circuits.md",
+            "hash": "889a09a63ccee40e58f9a3bbfcd020a14a72dc209d5fb2e19004e756337000f8",
+            "size": 5696
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Code Converters.md",
+            "hash": "672948e7d2a830f07e82fa6192ae8c1977b761c55fe53d09ca5140fe158b7ba6",
+            "size": 4750
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Design of Combinational Circuits.md",
+            "hash": "e6e09dca277d48f3fd3fa8e41d5211469d66d61fab3525e622f78ab7a686ac52",
+            "size": 6257
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Digital Comparators.md",
+            "hash": "c3a2d28979c085e45bed75079b3f0dd75b8ba12e366dcac7f9cf6033be7da21e",
+            "size": 3978
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Encoders and Decoders.md",
+            "hash": "c72683ec3784f5c3210ffc552a4d23a194c238cfa0c9d32c093fa25ae54fbbb8",
+            "size": 5055
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Multiplexers (MUX) and Demultiplexers (DEMUX).md",
+            "hash": "43438d46af660d2e28a2f05ca875d697577e681ea4fb6f46025283df80d046c2",
+            "size": 5529
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/2. Combinational Logic Circuits/Parallel Adders and Look-Ahead Carry Adders.md",
+            "hash": "b17f49274a84f20424d2a583bb2e81fb1dc25f5ead9e4abbba30fa16a71a4f40",
+            "size": 5800
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Counters - Asynchronous (Ripple) and Synchronous Counters.md",
+            "hash": "30a13dd06c75600a8452db0ac573b137b4274b5e563f039641db36dbc1ac0ea7",
+            "size": 4790
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Design of Synchronous Counters.md",
+            "hash": "936063d544075a738f72650ea64ec2671841d408597f31046575bcc43fd27553",
+            "size": 5951
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Finite State Machines (FSM) - Mealy and Moore Models.md",
+            "hash": "62273fe6998368ffba6ca8651023c9a7c5a8ce4741025e6aada88826fc82ca6b",
+            "size": 4346
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Latches and Flip-Flops (SR, JK, T, D).md",
+            "hash": "0a99865913d58773a6e6a82d5a2930147f2ce9fbd1c44d527c182c02be0f250d",
+            "size": 6421
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Master-Slave Flip-Flop Configuration.md",
+            "hash": "442d72ff459fd943a322c719b8666f2d7dfbb88a8408c202eab9a6b553d6edc5",
+            "size": 4970
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Registers (Shift Registers - SISO, SIPO, PISO, PIPO).md",
+            "hash": "9418174b67811e291cbfd04436cd43b85ee5215deca5df327b64a09436942ca1",
+            "size": 5611
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/Ring Counter and Johnson Counter.md",
+            "hash": "927eceecac3c8f2ef541a00e50a87ec2e559c9ed1dcd2851a8abcd7e7abd1e23",
+            "size": 4797
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/3. Sequential Logic Circuits/State Diagram and State Reduction.md",
+            "hash": "03318f9b8e119523a9f266bf0b64ad7734a9716d3c356d8830607a82b6f5610e",
+            "size": 6691
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/4. Data Converters & Memories/Analog-to-Digital Converters (ADC).md",
+            "hash": "ba1dfb786b51a22343ebaf19aed0ab116b7ae9fdfbe310d1a00f7c9551019850",
+            "size": 5366
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/4. Data Converters & Memories/Digital-to-Analog Converters (DAC) - Weighted Resistor, R-2R Ladder.md",
+            "hash": "043d2f59c10538e74324c08e0798994888586384f5e7c57066459e8375c0b5aa",
+            "size": 3953
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/4. Data Converters & Memories/Semiconductor Memories - ROM, RAM (SRAM, DRAM).md",
+            "hash": "b463c24d43ea1e8d4dd9337d480fd62c9d20def928d80c58f1e49332f5de78f7",
+            "size": 5750
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/4. Data Converters & Memories/Specifications of DACs and ADCs.md",
+            "hash": "4583b74bda4f8420cddadc15e184913137c02bd92c2112d60a0851ebe1cfccfe",
+            "size": 5102
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/5. Logic Families/CMOS Logic Gates.md",
+            "hash": "272bc27e82a90baefb71dc3a82b490bb66164d81bec8f8f5566721d88a45a2df",
+            "size": 4163
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/5. Logic Families/Characteristics of Digital ICs.md",
+            "hash": "617ec744155ab2b786e28b786d43819fc19200c417c9ac582bb8709dffcbe0ca",
+            "size": 5240
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/5. Logic Families/Logic Families - TTL, ECL, CMOS.md",
+            "hash": "bd95b4ca18796aed055fe57c811d5093c4885b22105ee726202d406b612c8c1f",
+            "size": 5701
+        },
+        {
+            "path": "9. Analog & Digital Electronics/2. Digital Electronics/Digital Electronics.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
             "path": "9. Analog & Digital Electronics/Analog & Digital Electronics.md",
             "hash": "798171f126cd862f282d8b2fcd31d650cd002c31cb82b87ab024604fe3b6ba60",
             "size": 2695
@@ -8480,8 +8630,8 @@
         }
     ],
     "statistics": {
-        "files": 1695,
-        "directories": 186,
-        "bytes": 97696892
+        "files": 1725,
+        "directories": 192,
+        "bytes": 97855421
     }
 }
