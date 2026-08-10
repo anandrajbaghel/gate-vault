@@ -428,12 +428,13 @@ class GateIndexer {
         
         let manifest;
         try { 
-            const response = await fetch('pyq-vault-index.json');
+            // The ?t=... forces the browser to download the freshest file, bypassing the cache!
+            const response = await fetch('pyq-vault-index.json?t=' + new Date().getTime());
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status} (File not found on GitHub Pages)`);
             }
             manifest = await response.json(); 
-        } 
+        }
         catch (e) { 
             console.error("GATE Simulator Fetch Error:", e); 
             new Notice("Error loading pyq-vault-index.json. Press F12 to check the console.");
