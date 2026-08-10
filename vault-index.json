@@ -19,41 +19,6 @@
             "size": 696
         },
         {
-            "path": ".obsidian/snippets/admonitions.css",
-            "hash": "a3fa031ed5c421affbb1fcfe8e942e9f799cfdc5ad32dc30abbf0bfc9d2af99e",
-            "size": 2637
-        },
-        {
-            "path": ".obsidian/snippets/center-images.css",
-            "hash": "811b7262830f318fbda0ef03e35b19689e53909ca02ed6c72fee8a311688cc68",
-            "size": 102
-        },
-        {
-            "path": ".obsidian/snippets/center-table.css",
-            "hash": "8673a2ad8f7a41c38a7804550f67b552e88ff2010f6638148a58c217cc45a2b1",
-            "size": 133
-        },
-        {
-            "path": ".obsidian/snippets/embeds.css",
-            "hash": "18719d93a6cb6932b243d9906133bcc18a3c5509ac6b3f97c9573d2e0f715201",
-            "size": 912
-        },
-        {
-            "path": ".obsidian/snippets/highlight.css",
-            "hash": "2f441f4b21e98bdba0c0abef4aafa82f7033a368b0dceed0030cfbf1e873fac3",
-            "size": 612
-        },
-        {
-            "path": ".obsidian/snippets/table.css",
-            "hash": "e6dc69b60934f401d8e23bc126a31b022882b3e3438cbdecf89ab2e97a252faa",
-            "size": 156
-        },
-        {
-            "path": ".obsidian/snippets/underline.css",
-            "hash": "3328ede39d7d3e506c6731b7728553579ad8115031623348e853e86318efd82b",
-            "size": 189
-        },
-        {
             "path": "1. Mathematics/1. Linear Algebra/1. Basics of Linear Algebra/Basis and Dimension of a Vector Space.md",
             "hash": "6ecd862415c70b46e8b90fb7efcac9cd138bb1974f9a4226e8a78d12022a5b81",
             "size": 4683
@@ -10690,8 +10655,8 @@
         }
     ],
     "statistics": {
-        "files": 2137,
-        "directories": 240,
-        "bytes": 100188928
+        "files": 2130,
+        "directories": 239,
+        "bytes": 100184187
     }
 }
