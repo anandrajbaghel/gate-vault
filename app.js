@@ -427,8 +427,18 @@ class GateIndexer {
         await this.app.historyManager.load();
         
         let manifest;
-        try { manifest = await fetch('pyq-vault-index.json').then(r => r.json()); } 
-        catch (e) { console.error("Could not load pyq-vault-index.json. Ensure it exists in the root."); return; }
+        try { 
+            const response = await fetch('pyq-vault-index.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status} (File not found on GitHub Pages)`);
+            }
+            manifest = await response.json(); 
+        } 
+        catch (e) { 
+            console.error("GATE Simulator Fetch Error:", e); 
+            new Notice("Error loading pyq-vault-index.json. Press F12 to check the console.");
+            return; 
+        }
 
         this.masterIndex = []; this.institutes.clear(); this.subjects.clear(); this.topics.clear(); this.topicToSubjects = new Map();
         const seenQids = new Set(), qidMap = new Map();
