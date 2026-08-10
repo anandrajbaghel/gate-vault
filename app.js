@@ -1,4 +1,3 @@
-
 /* =========================================================================
    POLYFILLS & HELPER CLASSES (Replacing Obsidian API)
    ========================================================================= */
@@ -197,6 +196,36 @@ const windowMoment = (dateStr) => {
         }
     };
 };
+
+/**
+ * Fetch with automatic retry + backoff. GitHub Pages' CDN can transiently
+ * fail or time out on individual requests, especially right after a deploy
+ * or under load. A bare fetch() with no retry silently drops that file's
+ * content for the rest of the session (see buildMasterIndex's caching guard),
+ * which is the root cause of "sometimes full, sometimes partial" loads.
+ */
+async function fetchWithRetry(url, { retries = 3, backoffMs = 400, timeoutMs = 12000 } = {}) {
+    let lastErr;
+    for (let attempt = 0; attempt <= retries; attempt++) {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeoutMs);
+        try {
+            const res = await fetch(url, { signal: controller.signal, cache: 'no-store' });
+            clearTimeout(timer);
+            if (res.status === 404) throw Object.assign(new Error(`HTTP 404 (not found)`), { isNotFound: true });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return res;
+        } catch (e) {
+            clearTimeout(timer);
+            lastErr = e;
+            if (e.isNotFound) break; // genuine 404s aren't transient — don't waste retries
+            if (attempt < retries) {
+                await new Promise(r => setTimeout(r, backoffMs * Math.pow(2, attempt)));
+            }
+        }
+    }
+    throw new Error(`Failed to fetch "${url}" after ${retries + 1} attempts: ${lastErr && lastErr.message}`);
+}
 
 function downloadFile(filename, content) {
     const blob = new Blob([content], { type: 'text/markdown' });
@@ -503,19 +532,24 @@ class GateIndexer {
     }
     
     async buildMasterIndex(force = false) {
-        if (!force && this.masterIndex.length > 0) return;
+        // Previously this returned early any time masterIndex was non-empty,
+        // even if the last build had partial fetch failures. That silently
+        // locked in a broken/partial index until the user manually clicked
+        // Refresh. Now a build with errors is not treated as "done" — it will
+        // retry automatically the next time buildMasterIndex is called.
+        if (!force && this.masterIndex.length > 0 && !this.lastBuildHadErrors) return;
         await this.app.historyManager.load();
         
         let manifest;
         try { 
             // ?t= ensures we never cache the index file
-            const response = await fetch('pyq-vault-index.json?t=' + new Date().getTime());
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const response = await fetchWithRetry('pyq-vault-index.json?t=' + new Date().getTime());
             manifest = await response.json(); 
         } 
         catch (e) { 
             console.error("GATE Simulator Fetch Error:", e); 
-            new Notice("Error loading pyq-vault-index.json. Check the console.");
+            new Notice("Error loading pyq-vault-index.json after retries. Check the console.");
+            this.lastBuildHadErrors = true;
             return; 
         }
 
@@ -523,12 +557,13 @@ class GateIndexer {
         const seenQids = new Set(), qidMap = new Map();
         let duplicateCount = 0, skippedNoKeyCount = 0;
         const keysDict = {}, keyFileErrors = [];
+        const yearFileErrors = [], sourceFileErrors = [], tagFileErrors = [];
         const requiredSourceFiles = new Set(); 
 
         // 1. Load Answer Keys
         for (const file of manifest.answerKeys || []) {
             try {
-                const data = await fetch(file).then(r => r.json());
+                const data = await fetchWithRetry(file).then(r => r.json());
                 AnswerKeySchema.validate(data, file);
                 const setKey = (data.set === undefined || data.set === null) ? 'null' : data.set;
                 keysDict[`${data.year}_${setKey}`] = data;
@@ -538,7 +573,7 @@ class GateIndexer {
         // 2. Load "onlyQ" Year Files to build the index
         for (const file of manifest.onlyQYear || []) {
             try {
-                let content = await fetch(file).then(r => r.text());
+                let content = await fetchWithRetry(file).then(r => r.text());
                 let inst = "Unknown Institute"; 
                 
                 const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
@@ -597,7 +632,7 @@ class GateIndexer {
                     this.masterIndex.push(q);
                     qidMap.set(qid, q);
                 }
-            } catch(e) {}
+            } catch(e) { yearFileErrors.push({ path: file, message: e.message }); }
         }
 
         // 3. Fetch the ACTUAL question files 
@@ -607,12 +642,15 @@ class GateIndexer {
 
         for (const fileName of requiredSourceFiles) {
             let content = null;
+            let lastFileErr = null;
             for (const base of basePathsToSearch) {
                 try {
-                    const res = await fetch(`${base}${fileName}.md`);
-                    if (res.ok) { content = await res.text(); break; }
-                } catch(e) {}
+                    const res = await fetchWithRetry(`${base}${fileName}.md`);
+                    content = await res.text();
+                    break;
+                } catch(e) { lastFileErr = e; }
             }
+            if (!content && lastFileErr) sourceFileErrors.push({ path: fileName, message: lastFileErr.message });
 
             if (content) {
                 // Split file by --- to isolate each numbered question
@@ -653,7 +691,7 @@ class GateIndexer {
 
         for (const file of tagFiles) {
             try {
-                let content = await fetch(file).then(r => r.text());
+                let content = await fetchWithRetry(file).then(r => r.text());
                 const isSubject = (manifest.onlyQSubject||[]).includes(file);
                 const isTopic = (manifest.onlyQTopic||[]).includes(file);
                 
@@ -706,11 +744,12 @@ class GateIndexer {
                     if (isSubject && !q.subjects.includes(label)) { q.subjects.push(label); this.subjects.add(label); }
                     if (isTopic && !q.topics.includes(label)) { q.topics.push(label); this.topics.add(label); }
                 }
-            } catch(e) {}
+            } catch(e) { tagFileErrors.push({ path: file, message: e.message }); }
         }
 
         const stats = this.emptyStats();
         stats.total = this.masterIndex.length; stats.duplicates = duplicateCount; stats.keyFileErrors = keyFileErrors;
+        stats.yearFileErrors = yearFileErrors; stats.sourceFileErrors = sourceFileErrors; stats.tagFileErrors = tagFileErrors;
         for (const q of this.masterIndex) {
             if (q.section === 'GA' || q.section === 'EE') stats.bySection[q.section]++;
             if (q.type === 'UNKNOWN') stats.unknownType++;
@@ -718,7 +757,23 @@ class GateIndexer {
         }
         this.stats = stats;
 
+        // Track whether this build had any real failures so the caching guard
+        // at the top of this method knows to retry automatically next time,
+        // instead of silently keeping a broken partial index forever.
+        this.lastBuildHadErrors = (yearFileErrors.length + sourceFileErrors.length + tagFileErrors.length) > 0;
+
         if (keyFileErrors.length > 0) new Notice(`Excluded ${keyFileErrors.length} answer key file(s) for schema errors.`, 8000);
+        if (sourceFileErrors.length > 0) {
+            new Notice(`${sourceFileErrors.length} question content file(s) failed to load after retries — some questions will show "text missing" until this resolves. Check console for details.`, 10000);
+            console.warn('GATE Simulator: source file load failures', sourceFileErrors);
+        }
+        if (yearFileErrors.length > 0) {
+            new Notice(`${yearFileErrors.length} year-index file(s) failed to load after retries — pool may be incomplete.`, 10000);
+            console.warn('GATE Simulator: year file load failures', yearFileErrors);
+        }
+        if (tagFileErrors.length > 0) {
+            console.warn('GATE Simulator: tag file load failures (subjects/topics may be incomplete)', tagFileErrors);
+        }
     }
 }
 
