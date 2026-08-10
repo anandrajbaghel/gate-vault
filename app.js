@@ -16,7 +16,6 @@ HTMLElement.prototype.createSpan = function(opts = {}) { return this.createEl('s
 HTMLElement.prototype.empty = function() { this.innerHTML = ''; };
 HTMLElement.prototype.setText = function(t) { this.innerText = t; };
 HTMLElement.prototype.addClass = function(c) { this.classList.add(c); };
-HTMLElement.prototype.appendText = function(t) { this.appendChild(document.createTextNode(t)); };
 
 class Notice {
     constructor(msg, duration = 3000) {
@@ -87,15 +86,25 @@ class Setting {
 
 class MarkdownRenderer {
     static render(chunk, container) {
-        let html = chunk
+        let text = chunk;
+
+        // 1. Resolve Obsidian Block Embeds (e.g. ![[ee_2015(2)#^q22]])
+        text = text.replace(/!\[\[(.*?)#\^(.*?)\]\]/g, (match, file, blockId) => {
+            const normId = GateUtils.normalizeBlockId(blockId);
+            return window.vaultBlocks[normId] || `*[Question text missing. Could not load ${file}.md]*`;
+        });
+
+        // 2. Resolve Real Images (e.g. ![[circuit.png]])
+        // If your images are stored somewhere else, change "Resources/Question Paper/GATE/MD/Images/" below!
+        text = text.replace(/!\[\[(.*?\.(?:png|jpg|jpeg|svg|gif))\]\]/gi, '<img src="Resources/Question Paper/GATE/MD/Images/$1" style="max-width:100%;">');
+
+        // 3. Convert Markdown to HTML
+        let html = text
             .replace(/</g, '&lt;').replace(/>/g, '&gt;')
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
             .replace(/_(.*?)_/g, '<em>$1</em>')
             .replace(/`(.*?)`/g, '<code>$1</code>')
             .replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
-        
-        // Render simple markdown images if they exist: ![[path]] or ![alt](path)
-        html = html.replace(/!\[\[(.*?)\]\]/g, '<img src="$1" style="max-width:100%;">');
         
         container.innerHTML = `<p>${html}</p>`;
     }
@@ -410,6 +419,8 @@ class MistakeTagModal extends Modal {
 /* =========================================================================
    INDEXER (Static Website File Loader via Manifest)
    ========================================================================= */
+window.vaultBlocks = {}; // Global store for loaded question text
+
 class GateIndexer {
     constructor(app) {
         this.app = app;
@@ -429,16 +440,14 @@ class GateIndexer {
         
         let manifest;
         try { 
-            // The ?t=... forces the browser to download the freshest file, bypassing the cache!
+            // The ?t= param ensures the browser NEVER caches pyq-vault-index.json!
             const response = await fetch('pyq-vault-index.json?t=' + new Date().getTime());
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status} (File not found on GitHub Pages)`);
-            }
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             manifest = await response.json(); 
-        }
+        } 
         catch (e) { 
             console.error("GATE Simulator Fetch Error:", e); 
-            new Notice("Error loading pyq-vault-index.json. Press F12 to check the console.");
+            new Notice("Error loading pyq-vault-index.json. Check the console.");
             return; 
         }
 
@@ -446,7 +455,9 @@ class GateIndexer {
         const seenQids = new Set(), qidMap = new Map();
         let duplicateCount = 0, skippedNoKeyCount = 0;
         const keysDict = {}, keyFileErrors = [];
+        const requiredSourceFiles = new Set(); // Files we need to download to get question text
 
+        // 1. Load Answer Keys
         for (const file of manifest.answerKeys || []) {
             try {
                 const data = await fetch(file).then(r => r.json());
@@ -456,11 +467,12 @@ class GateIndexer {
             } catch (e) { keyFileErrors.push({ path: file, message: e.message }); }
         }
 
+        // 2. Load Year Files
         for (const file of manifest.onlyQYear || []) {
             try {
                 let content = await fetch(file).then(r => r.text());
                 let inst = "Unknown Institute"; 
-                // Frontmatter rudimentary parse
+                
                 const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
                 if(fmMatch) {
                     const fm = fmMatch[1];
@@ -480,6 +492,8 @@ class GateIndexer {
                     let match;
                     while ((match = embedRegex.exec(chunk)) !== null) {
                         const fileName = match[1]; set = match[2] !== undefined ? match[2] : null; blockId = GateUtils.normalizeBlockId(match[3]);
+                        requiredSourceFiles.add(fileName); // We need to download this file!
+
                         const yearMatch = fileName.match(/(\d{4})/); if (yearMatch) year = parseInt(yearMatch[1], 10);
                         if (blockId.startsWith(this.app.settings.aptitudePrefix)) section = 'GA';
                         else if (blockId.startsWith(this.app.settings.corePrefix)) section = 'EE';
@@ -504,6 +518,40 @@ class GateIndexer {
             } catch(e) {}
         }
 
+        // 3. Fetch all required source files to get the ACTUAL question text!
+        const basePathsToSearch = [
+            "Resources/Question Paper/GATE/MD/",
+            "Resources/Question Paper/GATE/MD/EE/",
+            "Resources/Question Paper/GATE/MD/GA/",
+            "Resources/Question Paper/GATE/MD/Core/"
+        ];
+
+        for (const fileName of requiredSourceFiles) {
+            let content = null;
+            // Try to find the file by guessing common vault paths
+            for (const base of basePathsToSearch) {
+                try {
+                    const res = await fetch(`${base}${fileName}.md`);
+                    if (res.ok) { content = await res.text(); break; }
+                } catch(e) {}
+            }
+
+            if (content) {
+                // Break the markdown file down into blocks separated by \n\n or ---
+                const blocks = content.split(/\n\n|---/);
+                for (let b of blocks) {
+                    // Find the ^blockId anchor
+                    const match = b.match(/([\s\S]*?)\n\^([a-zA-Z0-9_-]+)\s*$/);
+                    if (match) {
+                        const extractedText = match[1].trim();
+                        const normId = GateUtils.normalizeBlockId(match[2]);
+                        window.vaultBlocks[normId] = extractedText;
+                    }
+                }
+            }
+        }
+
+        // 4. Load Subject & Topic Tags
         const tagFiles = [...(manifest.onlyQSubject || []), ...(manifest.onlyQTopic || [])];
         const tagRegex = /!?\[\[(.*?)(?:\((\d+)\))?#\^(.*?)\]\]/g;
         const plainLinkRegex = /(?<!!)\[\[([^\]|#]+?)(?:\|[^\]]+)?\]\]/g;
@@ -934,11 +982,13 @@ class GateExamView {
         let ans = 0; this.questions.forEach((_, i) => { if (this.answers[i].trim() !== '') ans++; });
         if (this.dom.summary) this.dom.summary.innerHTML = `Ans: <strong>${ans}</strong> | Rem: <strong>${this.questions.length - ans}</strong>`;
     }
+    
     updateQuestionView() {
         const q = this.questions[this.currentIndex];
         this.dom.title.innerHTML = `Q ${this.currentIndex + 1} / ${this.questions.length} <span class="gate-exam-source">(${q.section} | ${q.marks}M | ${q.type})</span>`;
         this.dom.ansContainer.empty();
         this.dom.ansContainer.createEl('span', { text: 'Your Answer:' });
+        
         if (q.type === 'MCQ') {
             const optsGrp = this.dom.ansContainer.createDiv({ cls: 'gate-ans-group' });
             ['A', 'B', 'C', 'D'].forEach(opt => {
@@ -946,13 +996,34 @@ class GateExamView {
                 const rb = lbl.createEl('input', { type: 'radio', name: 'gate_mcq_ans', value: opt });
                 rb.checked = (this.answers[this.currentIndex] === opt);
                 rb.onchange = () => { this.answers[this.currentIndex] = opt; this.updatePaletteButton(this.currentIndex); this.updateProgressSummary(); };
-                lbl.appendText(` ${opt}`);
+                
+                // FIXED NATIVE APPEND TEXT
+                lbl.appendChild(document.createTextNode(` ${opt}`)); 
+            });
+        } else if (q.type === 'MSQ') {
+            const optsGrp = this.dom.ansContainer.createDiv({ cls: 'gate-ans-group' });
+            const currentAns = (this.answers[this.currentIndex] || "").replace(/[^A-D]/g, "");
+            ['A', 'B', 'C', 'D'].forEach(opt => {
+                const lbl = optsGrp.createEl('label', { cls: 'gate-ans-checkbox' });
+                const cb = lbl.createEl('input', { type: 'checkbox', value: opt });
+                cb.checked = currentAns.includes(opt);
+                cb.onchange = () => {
+                    let ansSet = new Set((this.answers[this.currentIndex] || "").replace(/[^A-D]/g, "").split(''));
+                    if (cb.checked) ansSet.add(opt); else ansSet.delete(opt);
+                    this.answers[this.currentIndex] = Array.from(ansSet).sort().join('');
+                    this.updatePaletteButton(this.currentIndex); this.updateProgressSummary();
+                };
+                
+                // FIXED NATIVE APPEND TEXT
+                lbl.appendChild(document.createTextNode(` ${opt}`));
             });
         } else if (q.type === 'NAT') {
             const input = this.dom.ansContainer.createEl('input', { type: 'text', placeholder: 'e.g. 1.05' });
             input.value = this.answers[this.currentIndex];
             input.oninput = (e) => { this.answers[this.currentIndex] = e.target.value.replace(/[^0-9.-]/g, ''); this.updatePaletteButton(this.currentIndex); this.updateProgressSummary(); };
-        } else { this.dom.ansContainer.createEl('span', { text: ` Not Graded/MTA`, cls: 'gate-text-muted' }); }
+        } else { 
+            this.dom.ansContainer.createEl('span', { text: ` Not Graded/MTA`, cls: 'gate-text-muted' }); 
+        }
         
         this.viewedIndices.add(this.currentIndex);
         MarkdownRenderer.render(q.chunk, this.dom.content);
@@ -961,6 +1032,7 @@ class GateExamView {
         (this.dom.paletteButtons || []).forEach(b => b.classList.remove('active'));
         this.updatePaletteButton(this.currentIndex);
     }
+    
     startTimer() {
         if (this.timerInterval) clearInterval(this.timerInterval);
         this.timerInterval = setInterval(() => {
