@@ -4,11 +4,6 @@
     "generated": true,
     "files": [
         {
-            "path": ".obsidian/app.json",
-            "hash": "401e0a137a3a835809055c49bfb30cf2dadd2cd3922afec0fde4705d8ffc180c",
-            "size": 649
-        },
-        {
             "path": ".obsidian/core-plugins.json",
             "hash": "3973d905543f18c8a6fb9b260e53e219565736e82fbda4355749825e76f3b22f",
             "size": 696
@@ -10650,8 +10645,8 @@
         }
     ],
     "statistics": {
-        "files": 2129,
+        "files": 2128,
         "directories": 239,
-        "bytes": 100183725
+        "bytes": 100183076
     }
 }
