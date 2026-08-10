@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE Exam Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="nav-brand">GATE Simulator</div>
+        <div class="nav-links">
+            <button class="nav-btn active" data-view="exam">Simulator</button>
+            <button class="nav-btn" data-view="dashboard">Dashboard</button>
+            <button class="nav-btn" data-view="settings">Settings</button>
+        </div>
+    </div>
+    
+    <div id="workspace">
+        <div id="view-exam" class="view-container active">
+            <!-- Simulated item view structure -->
+            <div class="view-header"></div>
+            <div class="view-content"></div>
+        </div>
+        <div id="view-dashboard" class="view-container">
+            <div class="view-header"></div>
+            <div class="view-content"></div>
+        </div>
+        <div id="view-settings" class="view-container">
+            <div class="view-header"></div>
+            <div class="view-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
