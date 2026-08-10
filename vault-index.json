@@ -4909,6 +4909,381 @@
             "size": 1297011
         },
         {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/1. Basic Characteristics of Instruments/Accuracy and Precision.md",
+            "hash": "507539dfed07056fda14eeaa6be9c46090927ab25d976d2940a4ea428585efd7",
+            "size": 5671
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/1. Basic Characteristics of Instruments/Hysteresis and Dead Zone.md",
+            "hash": "2ebc80a2a92131302dee5df1d5fe41cfc82a455dd80bea2529a159082e6066cc",
+            "size": 4849
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/1. Basic Characteristics of Instruments/Linearity and Repeatability.md",
+            "hash": "0436b6d95c0e45c35be158804fbdf97bde3b829a7255d62debb8ed0c265c6248",
+            "size": 4636
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/1. Basic Characteristics of Instruments/Resolution and Sensitivity.md",
+            "hash": "c8aa6942af59d30a0eed95cbc638279744c6a96476d0e3f06e071554065cfcb4",
+            "size": 5186
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/2. Errors in Measurement/Combination of Quantities with Limiting Errors.md",
+            "hash": "4e86c7c439a4de773348e879a8a54052617774648b9a331df2fd9364fe6261b8",
+            "size": 4568
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/2. Errors in Measurement/Limiting Errors (Guarantee Errors).md",
+            "hash": "974b5831ced9e06700d3cf86bf5fec010c1e5038bed83b0f53649416cdc2b5b7",
+            "size": 5515
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/2. Errors in Measurement/Sources of Systematic Errors.md",
+            "hash": "5a0e634e385b06c2bb94bd102e81032a4a7da6cbe64caf8cd3789583e11d219d",
+            "size": 5415
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/2. Errors in Measurement/Statistical Analysis of Random Errors.md",
+            "hash": "2d0ef53787a140b87ccf1fb403b0927ec4031aec20d6be26aa8cba0797d442d2",
+            "size": 4492
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/1. Fundamentals of Measurement and Error Analysis/2. Errors in Measurement/Types of Errors.md",
+            "hash": "d22d72ca87ba9bbb0a46ef4773b2208a16ccf06610f468610cb68b35983b4771",
+            "size": 5950
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/1. Measurement of Low Resistance/Ammeter-Voltmeter Method for Low Resistance.md",
+            "hash": "71b09c214c9726ee3d2b64707bbe80d7bb837a672fd78bd9b77cd82711682188",
+            "size": 4367
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/1. Measurement of Low Resistance/Kelvin's Double Bridge.md",
+            "hash": "17c9319e58c5068572f412fd583184f635663824866421846258b6243a0de36d",
+            "size": 6038
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/1. Measurement of Low Resistance/Potentiometer Method.md",
+            "hash": "f384e0c90df9aa016e69b1c1f6e1b8a06d5b525ec377da8cd65e27cda90ac9c5",
+            "size": 4610
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/2. Measurement of Medium Resistance/Ammeter-Voltmeter Method for Medium Resistance.md",
+            "hash": "6a409438c6606d4d4ca68041fa8559f6e93b6257a1390921a49fb8f3f9357394",
+            "size": 4644
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/2. Measurement of Medium Resistance/Substitution Method.md",
+            "hash": "aa96a7a83fb51863e13e594688e01fa3b1cde6e67d7bbdb16a06cfe5d55f6629",
+            "size": 4629
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/2. Measurement of Medium Resistance/Wheatstone Bridge and Sensitivity Analysis.md",
+            "hash": "e032f45c22003fa331b9a19052903d59b895590c94ad6114d6452ec090bb52e0",
+            "size": 5693
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/3. Measurement of High Resistance/Loss of Charge Method.md",
+            "hash": "4faeb7c4a074213280a4b5b31750ca7d9a5e1cd93686418a677678d5922a2678",
+            "size": 4844
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/3. Measurement of High Resistance/Megger (Insulation Resistance Measurement).md",
+            "hash": "c341523f75568b3aee40024923f7f65515c01377e3d9a3380950414973b50020",
+            "size": 5424
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/2. Measurement of Resistance/3. Measurement of High Resistance/Megohm Bridge.md",
+            "hash": "5af2de9db6adab52984d6161973a26716ac2c72c0fb3837001ab32a936117921",
+            "size": 4573
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/1. Bridge Fundamentals/General Equation for Bridge Balance.md",
+            "hash": "7474d53cbb22bcdfc97c49370b4514ee14195b92d7ae5ca4f3c3751cbdb83d51",
+            "size": 5544
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/1. Bridge Fundamentals/Phasor Diagram for Balanced AC Bridges.md",
+            "hash": "c2bf4f354ac7d6af9cf1d74bde1d28bdb8210c2ade5c69d317fb3fd8f46eb504",
+            "size": 5907
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/2. Measurement of Inductance/Anderson's Bridge.md",
+            "hash": "2171038dbfb9e876e25b03d3aaa3d9eeb8879f64b4566919b44a750a1f2ba5f6",
+            "size": 4431
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/2. Measurement of Inductance/Hay's Bridge (for High Q coils).md",
+            "hash": "d4773c89044b557079bdc536ff264b6deb9ef3dd13ff21e846df3992d377a814",
+            "size": 4652
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/2. Measurement of Inductance/Maxwell's Inductance Bridge.md",
+            "hash": "598b3b0ed2e92b889a550b9d13f064fca4004c535bdb32a1104c7b996ef2232f",
+            "size": 5411
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/2. Measurement of Inductance/Maxwell's Inductance-Capacitance Bridge.md",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "size": 0
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/2. Measurement of Inductance/Owen's Bridge.md",
+            "hash": "fc2475e75a54ea7e5e1ba6fc96c6016b52d4b6638c2bc6439e4a9d3e9a519de0",
+            "size": 5123
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/3. Measurement of Capacitance/De Sauty's Bridge.md",
+            "hash": "68ed0bfdf6d023066efc5b12af68a41e22bb3459204f60393af75241b27fd60d",
+            "size": 4209
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/3. Measurement of Capacitance/Schering Bridge (for Dielectric Loss Measurement).md",
+            "hash": "5ccfd8cf2be95cb83fdbc86032adaa8206f0f3d6df79555ceb597e231fcadf3a",
+            "size": 4439
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/3. AC Bridges/3. Measurement of Capacitance/Wien's Bridge (for Frequency Measurement).md",
+            "hash": "abff97e54da837f285c4e966aeda1a4a4ca8de73afd0303d4e2d8c337bcd4f8e",
+            "size": 4522
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/1. Principles of Operation/Essential Torques in Indicating Instruments.md",
+            "hash": "857c096812c4624fa8849f25372b535befd70edacf6e101b321fbf1caeddc54a",
+            "size": 5318
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/1. Principles of Operation/Types of Controlling Torques.md",
+            "hash": "420e12f39787743b0597c5592df224483b74dba5d59f020e547e68378450f6eb",
+            "size": 5164
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/1. Principles of Operation/Types of Damping Torques.md",
+            "hash": "9260acf59a39c400ce44c953b297dc607738aaa3c6ec26fb0a53e026df669ad0",
+            "size": 5571
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/2. Permanent Magnet Moving Coil (PMMC) Instruments/Construction and Principle of Operation of PMMC.md",
+            "hash": "12bbd1ff069126fc57a4adcd8b9c7e36e2a85f0da4142ec623e13c9c8ddcedc3",
+            "size": 6290
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/2. Permanent Magnet Moving Coil (PMMC) Instruments/Errors in PMMC Instruments.md",
+            "hash": "1736ab729944abe5c6604e9386ca32824411c419e7ea4ef46eb43b3ede5b2fcd",
+            "size": 6085
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/2. Permanent Magnet Moving Coil (PMMC) Instruments/Torque Equation of a PMMC Instrument.md",
+            "hash": "d8df555cdfe963c1bb08c661f17c19d8a52b81f2e9b102d25aa4c1ab57642084",
+            "size": 3937
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/2. Permanent Magnet Moving Coil (PMMC) Instruments/Use as Ammeter and Voltmeter (DC only).md",
+            "hash": "b4db23e4a5c5ef329ab2937f92874560ac1fac2c1874bed16749967edc8351e9",
+            "size": 5144
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/3. Moving Iron (MI) Instruments/Construction and Principle (Attraction and Repulsion Types).md",
+            "hash": "88e74a24b9ea73a821b7b89b269ab28cbe7c8f1f2f2edba10c98a56f2086e095",
+            "size": 5974
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/3. Moving Iron (MI) Instruments/Errors in MI Instruments.md",
+            "hash": "bb5afe766951d31d584ba2c99665bdf170c08cc7f742f9be148cce107d092b27",
+            "size": 6823
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/3. Moving Iron (MI) Instruments/Torque Equation of an MI Instrument.md",
+            "hash": "79851101f7d467858b4f380f91f8e7e16017541f67bded0fa631381b8bcfb23d",
+            "size": 6078
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/3. Moving Iron (MI) Instruments/Use for both AC and DC Measurements.md",
+            "hash": "dbb29a28d53ca4fbc65fa0473390eb881be653897846ca0faf8b5d1d6d678ce6",
+            "size": 5396
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/4. Electrodynamometer Type Instruments/Construction and Principle of Operation of Electrodynamometer Type Instruments.md",
+            "hash": "23fa6fecb59bee83dffbc2709e67c342997eb42f9ed0b7eca2c502dd2b6a0e99",
+            "size": 5788
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/4. Electrodynamometer Type Instruments/Torque Equation of an Electrodynamometer Instrument.md",
+            "hash": "493ea76b3a5aa9b44a9b0e31e4c481852ab64197dd0d1b45607055e03e5688ca",
+            "size": 4990
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/4. Electrodynamometer Type Instruments/Use as Ammeter, Voltmeter, and Wattmeter.md",
+            "hash": "9f6194cf27719d47e23d091407f9f81f830af5f7d016920f14862912f42132dc",
+            "size": 5970
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/5. Instrument Range Extension/Multipliers for Voltmeter Range Extension.md",
+            "hash": "c139c95456c59e210db04e24c186041aeff4bd4fa66524df36faf6848b88a164",
+            "size": 4684
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/4. Indicating Instruments/5. Instrument Range Extension/Shunts for Ammeter Range Extension.md",
+            "hash": "82c3eb5b8e924367598f57d7162a8880022137e4474ade99199e9eed0720fe16",
+            "size": 5282
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/1. Power Measurement/Blondel's Theorem and the Two-Wattmeter Method.md",
+            "hash": "0ed260ef8e17b82fc7cdd02e6dbf4f50f9c07d969fadc7f0e99283767c9612b6",
+            "size": 4851
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/1. Power Measurement/Electrodynamometer Wattmeter.md",
+            "hash": "e2408bc52f89a89ea5fd813adc041406b2e241153543b07ac4767ba5c50dd031",
+            "size": 6146
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/1. Power Measurement/Errors in Wattmeter Measurement and Compensation.md",
+            "hash": "c98eb936b90feb4bf68bb22faf18e0aa342812aaac588b572d5f855c406bd7f9",
+            "size": 5348
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/1. Power Measurement/Low Power Factor (LPF) Wattmeter.md",
+            "hash": "be0a2bb55542752a0f0bfafd01fb8d6c753705e49e5e020fa5c2bd6a1e42e68f",
+            "size": 5071
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/1. Power Measurement/Measurement of Power in Three-Phase Circuits.md",
+            "hash": "32678c65341718ebcd522ca5bf208453f2cff8476b8f6541bd3688eeb9c9ef5b",
+            "size": 6132
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/1. Power Measurement/Power Factor Calculation from Two-Wattmeter Readings.md",
+            "hash": "08f40ce9ca66c647f79f38abde6a538a7c0af567019ef96b398f1767e7d8606a",
+            "size": 4908
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/2. Energy Measurement/Construction, Principle, and Operation.md",
+            "hash": "60d000307af25e64bf2c931b7590bb84dc332b9dddaf2099b44596859aaacc5d",
+            "size": 5203
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/2. Energy Measurement/Errors and Adjustments in Energy Meters.md",
+            "hash": "c850ad44665ade1a10490a91931839870b627f914c9f8c7eda56354ffb2bc091",
+            "size": 6465
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/5. Measurement of Power and Energy/2. Energy Measurement/Single-Phase Induction Type Energy Meter.md",
+            "hash": "febd74657eb89705485197bc0f72aba11a2a8ae5b72112c3202dec7f62285d2f",
+            "size": 6086
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/1. Current Transformers (CT)/Construction and Principle of Operation of Current Transformer (CT).md",
+            "hash": "5cf1a764fb0cda55dd85e867a9b262448733c439a279731d16487f143dc531f9",
+            "size": 6230
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/1. Current Transformers (CT)/Phasor Diagram of a CT.md",
+            "hash": "7adeac5397448a869155edbb0a75c90208b77c5f9cde183ce15965ce1701a1fc",
+            "size": 5944
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/1. Current Transformers (CT)/Ratio Error and Phase Angle Error.md",
+            "hash": "fd8d863511a178e93eb9c9bb818dd04bf7f90bf550c306c227f3282d574c9805",
+            "size": 4572
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/2. Potential Transformers (PT)/Construction and Principle of Operation of Potential Transformer (PT).md",
+            "hash": "496ea6a299976ef677d8654bfa2594f063333dbbe1109dfca15e9f954acbda74",
+            "size": 5563
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/2. Potential Transformers (PT)/Difference between CT and PT.md",
+            "hash": "913a96b4ff2bb2f579b251b5343d5b402f41cde45e530f5ff0fe1c09ad37a062",
+            "size": 4480
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/2. Potential Transformers (PT)/Phasor Diagram of a PT.md",
+            "hash": "5ee74b2bfb20e5176b1ab52a35dcba608fc0aa167274147f210212b2a4f84b43",
+            "size": 5312
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/6. Instrument Transformers/2. Potential Transformers (PT)/Ratio Error and Phase Angle Error.md",
+            "hash": "4a3bc72c05c0fb27d1c6a866efe45a151995e38f581fe9d9f620b1ee99a712fb",
+            "size": 4452
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/1. Cathode Ray Oscilloscope (CRO)/Block Diagram of a CRO.md",
+            "hash": "709bb137bef9caf324c7c7758c1630eccc6ab30b813c16f18f5a2bb6fc8f7960",
+            "size": 5560
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/1. Cathode Ray Oscilloscope (CRO)/Measurement of Frequency and Phase using Lissajous Patterns.md",
+            "hash": "9f7adec1ccdfce1612e7664c681ef8f92f525a8b31c0373c3a318a11b14d548d",
+            "size": 4485
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/1. Cathode Ray Oscilloscope (CRO)/Measurement of Voltage and Time Period.md",
+            "hash": "0b58cb6bb43d238d0c3fa5646abef4eb5b905b8978d318a597f3cc34af88f9f9",
+            "size": 4593
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/2. Digital Instruments/Digital Multimeter (DMM).md",
+            "hash": "376c3e381fd83ab926fa2b89a9aeb101c90864be399975a163a4cb98e67ad0a0",
+            "size": 5641
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/2. Digital Instruments/Digital Voltmeters (DVMs).md",
+            "hash": "7d6c8f8d16240649511d3439745bc7ab7098a5ef85b9535f2e7a9836a79d79fb",
+            "size": 5692
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/2. Digital Instruments/Q-Meter for Measurement of Quality Factor.md",
+            "hash": "6ae17149d9e4697b140d17ecf7517bf61d3ed488c040bbc44314241bdd04f78a",
+            "size": 5652
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/7. Electronic and Digital Instruments/2. Digital Instruments/Types of DVMs.md",
+            "hash": "72b8286e7bd2b9118a0eb73a90aa2f9903bc5596aafd6db94c229afb4ddd16ac",
+            "size": 6521
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/1. Transducer Fundamentals/Active and Passive Transducers.md",
+            "hash": "4f81c9c02c0be37c1af4b2b627c2058bfc946502618c317f9d86d372aefc9eaa",
+            "size": 5321
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/1. Transducer Fundamentals/Definition and Classification of Transducers.md",
+            "hash": "c021d5cad60f6243d6d47774ab2d7a8c9cbb26b3146a2d9ce65551b8e96c78bb",
+            "size": 5469
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/2. Common Transducers/Capacitive Transducers.md",
+            "hash": "ffd4c1b6954e9573065d654a963f2b8d01afd7d07fa57d6e342be6e336dc223f",
+            "size": 5783
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/2. Common Transducers/Inductive Transducers (Linear Variable Differential Transformer - LVDT).md",
+            "hash": "85274d7f12ce469cc0ae6086ca18956cb4a621792261687917a849babc6db8f4",
+            "size": 5662
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/2. Common Transducers/Piezoelectric Transducers.md",
+            "hash": "711a644c1e23d0c4ee4ce1458ee2783929852ef807e11e16c87336a4b9f4fea8",
+            "size": 5297
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/2. Common Transducers/Resistive Transducers.md",
+            "hash": "8596e8691aa443b255bd4501281daec8d76e17d072a8258a910b6b91d96f77d7",
+            "size": 5768
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/8. Transducers/2. Common Transducers/Thermoelectric Transducers (Thermocouple).md",
+            "hash": "95451ed8207dc0edfe1cfe98847358ccb2bfd2685e0793796886e6ecf10be283",
+            "size": 5744
+        },
+        {
+            "path": "8. Electrical & Electronic Measurements/Electrical & Electronic Measurements.md",
+            "hash": "3f2caa947376295e38ad7fd7dc0530220972038848f0c23fdecf3ea5dc8e3c2b",
+            "size": 4830
+        },
+        {
             "path": "9. Analog & Digital Electronics/1. Analog Electronics/1. Semiconductor Devices and Circuits/BJT Biasing and Thermal Stability.md",
             "hash": "179f4b415112d9e0b785ee2fcf4669a41e3bf7ac846580220a98e1f4bd9d1159",
             "size": 5603
@@ -10315,8 +10690,8 @@
         }
     ],
     "statistics": {
-        "files": 2062,
-        "directories": 218,
-        "bytes": 99796311
+        "files": 2137,
+        "directories": 240,
+        "bytes": 100188928
     }
 }
