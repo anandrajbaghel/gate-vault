@@ -2064,6 +2064,31 @@
             "size": 637
         },
         {
+            "path": "13. REVISION Sheets 📙/All Exam Conventions for Power System.md",
+            "hash": "97b0ca9e9f7c19d71d2524a911d58b64c127f35f47ede10e378e2ad9fcf00baa",
+            "size": 6693
+        },
+        {
+            "path": "13. REVISION Sheets 📙/Exhaustive Formulas - DC Machines.md",
+            "hash": "147681c1cc80d8f7f84252b36849e233a21e71fca48150cb767732e354428475",
+            "size": 5704
+        },
+        {
+            "path": "13. REVISION Sheets 📙/Exhaustive Formulas - Single-Phase Transformer.md",
+            "hash": "5cd0a3c66db58bcec66b97d1d6244d11c92fa1ad4cbfbbc026ecbddaae9bb103",
+            "size": 6646
+        },
+        {
+            "path": "13. REVISION Sheets 📙/Exhaustive Formulas - Three-Phase Transformer.md",
+            "hash": "eef42d91e573fba822ec200b98e51e79596df6843ca586eb16b61b62b19c60da",
+            "size": 5800
+        },
+        {
+            "path": "13. REVISION Sheets 📙/Interpreting Given Value Data.md",
+            "hash": "26173a7ada43f485891ce2ba48ce1af466c18b6101683b25a4bdba4bae6b7854",
+            "size": 6292
+        },
+        {
             "path": "14. Reading List 📃/list1.md",
             "hash": "9ef53785cf798d6b18151b8fd0e5fff5f21652307dae1b9e9b9be3a4fbd1b08f",
             "size": 251
@@ -10639,14 +10664,19 @@
             "size": 2789
         },
         {
+            "path": "Syllabus 27.md",
+            "hash": "023643fc66411b94d621a09e7221e803062c29bdb36275d69d589bce471a9fca",
+            "size": 11470
+        },
+        {
             "path": "vault-manifest.json",
             "hash": "7ec876f1bdbef2936b76a7731e477753c64bd2dd3c21832fc21ecedeae8d30b4",
             "size": 541
         }
     ],
     "statistics": {
-        "files": 2128,
-        "directories": 239,
-        "bytes": 100183076
+        "files": 2134,
+        "directories": 240,
+        "bytes": 100225681
     }
 }
