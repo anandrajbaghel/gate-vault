@@ -81,6 +81,29 @@ class Setting {
         cb(c);
         return this;
     }
+    addColorPicker(cb) {
+        const input = document.createElement('input'); input.type = 'color';
+        input.className = 'gate-color-input';
+        this.controlEl.appendChild(input);
+        const c = { inputEl: input, setValue: v => { input.value = v; return c; }, onChange: fn => { input.addEventListener('input', e => fn(e.target.value)); return c; } };
+        cb(c);
+        return this;
+    }
+    addSlider(cb) {
+        const wrap = document.createElement('div'); wrap.className = 'gate-slider-wrap';
+        const input = document.createElement('input'); input.type = 'range';
+        const valueLbl = document.createElement('span'); valueLbl.className = 'gate-slider-value';
+        wrap.appendChild(input); wrap.appendChild(valueLbl);
+        this.controlEl.appendChild(wrap);
+        const c = {
+            inputEl: input,
+            setLimits: (min, max, step) => { input.min = min; input.max = max; input.step = step; return c; },
+            setValue: v => { input.value = v; valueLbl.textContent = v; return c; },
+            onChange: fn => { input.addEventListener('input', e => { valueLbl.textContent = e.target.value; fn(Number(e.target.value)); }); return c; }
+        };
+        cb(c);
+        return this;
+    }
     addTextArea(cb) {
         const textarea = document.createElement('textarea');
         this.controlEl.appendChild(textarea);
@@ -248,8 +271,61 @@ const DEFAULT_SETTINGS = {
     enableMistakeTags: true,
     nestedMistakeTags: true,
     mistakeTags: 'Careless, Conceptual Gap/Formula, Conceptual Gap/Concept, Conceptual Gap/Condition, Anxiety, Slow, Typo',
-    imageBasePath: 'Resources/Image/Question Paper' // Updated to match user reported configuration structure
+    imageBasePath: 'Resources/Image/Question Paper', // Updated to match user reported configuration structure
+    // Appearance
+    questionFont: 'default',
+    questionFontSize: 18,
+    questionLineHeight: 1.6,
+    accentColor: '#2563eb'
 };
+
+const QUESTION_FONT_STACKS = {
+    default: null, // falls back to --font-interface
+    verdana: `Verdana, Geneva, sans-serif`,
+    arial: `Arial, Helvetica, sans-serif`,
+    inter: `'Inter', -apple-system, BlinkMacSystemFont, sans-serif`,
+    georgia: `Georgia, 'Times New Roman', serif`,
+    times: `'Times New Roman', Times, serif`
+};
+
+// Inter isn't a system font — load it from Google Fonts on demand, once.
+function ensureGoogleFontLoaded(cssFontFamily) {
+    if (cssFontFamily !== 'inter') return;
+    if (document.getElementById('gate-google-font-inter')) return;
+    const link = document.createElement('link');
+    link.id = 'gate-google-font-inter';
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap';
+    document.head.appendChild(link);
+}
+
+// Darken/lighten a hex color by a percentage, used to derive a hover shade
+// from the user's chosen accent color without needing a second picker.
+function shadeColor(hex, percent) {
+    try {
+        let col = hex.replace('#', '');
+        if (col.length === 3) col = col.split('').map(c => c + c).join('');
+        const num = parseInt(col, 16);
+        let r = (num >> 16) + percent, g = ((num >> 8) & 0x00FF) + percent, b = (num & 0x0000FF) + percent;
+        r = Math.max(0, Math.min(255, r)); g = Math.max(0, Math.min(255, g)); b = Math.max(0, Math.min(255, b));
+        return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1)}`;
+    } catch (e) { return hex; }
+}
+
+function applyAppearanceSettings(settings) {
+    const root = document.documentElement.style;
+    const fontStack = QUESTION_FONT_STACKS[settings.questionFont];
+    if (fontStack) { root.setProperty('--gate-question-font', fontStack); ensureGoogleFontLoaded(settings.questionFont); }
+    else root.removeProperty('--gate-question-font');
+
+    root.setProperty('--gate-question-font-size', `${settings.questionFontSize}px`);
+    root.setProperty('--gate-question-line-height', String(settings.questionLineHeight));
+
+    const accent = settings.accentColor || DEFAULT_SETTINGS.accentColor;
+    root.setProperty('--interactive-accent', accent);
+    root.setProperty('--interactive-accent-hover', shadeColor(accent, -25));
+    root.setProperty('--text-accent', accent);
+}
 
 class GateUtils {
     static shuffleArray(array) {
@@ -1179,7 +1255,7 @@ class GateExamView {
             input.value = this.answers[this.currentIndex];
             input.oninput = (e) => { this.answers[this.currentIndex] = e.target.value.replace(/[^0-9.-]/g, ''); this.updatePaletteButton(this.currentIndex); this.updateProgressSummary(); };
         } else { 
-            this.dom.ansContainer.createEl('span', { text: ` Not Graded/MTA`, cls: 'gate-text-muted' }); 
+            this.dom.ansContainer.createEl('span', { text: `Marks to All`, cls: 'gate-mta-badge' }); 
         }
         
         this.viewedIndices.add(this.currentIndex);
@@ -1280,6 +1356,39 @@ class GateSettingTab {
         const s = this.app.settings;
         const save = () => { localStorage.setItem('gate_settings', JSON.stringify(this.app.settings)); new Notice("Settings Saved."); };
 
+        // Appearance
+        new Setting(wrapper).setName('Appearance').setHeading();
+        new Setting(wrapper)
+            .setName('Question Font')
+            .setDesc('Font used for rendered question text. "Inter" loads from Google Fonts on demand.')
+            .addDropdown(d => {
+                [['default', 'System Default'], ['verdana', 'Verdana'], ['arial', 'Arial'], ['inter', 'Inter'], ['georgia', 'Georgia (Serif)'], ['times', 'Times New Roman (Serif)']]
+                    .forEach(([v, t]) => d.addOption(v, t));
+                d.setValue(s.questionFont || 'default');
+                d.onChange(v => { s.questionFont = v; applyAppearanceSettings(s); save(); });
+            });
+        new Setting(wrapper)
+            .setName('Question Font Size')
+            .setDesc('Applies to the question text area.')
+            .addSlider(sl => {
+                sl.setLimits(14, 28, 1).setValue(s.questionFontSize || 18);
+                sl.onChange(v => { s.questionFontSize = v; applyAppearanceSettings(s); save(); });
+            });
+        new Setting(wrapper)
+            .setName('Line Height')
+            .setDesc('Spacing between lines of question text.')
+            .addSlider(sl => {
+                sl.setLimits(1.2, 2.2, 0.1).setValue(s.questionLineHeight || 1.6);
+                sl.onChange(v => { s.questionLineHeight = v; applyAppearanceSettings(s); save(); });
+            });
+        new Setting(wrapper)
+            .setName('Accent Color')
+            .setDesc('Used for buttons, selected answers, highlights, and links throughout the app.')
+            .addColorPicker(cp => {
+                cp.setValue(s.accentColor || DEFAULT_SETTINGS.accentColor);
+                cp.onChange(v => { s.accentColor = v; applyAppearanceSettings(s); save(); });
+            });
+
         // NEW: Media settings
         new Setting(wrapper).setName('Media & Files').setHeading();
         new Setting(wrapper)
@@ -1304,6 +1413,7 @@ class GateSettingTab {
 class GateApp {
     constructor() {
         this.settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('gate_settings') || '{}') };
+        applyAppearanceSettings(this.settings);
         this.historyManager = new HistoryManager();
         this.sessionManager = new SessionManager();
         this.indexer = new GateIndexer(this);
