@@ -9,11 +9,6 @@
             "size": 649
         },
         {
-            "path": ".obsidian/appearance.json",
-            "hash": "b5787e09a39dc43f986c8ddb4724a48d0229abb2bffbc0d6845e0441bff15ba4",
-            "size": 462
-        },
-        {
             "path": ".obsidian/core-plugins.json",
             "hash": "3973d905543f18c8a6fb9b260e53e219565736e82fbda4355749825e76f3b22f",
             "size": 696
@@ -10655,8 +10650,8 @@
         }
     ],
     "statistics": {
-        "files": 2130,
+        "files": 2129,
         "directories": 239,
-        "bytes": 100184187
+        "bytes": 100183725
     }
 }
