@@ -1057,6 +1057,7 @@ class GateExamView {
         this.setupMode = this.setupMode || 'REPLICATION';
         this.selectedAlgorithm = this.selectedAlgorithm || null;
         this.isSubmitting = false;
+        this.isPaused = false;
     }
     async onOpen() {
         this.containerEl.empty();
@@ -1175,16 +1176,26 @@ class GateExamView {
         this.dom.title = titleWrap.createDiv({ cls: 'gate-exam-title' });
         this.dom.content = main.createDiv({ cls: 'gate-exam-content' });
         this.dom.ansContainer = main.createDiv({ cls: 'gate-exam-answer-box' });
+        this.dom.pauseOverlay = main.createDiv({ cls: 'gate-pause-overlay' });
+        this.dom.pauseOverlay.createDiv({ cls: 'gate-pause-overlay-text', text: 'Paused' });
 
         const footer = main.createDiv({ cls: 'gate-exam-footer' });
         const footerL = footer.createDiv({ cls: 'gate-footer-left' });
-        this.dom.btnPrev = footerL.createEl('button', { text: 'Prev', cls: 'gate-btn' });
+        this.dom.btnPrev = footerL.createEl('button', { text: 'Previous', cls: 'gate-btn' });
         this.dom.btnClear = footerL.createEl('button', { text: 'Clear', cls: 'gate-btn' });
-        this.dom.btnNext = footer.createEl('button', { text: 'Next', cls: 'gate-btn primary' });
+        this.dom.btnPause = footerL.createEl('button', { text: 'Pause', cls: 'gate-btn' });
+
+        const reviewToggle = footerL.createEl('label', { cls: 'gate-exam-review-toggle' });
+        this.dom.reviewCheckbox = reviewToggle.createEl('input', { type: 'checkbox' });
+        reviewToggle.createEl('span', { text: 'Mark for Review', cls: 'gate-review-toggle-text-visible' });
+
+        this.dom.btnNext = footer.createEl('button', { text: 'Save & Next', cls: 'gate-btn primary' });
 
         this.dom.btnPrev.onclick = () => { if (this.currentIndex > 0) this.navigate(-1); };
         this.dom.btnNext.onclick = () => { if (this.currentIndex < this.questions.length - 1) this.navigate(1); };
         this.dom.btnClear.onclick = () => { this.answers[this.currentIndex] = ""; this.updateQuestionView(); this.autoSaveSessionSilent(); };
+        this.dom.reviewCheckbox.onchange = (e) => { this.reviews[this.currentIndex] = e.target.checked; this.updatePaletteButton(this.currentIndex); this.autoSaveSessionSilent(); };
+        this.dom.btnPause.onclick = () => this.togglePause();
 
         const sidebar = layout.createDiv({ cls: 'gate-exam-sidebar' });
         this.dom.timer = sidebar.createDiv({ cls: 'gate-exam-timer-box', text: GateUtils.formatTime(this.timeLeft) });
@@ -1259,6 +1270,7 @@ class GateExamView {
         }
         
         this.viewedIndices.add(this.currentIndex);
+        if (this.dom.reviewCheckbox) this.dom.reviewCheckbox.checked = !!this.reviews[this.currentIndex];
         MarkdownRenderer.render(q.chunk, this.dom.content);
         this.dom.btnPrev.disabled = this.currentIndex === 0;
         this.dom.btnNext.disabled = this.currentIndex === this.questions.length - 1;
@@ -1275,6 +1287,19 @@ class GateExamView {
         }, 1000);
     }
     stopTimer() { if (this.timerInterval) { clearInterval(this.timerInterval); this.timerInterval = null; } }
+
+    togglePause() {
+        this.isPaused = !this.isPaused;
+        if (this.isPaused) {
+            this.stopTimer();
+            this.dom.pauseOverlay.classList.add('active');
+            this.dom.btnPause.innerText = 'Resume';
+        } else {
+            if (!this.isUntimed) this.startTimer();
+            this.dom.pauseOverlay.classList.remove('active');
+            this.dom.btnPause.innerText = 'Pause';
+        }
+    }
     
     async submitTest() {
         if (this.isSubmitting) return; this.isSubmitting = true;
