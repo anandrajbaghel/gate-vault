@@ -1,6 +1,6 @@
 {
     "formatVersion": 1,
-    "version": "0.1.5",
+    "version": "1.0.1",
 
     "index": {
         "include": [
@@ -17,12 +17,15 @@
             "10. Power Electronics",
             "11. ERROR Logbook",
             "12. PYQs Pattern Book",
-            "13. REVISION Sheets",
+            "13. REVISION Sheets 📙",
             "14. Reading List 📃",
             "15. Master",
             "Resources",
+            "A Community Project,md",
+            "CONTRIBUTE,md",
             "Caution.md",
             "Changelog.md",
+            "Syllabus 27.md",
             "vault-manifest.json"
         ],
 
