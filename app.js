@@ -88,17 +88,47 @@ class Setting {
 class MarkdownRenderer {
     static render(chunk, container) {
         let text = chunk || "";
+        const basePath = (window.app && window.app.settings && window.app.settings.imageBasePath) || '';
 
-        // 1. Resolve Obsidian Block Embeds (e.g. ![[ee_2015(2)#^q22]])
+        // 1. Resolve Obsidian Block Embeds
         text = text.replace(/!\[\[([^#|\]]+).*?#\^([a-zA-Z0-9_-]+)\]\]/g, (match, file, blockId) => {
             const normId = GateUtils.normalizeBlockId(blockId);
             return window.vaultBlocks[normId] || `*[Question text missing for block ${blockId}]*`;
         });
 
-        // 2. Resolve Real Images (Assumes images are in the same relative path or root, adjusts based on standard repo)
-        text = text.replace(/!\[\[(.*?\.(?:png|jpg|jpeg|svg|gif))\]\]/gi, '<img src="$1" style="max-width:100%;">');
+        // 2. Extract Math blocks to protect them from Markdown formatting (prevents italics from breaking math)
+        const mathBlocks = [];
+        text = text.replace(/\$\$([\s\S]*?)\$\$/g, (match) => {
+            mathBlocks.push(match);
+            return `__MATH_BLOCK_${mathBlocks.length - 1}__`;
+        });
+        text = text.replace(/\$([\s\S]*?)\$/g, (match) => {
+            mathBlocks.push(match);
+            return `__MATH_BLOCK_${mathBlocks.length - 1}__`;
+        });
 
-        // 3. Convert basic Markdown to HTML
+        // 3. Resolve Real Images (Supports ![[image.png|300]] and standard markdown)
+        text = text.replace(/!\[\[([^|\]]+)(?:\|[^\]]*)?\]\]/g, (match, file) => {
+            file = file.trim();
+            if (/\.(png|jpg|jpeg|svg|gif|webp|bmp)$/i.test(file)) {
+                let src = file.split('/').map(encodeURIComponent).join('/');
+                if (basePath && !/^https?:\/\//i.test(src)) {
+                    src = basePath.endsWith('/') ? basePath + src : basePath + '/' + src;
+                }
+                return `<img src="${src}" style="max-width:100%;">`;
+            }
+            return match;
+        });
+        
+        text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, url) => {
+            let src = url.trim();
+            if (basePath && !/^https?:\/\//i.test(src)) {
+                src = basePath.endsWith('/') ? basePath + src : basePath + '/' + src;
+            }
+            return `<img src="${src}" alt="${alt}" style="max-width:100%;">`;
+        });
+
+        // 4. Convert basic Markdown to HTML
         let html = text
             .replace(/</g, '&lt;').replace(/>/g, '&gt;')
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -106,7 +136,19 @@ class MarkdownRenderer {
             .replace(/`(.*?)`/g, '<code>$1</code>')
             .replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
         
+        // 5. Restore Math blocks
+        html = html.replace(/__MATH_BLOCK_(\d+)__/g, (match, index) => {
+            let math = mathBlocks[index];
+            // Escape < and > inside math so browser doesn't interpret them as HTML tags
+            return math.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        });
+
         container.innerHTML = `<p>${html}</p>`;
+
+        // 6. Trigger MathJax Rendering
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise([container]).catch((err) => console.error(err.message));
+        }
     }
 }
 
@@ -153,7 +195,8 @@ const DEFAULT_SETTINGS = {
     selectionAlgorithm: 'ADAPTIVE',
     enableMistakeTags: true,
     nestedMistakeTags: true,
-    mistakeTags: 'Careless, Conceptual Gap/Formula, Conceptual Gap/Concept, Conceptual Gap/Condition, Anxiety, Slow, Typo'
+    mistakeTags: 'Careless, Conceptual Gap/Formula, Conceptual Gap/Concept, Conceptual Gap/Condition, Anxiety, Slow, Typo',
+    imageBasePath: '' // Added Image Base Path tracking
 };
 
 class GateUtils {
@@ -1158,6 +1201,13 @@ class GateSettingTab {
         
         const s = this.app.settings;
         const save = () => { localStorage.setItem('gate_settings', JSON.stringify(this.app.settings)); new Notice("Settings Saved."); };
+
+        // NEW: Media settings
+        new Setting(wrapper).setName('Media & Files').setHeading();
+        new Setting(wrapper)
+            .setName('Image Base Path')
+            .setDesc('Folder where your images are stored relative to index.html (e.g. "Resources/Question Paper/GATE/Answer Key/"). Leave empty if images are in the root directory.')
+            .addText(t => t.setValue(s.imageBasePath || '').onChange(v => { s.imageBasePath = v.trim(); save(); }));
 
         new Setting(wrapper).setName('Mistake tagging').setHeading();
         new Setting(wrapper).setName('Prompt for mistake tags').addToggle(t => t.setValue(s.enableMistakeTags !== false).onChange(v => { s.enableMistakeTags = v; save(); }));
