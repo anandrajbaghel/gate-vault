@@ -16,6 +16,7 @@ HTMLElement.prototype.createSpan = function(opts = {}) { return this.createEl('s
 HTMLElement.prototype.empty = function() { this.innerHTML = ''; };
 HTMLElement.prototype.setText = function(t) { this.innerText = t; };
 HTMLElement.prototype.addClass = function(c) { this.classList.add(c); };
+HTMLElement.prototype.appendText = function(t) { this.appendChild(document.createTextNode(t)); };
 
 class Notice {
     constructor(msg, duration = 3000) {
