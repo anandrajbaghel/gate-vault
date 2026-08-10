@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GATE Exam Simulator</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- MathJax Configuration for LaTeX Rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            startup: {
+                typeset: false // We trigger this manually in app.js per question
+            }
+        };
+    </script>
+    <!-- Load MathJax from CDN -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div id="nav">
@@ -18,7 +34,6 @@
     
     <div id="workspace">
         <div id="view-exam" class="view-container active">
-            <!-- Simulated item view structure -->
             <div class="view-header"></div>
             <div class="view-content"></div>
         </div>
@@ -32,6 +47,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=5"></script>
+    <script src="app.js?v=10"></script>
 </body>
 </html>
