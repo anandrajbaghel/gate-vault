@@ -1,3 +1,4 @@
+
 /* =========================================================================
    POLYFILLS & HELPER CLASSES (Replacing Obsidian API)
    ========================================================================= */
@@ -56,31 +57,36 @@ class Setting {
     addText(cb) {
         const input = document.createElement('input'); input.type = 'text';
         this.controlEl.appendChild(input);
-        cb({ inputEl: input, setPlaceholder: p => input.placeholder = p, setValue: v => input.value = v, onChange: fn => input.addEventListener('input', e => fn(e.target.value)) });
+        const c = { inputEl: input, setPlaceholder: p => { input.placeholder = p; return c; }, setValue: v => { input.value = v; return c; }, onChange: fn => { input.addEventListener('input', e => fn(e.target.value)); return c; } };
+        cb(c);
         return this;
     }
     addDropdown(cb) {
         const select = document.createElement('select');
         this.controlEl.appendChild(select);
-        cb({ selectEl: select, addOption: (v, t) => { const o = document.createElement('option'); o.value=v; o.innerText=t; select.appendChild(o); }, setValue: v => select.value = v, onChange: fn => select.addEventListener('change', e => fn(e.target.value)) });
+        const c = { selectEl: select, addOption: (v, t) => { const o = document.createElement('option'); o.value=v; o.innerText=t; select.appendChild(o); return c; }, setValue: v => { select.value = v; return c; }, onChange: fn => { select.addEventListener('change', e => fn(e.target.value)); return c; } };
+        cb(c);
         return this;
     }
     addToggle(cb) {
         const input = document.createElement('input'); input.type = 'checkbox';
         this.controlEl.appendChild(input);
-        cb({ inputEl: input, setValue: v => input.checked = !!v, onChange: fn => input.addEventListener('change', e => fn(e.target.checked)) });
+        const c = { inputEl: input, setValue: v => { input.checked = !!v; return c; }, onChange: fn => { input.addEventListener('change', e => fn(e.target.checked)); return c; } };
+        cb(c);
         return this;
     }
     addButton(cb) {
         const btn = document.createElement('button'); btn.className = 'gate-btn';
         this.controlEl.appendChild(btn);
-        cb({ setButtonText: t => btn.innerText = t, setCta: () => btn.classList.add('primary'), setWarning: () => btn.classList.add('danger'), onClick: fn => btn.addEventListener('click', fn) });
+        const c = { setButtonText: t => { btn.innerText = t; return c; }, setCta: () => { btn.classList.add('primary'); return c; }, setWarning: () => { btn.classList.add('danger'); return c; }, onClick: fn => { btn.addEventListener('click', fn); return c; } };
+        cb(c);
         return this;
     }
     addTextArea(cb) {
         const textarea = document.createElement('textarea');
         this.controlEl.appendChild(textarea);
-        cb({ inputEl: textarea, setValue: v => textarea.value = v, onChange: fn => textarea.addEventListener('input', e => fn(e.target.value)) });
+        const c = { inputEl: textarea, setValue: v => { textarea.value = v; return c; }, onChange: fn => { textarea.addEventListener('input', e => fn(e.target.value)); return c; } };
+        cb(c);
         return this;
     }
 }
@@ -96,57 +102,74 @@ class MarkdownRenderer {
             return window.vaultBlocks[normId] || `*[Question text missing for block ${blockId}]*`;
         });
 
-        // 2. Extract Math blocks to protect them from Markdown formatting (prevents italics from breaking math)
-        const mathBlocks = [];
+        // Use placeholders to protect Math and Images from HTML escaping and Markdown formatting
+        const placeholders = [];
+        const pushPlaceholder = (htmlContent) => {
+            placeholders.push(htmlContent);
+            return `@@PLACEHOLDER_${placeholders.length - 1}@@`;
+        };
+
+        // 2. Extract Math blocks to protect them from Markdown formatting (prevents italics from breaking math variables)
         text = text.replace(/\$\$([\s\S]*?)\$\$/g, (match) => {
-            mathBlocks.push(match);
-            return `__MATH_BLOCK_${mathBlocks.length - 1}__`;
+            return pushPlaceholder(match.replace(/</g, '&lt;').replace(/>/g, '&gt;'));
         });
         text = text.replace(/\$([\s\S]*?)\$/g, (match) => {
-            mathBlocks.push(match);
-            return `__MATH_BLOCK_${mathBlocks.length - 1}__`;
+            return pushPlaceholder(match.replace(/</g, '&lt;').replace(/>/g, '&gt;'));
         });
 
         // 3. Resolve Real Images (Supports ![[image.png|300]] and standard markdown)
-        text = text.replace(/!\[\[([^|\]]+)(?:\|[^\]]*)?\]\]/g, (match, file) => {
+        const formatSrc = (rawFile) => {
+            let src = rawFile.split(/[\/\\]/).map(encodeURIComponent).join('/');
+            if (basePath && !/^https?:\/\//i.test(src)) {
+                const encBase = basePath.split(/[\/\\]/).map(encodeURIComponent).join('/');
+                src = encBase.endsWith('/') ? encBase + src : encBase + '/' + src;
+            }
+            return src;
+        };
+
+        text = text.replace(/!\[\[([^|\]]+)(?:\|([^\]]*))?\]\]/g, (match, file, size) => {
             file = file.trim();
             if (/\.(png|jpg|jpeg|svg|gif|webp|bmp)$/i.test(file)) {
-                let src = file.split('/').map(encodeURIComponent).join('/');
-                if (basePath && !/^https?:\/\//i.test(src)) {
-                    src = basePath.endsWith('/') ? basePath + src : basePath + '/' + src;
+                let src = formatSrc(file);
+                let style = 'max-width:100%;';
+                if (size) {
+                    size = size.trim();
+                    if (!isNaN(size)) {
+                        style += ` width:${size}px;`;
+                    } else if (/^\d+x\d+$/i.test(size)) {
+                        style += ` width:${size.split('x')[0]}px;`;
+                    }
                 }
-                return `<img src="${src}" style="max-width:100%;">`;
+                return pushPlaceholder(`<img src="${src}" style="${style}">`);
             }
             return match;
         });
         
         text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, url) => {
-            let src = url.trim();
-            if (basePath && !/^https?:\/\//i.test(src)) {
-                src = basePath.endsWith('/') ? basePath + src : basePath + '/' + src;
-            }
-            return `<img src="${src}" alt="${alt}" style="max-width:100%;">`;
+            return pushPlaceholder(`<img src="${formatSrc(url.trim())}" alt="${alt}" style="max-width:100%;">`);
         });
 
-        // 4. Convert basic Markdown to HTML
+        // 4. Convert basic Markdown to HTML safely outside placeholders
         let html = text
             .replace(/</g, '&lt;').replace(/>/g, '&gt;')
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-            .replace(/_(.*?)_/g, '<em>$1</em>')
+            .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+            .replace(/_([^_]+)_/g, '<em>$1</em>')
             .replace(/`(.*?)`/g, '<code>$1</code>')
             .replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
         
-        // 5. Restore Math blocks
-        html = html.replace(/__MATH_BLOCK_(\d+)__/g, (match, index) => {
-            let math = mathBlocks[index];
-            // Escape < and > inside math so browser doesn't interpret them as HTML tags
-            return math.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        // 5. Restore isolated mathematical logic and image tags
+        html = html.replace(/@@PLACEHOLDER_(\d+)@@/g, (match, index) => {
+            return placeholders[index];
         });
 
         container.innerHTML = `<p>${html}</p>`;
 
-        // 6. Trigger MathJax Rendering
+        // 6. Trigger MathJax Rendering (Clearing previously typeset contexts ensures clean execution)
         if (window.MathJax && window.MathJax.typesetPromise) {
+            if (window.MathJax.typesetClear) {
+                window.MathJax.typesetClear([container]);
+            }
             window.MathJax.typesetPromise([container]).catch((err) => console.error(err.message));
         }
     }
@@ -196,7 +219,7 @@ const DEFAULT_SETTINGS = {
     enableMistakeTags: true,
     nestedMistakeTags: true,
     mistakeTags: 'Careless, Conceptual Gap/Formula, Conceptual Gap/Concept, Conceptual Gap/Condition, Anxiety, Slow, Typo',
-    imageBasePath: '' // Added Image Base Path tracking
+    imageBasePath: 'Resources/Image/Question Paper' // Updated to match user reported configuration structure
 };
 
 class GateUtils {
