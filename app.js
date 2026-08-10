@@ -536,8 +536,7 @@ class GateIndexer {
 
         // 3. Fetch the ACTUAL question files 
         const basePathsToSearch = [
-            "Resources/Question Paper/GATE/MD/year/", 
-            "Resources/Question Paper/GATE/MD/"
+            "Resources/Question Paper/GATE/MD/Year/"
         ];
 
         for (const fileName of requiredSourceFiles) {
