@@ -16,6 +16,7 @@ HTMLElement.prototype.createSpan = function(opts = {}) { return this.createEl('s
 HTMLElement.prototype.empty = function() { this.innerHTML = ''; };
 HTMLElement.prototype.setText = function(t) { this.innerText = t; };
 HTMLElement.prototype.addClass = function(c) { this.classList.add(c); };
+HTMLElement.prototype.appendText = function(t) { this.appendChild(document.createTextNode(t)); };
 
 class Notice {
     constructor(msg, duration = 3000) {
@@ -86,19 +87,18 @@ class Setting {
 
 class MarkdownRenderer {
     static render(chunk, container) {
-        let text = chunk;
+        let text = chunk || "";
 
         // 1. Resolve Obsidian Block Embeds (e.g. ![[ee_2015(2)#^q22]])
-        text = text.replace(/!\[\[(.*?)#\^(.*?)\]\]/g, (match, file, blockId) => {
+        text = text.replace(/!\[\[([^#|\]]+).*?#\^([a-zA-Z0-9_-]+)\]\]/g, (match, file, blockId) => {
             const normId = GateUtils.normalizeBlockId(blockId);
-            return window.vaultBlocks[normId] || `*[Question text missing. Could not load ${file}.md]*`;
+            return window.vaultBlocks[normId] || `*[Question text missing for block ${blockId}]*`;
         });
 
-        // 2. Resolve Real Images (e.g. ![[circuit.png]])
-        // If your images are stored somewhere else, change "Resources/Question Paper/GATE/MD/Images/" below!
-        text = text.replace(/!\[\[(.*?\.(?:png|jpg|jpeg|svg|gif))\]\]/gi, '<img src="Resources/Question Paper/GATE/MD/Images/$1" style="max-width:100%;">');
+        // 2. Resolve Real Images (Assumes images are in the same relative path or root, adjusts based on standard repo)
+        text = text.replace(/!\[\[(.*?\.(?:png|jpg|jpeg|svg|gif))\]\]/gi, '<img src="$1" style="max-width:100%;">');
 
-        // 3. Convert Markdown to HTML
+        // 3. Convert basic Markdown to HTML
         let html = text
             .replace(/</g, '&lt;').replace(/>/g, '&gt;')
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -431,16 +431,18 @@ class GateIndexer {
         this.topicToSubjects = new Map();
         this.stats = this.emptyStats();
     }
+    
     emptyStats() {
         return { total: 0, bySection: { GA: 0, EE: 0 }, byMarks: { GA1: 0, GA2: 0, EE1: 0, EE2: 0 }, unknownType: 0, duplicates: 0, keyFileErrors: [] };
     }
+    
     async buildMasterIndex(force = false) {
         if (!force && this.masterIndex.length > 0) return;
         await this.app.historyManager.load();
         
         let manifest;
         try { 
-            // The ?t= param ensures the browser NEVER caches pyq-vault-index.json!
+            // ?t= ensures we never cache the index file
             const response = await fetch('pyq-vault-index.json?t=' + new Date().getTime());
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             manifest = await response.json(); 
@@ -455,7 +457,7 @@ class GateIndexer {
         const seenQids = new Set(), qidMap = new Map();
         let duplicateCount = 0, skippedNoKeyCount = 0;
         const keysDict = {}, keyFileErrors = [];
-        const requiredSourceFiles = new Set(); // Files we need to download to get question text
+        const requiredSourceFiles = new Set(); 
 
         // 1. Load Answer Keys
         for (const file of manifest.answerKeys || []) {
@@ -467,7 +469,7 @@ class GateIndexer {
             } catch (e) { keyFileErrors.push({ path: file, message: e.message }); }
         }
 
-        // 2. Load Year Files
+        // 2. Load "onlyQ" Year Files to build the index
         for (const file of manifest.onlyQYear || []) {
             try {
                 let content = await fetch(file).then(r => r.text());
@@ -488,15 +490,29 @@ class GateIndexer {
                     if (!chunk || !chunk.includes('![[')) continue;
 
                     let year = null, set = null, blockId = null, section = null;
-                    const embedRegex = /!\[\[(.*?)(?:\((\d+)\))?#\^(.*?)\]\]/g;
+                    
+                    const embedRegex = /!\[\[([^#|\]]+).*?#\^([a-zA-Z0-9_-]+)\]\]/g;
                     let match;
+                    
+                    // This loop will run multiple times if multiple block IDs exist (e.g. common data)
+                    // The last matched block ID dictates the final ID of the question used for grading
                     while ((match = embedRegex.exec(chunk)) !== null) {
-                        const fileName = match[1]; set = match[2] !== undefined ? match[2] : null; blockId = GateUtils.normalizeBlockId(match[3]);
-                        requiredSourceFiles.add(fileName); // We need to download this file!
+                        const fileName = match[1].trim(); 
+                        blockId = GateUtils.normalizeBlockId(match[2]);
+                        
+                        requiredSourceFiles.add(fileName);
 
-                        const yearMatch = fileName.match(/(\d{4})/); if (yearMatch) year = parseInt(yearMatch[1], 10);
-                        if (blockId.startsWith(this.app.settings.aptitudePrefix)) section = 'GA';
-                        else if (blockId.startsWith(this.app.settings.corePrefix)) section = 'EE';
+                        const yearMatch = fileName.match(/(\d{4})/); 
+                        if (yearMatch) year = parseInt(yearMatch[1], 10);
+                        
+                        const setMatch = fileName.match(/\((\d+)\)/);
+                        set = setMatch ? setMatch[1] : null;
+
+                        if (blockId.startsWith(this.app.settings.aptitudePrefix) || blockId.startsWith('gaq') || blockId.startsWith('qga')) {
+                            section = 'GA';
+                        } else if (blockId.startsWith(this.app.settings.corePrefix) || blockId.startsWith('q')) {
+                            section = 'EE';
+                        }
                     }
                     if (!blockId || !year || !section) continue;
 
@@ -518,17 +534,14 @@ class GateIndexer {
             } catch(e) {}
         }
 
-        // 3. Fetch all required source files to get the ACTUAL question text!
+        // 3. Fetch the ACTUAL question files 
         const basePathsToSearch = [
-            "Resources/Question Paper/GATE/MD/",
-            "Resources/Question Paper/GATE/MD/EE/",
-            "Resources/Question Paper/GATE/MD/GA/",
-            "Resources/Question Paper/GATE/MD/Core/"
+            "Resources/Question Paper/GATE/MD/year/", 
+            "Resources/Question Paper/GATE/MD/"
         ];
 
         for (const fileName of requiredSourceFiles) {
             let content = null;
-            // Try to find the file by guessing common vault paths
             for (const base of basePathsToSearch) {
                 try {
                     const res = await fetch(`${base}${fileName}.md`);
@@ -537,23 +550,40 @@ class GateIndexer {
             }
 
             if (content) {
-                // Break the markdown file down into blocks separated by \n\n or ---
-                const blocks = content.split(/\n\n|---/);
+                // Split file by --- to isolate each numbered question
+                const blocks = content.split(/^---/gm);
                 for (let b of blocks) {
-                    // Find the ^blockId anchor
-                    const match = b.match(/([\s\S]*?)\n\^([a-zA-Z0-9_-]+)\s*$/);
-                    if (match) {
-                        const extractedText = match[1].trim();
-                        const normId = GateUtils.normalizeBlockId(match[2]);
-                        window.vaultBlocks[normId] = extractedText;
+                    
+                    // ANTI-CHEAT: Remove tags and answers at the bottom
+                    let cleanText = b.split(/\n#\w|\n>\[!success]/i)[0].trim();
+                    if (!cleanText) continue;
+
+                    // SMART EXTRACTION: Find EVERY ^blockId inside this section
+                    const blockRegex = /\^([a-zA-Z0-9_-]+)/g;
+                    let match;
+                    let lastIndex = 0;
+                    
+                    while ((match = blockRegex.exec(cleanText)) !== null) {
+                        const extractedBlockId = GateUtils.normalizeBlockId(match[1]);
+                        
+                        // Extract text from the start of the section (or previous block ID) up to this block ID
+                        let blockContent = cleanText.substring(lastIndex, match.index).trim();
+                        
+                        // Save it to memory so the Renderer can find it
+                        window.vaultBlocks[extractedBlockId] = blockContent;
+                        
+                        // Move the starting point forward for the next block ID in the same section
+                        lastIndex = match.index + match[0].length;
                     }
                 }
+            } else {
+                console.warn(`GATE Simulator: Could not find source file ${fileName}.md`);
             }
         }
 
         // 4. Load Subject & Topic Tags
         const tagFiles = [...(manifest.onlyQSubject || []), ...(manifest.onlyQTopic || [])];
-        const tagRegex = /!?\[\[(.*?)(?:\((\d+)\))?#\^(.*?)\]\]/g;
+        const tagRegex = /!?\[\[([^#|\]]+).*?#\^([a-zA-Z0-9_-]+)\]\]/g;
         const plainLinkRegex = /(?<!!)\[\[([^\]|#]+?)(?:\|[^\]]+)?\]\]/g;
 
         for (const file of tagFiles) {
@@ -561,14 +591,17 @@ class GateIndexer {
                 let content = await fetch(file).then(r => r.text());
                 const isSubject = (manifest.onlyQSubject||[]).includes(file);
                 const isTopic = (manifest.onlyQTopic||[]).includes(file);
-                const label = GateUtils.labelFromFileName(file.split('/').pop());
+                
+                let label = file.split('/').pop().replace('.md', '');
+                label = label.replace(/^(onlyQ - |trends - )/i, '').trim();
+                
                 if (!label) continue;
 
                 if (isTopic) {
                     const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
                     const declared = new Set();
                     if(fmMatch) {
-                        const sm = fmMatch[1].match(/subject:\s*(.*)/);
+                        const sm = fmMatch[1].match(/subject:\s*\[?"?(.*?)"?\]?/);
                         if(sm) {
                             const subjects = sm[1].split(',').map(s=>s.replace(/\[\[|\]\]/g, '').trim()).filter(Boolean);
                             subjects.forEach(s=>declared.add(s));
@@ -588,12 +621,18 @@ class GateIndexer {
                 
                 let match; tagRegex.lastIndex = 0;
                 while ((match = tagRegex.exec(content)) !== null) {
-                    const fileName = match[1], set = match[2] !== undefined ? match[2] : null, blockId = GateUtils.normalizeBlockId(match[3]);
+                    const fileName = match[1].trim();
+                    const blockId = GateUtils.normalizeBlockId(match[2]);
+                    
                     const yearMatch = fileName.match(/(\d{4})/); if (!yearMatch) continue;
                     const year = parseInt(yearMatch[1], 10);
+                    
+                    const setMatch = fileName.match(/\((\d+)\)/);
+                    const set = setMatch ? setMatch[1] : null;
+                    
                     let section = null;
-                    if (blockId.startsWith(this.app.settings.aptitudePrefix)) section = 'GA';
-                    else if (blockId.startsWith(this.app.settings.corePrefix)) section = 'EE';
+                    if (blockId.startsWith(this.app.settings.aptitudePrefix) || blockId.startsWith('gaq') || blockId.startsWith('qga')) section = 'GA';
+                    else if (blockId.startsWith(this.app.settings.corePrefix) || blockId.startsWith('q')) section = 'EE';
                     if (!section) continue;
 
                     const qid = GateUtils.buildGlobalQID(year, set, section, blockId);
@@ -997,7 +1036,6 @@ class GateExamView {
                 rb.checked = (this.answers[this.currentIndex] === opt);
                 rb.onchange = () => { this.answers[this.currentIndex] = opt; this.updatePaletteButton(this.currentIndex); this.updateProgressSummary(); };
                 
-                // FIXED NATIVE APPEND TEXT
                 lbl.appendChild(document.createTextNode(` ${opt}`)); 
             });
         } else if (q.type === 'MSQ') {
@@ -1014,7 +1052,6 @@ class GateExamView {
                     this.updatePaletteButton(this.currentIndex); this.updateProgressSummary();
                 };
                 
-                // FIXED NATIVE APPEND TEXT
                 lbl.appendChild(document.createTextNode(` ${opt}`));
             });
         } else if (q.type === 'NAT') {
