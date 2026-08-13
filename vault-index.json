@@ -1414,11 +1414,6 @@
             "size": 128
         },
         {
-            "path": "12. PYQs Pattern Book/README.md",
-            "hash": "fae379b2920b02b4c85110eb4d3f42a9997e669c96b15423f9af8cdfd9775098",
-            "size": 5
-        },
-        {
             "path": "12. PYQs Pattern Book/trends - 555 Timer.md",
             "hash": "5d1d7ed66ac1dee46f722dfa10eb67e44c0459367687eac9cdc965b222218de7",
             "size": 435
@@ -10745,8 +10740,8 @@
         }
     ],
     "statistics": {
-        "files": 2148,
+        "files": 2147,
         "directories": 240,
-        "bytes": 100240756
+        "bytes": 100240751
     }
 }
