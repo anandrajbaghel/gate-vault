@@ -120,8 +120,7 @@ class MarkdownRenderer {
 
         // 1. Resolve Obsidian Block Embeds
         text = text.replace(/!\[\[([^#|\]]+).*?#\^([a-zA-Z0-9_-]+)\]\]/g, (match, file, blockId) => {
-            const normId = GateUtils.normalizeBlockId(blockId);
-            return window.vaultBlocks[normId] || `*[Question text missing for block ${blockId}]*`;
+            return window.vaultBlocks[GateUtils.vaultKey(file, blockId)] || `*[Question text missing for block ${file.trim()}#^${blockId}]*`;
         });
 
         // Use placeholders to protect Math and Images from HTML escaping and Markdown formatting
@@ -344,6 +343,8 @@ class GateUtils {
         return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     }
     static normalizeBlockId(id) { return String(id).trim().toLowerCase().replace(/[\s._-]+/g, ''); }
+    // Block IDs repeat across papers, so question text is stored per source file: "file::blockid".
+    static vaultKey(fileName, blockId) { return String(fileName).trim().toLowerCase() + '::' + GateUtils.normalizeBlockId(blockId); }
     static buildGlobalQID(year, set, section, blockId) { return `${year}_${(set === null || set === undefined) ? '0' : set}_${section}_${blockId}`; }
     static labelFromFileName(basename) { return String(basename).replace(/^(onlyq|trends)[\s_-]+/i, '').replace(/[_]+/g, ' ').replace(/\.md$/i, '').trim(); }
     static parseYearSelector(raw) {
@@ -629,6 +630,7 @@ class GateIndexer {
             return; 
         }
 
+        window.vaultBlocks = {};
         this.masterIndex = []; this.institutes.clear(); this.subjects.clear(); this.topics.clear(); this.topicToSubjects = new Map();
         const seenQids = new Set(), qidMap = new Map();
         let duplicateCount = 0, skippedNoKeyCount = 0;
@@ -716,49 +718,42 @@ class GateIndexer {
             "Resources/Question Paper/GATE/MD/Year/"
         ];
 
-        for (const fileName of requiredSourceFiles) {
+        const loadSourceFile = async (fileName) => {
             let content = null;
             let lastFileErr = null;
             for (const base of basePathsToSearch) {
                 try {
-                    const res = await fetchWithRetry(`${base}${fileName}.md`);
+                    const res = await fetchWithRetry(`${base}${encodeURIComponent(fileName)}.md`);
                     content = await res.text();
                     break;
                 } catch(e) { lastFileErr = e; }
             }
-            if (!content && lastFileErr) sourceFileErrors.push({ path: fileName, message: lastFileErr.message });
-
-            if (content) {
-                // Split file by --- to isolate each numbered question
-                const blocks = content.split(/^---/gm);
-                for (let b of blocks) {
-                    
-                    // ANTI-CHEAT: Remove tags and answers at the bottom
-                    let cleanText = b.split(/\n#\w|\n>\[!success]/i)[0].trim();
-                    if (!cleanText) continue;
-
-                    // SMART EXTRACTION: Find EVERY ^blockId inside this section
-                    const blockRegex = /\^([a-zA-Z0-9_-]+)/g;
-                    let match;
-                    let lastIndex = 0;
-                    
-                    while ((match = blockRegex.exec(cleanText)) !== null) {
-                        const extractedBlockId = GateUtils.normalizeBlockId(match[1]);
-                        
-                        // Extract text from the start of the section (or previous block ID) up to this block ID
-                        let blockContent = cleanText.substring(lastIndex, match.index).trim();
-                        
-                        // Save it to memory so the Renderer can find it
-                        window.vaultBlocks[extractedBlockId] = blockContent;
-                        
-                        // Move the starting point forward for the next block ID in the same section
-                        lastIndex = match.index + match[0].length;
-                    }
-                }
-            } else {
+            if (!content) {
+                if (lastFileErr) sourceFileErrors.push({ path: fileName, message: lastFileErr.message });
                 console.warn(`GATE Simulator: Could not find source file ${fileName}.md`);
+                return;
             }
-        }
+            content = content.replace(/\r\n/g, '\n');
+            // Split file by --- to isolate each numbered question
+            for (const b of content.split(/^---/gm)) {
+                // ANTI-CHEAT: Remove tags and answers at the bottom
+                const cleanText = b.split(/\n#\w|\n>\[!success]/i)[0].trim();
+                if (!cleanText) continue;
+                // Find EVERY ^blockId inside this section
+                const blockRegex = /\^([a-zA-Z0-9_-]+)/g;
+                let match, lastIndex = 0;
+                while ((match = blockRegex.exec(cleanText)) !== null) {
+                    window.vaultBlocks[GateUtils.vaultKey(fileName, match[1])] = cleanText.substring(lastIndex, match.index).trim();
+                    lastIndex = match.index + match[0].length;
+                }
+            }
+        };
+        // Fetch in parallel (6 at a time) instead of one by one
+        const pending = Array.from(requiredSourceFiles);
+        await Promise.all(Array.from({ length: 6 }, async () => {
+            while (pending.length) await loadSourceFile(pending.shift());
+        }));
+        console.info(`GATE Simulator: loaded ${Object.keys(window.vaultBlocks).length} question blocks from ${requiredSourceFiles.size} source files`);
 
         // 4. Load Subject & Topic Tags
         const tagFiles = [...(manifest.onlyQSubject || []), ...(manifest.onlyQTopic || [])];
