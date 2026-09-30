@@ -127,16 +127,15 @@ class MarkdownRenderer {
         const placeholders = [];
         const pushPlaceholder = (htmlContent) => {
             placeholders.push(htmlContent);
-            return `@@PLACEHOLDER_${placeholders.length - 1}@@`;
+            return `\uE000${placeholders.length - 1}\uE001`;
         };
 
         // 2. Extract Math blocks to protect them from Markdown formatting (prevents italics from breaking math variables)
-        text = text.replace(/\$\$([\s\S]*?)\$\$/g, (match) => {
-            return pushPlaceholder(match.replace(/</g, '&lt;').replace(/>/g, '&gt;'));
-        });
-        text = text.replace(/\$([\s\S]*?)\$/g, (match) => {
-            return pushPlaceholder(match.replace(/</g, '&lt;').replace(/>/g, '&gt;'));
-        });
+        const protectMath = (match) => pushPlaceholder(match.replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+        text = text.replace(/\$\$[\s\S]*?\$\$/g, protectMath);              // $$ display $$
+        text = text.replace(/\\\[[\s\S]*?\\\]/g, protectMath);                // \[ display \]
+        text = text.replace(/\\\([\s\S]*?\\\)/g, protectMath);                // \( inline \)
+        text = text.replace(/(?<!\\)\$(?:[^$\\\n]|\\[\s\S]|\n(?!\n))+?\$/g, protectMath); // $ inline $ (never spans a blank line)
 
         // 3. Resolve Real Images (Supports ![[image.png|300]] and standard markdown)
         const formatSrc = (rawFile) => {
@@ -180,18 +179,28 @@ class MarkdownRenderer {
             .replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
         
         // 5. Restore isolated mathematical logic and image tags
-        html = html.replace(/@@PLACEHOLDER_(\d+)@@/g, (match, index) => {
-            return placeholders[index];
-        });
+        html = html.replace(/\uE000(\d+)\uE001/g, (match, index) => placeholders[index]);
 
         container.innerHTML = `<p>${html}</p>`;
 
-        // 6. Trigger MathJax Rendering (Clearing previously typeset contexts ensures clean execution)
-        if (window.MathJax && window.MathJax.typesetPromise) {
-            if (window.MathJax.typesetClear) {
-                window.MathJax.typesetClear([container]);
-            }
-            window.MathJax.typesetPromise([container]).catch((err) => console.error(err.message));
+        // 6. Typeset. MathJax loads async, so wait for it, and chain calls (MathJax's own advice) so concurrent renders don't collide.
+        MarkdownRenderer.typeset(container);
+    }
+
+    static typeset(container, tries = 0) {
+        const mj = window.MathJax;
+        if (mj && mj.typesetPromise && mj.startup && mj.startup.promise) {
+            mj.startup.promise = mj.startup.promise
+                .then(() => {
+                    if (!container.isConnected) return;
+                    if (mj.typesetClear) mj.typesetClear([container]);
+                    return mj.typesetPromise([container]);
+                })
+                .catch((err) => console.error('MathJax:', err && err.message));
+        } else if (tries < 150) {
+            setTimeout(() => MarkdownRenderer.typeset(container, tries + 1), 100); // not loaded yet (up to ~15s)
+        } else {
+            console.error('MathJax never loaded — check the CDN script in index.html');
         }
     }
 }
