@@ -1,22 +1,129 @@
-:root {
+/* =========================================================================
+   THEME TOKENS
+   Themes are switched with <html data-theme="light|dark|blueprint|paper|midnight">.
+   Obsidian-style variable names are kept so every existing rule keeps working.
+   ========================================================================= */
+:root, :root[data-theme="light"] {
+  color-scheme: light;
   --background-primary: #ffffff;
-  --background-secondary: #f9f9f9;
-  --background-secondary-alt: #f0f0f0;
-  --background-modifier-border: #d0d4dc;
+  --background-secondary: #f5f6f9;
+  --background-secondary-alt: #eceef3;
+  --background-modifier-border: #d9dde6;
   --background-modifier-form-field: #ffffff;
-  --background-modifier-hover: rgba(0,0,0,0.05);
-  
-  --text-normal: #2e3338;
-  --text-muted: #5c6370;
-  --text-accent: #337ab7;
-  --text-error: #e53935;
+  --background-modifier-hover: rgba(20, 30, 60, 0.06);
+  --text-normal: #1b2230;
+  --text-muted: #5a6477;
+  --text-accent: #2447c9;
+  --text-error: #c92f28;
   --text-on-accent: #ffffff;
-  
-  --interactive-accent: #2563eb;
-  --interactive-accent-hover: #1d4ed8;
-  
-  --font-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-monospace: Consolas, "Courier New", monospace;
+  --interactive-accent: #2447c9;
+  --interactive-accent-hover: #1a37a3;
+  --gate-success: #1c8a52;
+  --gate-warning: #c27000;
+  --gate-review: #7a4bc9;
+  --gate-on-status: #ffffff;
+  --shadow-s: 0 1px 2px rgba(20, 30, 60, 0.08);
+  --shadow-m: 0 4px 14px rgba(20, 30, 60, 0.10);
+  --shadow-l: 0 12px 34px rgba(20, 30, 60, 0.18);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background-primary: #14171d;
+  --background-secondary: #1a1e26;
+  --background-secondary-alt: #232834;
+  --background-modifier-border: #2f3645;
+  --background-modifier-form-field: #1a1e26;
+  --background-modifier-hover: rgba(255, 255, 255, 0.06);
+  --text-normal: #e3e6ee;
+  --text-muted: #9aa2b3;
+  --text-accent: #86a8ff;
+  --text-error: #ff7068;
+  --text-on-accent: #0b1226;
+  --interactive-accent: #86a8ff;
+  --interactive-accent-hover: #a5bfff;
+  --gate-success: #4cc38a;
+  --gate-warning: #f0a43a;
+  --gate-review: #b69af7;
+  --gate-on-status: #0c1210;
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-m: 0 4px 14px rgba(0, 0, 0, 0.4);
+  --shadow-l: 0 12px 34px rgba(0, 0, 0, 0.55);
+}
+:root[data-theme="blueprint"] {
+  color-scheme: dark;
+  --background-primary: #0e2745;
+  --background-secondary: #123259;
+  --background-secondary-alt: #173d6b;
+  --background-modifier-border: #2b5a8c;
+  --background-modifier-form-field: #0e2745;
+  --background-modifier-hover: rgba(160, 210, 255, 0.10);
+  --text-normal: #e7f2ff;
+  --text-muted: #9dbddf;
+  --text-accent: #7fd8ff;
+  --text-error: #ff8793;
+  --text-on-accent: #05213b;
+  --interactive-accent: #7fd8ff;
+  --interactive-accent-hover: #a6e6ff;
+  --gate-success: #62e3ab;
+  --gate-warning: #ffc462;
+  --gate-review: #c6a9ff;
+  --gate-on-status: #06182b;
+  --shadow-s: 0 1px 2px rgba(0, 10, 30, 0.45);
+  --shadow-m: 0 4px 14px rgba(0, 10, 30, 0.45);
+  --shadow-l: 0 12px 34px rgba(0, 10, 30, 0.6);
+}
+:root[data-theme="paper"] {
+  color-scheme: light;
+  --background-primary: #f4f1ea;
+  --background-secondary: #ece8de;
+  --background-secondary-alt: #e3ded1;
+  --background-modifier-border: #d3cdbd;
+  --background-modifier-form-field: #faf8f3;
+  --background-modifier-hover: rgba(60, 50, 20, 0.07);
+  --text-normal: #2a2924;
+  --text-muted: #6a665a;
+  --text-accent: #25694c;
+  --text-error: #b0352b;
+  --text-on-accent: #f7f5ee;
+  --interactive-accent: #25694c;
+  --interactive-accent-hover: #1b5239;
+  --gate-success: #2b7a4b;
+  --gate-warning: #b3661a;
+  --gate-review: #7650b0;
+  --gate-on-status: #f7f5ee;
+  --shadow-s: 0 1px 2px rgba(60, 50, 20, 0.10);
+  --shadow-m: 0 4px 14px rgba(60, 50, 20, 0.12);
+  --shadow-l: 0 12px 34px rgba(60, 50, 20, 0.2);
+}
+:root[data-theme="midnight"] {
+  color-scheme: dark;
+  --background-primary: #000000;
+  --background-secondary: #0b0b10;
+  --background-secondary-alt: #14141b;
+  --background-modifier-border: #24242e;
+  --background-modifier-form-field: #0b0b10;
+  --background-modifier-hover: rgba(255, 255, 255, 0.07);
+  --text-normal: #dcdfe8;
+  --text-muted: #8a90a2;
+  --text-accent: #b49cff;
+  --text-error: #ff7a74;
+  --text-on-accent: #120a2b;
+  --interactive-accent: #b49cff;
+  --interactive-accent-hover: #cbb9ff;
+  --gate-success: #4cc38a;
+  --gate-warning: #f0a43a;
+  --gate-review: #e29cf7;
+  --gate-on-status: #0a0a0c;
+  --shadow-s: 0 0 0 rgba(0, 0, 0, 0);
+  --shadow-m: 0 4px 14px rgba(0, 0, 0, 0.7);
+  --shadow-l: 0 12px 34px rgba(0, 0, 0, 0.85);
+}
+:root {
+  --font-interface: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-monospace: "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, "Courier New", monospace;
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 14px;
 }
 
 /* --- Base Static App Reset --- */
@@ -96,8 +203,8 @@ body { margin: 0; font-family: var(--font-interface); color: var(--text-normal);
 .gate-exam-algo-badge { font-size: 0.75em; color: var(--text-muted); font-weight: 600; background: var(--background-primary); padding: 2px 8px; border-radius: 10px; border: 1px solid var(--background-modifier-border); }
 .gate-selection-reason { font-size: 0.8em; color: var(--text-muted); font-style: italic; }
 .gate-mastery-badge { font-size: 0.75em; font-weight: 700; padding: 2px 8px; border-radius: 10px; display: none; }
-.gate-mastery-badge.needs-review { display: inline-block; background: #ff9800; color: white; }
-.gate-mastery-badge.mastered { display: inline-block; background: #4caf50; color: white; }
+.gate-mastery-badge.needs-review { display: inline-block; background: var(--gate-warning); color: var(--gate-on-status); }
+.gate-mastery-badge.mastered { display: inline-block; background: var(--gate-success); color: var(--gate-on-status); }
 .gate-exam-source { font-size: 0.75em; color: var(--text-muted); font-weight: normal; margin-left: 8px; font-family: var(--font-monospace); background: var(--background-primary); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--background-modifier-border);}
 .gate-exam-review-toggle { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 600; padding: 9px 16px; border: 1px solid var(--background-modifier-border); border-radius: 8px; background: var(--background-primary); transition: 0.15s; }
 .gate-exam-review-toggle:hover { border-color: var(--interactive-accent); }
@@ -110,7 +217,7 @@ body { margin: 0; font-family: var(--font-interface); color: var(--text-normal);
 .gate-exam-answer-box input[type="text"] { flex: 1; max-width: 420px; padding: 12px 14px; border-radius: 8px; border: 1px solid var(--background-modifier-border); background: var(--background-primary); font-family: var(--font-monospace); font-size: 1.05em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; outline: none; transition: 0.15s; }
 .gate-exam-answer-box input[type="text"]::placeholder { color: var(--text-muted); opacity: 0.8; text-transform: uppercase; }
 .gate-exam-answer-box input[type="text"]:focus { border-color: var(--interactive-accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--interactive-accent) 20%, transparent); }
-.gate-pause-overlay { display: none; position: absolute; inset: 0; background: rgba(255,255,255,0.85); backdrop-filter: blur(2px); align-items: center; justify-content: center; z-index: 5; }
+.gate-pause-overlay { display: none; position: absolute; inset: 0; background: color-mix(in srgb, var(--background-primary) 88%, transparent); backdrop-filter: blur(2px); align-items: center; justify-content: center; z-index: 5; }
 .gate-pause-overlay.active { display: flex; }
 .gate-pause-overlay-text { font-size: 1.4em; font-weight: 700; color: var(--text-muted); background: var(--background-primary); padding: 14px 32px; border-radius: 10px; border: 1px solid var(--background-modifier-border); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
 .gate-btn { padding: 10px 18px; border-radius: 8px; border: 1px solid var(--background-modifier-border); cursor: pointer; font-weight: 600; background: var(--background-primary); color: var(--text-normal); transition: 0.15s; }
@@ -142,10 +249,10 @@ body { margin: 0; font-family: var(--font-interface); color: var(--text-normal);
 .gate-grid-btn { aspect-ratio: 1; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--background-modifier-border); cursor: pointer; font-weight: bold; background: var(--background-primary); color: var(--text-normal); transition: 0.1s; user-select: none; }
 .gate-grid-btn:hover { filter: brightness(1.2); }
 .gate-grid-btn.active { box-shadow: 0 0 0 3px var(--text-normal); transform: scale(1.1); }
-.gate-grid-btn.answered { background: #4caf50; color: white; border-color: #4caf50; }
-.gate-grid-btn.review { background: #ff9800; color: white; border-color: #ff9800; }
-.gate-grid-btn.answered.review { background: #9c27b0; color: white; border-color: #9c27b0; }
-.gate-btn.danger { background: var(--text-error); color: white; border: none; width: 100%; padding: 15px; font-size: 1.1em;}
+.gate-grid-btn.answered { background: var(--gate-success); color: var(--gate-on-status); border-color: var(--gate-success); }
+.gate-grid-btn.review { background: var(--gate-warning); color: var(--gate-on-status); border-color: var(--gate-warning); }
+.gate-grid-btn.answered.review { background: var(--gate-review); color: var(--gate-on-status); border-color: var(--gate-review); }
+.gate-btn.danger { background: var(--text-error); color: var(--gate-on-status); border: none; width: 100%; padding: 15px; font-size: 1.1em;}
 .gate-btn.danger:hover { filter: brightness(1.1); }
 .gate-support-btn { margin-left: 12px;}
 .gate-scorecard { display: flex; gap: 20px; background: var(--background-secondary); padding: 20px; border-radius: 10px; margin-bottom: 20px; border: 1px solid var(--background-modifier-border); }
@@ -153,7 +260,7 @@ body { margin: 0; font-family: var(--font-interface); color: var(--text-normal);
 .gate-score-stat h4 { margin: 0 0 5px 0; color: var(--text-muted); font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px;}
 .gate-score-stat span { font-size: 2em; font-weight: bold; color: var(--text-normal); display: block;}
 .gate-score-stat.total span { color: var(--interactive-accent); }
-.gate-res-correct { color: #4caf50; font-weight: bold; }
+.gate-res-correct { color: var(--gate-success); font-weight: bold; }
 .gate-res-wrong { color: var(--text-error); font-weight: bold; }
 .gate-res-unattempted { color: var(--text-muted); font-weight: bold; }
 .gate-dashboard-container { padding: 20px 40px; overflow-y: auto; height: 100%; background: var(--background-primary); font-family: var(--font-interface); }
@@ -266,3 +373,133 @@ body { margin: 0; font-family: var(--font-interface); color: var(--text-normal);
     .gate-exam-review-toggle { font-size: 0.65em; padding: 6px 2px; }
     .gate-exam-sidebar > .gate-btn.danger { flex: 1 1 100%; order: 3; }
 }
+
+/* =========================================================================
+   UI REFRESH LAYER (sits on top of the rules above)
+   ========================================================================= */
+:where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]), select, textarea) { color: var(--text-normal); background: var(--background-modifier-form-field); font-family: inherit; }
+::placeholder { color: var(--text-muted); opacity: 0.75; }
+input[type="checkbox"], input[type="radio"] { accent-color: var(--interactive-accent); }
+*, *::before, *::after { box-sizing: border-box; } /* Obsidian uses border-box everywhere; this layout was built for it */
+* { scrollbar-width: thin; scrollbar-color: var(--background-modifier-border) transparent; }
+:focus-visible { outline: 2px solid var(--interactive-accent); outline-offset: 2px; }
+body { height: 100vh; height: 100dvh; font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
+
+/* --- Top bar --- */
+#nav { position: sticky; top: 0; z-index: 50; height: 56px; box-sizing: border-box; padding: 0 20px; gap: 16px; }
+.nav-brand { display: flex; align-items: center; gap: 10px; font-size: 1.02rem; font-weight: 600; letter-spacing: -0.01em; color: var(--text-normal); white-space: nowrap; }
+.nav-brand svg { color: var(--interactive-accent); flex: 0 0 auto; }
+.nav-links { gap: 2px; padding: 3px; border-radius: var(--radius-m); background: var(--background-secondary-alt); }
+.nav-btn { padding: 6px 14px; border-radius: 7px; font: 500 0.9rem var(--font-interface); }
+.nav-btn.active { background: var(--background-primary); color: var(--text-normal); box-shadow: var(--shadow-s), 0 0 0 1px var(--background-modifier-border); }
+.nav-right { display: flex; align-items: center; }
+
+/* --- Theme switcher --- */
+.theme-wrap { position: relative; }
+.theme-btn { display: flex; align-items: center; gap: 8px; padding: 5px 10px 5px 6px; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-m); background: var(--background-primary); color: var(--text-normal); font: 500 0.85rem var(--font-interface); cursor: pointer; }
+.theme-btn:hover { background: var(--background-modifier-hover); }
+.theme-btn .gate-theme-prev { width: 28px; height: 20px; border-radius: 5px; }
+.theme-menu { position: absolute; right: 0; top: calc(100% + 8px); width: 270px; padding: 6px; background: var(--background-primary); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-l); box-shadow: var(--shadow-l); z-index: 60; }
+.theme-menu[hidden] { display: none; }
+.theme-opt { display: flex; align-items: center; gap: 12px; width: 100%; padding: 8px 10px; border: 0; border-radius: var(--radius-s); background: none; color: var(--text-normal); text-align: left; cursor: pointer; font: inherit; }
+.theme-opt:hover { background: var(--background-modifier-hover); }
+.theme-opt[aria-checked="true"] { background: var(--background-secondary-alt); }
+.theme-opt .gate-theme-prev { flex: 0 0 auto; width: 48px; height: 32px; }
+.theme-opt .txt { display: flex; flex-direction: column; min-width: 0; }
+.theme-opt .name { font-weight: 600; font-size: 0.9rem; }
+.theme-opt .desc { font-size: 0.76rem; color: var(--text-muted); }
+
+/* Mini UI preview used by the nav menu and the Settings theme cards */
+.gate-theme-prev { position: relative; display: block; background: var(--p-bg); border: 1px solid var(--p-bd); border-radius: 8px; overflow: hidden; }
+.gate-theme-prev i { position: absolute; display: block; }
+.gate-theme-prev .b  { left: 0; right: 0; top: 0; height: 22%; background: var(--p-bg2); border-bottom: 1px solid var(--p-bd); }
+.gate-theme-prev .l1 { left: 10%; top: 40%; width: 55%; height: 7%; border-radius: 2px; background: var(--p-tx); opacity: 0.55; }
+.gate-theme-prev .l2 { left: 10%; top: 56%; width: 38%; height: 7%; border-radius: 2px; background: var(--p-tx); opacity: 0.3; }
+.gate-theme-prev .a  { right: 10%; bottom: 14%; width: 24%; height: 16%; border-radius: 3px; background: var(--p-ac); }
+.gate-theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; padding: 12px 0 18px; }
+.gate-theme-card { display: flex; flex-direction: column; gap: 8px; padding: 8px; text-align: left; border: 2px solid var(--background-modifier-border); border-radius: var(--radius-m); background: var(--background-primary); color: var(--text-normal); cursor: pointer; font: inherit; transition: border-color 0.15s; }
+.gate-theme-card:hover { border-color: var(--text-muted); }
+.gate-theme-card.active { border-color: var(--interactive-accent); }
+.gate-theme-card .gate-theme-prev { height: 64px; }
+.gate-theme-card .name { font-weight: 600; font-size: 0.92rem; }
+.gate-theme-card .desc { font-size: 0.78rem; color: var(--text-muted); }
+
+/* Blueprint: faint drafting grid behind the panels */
+:root[data-theme="blueprint"] #workspace {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--text-normal) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--text-normal) 6%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+:root[data-theme="blueprint"] .gate-dashboard-container { background: transparent; }
+
+/* --- Surfaces, buttons, forms --- */
+.gate-config-screen { border-radius: var(--radius-l); box-shadow: var(--shadow-m); }
+.gate-config-title { text-align: left; font-size: 1.5rem; font-weight: 600; border-bottom: none; padding-bottom: 4px; margin-bottom: 18px; }
+.gate-goal-card { border-width: 1px; border-radius: var(--radius-m); padding: 14px 16px; }
+.gate-goal-card.active { border-color: var(--interactive-accent); box-shadow: 0 0 0 1px var(--interactive-accent); }
+.gate-config-body, .gate-pool-stats { border-radius: var(--radius-m); }
+.gate-config-body .setting-item-heading .setting-item-name, .setting-item-heading { text-transform: none; letter-spacing: 0; font-size: 1.02em; }
+.gate-start-btn { padding: 16px; font-size: 1.05em; font-weight: 600; border-radius: var(--radius-m); }
+.gate-btn { border-radius: var(--radius-s); font-weight: 500; }
+.gate-btn.primary { font-weight: 600; }
+.gate-exam-main, .gate-exam-palette, .gate-dash-card, .gate-dash-charts, .gate-weak-group { border-radius: var(--radius-m); }
+.gate-dash-card, .gate-dash-charts { box-shadow: var(--shadow-s); }
+.gate-modal-content { border-radius: var(--radius-l); box-shadow: var(--shadow-l); border: 1px solid var(--background-modifier-border); }
+.gate-modal-overlay { background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(2px); }
+.setting-item-control input[type="text"], .setting-item-control input[type="number"], .setting-item-control select, .setting-item-control textarea { background: var(--background-modifier-form-field); color: var(--text-normal); }
+
+/* --- Exam view --- */
+.gate-exam-title { font-weight: 600; color: var(--text-normal); }
+.gate-exam-content > * { max-width: 80ch; margin-left: auto; margin-right: auto; }
+.gate-exam-content img { max-width: 100%; height: auto; border-radius: var(--radius-s); }
+.gate-exam-content table { border-collapse: collapse; }
+.gate-exam-content th, .gate-exam-content td { border: 1px solid var(--background-modifier-border); padding: 6px 10px; }
+/* Transparent black-line diagrams vanish on dark themes, so give images a light backing */
+:root[data-theme="dark"] .gate-exam-content img, :root[data-theme="blueprint"] .gate-exam-content img, :root[data-theme="midnight"] .gate-exam-content img { background: #ffffff; padding: 6px; filter: brightness(0.92); }
+.gate-ans-radio, .gate-ans-checkbox { border-width: 1px; border-radius: var(--radius-s); font-weight: 600; }
+.gate-ans-radio:has(input:checked), .gate-ans-checkbox:has(input:checked) { transform: none; box-shadow: var(--shadow-m); }
+.gate-exam-timer-box { border: 1px solid var(--background-modifier-border); border-left: 4px solid var(--interactive-accent); color: var(--text-normal); font-weight: 600; font-variant-numeric: tabular-nums; border-radius: var(--radius-m); }
+.gate-exam-grid { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.gate-grid-btn { border-radius: 8px; font-weight: 600; font-variant-numeric: tabular-nums; font-size: 0.9em; transition: transform 0.1s; }
+.gate-grid-btn:hover { filter: none; background: var(--background-modifier-hover); }
+.gate-grid-btn.answered:hover, .gate-grid-btn.review:hover { filter: brightness(1.08); }
+.gate-grid-btn.active { transform: none; box-shadow: 0 0 0 2px var(--background-primary), 0 0 0 4px var(--interactive-accent); }
+.gate-mastery-badge, .gate-exam-algo-badge { border-radius: 6px; }
+
+/* --- Dashboard --- */
+.gate-dash-header h2 { color: var(--text-normal); font-weight: 600; }
+.gate-dash-section-title { font-weight: 600; }
+.gate-dash-card { text-align: left; }
+.gate-dash-card h4, .gate-score-stat h4, .gate-weak-group h4, .gate-dash-mistakes th { text-transform: none; letter-spacing: 0; font-weight: 500; font-size: 0.88em; }
+.gate-dash-card .val, .gate-score-stat span { font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.gate-score-stat { text-align: left; }
+.gate-weak-track { height: 10px; border-radius: 5px; }
+
+/* --- Desktop-only sizing (kept out of the base rules so the original mobile rules still win on phones) --- */
+@media (min-width: 769px) {
+  .gate-exam-header { padding: 12px 20px; }
+  .gate-exam-content { padding: 28px clamp(18px, 5vw, 56px); }
+  .gate-exam-answer-box, .gate-exam-footer { padding: 12px 20px; }
+  .gate-exam-timer-box { font-size: 1.6em; }
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .gate-exam-footer { flex-wrap: wrap; gap: 6px; }
+  .gate-exam-footer > .gate-btn:not(.primary) { flex: 1 1 28%; }
+  .gate-exam-review-toggle { flex: 1 1 42%; }
+  .gate-exam-footer > .gate-btn.primary { flex: 1 1 48%; padding: 9px 4px; font-size: 0.85em; }
+  .gate-review-toggle-text-visible { font-size: 0.8em; }
+  #nav { padding: 0 10px; gap: 8px; }
+  .nav-brand span { display: none; }
+  .nav-btn { padding: 6px 10px; font-size: 0.85rem; }
+  .theme-btn { padding: 5px; }
+  .theme-btn .theme-btn-label { display: none; }
+  .theme-menu { position: fixed; left: 10px; right: 10px; top: 62px; width: auto; }
+  .gate-exam-content { padding: 14px 16px; }
+  .gate-exam-grid { grid-template-columns: none; }
+  .gate-grid-btn { border-radius: 7px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
