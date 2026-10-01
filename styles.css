@@ -583,3 +583,102 @@ mjx-container { color: inherit; }
 /* Font availability message under the font setting */
 .gate-font-status { margin: -6px 0 10px; font-size: 0.82em; color: var(--text-muted); }
 .gate-font-status[data-state="warn"] { color: var(--text-error); }
+
+/* =========================================================================
+   SWITCHES (replace tick boxes in Settings)
+   ========================================================================= */
+.gate-switch { position: relative; display: inline-block; width: 44px; height: 26px; flex: 0 0 auto; }
+.gate-switch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
+.gate-switch-track { position: absolute; inset: 0; border-radius: 999px; background: color-mix(in srgb, var(--text-muted) 45%, var(--background-secondary)); transition: background 0.15s; }
+.gate-switch-track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #ffffff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); transition: transform 0.15s; }
+.gate-switch input:checked + .gate-switch-track { background: var(--interactive-accent); }
+.gate-switch input:checked + .gate-switch-track::after { transform: translateX(18px); }
+.gate-switch input:focus-visible + .gate-switch-track { outline: 2px solid var(--interactive-accent); outline-offset: 2px; }
+
+/* =========================================================================
+   SETTINGS PAGE
+   ========================================================================= */
+.gate-settings { max-width: 1000px; margin: 0 auto; padding: 8px 4px 48px; }
+.gate-settings-head { margin: 8px 0 22px; }
+.gate-settings-head h2 { margin: 0; font-size: 1.7rem; font-weight: 600; letter-spacing: -0.02em; color: var(--text-normal); }
+.gate-settings-sub { margin-top: 4px; color: var(--text-muted); }
+.gate-settings-body { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; align-items: start; }
+.gate-settings-nav { position: sticky; top: 16px; display: flex; flex-direction: column; gap: 2px; }
+.gate-settings-navlink { text-align: left; padding: 8px 12px; border: 0; border-left: 2px solid transparent; border-radius: 0 var(--radius-s) var(--radius-s) 0; background: none; color: var(--text-muted); font: 500 0.92rem var(--font-interface); cursor: pointer; }
+.gate-settings-navlink:hover { color: var(--text-normal); background: var(--background-modifier-hover); }
+.gate-settings-navlink.active { color: var(--text-normal); border-left-color: var(--interactive-accent); background: var(--background-secondary); }
+.gate-settings-card { margin-bottom: 20px; padding: 6px 24px 8px; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-l); background: var(--background-secondary); box-shadow: var(--shadow-s); scroll-margin-top: 16px; }
+.gate-settings-card-head { padding: 16px 0 4px; }
+.gate-settings-card-head h3 { margin: 0; font-size: 1.08rem; font-weight: 600; text-transform: none; letter-spacing: -0.005em; color: var(--text-normal); }
+.gate-settings-card-desc { margin-top: 2px; font-size: 0.88rem; color: var(--text-muted); }
+.gate-settings-card.danger { border-color: color-mix(in srgb, var(--text-error) 45%, var(--background-modifier-border)); }
+.gate-settings-card.danger h3 { color: var(--text-error); }
+
+.gate-settings .setting-item { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 0; border: 0; border-bottom: 1px solid var(--background-modifier-border); }
+.gate-settings .gate-settings-rows > .setting-item:last-child { border-bottom: 0; }
+.gate-settings .setting-item-info { flex: 1 1 auto; min-width: 0; }
+.gate-settings .setting-item-name { font-weight: 600; font-size: 0.97rem; color: var(--text-normal); }
+.gate-settings .setting-item-description { margin-top: 2px; font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); }
+.gate-settings .setting-item-control { flex: 0 0 auto; display: flex; align-items: center; gap: 10px; }
+.gate-settings .setting-item.is-stacked { flex-direction: column; align-items: stretch; gap: 12px; }
+.gate-settings .setting-item.is-stacked .setting-item-control { width: 100%; }
+.gate-settings .setting-item.is-stacked textarea { width: 100%; min-height: 96px; resize: vertical; }
+.gate-settings input[type="text"], .gate-settings select, .gate-settings textarea { box-sizing: border-box; padding: 8px 12px; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); background: var(--background-primary); color: var(--text-normal); font: inherit; font-size: 0.92rem; }
+.gate-settings input[type="text"] { width: 260px; }
+.gate-settings select { width: 260px; max-width: 100%; cursor: pointer; }
+.gate-settings input[type="text"]:focus, .gate-settings select:focus, .gate-settings textarea:focus { outline: none; border-color: var(--interactive-accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--interactive-accent) 25%, transparent); }
+.gate-settings .gate-color-input { width: 44px; height: 34px; padding: 2px; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); background: var(--background-primary); cursor: pointer; }
+.gate-settings .gate-slider-wrap { display: flex; align-items: center; gap: 14px; width: 260px; }
+.gate-settings input[type="range"] { flex: 1; accent-color: var(--interactive-accent); }
+.gate-settings .gate-slider-value { min-width: 44px; padding: 2px 10px; text-align: center; border-radius: 999px; background: var(--background-secondary-alt); font: 600 0.82rem var(--font-monospace); color: var(--text-normal); }
+.gate-settings .gate-theme-grid { padding: 0; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+.gate-settings .gate-theme-card { background: var(--background-primary); }
+.gate-set-preview { padding: 16px 20px; border: 1px dashed var(--background-modifier-border); border-radius: var(--radius-m); background: var(--background-primary); font-family: var(--gate-question-font, var(--font-interface)); font-size: var(--gate-question-font-size, 18px); line-height: var(--gate-question-line-height, 1.6); }
+.gate-set-preview p { margin: 0.4em 0; }
+.gate-settings .gate-font-status { margin: 6px 0 0; }
+
+@media (max-width: 820px) {
+  .gate-settings-body { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .gate-settings-nav { position: sticky; top: 0; z-index: 5; flex-direction: row; gap: 6px; overflow-x: auto; padding: 8px 0; background: var(--background-primary); }
+  .gate-settings-navlink { flex: 0 0 auto; border: 1px solid var(--background-modifier-border); border-radius: 999px; padding: 6px 14px; font-size: 0.85rem; }
+  .gate-settings-navlink.active { border-color: var(--interactive-accent); }
+  .gate-settings-card { padding: 4px 16px 6px; }
+  .gate-settings .setting-item:not(.is-toggle) { flex-direction: column; align-items: stretch; gap: 10px; }
+  .gate-settings .setting-item:not(.is-toggle) .setting-item-control { width: 100%; flex-wrap: wrap; }
+  .gate-settings input[type="text"], .gate-settings select, .gate-settings .gate-slider-wrap { width: 100%; }
+}
+
+/* =========================================================================
+   MODALS: confirm + exam summary
+   ========================================================================= */
+.gate-modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.gate-confirm-modal { max-width: 440px; }
+.gate-confirm-modal h3 { margin: 0 0 8px; }
+.gate-confirm-modal p { margin: 0; color: var(--text-muted); line-height: 1.5; }
+.gate-submit-modal { width: min(920px, 94vw); max-width: none; max-height: 90vh; overflow-y: auto; }
+.gate-submit-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+.gate-submit-head h3 { margin: 0; font-size: 1.3rem; font-weight: 600; }
+.gate-submit-time { font: 600 0.95rem var(--font-monospace); font-variant-numeric: tabular-nums; color: var(--text-muted); }
+.gate-submit-table-wrap { overflow-x: auto; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-m); }
+.gate-submit-table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+.gate-submit-table th, .gate-submit-table td { padding: 10px 12px; text-align: center; border-bottom: 1px solid var(--background-modifier-border); border-right: 1px solid var(--background-modifier-border); }
+.gate-submit-table th:last-child, .gate-submit-table td:last-child { border-right: 0; }
+.gate-submit-table tbody tr:last-child td { border-bottom: 0; }
+.gate-submit-table th { background: var(--background-secondary-alt); font-weight: 600; font-size: 0.82rem; line-height: 1.3; vertical-align: bottom; }
+.gate-submit-table .left { text-align: left; }
+.gate-submit-table td { font-variant-numeric: tabular-nums; font-weight: 500; }
+.gate-submit-table td.left { font-weight: 600; }
+.gate-submit-table tr.total td { background: var(--background-secondary); font-weight: 700; border-top: 2px solid var(--background-modifier-border); }
+.gate-submit-dot { display: inline-block; width: 11px; height: 11px; margin-right: 6px; border-radius: 3px; vertical-align: -1px; border: 1px solid transparent; }
+.gate-submit-dot.answered { background: var(--gate-success); }
+.gate-submit-dot.review { background: var(--gate-warning); }
+.gate-submit-dot.both { background: var(--gate-review); }
+.gate-submit-dot.na { background: var(--text-error); }
+.gate-submit-dot.nv { background: var(--background-primary); border-color: var(--text-muted); }
+.gate-submit-note { margin-top: 16px; padding: 12px 14px; border-radius: var(--radius-s); background: var(--background-secondary); color: var(--text-muted); line-height: 1.5; font-size: 0.93rem; }
+.gate-submit-note.warn { border-left: 3px solid var(--gate-warning); color: var(--text-normal); }
+@media (max-width: 600px) { .gate-submit-table { font-size: 0.82rem; } .gate-submit-table th, .gate-submit-table td { padding: 8px 6px; } }
+
+.gate-modal-actions .gate-btn, .gate-settings .gate-btn { width: auto; flex: 0 0 auto; padding: 9px 20px; }
+.gate-modal-actions .gate-btn.danger, .gate-settings .gate-btn.danger { background: var(--text-error); color: var(--gate-on-status); border-color: transparent; }
+.gate-settings input[type="text"] { width: 300px; }
