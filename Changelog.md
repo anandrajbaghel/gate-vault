@@ -5,18 +5,6 @@ All notable changes to the GATE Vault are documented in this file.
 </p>
 
 ---
-<p align="center">
-  <a href="https://razorpay.me/@anandbaghel">
-    <img src="https://img.shields.io/badge/Support_GATE_Vault-d97706?style=for-the-badge" alt="Support GATE Vault">
-  </a>
-</p>
-
-<p align="center">
-  <strong>If GATE Vault has helped you, consider supporting its development.</strong><br>
-  Every contribution helps keep the project free and continuously improving.
-</p>
-
----
 ### v1.0.0
 
 > [!info] What's New in v1.0.0
