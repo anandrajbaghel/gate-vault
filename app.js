@@ -72,8 +72,13 @@ class Setting {
         return this;
     }
     addToggle(cb) {
-        const input = document.createElement('input'); input.type = 'checkbox';
-        this.controlEl.appendChild(input);
+        this.settingEl.classList.add('is-toggle');
+        const label = document.createElement('label'); label.className = 'gate-switch';
+        const input = document.createElement('input'); input.type = 'checkbox'; input.setAttribute('role', 'switch');
+        input.setAttribute('aria-label', this.nameEl.innerText || 'Toggle');
+        const track = document.createElement('span'); track.className = 'gate-switch-track';
+        label.appendChild(input); label.appendChild(track);
+        this.controlEl.appendChild(label);
         const c = { inputEl: input, setValue: v => { input.checked = !!v; return c; }, onChange: fn => { input.addEventListener('change', e => fn(e.target.checked)); return c; } };
         cb(c);
         return this;
@@ -174,8 +179,8 @@ class MarkdownRenderer {
         text = text.replace(/^([ \t]*)(`{3,}|~{3,})[^\n]*\n[\s\S]*$/m, stashCode);                           // unclosed fence runs to the end
         text = text.replace(/(`+)(?!`)((?:[^\n]|\n(?!\s*\n))*?[^`])\1(?!`)/g, stashCode);                   // `inline code`
         text = text.replace(/\$\$([\s\S]+?)\$\$/g, (m, tex) => stashMath(tex, true));                       // $$ display $$
-        // $ inline $ : opening $ not followed by a space, closing $ not preceded by a space or followed by a digit
-        text = text.replace(/(?<![\\$])\$(?![\s$])((?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))*?)(?<![\s\\])\$(?!\d)/g, (m, tex) => stashMath(tex, false));
+        // $ inline $ : may have spaces inside the dollars; never spans a blank line; \$ is a literal dollar
+        text = text.replace(/(?<![\\$])\$(?!\$)((?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))+?)\$(?!\$)/g, (m, tex) => tex.trim() ? stashMath(tex, false) : m);
 
         // 3. Obsidian-only syntax
         text = text.replace(/%%[\s\S]*?%%/g, '');                                                           // %% comments %%
@@ -628,6 +633,23 @@ class GateUtils {
         const s = total % 60;
         return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     }
+    // Splits one "---" section into [{id, text}]. A block id is "^id" at the END of a line, preceded by a space or
+    // starting the line, and not inside $...$ / $$...$$ (so exponents like x^2 or 10^3 are never mistaken for ids).
+    static parseSectionBlocks(section) {
+        const mathRanges = [];
+        const mr = /\$\$[\s\S]+?\$\$|(?<![\\$])\$(?!\$)(?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))+?\$(?!\$)/g;
+        let m;
+        while ((m = mr.exec(section)) !== null) mathRanges.push([m.index, m.index + m[0].length]);
+        const out = [];
+        const idRe = /(?:^|[ \t])\^([A-Za-z0-9_-]+)[ \t]*$/gm;
+        let lastIndex = 0;
+        while ((m = idRe.exec(section)) !== null) {
+            if (mathRanges.some(([s0, e0]) => m.index >= s0 && m.index < e0)) continue;
+            out.push({ id: m[1], text: section.substring(lastIndex, m.index).trim() });
+            lastIndex = m.index + m[0].length;
+        }
+        return out;
+    }
     static normalizeBlockId(id) { return String(id).trim().toLowerCase().replace(/[\s._-]+/g, ''); }
     // Block IDs repeat across papers, so question text is stored per source file: "file::blockid".
     static vaultKey(fileName, blockId) { return String(fileName).trim().toLowerCase() + '::' + GateUtils.normalizeBlockId(blockId); }
@@ -1025,12 +1047,9 @@ class GateIndexer {
                 // ANTI-CHEAT: Remove tags and answers at the bottom
                 const cleanText = b.split(/\n#\w|\n>\[!success]/i)[0].trim();
                 if (!cleanText) continue;
-                // Find EVERY ^blockId inside this section
-                const blockRegex = /\^([a-zA-Z0-9_-]+)/g;
-                let match, lastIndex = 0;
-                while ((match = blockRegex.exec(cleanText)) !== null) {
-                    window.vaultBlocks[GateUtils.vaultKey(fileName, match[1])] = cleanText.substring(lastIndex, match.index).trim();
-                    lastIndex = match.index + match[0].length;
+                // Find EVERY ^blockId inside this section (ids sit at the end of a line, never inside math like x^2)
+                for (const { id, text } of GateUtils.parseSectionBlocks(cleanText)) {
+                    window.vaultBlocks[GateUtils.vaultKey(fileName, id)] = text;
                 }
             }
         };
@@ -1324,6 +1343,104 @@ class TestGenerator {
    UI CONTROLLERS
    ========================================================================= */
 
+class ConfirmModal extends Modal {
+    constructor({ title, message, confirmText = 'Confirm', cancelText = 'Cancel', danger = false, onConfirm }) {
+        super();
+        Object.assign(this, { title, message, confirmText, cancelText, danger, onConfirm });
+        this.contentEl.classList.add('gate-confirm-modal');
+    }
+    onOpen() {
+        const c = this.contentEl; c.empty();
+        c.createEl('h3', { text: this.title });
+        c.createEl('p', { text: this.message });
+        const row = c.createDiv({ cls: 'gate-modal-actions' });
+        const cancel = row.createEl('button', { text: this.cancelText, cls: 'gate-btn' });
+        const ok = row.createEl('button', { text: this.confirmText, cls: 'gate-btn ' + (this.danger ? 'danger' : 'primary') });
+        cancel.onclick = () => this.close();
+        ok.onclick = () => { this.close(); this.onConfirm && this.onConfirm(); };
+        this._esc = (e) => { if (e.key === 'Escape') this.close(); };
+        document.addEventListener('keydown', this._esc);
+        cancel.focus();
+    }
+    onClose() { document.removeEventListener('keydown', this._esc); }
+}
+
+// Exam summary shown before submitting, laid out like the TCS iON exam summary table.
+class SubmitSummaryModal extends Modal {
+    constructor(view, onConfirm) {
+        super();
+        this.view = view; this.onConfirm = onConfirm;
+        this.contentEl.classList.add('gate-submit-modal');
+    }
+    static sectionName(code) { return ({ GA: 'General Aptitude', EE: 'Electrical Engineering' })[code] || code || 'Questions'; }
+    summarize() {
+        const v = this.view, rows = new Map();
+        const blank = (name) => ({ name, total: 0, answered: 0, notAnswered: 0, marked: 0, ansMarked: 0, notVisited: 0 });
+        v.questions.forEach((q, i) => {
+            const key = q.section || 'All';
+            if (!rows.has(key)) rows.set(key, blank(SubmitSummaryModal.sectionName(key)));
+            const r = rows.get(key); r.total++;
+            const ans = String(v.answers[i] || '').trim() !== '', rev = !!v.reviews[i], seen = v.viewedIndices.has(i);
+            if (ans && rev) r.ansMarked++;
+            else if (ans) r.answered++;
+            else if (rev) r.marked++;
+            else if (seen) r.notAnswered++;
+            else r.notVisited++;
+        });
+        const list = [...rows.entries()].sort((a, b) => (a[0] === 'GA' ? -1 : 0) - (b[0] === 'GA' ? -1 : 0)).map(e => e[1]);
+        const total = blank('Total');
+        list.forEach(r => Object.keys(total).forEach(k => { if (k !== 'name') total[k] += r[k]; }));
+        return { list, total };
+    }
+    onOpen() {
+        const c = this.contentEl; c.empty();
+        const { list, total } = this.summarize();
+        const head = c.createDiv({ cls: 'gate-submit-head' });
+        head.createEl('h3', { text: 'Exam summary' });
+        if (!this.view.isUntimed) head.createDiv({ cls: 'gate-submit-time', text: `Time left  ${GateUtils.formatTime(this.view.timeLeft)}` });
+
+        const cols = [
+            ['Section name', ''], ['No. of questions', ''], ['Answered', 'answered'], ['Not answered', 'na'],
+            ['Marked for review', 'review'], ['Answered & marked for review (will be considered for evaluation)', 'both'], ['Not visited', 'nv']
+        ];
+        const wrap = c.createDiv({ cls: 'gate-submit-table-wrap' });
+        const table = wrap.createEl('table', { cls: 'gate-submit-table' });
+        const trh = table.createEl('thead').createEl('tr');
+        cols.forEach(([label, dot], i) => {
+            const th = trh.createEl('th', { attr: { scope: 'col' } });
+            if (dot) th.createSpan({ cls: `gate-submit-dot ${dot}` });
+            th.appendChild(document.createTextNode(label));
+            if (i === 0) th.classList.add('left');
+        });
+        const body = table.createEl('tbody');
+        const addRow = (r, isTotal) => {
+            const tr = body.createEl('tr'); if (isTotal) tr.className = 'total';
+            [r.name, r.total, r.answered, r.notAnswered, r.marked, r.ansMarked, r.notVisited].forEach((val, i) => {
+                const td = tr.createEl('td', { text: String(val) }); if (i === 0) td.classList.add('left');
+            });
+        };
+        list.forEach(r => addRow(r, false));
+        if (list.length > 1) addRow(total, true);
+
+        const unanswered = total.total - total.answered - total.ansMarked;
+        const note = c.createDiv({ cls: 'gate-submit-note' + (unanswered > 0 ? ' warn' : '') });
+        note.textContent = unanswered > 0
+            ? `${unanswered} of ${total.total} question${total.total === 1 ? '' : 's'} ${unanswered === 1 ? 'has' : 'have'} no answer. `
+            : 'Every question has an answer. ';
+        note.appendChild(document.createTextNode('Are you sure you want to submit? Once submitted, you won\u2019t be able to change your answers.'));
+
+        const row = c.createDiv({ cls: 'gate-modal-actions' });
+        const back = row.createEl('button', { text: 'Back to test', cls: 'gate-btn' });
+        const submit = row.createEl('button', { text: 'Submit test', cls: 'gate-btn danger' });
+        back.onclick = () => this.close();
+        submit.onclick = () => { this.close(); this.onConfirm && this.onConfirm(); };
+        this._esc = (e) => { if (e.key === 'Escape') this.close(); };
+        document.addEventListener('keydown', this._esc);
+        back.focus(); // safest default: Enter goes back to the test, not to submit
+    }
+    onClose() { document.removeEventListener('keydown', this._esc); if (this.view.activeSubmitModal === this) this.view.activeSubmitModal = null; }
+}
+
 class GateExamView {
     constructor(app, container) {
         this.app = app;
@@ -1483,7 +1600,7 @@ class GateExamView {
         this.dom.summary = sidebar.createDiv({ cls: 'gate-progress-summary' });
         const palette = sidebar.createDiv({ cls: 'gate-exam-palette' });
         this.dom.grid = palette.createDiv({ cls: 'gate-exam-grid' });
-        sidebar.createEl('button', { text: 'Submit Test', cls: 'gate-btn danger' }).onclick = () => this.submitTest();
+        sidebar.createEl('button', { text: 'Submit Test', cls: 'gate-btn danger' }).onclick = () => this.requestSubmit();
 
         this.createPaletteGrid(); this.lastNavTime = Date.now(); this.updateQuestionView(); this.updateProgressSummary();
     }
@@ -1582,8 +1699,17 @@ class GateExamView {
         }
     }
     
+    // The Submit button asks first; the timer running out calls submitTest() directly.
+    requestSubmit() {
+        if (this.isSubmitting || !this.questions.length) return;
+        if (this.activeSubmitModal) return;
+        this.activeSubmitModal = new SubmitSummaryModal(this, () => this.submitTest());
+        this.activeSubmitModal.open();
+    }
+
     async submitTest() {
         if (this.isSubmitting) return; this.isSubmitting = true;
+        if (this.activeSubmitModal) this.activeSubmitModal.close();
         this.accumulateTime(); this.stopTimer(); new Notice("Grading...");
 
         let totalMarks = 0, correct = 0, wrong = 0, unattempted = 0;
@@ -1656,16 +1782,35 @@ class GateSettingTab {
     constructor(app, container) { this.app = app; this.containerEl = container; }
     onOpen() {
         this.containerEl.empty();
-        const wrapper = this.containerEl.createDiv({ cls: 'gate-view-container' }).createDiv({ cls: 'gate-config-screen' });
-        wrapper.createEl('h2', { text: 'Settings', cls: 'gate-config-title' });
-        
         const s = this.app.settings;
-        const save = () => { localStorage.setItem('gate_settings', JSON.stringify(this.app.settings)); new Notice("Settings Saved."); };
+        const save = () => { localStorage.setItem('gate_settings', JSON.stringify(this.app.settings)); new Notice("Settings saved."); };
 
-        // Appearance
-        new Setting(wrapper).setName('Appearance').setHeading();
-        new Setting(wrapper).setName('Theme').setDesc('Applies instantly and is remembered on this device.');
-        const themeGrid = wrapper.createDiv({ cls: 'gate-theme-grid' });
+        const page = this.containerEl.createDiv({ cls: 'gate-view-container' }).createDiv({ cls: 'gate-settings' });
+        const head = page.createDiv({ cls: 'gate-settings-head' });
+        head.createEl('h2', { text: 'Settings' });
+        head.createDiv({ cls: 'gate-settings-sub', text: 'Changes apply instantly and are saved on this device.' });
+        const body = page.createDiv({ cls: 'gate-settings-body' });
+        const nav = body.createEl('nav', { cls: 'gate-settings-nav', attr: { 'aria-label': 'Settings sections' } });
+        const main = body.createDiv({ cls: 'gate-settings-main' });
+
+        const navLinks = [];
+        const section = (id, title, desc, danger = false) => {
+            const card = main.createEl('section', { cls: 'gate-settings-card' + (danger ? ' danger' : ''), attr: { id: `gate-set-${id}` } });
+            const h = card.createDiv({ cls: 'gate-settings-card-head' });
+            h.createEl('h3', { text: title });
+            if (desc) h.createDiv({ cls: 'gate-settings-card-desc', text: desc });
+            const link = nav.createEl('button', { text: title, cls: 'gate-settings-navlink', attr: { type: 'button' } });
+            link.dataset.target = card.id;
+            link.onclick = () => card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            navLinks.push(link);
+            return card.createDiv({ cls: 'gate-settings-rows' });
+        };
+
+        // ---------- Appearance ----------
+        const look = section('appearance', 'Appearance', 'Theme and accent color.');
+        const themeRow = new Setting(look).setName('Theme').setDesc('System follows your device and switches automatically.');
+        themeRow.settingEl.classList.add('is-stacked');
+        const themeGrid = themeRow.settingEl.createDiv({ cls: 'gate-theme-grid' });
         THEMES.forEach(t => {
             const card = document.createElement('button');
             card.type = 'button'; card.className = 'gate-theme-card'; card.dataset.themeId = t.id;
@@ -1676,47 +1821,7 @@ class GateSettingTab {
             themeGrid.appendChild(card);
         });
         applyTheme(getThemePref(), false); // marks the active card
-        const fontStatus = document.createElement('div');
-        fontStatus.className = 'gate-font-status';
-        let fontCheckId = 0;
-        const refreshFontStatus = async () => {
-            const id = ++fontCheckId;
-            fontStatus.textContent = 'Checking font…'; fontStatus.dataset.state = '';
-            const r = await checkQuestionFont(s);
-            if (id !== fontCheckId) return; // a newer choice superseded this check
-            fontStatus.textContent = r.msg; fontStatus.dataset.state = r.ok ? 'ok' : 'warn';
-        };
-        new Setting(wrapper)
-            .setName('Question font')
-            .setDesc('Font for question text. Web fonts load from Google Fonts and work on every device; "system" fonts only work if installed.')
-            .addDropdown(d => {
-                QUESTION_FONTS.forEach(f => d.addOption(f.id, f.label));
-                d.setValue(s.questionFont || 'default');
-                d.onChange(v => { s.questionFont = v; applyAppearanceSettings(s); save(); refreshFontStatus(); });
-            });
-        new Setting(wrapper)
-            .setName('Custom font name')
-            .setDesc('Used when "Custom" is selected. Any Google Fonts family (e.g. Crimson Pro) or a font installed on this device.')
-            .addText(t => {
-                t.setPlaceholder('e.g. Crimson Pro').setValue(s.questionFontCustom || '');
-                t.onChange(v => { s.questionFontCustom = v.trim(); applyAppearanceSettings(s); save(); refreshFontStatus(); });
-            });
-        wrapper.appendChild(fontStatus);
-        refreshFontStatus();
-        new Setting(wrapper)
-            .setName('Question Font Size')
-            .setDesc('Applies to the question text area.')
-            .addSlider(sl => {
-                sl.setLimits(14, 28, 1).setValue(s.questionFontSize || 18);
-                sl.onChange(v => { s.questionFontSize = v; applyAppearanceSettings(s); save(); });
-            });
-        new Setting(wrapper)
-            .setName('Line Height')
-            .setDesc('Spacing between lines of question text.')
-            .addSlider(sl => {
-                sl.setLimits(1.2, 2.2, 0.1).setValue(s.questionLineHeight || 1.6);
-                sl.onChange(v => { s.questionLineHeight = v; applyAppearanceSettings(s); save(); });
-            });
+
         const currentAccent = () => {
             const a = (s.accentColor || '').toLowerCase();
             if (/^#[0-9a-f]{6}$/.test(a) && a !== '#2563eb') return a;
@@ -1724,9 +1829,9 @@ class GateSettingTab {
             return /^#[0-9a-f]{6}$/i.test(v) ? v : '#2447c9';
         };
         let accentInput = null;
-        new Setting(wrapper)
+        new Setting(look)
             .setName('Accent color')
-            .setDesc('Buttons, selected answers and highlights. Each theme has its own; pick a color to override it.')
+            .setDesc('Buttons, selected answers and highlights. Every theme has its own; pick a color to override it.')
             .addColorPicker(cp => {
                 accentInput = cp.inputEl;
                 cp.setValue(currentAccent());
@@ -1737,21 +1842,85 @@ class GateSettingTab {
             }));
         this.refreshAccentPicker = () => { if (accentInput) accentInput.value = currentAccent(); };
 
-        // NEW: Media settings
-        new Setting(wrapper).setName('Media & Files').setHeading();
-        new Setting(wrapper)
-            .setName('Image Base Path')
-            .setDesc('Folder where your images are stored relative to index.html (e.g. "Resources/Question Paper/GATE/Answer Key/"). Leave empty if images are in the root directory.')
-            .addText(t => t.setValue(s.imageBasePath || '').onChange(v => { s.imageBasePath = v.trim(); save(); }));
+        // ---------- Question text ----------
+        const text = section('question', 'Question text', 'How questions are displayed while you practise.');
+        const prevRow = new Setting(text).setName('Preview');
+        prevRow.settingEl.classList.add('is-stacked');
+        const preview = prevRow.settingEl.createDiv({ cls: 'gate-set-preview' });
+        MarkdownRenderer.render('**Q1.** A series RLC circuit has $R = 10\\,\\Omega$, $L = 2\\,\\text{mH}$ and $C = 5\\,\\mu\\text{F}$. Find the resonant frequency.\n\n$$f_0 = \\frac{1}{2\\pi\\sqrt{LC}}$$', preview);
 
-        new Setting(wrapper).setName('Mistake tagging').setHeading();
-        new Setting(wrapper).setName('Prompt for mistake tags').addToggle(t => t.setValue(s.enableMistakeTags !== false).onChange(v => { s.enableMistakeTags = v; save(); }));
-        new Setting(wrapper).setName('Tag list').addTextArea(t => t.setValue(s.mistakeTags || '').onChange(v => { s.mistakeTags = v; save(); }));
-        
-        new Setting(wrapper).setName('Danger zone').setHeading();
-        new Setting(wrapper).setName('Clear history').addButton(btn => btn.setButtonText('Clear Progress').setWarning().onClick(() => {
-            if (confirm('Permanently erase all progress history?')) { localStorage.removeItem('gate_history'); new Notice('History cleared.'); }
-        }));
+        const fontStatus = document.createElement('div');
+        fontStatus.className = 'gate-font-status';
+        let fontCheckId = 0;
+        const refreshFontStatus = async () => {
+            const id = ++fontCheckId;
+            fontStatus.textContent = 'Checking font…'; fontStatus.dataset.state = '';
+            const r = await checkQuestionFont(s);
+            if (id !== fontCheckId) return; // a newer choice superseded this check
+            fontStatus.textContent = r.msg; fontStatus.dataset.state = r.ok ? 'ok' : 'warn';
+        };
+        const fontRow = new Setting(text)
+            .setName('Font')
+            .setDesc('Web fonts load from Google Fonts and work on every device. System fonts only work if installed.')
+            .addDropdown(d => {
+                QUESTION_FONTS.forEach(f => d.addOption(f.id, f.label));
+                d.setValue(s.questionFont || 'default');
+                d.onChange(v => { s.questionFont = v; applyAppearanceSettings(s); save(); refreshFontStatus(); });
+            });
+        fontRow.infoEl.appendChild(fontStatus);
+        new Setting(text)
+            .setName('Custom font name')
+            .setDesc('Used when "Custom" is chosen: any Google Fonts family (e.g. Crimson Pro) or a font installed here.')
+            .addText(t => {
+                t.setPlaceholder('e.g. Crimson Pro').setValue(s.questionFontCustom || '');
+                t.onChange(v => { s.questionFontCustom = v.trim(); applyAppearanceSettings(s); save(); refreshFontStatus(); });
+            });
+        refreshFontStatus();
+        new Setting(text).setName('Font size').setDesc('Question text size in pixels.')
+            .addSlider(sl => {
+                sl.setLimits(14, 28, 1).setValue(s.questionFontSize || 18);
+                sl.onChange(v => { s.questionFontSize = v; applyAppearanceSettings(s); save(); });
+            });
+        new Setting(text).setName('Line height').setDesc('Space between lines of text.')
+            .addSlider(sl => {
+                sl.setLimits(1.2, 2.2, 0.1).setValue(s.questionLineHeight || 1.6);
+                sl.onChange(v => { s.questionLineHeight = v; applyAppearanceSettings(s); save(); });
+            });
+
+        // ---------- Images & files ----------
+        const files = section('files', 'Images & files', 'Where question images live in your repository.');
+        new Setting(files)
+            .setName('Image folder')
+            .setDesc('Folder (relative to index.html) that holds your images, e.g. Resources/Image/Question Paper. Leave empty if they are in the repo root.')
+            .addText(t => t.setPlaceholder('Resources/Image/Question Paper').setValue(s.imageBasePath || '').onChange(v => { s.imageBasePath = v.trim(); save(); }));
+
+        // ---------- Mistake tagging ----------
+        const mistakes = section('mistakes', 'Mistake tagging', 'Tag why you got a question wrong after submitting.');
+        new Setting(mistakes).setName('Ask for a mistake tag').setDesc('Show the tagging step for wrong answers when you submit.')
+            .addToggle(t => t.setValue(s.enableMistakeTags !== false).onChange(v => { s.enableMistakeTags = v; save(); }));
+        const tagRow = new Setting(mistakes).setName('Tag list').setDesc('Comma-separated. Use / to nest, e.g. Conceptual Gap/Formula.')
+            .addTextArea(t => t.setValue(s.mistakeTags || '').onChange(v => { s.mistakeTags = v; save(); }));
+        tagRow.settingEl.classList.add('is-stacked');
+
+        // ---------- Data ----------
+        const data = section('data', 'Your data', 'Stored only in this browser.', true);
+        new Setting(data).setName('Clear history').setDesc('Permanently erases your attempts, accuracy and mistake tags.')
+            .addButton(btn => btn.setButtonText('Clear progress').setWarning().onClick(() => {
+                new ConfirmModal({
+                    title: 'Erase all progress?', message: 'This permanently deletes your attempt history, accuracy stats and mistake tags on this device. It can\u2019t be undone.',
+                    confirmText: 'Erase everything', danger: true,
+                    onConfirm: () => { localStorage.removeItem('gate_history'); new Notice('History cleared.'); }
+                }).open();
+            }));
+
+        // Highlight the section that is currently on screen in the side nav
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) navLinks.forEach(l => l.classList.toggle('active', l.dataset.target === e.target.id)); });
+            }, { rootMargin: '-15% 0px -70% 0px' });
+            main.querySelectorAll('.gate-settings-card').forEach(c => io.observe(c));
+        }
+        if (navLinks[0]) navLinks[0].classList.add('active');
     }
 }
 
