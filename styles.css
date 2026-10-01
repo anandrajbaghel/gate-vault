@@ -503,3 +503,83 @@ h1, h2, h3, h4 { letter-spacing: -0.01em; }
   .gate-grid-btn { border-radius: 7px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* =========================================================================
+   NOTE CONTENT (HTML, code, tables, callouts) — matches Obsidian reading view
+   ========================================================================= */
+.gate-exam-content, .gate-mistake-preview { overflow-wrap: anywhere; }
+.gate-mistake-preview { font-family: var(--gate-question-font, var(--font-interface)); }
+.gate-exam-content p, .gate-mistake-preview p { margin: 0.7em 0; }
+.gate-exam-content > :first-child { margin-top: 0; }
+.gate-exam-content h1, .gate-exam-content h2, .gate-exam-content h3, .gate-exam-content h4, .gate-exam-content h5, .gate-exam-content h6 { line-height: 1.25; margin: 1.1em 0 0.5em; font-weight: 600; }
+.gate-exam-content h1 { font-size: 1.6em; } .gate-exam-content h2 { font-size: 1.4em; } .gate-exam-content h3 { font-size: 1.2em; } .gate-exam-content h4 { font-size: 1.05em; }
+.gate-exam-content ul, .gate-exam-content ol { padding-left: 1.5em; margin: 0.6em 0; }
+.gate-exam-content li { margin: 0.2em 0; }
+.gate-exam-content li:has(> input[type="checkbox"]) { list-style: none; }
+.gate-exam-content li > input[type="checkbox"] { margin: 0 0.5em 0 -1.4em; }
+.gate-exam-content img.gate-img-missing { overflow-wrap: normal; }
+.gate-exam-content hr { border: none; border-top: 1px solid var(--background-modifier-border); margin: 1.4em 0; }
+.gate-exam-content blockquote { margin: 0.8em 0; padding: 0.1em 1em; border-left: 3px solid var(--background-modifier-border); color: var(--text-muted); }
+.gate-exam-content a { color: var(--text-accent); }
+.gate-exam-content mark { background: color-mix(in srgb, var(--gate-warning) 38%, transparent); color: inherit; padding: 0 0.2em; border-radius: 3px; }
+.gate-exam-content kbd { font-family: var(--font-monospace); font-size: 0.85em; padding: 1px 6px; border: 1px solid var(--background-modifier-border); border-bottom-width: 2px; border-radius: 4px; background: var(--background-secondary); }
+.gate-exam-content sub, .gate-exam-content sup { line-height: 0; }
+.gate-exam-content details { margin: 0.7em 0; }
+.gate-exam-content summary { cursor: pointer; }
+.gate-exam-content img.gate-img-missing { display: inline-block; min-width: 120px; min-height: 40px; border: 1px dashed var(--text-error); color: var(--text-error); font-size: 0.8em; padding: 6px; }
+.gate-exam-content svg { max-width: 100%; height: auto; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; margin: 0.9em 0 !important; }
+mjx-container { color: inherit; }
+
+/* Inline code */
+.gate-exam-content :not(pre) > code, .gate-mistake-preview :not(pre) > code { font-family: var(--font-monospace); font-size: 0.88em; padding: 0.1em 0.4em; border-radius: 5px; background: var(--background-secondary-alt); border: 1px solid var(--background-modifier-border); }
+
+/* Code blocks */
+.gate-exam-content > .gate-code-block { max-width: 100%; }
+.gate-code-block { position: relative; margin: 0.9em 0; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-m); background: var(--background-secondary); overflow: hidden; }
+.gate-code-bar { position: absolute; top: 6px; right: 8px; display: flex; align-items: center; gap: 8px; z-index: 1; opacity: 0.0; transition: opacity 0.15s; }
+.gate-code-block:hover .gate-code-bar, .gate-code-block:focus-within .gate-code-bar { opacity: 1; }
+@media (hover: none) { .gate-code-bar { opacity: 1; } }
+.gate-code-lang { font: 500 0.72rem var(--font-monospace); color: var(--text-muted); }
+.gate-code-copy { font: 500 0.72rem var(--font-interface); padding: 3px 9px; border-radius: 6px; border: 1px solid var(--background-modifier-border); background: var(--background-primary); color: var(--text-normal); cursor: pointer; }
+.gate-code-copy:hover { background: var(--background-modifier-hover); }
+.gate-code-block pre { margin: 0; padding: 14px 16px; overflow-x: auto; background: transparent; }
+.gate-code-block pre code { font-family: var(--font-monospace); font-size: 0.88em; line-height: 1.55; background: none; border: none; padding: 0; white-space: pre; display: block; tab-size: 4; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-meta .hljs-keyword { color: var(--code-keyword); }
+.hljs-string, .hljs-regexp, .hljs-addition, .hljs-meta .hljs-string { color: var(--code-string); }
+.hljs-comment, .hljs-quote, .hljs-deletion { color: var(--code-comment); font-style: italic; }
+.hljs-number, .hljs-symbol, .hljs-bullet { color: var(--code-number); }
+.hljs-title, .hljs-title.function_, .hljs-function .hljs-title, .hljs-section { color: var(--code-fn); }
+.hljs-type, .hljs-built_in, .hljs-class .hljs-title, .hljs-title.class_, .hljs-attr, .hljs-attribute, .hljs-variable, .hljs-template-variable, .hljs-params { color: var(--code-type); }
+.hljs-meta, .hljs-doctag, .hljs-name { color: var(--code-fn); }
+:root, :root[data-theme="light"] { --code-keyword: #8b3fc7; --code-string: #1c7a4d; --code-comment: #7a8497; --code-number: #b45f06; --code-fn: #1f4fd1; --code-type: #0e7490; }
+:root[data-theme="dark"], :root[data-theme="midnight"] { --code-keyword: #c4a1ff; --code-string: #7fdca6; --code-comment: #7f8aa0; --code-number: #ffb86b; --code-fn: #86a8ff; --code-type: #6fd3e6; }
+:root[data-theme="blueprint"] { --code-keyword: #c6a9ff; --code-string: #62e3ab; --code-comment: #7fa0c4; --code-number: #ffc462; --code-fn: #7fd8ff; --code-type: #8ee6f0; }
+:root[data-theme="paper"] { --code-keyword: #7650b0; --code-string: #2b7a4b; --code-comment: #8a8575; --code-number: #a85a14; --code-fn: #25694c; --code-type: #8a4b2a; }
+
+/* Tables (GitHub / Obsidian style) */
+.gate-table-wrap { overflow-x: auto; max-width: 100%; width: fit-content; margin: 0.9em auto 0.9em 0; }
+.gate-exam-content > .gate-table-wrap { max-width: 100%; }
+.gate-exam-content table, .gate-mistake-preview table { border-collapse: collapse; font-size: 0.95em; }
+.gate-exam-content th, .gate-exam-content td, .gate-mistake-preview th, .gate-mistake-preview td { border: 1px solid var(--background-modifier-border); padding: 6px 12px; vertical-align: top; }
+.gate-exam-content th, .gate-mistake-preview th { background: var(--background-secondary-alt); font-weight: 600; }
+.gate-exam-content tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--background-secondary) 60%, transparent); }
+
+/* Callouts: > [!note] Title */
+.gate-callout { --cc: #448aff; margin: 1em 0; border: 1px solid color-mix(in srgb, var(--cc) 35%, var(--background-modifier-border)); border-left: 4px solid var(--cc); border-radius: var(--radius-s); background: color-mix(in srgb, var(--cc) 9%, var(--background-primary)); overflow: hidden; }
+.gate-callout-title { display: block; padding: 8px 14px; font-weight: 600; color: var(--cc); list-style-position: inside; }
+.gate-callout-body { padding: 0 14px 8px; }
+.gate-callout-body > :first-child { margin-top: 0.2em; } .gate-callout-body > :last-child { margin-bottom: 0.2em; }
+.gate-callout[data-callout="info"], .gate-callout[data-callout="todo"] { --cc: #3b8ff0; }
+.gate-callout[data-callout="abstract"], .gate-callout[data-callout="summary"], .gate-callout[data-callout="tldr"] { --cc: #14a9d6; }
+.gate-callout[data-callout="tip"], .gate-callout[data-callout="hint"], .gate-callout[data-callout="important"] { --cc: #0fb5a0; }
+.gate-callout[data-callout="success"], .gate-callout[data-callout="check"], .gate-callout[data-callout="done"] { --cc: var(--gate-success); }
+.gate-callout[data-callout="question"], .gate-callout[data-callout="help"], .gate-callout[data-callout="faq"] { --cc: #d98b0b; }
+.gate-callout[data-callout="warning"], .gate-callout[data-callout="caution"], .gate-callout[data-callout="attention"] { --cc: #e9973f; }
+.gate-callout[data-callout="failure"], .gate-callout[data-callout="fail"], .gate-callout[data-callout="missing"], .gate-callout[data-callout="danger"], .gate-callout[data-callout="error"], .gate-callout[data-callout="bug"] { --cc: #e5484d; }
+.gate-callout[data-callout="example"] { --cc: #8a5cf5; }
+.gate-callout[data-callout="quote"], .gate-callout[data-callout="cite"] { --cc: #8b93a3; }
+
+/* Font availability message under the font setting */
+.gate-font-status { margin: -6px 0 10px; font-size: 0.82em; color: var(--text-muted); }
+.gate-font-status[data-state="warn"] { color: var(--text-error); }
