@@ -7,6 +7,10 @@ HTMLElement.prototype.createEl = function(tag, opts = {}) {
     if (opts.cls) el.className = Array.isArray(opts.cls) ? opts.cls.join(' ') : opts.cls;
     if (opts.text) el.innerText = opts.text;
     if (opts.attr) Object.entries(opts.attr).forEach(([k,v]) => el.setAttribute(k, v));
+    // Obsidian's createEl accepts these directly; without them radios/checkboxes become plain text boxes.
+    ['type', 'placeholder', 'value', 'name', 'href', 'title', 'id', 'min', 'max', 'step', 'rows', 'cols'].forEach(k => {
+        if (opts[k] !== undefined && opts[k] !== null) el.setAttribute(k, opts[k]);
+    });
     if (opts.style) el.setAttribute('style', opts.style);
     this.appendChild(el);
     return el;
@@ -284,7 +288,7 @@ const DEFAULT_SETTINGS = {
     questionFont: 'default',
     questionFontSize: 18,
     questionLineHeight: 1.6,
-    accentColor: '#2563eb'
+    accentColor: '' // empty = use the theme's own accent
 };
 
 const QUESTION_FONT_STACKS = {
@@ -320,6 +324,102 @@ function shadeColor(hex, percent) {
     } catch (e) { return hex; }
 }
 
+
+/* =========================================================================
+   THEMES
+   The html[data-theme] attribute is set before first paint by a script in
+   index.html; this section handles switching, persistence and the pickers.
+   ========================================================================= */
+const THEMES = [
+    { id: 'system',    name: 'System',    desc: 'Follows your device',   p: { bg: 'linear-gradient(90deg,#ffffff 50%,#14171d 50%)', bg2: 'linear-gradient(90deg,#f5f6f9 50%,#1a1e26 50%)', tx: '#8a92a3', ac: '#2447c9', bd: '#9aa2b3' } },
+    { id: 'light',     name: 'Draft',     desc: 'Clean white, ink blue', p: { bg: '#ffffff', bg2: '#f5f6f9', tx: '#1b2230', ac: '#2447c9', bd: '#d9dde6' } },
+    { id: 'dark',      name: 'Graphite',  desc: 'Soft dark for evenings', p: { bg: '#14171d', bg2: '#1a1e26', tx: '#e3e6ee', ac: '#86a8ff', bd: '#2f3645' } },
+    { id: 'blueprint', name: 'Blueprint', desc: 'Drafting-sheet blue',   p: { bg: '#0e2745', bg2: '#123259', tx: '#e7f2ff', ac: '#7fd8ff', bd: '#2b5a8c' } },
+    { id: 'paper',     name: 'Paper',     desc: 'Low-glare for reading', p: { bg: '#f4f1ea', bg2: '#ece8de', tx: '#2a2924', ac: '#25694c', bd: '#d3cdbd' } },
+    { id: 'midnight',  name: 'Midnight',  desc: 'True black for OLED',   p: { bg: '#000000', bg2: '#0b0b10', tx: '#dcdfe8', ac: '#b49cff', bd: '#24242e' } }
+];
+const THEME_STORAGE_KEY = 'gate_theme';
+const THEME_BAR_COLORS = { light: '#f5f6f9', dark: '#1a1e26', blueprint: '#123259', paper: '#ece8de', midnight: '#0b0b10' };
+
+function getThemePref() {
+    try { const v = localStorage.getItem(THEME_STORAGE_KEY); if (THEMES.some(t => t.id === v)) return v; } catch (e) {}
+    return 'system';
+}
+function resolveTheme(pref) {
+    if (pref === 'system') return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return pref;
+}
+function makeThemePreview(t) {
+    const el = document.createElement('span');
+    el.className = 'gate-theme-prev';
+    el.style.cssText = `--p-bg:${t.p.bg};--p-bg2:${t.p.bg2};--p-tx:${t.p.tx};--p-ac:${t.p.ac};--p-bd:${t.p.bd}`;
+    el.innerHTML = '<i class="b"></i><i class="l1"></i><i class="l2"></i><i class="a"></i>';
+    return el;
+}
+function applyTheme(pref, persist = true) {
+    if (!THEMES.some(t => t.id === pref)) pref = 'system';
+    const resolved = resolveTheme(pref);
+    document.documentElement.setAttribute('data-theme', resolved);
+    if (persist) { try { localStorage.setItem(THEME_STORAGE_KEY, pref); } catch (e) {} }
+
+    // Browser UI colour on phones
+    let meta = document.querySelector('meta[name="theme-color"]');
+    if (!meta) { meta = document.createElement('meta'); meta.name = 'theme-color'; document.head.appendChild(meta); }
+    meta.content = THEME_BAR_COLORS[resolved] || '#ffffff';
+
+    // Nav button shows the current choice
+    const btn = document.getElementById('theme-btn');
+    const t = THEMES.find(x => x.id === pref);
+    if (btn && t) {
+        btn.innerHTML = '';
+        btn.appendChild(makeThemePreview(t));
+        const label = document.createElement('span');
+        label.className = 'theme-btn-label';
+        label.textContent = t.name;
+        btn.appendChild(label);
+    }
+    document.querySelectorAll('[data-theme-id]').forEach(el => {
+        const on = el.dataset.themeId === pref;
+        el.classList.toggle('active', on);
+        el.setAttribute(el.getAttribute('role') === 'menuitemradio' ? 'aria-checked' : 'aria-pressed', String(on));
+    });
+    applyAppearanceSettings(window.app ? window.app.settings : DEFAULT_SETTINGS); // re-evaluate custom accent
+}
+function initThemeMenu() {
+    const btn = document.getElementById('theme-btn');
+    const menu = document.getElementById('theme-menu');
+    if (!btn || !menu) return;
+    menu.innerHTML = '';
+    THEMES.forEach(t => {
+        const o = document.createElement('button');
+        o.type = 'button'; o.className = 'theme-opt'; o.dataset.themeId = t.id;
+        o.setAttribute('role', 'menuitemradio');
+        o.appendChild(makeThemePreview(t));
+        const txt = document.createElement('span'); txt.className = 'txt';
+        txt.innerHTML = `<span class="name">${t.name}</span><span class="desc">${t.desc}</span>`;
+        o.appendChild(txt);
+        o.addEventListener('click', () => { applyTheme(t.id); close(); btn.focus(); });
+        menu.appendChild(o);
+    });
+    const open = () => { menu.hidden = false; btn.setAttribute('aria-expanded', 'true'); (menu.querySelector('.active') || menu.firstElementChild).focus(); };
+    const close = () => { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); };
+    btn.addEventListener('click', (e) => { e.stopPropagation(); menu.hidden ? open() : close(); });
+    document.addEventListener('click', (e) => { if (!menu.hidden && !menu.contains(e.target)) close(); });
+    menu.addEventListener('keydown', (e) => {
+        const items = [...menu.querySelectorAll('.theme-opt')]; const i = items.indexOf(document.activeElement);
+        if (e.key === 'ArrowDown') { e.preventDefault(); items[(i + 1) % items.length].focus(); }
+        if (e.key === 'ArrowUp') { e.preventDefault(); items[(i - 1 + items.length) % items.length].focus(); }
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { close(); btn.focus(); } });
+    // "System" follows the device live
+    if (window.matchMedia) {
+        const mq = matchMedia('(prefers-color-scheme: dark)');
+        const onChange = () => { if (getThemePref() === 'system') applyTheme('system', false); };
+        mq.addEventListener ? mq.addEventListener('change', onChange) : mq.addListener(onChange);
+    }
+    applyTheme(getThemePref(), false);
+}
+
 function applyAppearanceSettings(settings) {
     const root = document.documentElement.style;
     const fontStack = QUESTION_FONT_STACKS[settings.questionFont];
@@ -329,10 +429,21 @@ function applyAppearanceSettings(settings) {
     root.setProperty('--gate-question-font-size', `${settings.questionFontSize}px`);
     root.setProperty('--gate-question-line-height', String(settings.questionLineHeight));
 
-    const accent = settings.accentColor || DEFAULT_SETTINGS.accentColor;
-    root.setProperty('--interactive-accent', accent);
-    root.setProperty('--interactive-accent-hover', shadeColor(accent, -25));
-    root.setProperty('--text-accent', accent);
+    // Accent comes from the active theme unless the user picked their own colour.
+    // (#2563eb was the old default, so it counts as "not customised".)
+    const a = (settings.accentColor || '').toLowerCase();
+    const custom = /^#[0-9a-f]{6}$/.test(a) && a !== '#2563eb';
+    const rs = document.documentElement.style;
+    if (custom) {
+        const n = parseInt(a.slice(1), 16);
+        const lum = (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
+        root.setProperty('--interactive-accent', a);
+        root.setProperty('--interactive-accent-hover', shadeColor(a, lum > 0.6 ? -25 : 25));
+        root.setProperty('--text-accent', a);
+        root.setProperty('--text-on-accent', lum > 0.6 ? '#111111' : '#ffffff');
+    } else {
+        ['--interactive-accent', '--interactive-accent-hover', '--text-accent', '--text-on-accent'].forEach(p => rs.removeProperty(p));
+    }
 }
 
 class GateUtils {
@@ -1387,6 +1498,18 @@ class GateSettingTab {
 
         // Appearance
         new Setting(wrapper).setName('Appearance').setHeading();
+        new Setting(wrapper).setName('Theme').setDesc('Applies instantly and is remembered on this device.');
+        const themeGrid = wrapper.createDiv({ cls: 'gate-theme-grid' });
+        THEMES.forEach(t => {
+            const card = document.createElement('button');
+            card.type = 'button'; card.className = 'gate-theme-card'; card.dataset.themeId = t.id;
+            card.appendChild(makeThemePreview(t));
+            const nm = document.createElement('span'); nm.className = 'name'; nm.textContent = t.name; card.appendChild(nm);
+            const ds = document.createElement('span'); ds.className = 'desc'; ds.textContent = t.desc; card.appendChild(ds);
+            card.addEventListener('click', () => { applyTheme(t.id); this.refreshAccentPicker && this.refreshAccentPicker(); });
+            themeGrid.appendChild(card);
+        });
+        applyTheme(getThemePref(), false); // marks the active card
         new Setting(wrapper)
             .setName('Question Font')
             .setDesc('Font used for rendered question text. "Inter" loads from Google Fonts on demand.')
@@ -1410,13 +1533,25 @@ class GateSettingTab {
                 sl.setLimits(1.2, 2.2, 0.1).setValue(s.questionLineHeight || 1.6);
                 sl.onChange(v => { s.questionLineHeight = v; applyAppearanceSettings(s); save(); });
             });
+        const currentAccent = () => {
+            const a = (s.accentColor || '').toLowerCase();
+            if (/^#[0-9a-f]{6}$/.test(a) && a !== '#2563eb') return a;
+            const v = getComputedStyle(document.documentElement).getPropertyValue('--interactive-accent').trim();
+            return /^#[0-9a-f]{6}$/i.test(v) ? v : '#2447c9';
+        };
+        let accentInput = null;
         new Setting(wrapper)
-            .setName('Accent Color')
-            .setDesc('Used for buttons, selected answers, highlights, and links throughout the app.')
+            .setName('Accent color')
+            .setDesc('Buttons, selected answers and highlights. Each theme has its own; pick a color to override it.')
             .addColorPicker(cp => {
-                cp.setValue(s.accentColor || DEFAULT_SETTINGS.accentColor);
+                accentInput = cp.inputEl;
+                cp.setValue(currentAccent());
                 cp.onChange(v => { s.accentColor = v; applyAppearanceSettings(s); save(); });
-            });
+            })
+            .addButton(btn => btn.setButtonText('Use theme color').onClick(() => {
+                s.accentColor = ''; applyAppearanceSettings(s); accentInput.value = currentAccent(); save();
+            }));
+        this.refreshAccentPicker = () => { if (accentInput) accentInput.value = currentAccent(); };
 
         // NEW: Media settings
         new Setting(wrapper).setName('Media & Files').setHeading();
@@ -1448,6 +1583,7 @@ class GateApp {
         this.indexer = new GateIndexer(this);
     }
     async init() {
+        initThemeMenu();
         this.views = {
             exam: new GateExamView(this, document.querySelector('#view-exam .view-content')),
             dashboard: new GateDashboardView(this, document.querySelector('#view-dashboard .view-content')),
