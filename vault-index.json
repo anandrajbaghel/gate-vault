@@ -5745,8 +5745,8 @@
         },
         {
             "path": "Changelog.md",
-            "hash": "32521e863f4201f50a3543cf748ab88a685366eacc6d2a7705687f10fb1c4e25",
-            "size": 3907
+            "hash": "21b2908e91074a25ed703009adb748fd9131219b01f5b7e517ee0988b07e2f42",
+            "size": 3517
         },
         {
             "path": "Resources/Bases/1. mathematics.base",
@@ -10752,6 +10752,6 @@
     "statistics": {
         "files": 2149,
         "directories": 240,
-        "bytes": 100249896
+        "bytes": 100249506
     }
 }
