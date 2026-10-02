@@ -1604,6 +1604,31 @@
             "size": 264
         },
         {
+            "path": "12. PYQs Pattern Book/Trends - Transfer Function.md",
+            "hash": "a64eac4b9582958717e31d853196f7dae3489c4223ed5e3053e7b7d18bec9081",
+            "size": 388
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Vector Differential Operators.md",
+            "hash": "862e0eaae3a4323600b3ff2d203129a0c41cfea0880804e91f4b318d5064cb95",
+            "size": 420
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Venn Diagram.md",
+            "hash": "a50549b1e14f3a22fb0106eff216c6b336abb593ffd494842f858333fbaa1ae5",
+            "size": 217
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Verbal.md",
+            "hash": "789c0205785819d11f3e3b8179f15b1f3c57dd52012c96578efb0b8512866c95",
+            "size": 1032
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Vocabulary.md",
+            "hash": "4feacb4ad520f2d9e8fb83aef4224163244c3cea6c0ab73965279ed3da39a180",
+            "size": 824
+        },
+        {
             "path": "12. PYQs Pattern Book/trends - 555 Timer.md",
             "hash": "5d1d7ed66ac1dee46f722dfa10eb67e44c0459367687eac9cdc965b222218de7",
             "size": 435
@@ -2487,6 +2512,96 @@
             "path": "12. PYQs Pattern Book/trends - Torque.md",
             "hash": "b2b2e9b6b06dac819b5ee4dd44334d90a9b7e58cc89f61a0b6ccfe23fb4e86ff",
             "size": 517
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transducers.md",
+            "hash": "72a17f715bef7d784a5b07dc05d050e88cfb3b87bfafcf71e80e1f9eac2eb0a8",
+            "size": 289
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transformers.md",
+            "hash": "5f3e850906d4e3b8d2cea69c28b3c643bc2482005395943878e32cfd03105885",
+            "size": 2381
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transient Analysis.md",
+            "hash": "3e0ae00f4265ce712c267f07f70f229711a1491a4c4ad00350c97fc84784ada8",
+            "size": 1263
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Transmission Lines.md",
+            "hash": "ba1fa2130fa4ae339b5029c91862ca19eb0c806f5a71f9fa6e8d51961ead899a",
+            "size": 1361
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Two-Phase System.md",
+            "hash": "f834dc068d5205a971c089b6bea7833e5ae1b9d135ed4f6cf8ccd5119d3ed35b",
+            "size": 361
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Two-Port Networks.md",
+            "hash": "bc7e5a9e82b315d9cce32032bee6357202a4583836166253d3199ca2eb7d35ac",
+            "size": 951
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Underground Cables.md",
+            "hash": "72685de05b794ceb4e8466f67da7ce7ea4f01b55b2fe0c0785898caf1296815f",
+            "size": 423
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Vector Algebra.md",
+            "hash": "61ff15de943e1892309ffd906e23dbb07d324bca2c2ea58f440ae843ef898d06",
+            "size": 321
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Vector Calculus.md",
+            "hash": "2076d22eceee1d48674d71e24760cda2f88d5dccc76e3f3678c38f230c18a27f",
+            "size": 881
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Vector Space.md",
+            "hash": "ff322d5bc0165eafa742b80048abb56ad3be05da1517216fbf2bf13b22c3c857",
+            "size": 324
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltage Control.md",
+            "hash": "7e0791e7200adb7858eaf73d064b47e5f3735005d8879940562f255d5c840c13",
+            "size": 327
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltage Regulation.md",
+            "hash": "ad5be7172dfd35618b518e65990a35bb09c39c8053f4c5a72d1704a87c6e6b17",
+            "size": 607
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltage Regulators.md",
+            "hash": "6260a488a8066a8233106479078d49afc4ab6432ec84fe6f7a661d9002b8cb79",
+            "size": 379
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltage and Frequency Control.md",
+            "hash": "be95589aef1e84f35f193ac2a706cb8cb4693bb140a0e30650bf752d3cb545cc",
+            "size": 359
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Voltmeters Ammeter Wattmeter and Multimeters.md",
+            "hash": "90cedf0887067cf1ccf428715a007724fef4ff6473a3077376017e96154e0ce2",
+            "size": 565
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Wheatstone Bridge.md",
+            "hash": "3dac78c937fd7619aae00534839269c17e8e27a2f950491558dd540e4384d603",
+            "size": 743
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Y Bus.md",
+            "hash": "c75942f81d3c7c681a953c4682510ade7544d3e3450f2edb478bb41a023a449c",
+            "size": 454
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Z-Transform.md",
+            "hash": "cf6ff00373b438793c83f16fee387e00786ec3d50cc5aa31b91fed365379f5b5",
+            "size": 894
         },
         {
             "path": "13. REVISION Sheets 📙/All Exam Conventions for Power System.md",
@@ -11115,8 +11230,8 @@
         }
     ],
     "statistics": {
-        "files": 2222,
+        "files": 2245,
         "directories": 240,
-        "bytes": 100276214
+        "bytes": 100291978
     }
 }
