@@ -179,8 +179,8 @@ class MarkdownRenderer {
         text = text.replace(/^([ \t]*)(`{3,}|~{3,})[^\n]*\n[\s\S]*$/m, stashCode);                           // unclosed fence runs to the end
         text = text.replace(/(`+)(?!`)((?:[^\n]|\n(?!\s*\n))*?[^`])\1(?!`)/g, stashCode);                   // `inline code`
         text = text.replace(/\$\$([\s\S]+?)\$\$/g, (m, tex) => stashMath(tex, true));                       // $$ display $$
-        // $ inline $ : may have spaces inside the dollars; never spans a blank line; \$ is a literal dollar
-        text = text.replace(/(?<![\\$])\$(?!\$)((?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))+?)\$(?!\$)/g, (m, tex) => tex.trim() ? stashMath(tex, false) : m);
+        // $ inline $ : Obsidian's rules (no space just inside the dollars, closing $ not followed by a digit); \$ is a literal dollar
+        text = text.replace(GateUtils.inlineMathRe(), (m, tex) => stashMath(tex, false));
 
         // 3. Obsidian-only syntax
         text = text.replace(/%%[\s\S]*?%%/g, '');                                                           // %% comments %%
@@ -633,13 +633,18 @@ class GateUtils {
         const s = total % 60;
         return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
     }
+    // Inline math exactly as Obsidian reads it: the opening $ must be followed by a non-space, the closing $ must be preceded
+    // by a non-space and must not be followed by a digit, and it can't span a blank line. Escape a literal dollar as \$.
+    static inlineMathRe() { return /(?<![\\$])\$(?![\s$])((?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))*?)(?<![\s\\])\$(?!\d)/g; }
+
     // Splits one "---" section into [{id, text}]. A block id is "^id" at the END of a line, preceded by a space or
     // starting the line, and not inside $...$ / $$...$$ (so exponents like x^2 or 10^3 are never mistaken for ids).
     static parseSectionBlocks(section) {
         const mathRanges = [];
-        const mr = /\$\$[\s\S]+?\$\$|(?<![\\$])\$(?!\$)(?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))+?\$(?!\$)/g;
         let m;
-        while ((m = mr.exec(section)) !== null) mathRanges.push([m.index, m.index + m[0].length]);
+        for (const mr of [/\$\$[\s\S]+?\$\$/g, GateUtils.inlineMathRe()]) {
+            while ((m = mr.exec(section)) !== null) mathRanges.push([m.index, m.index + m[0].length]);
+        }
         const out = [];
         const idRe = /(?:^|[ \t])\^([A-Za-z0-9_-]+)[ \t]*$/gm;
         let lastIndex = 0;
@@ -901,6 +906,39 @@ class MistakeTagModal extends Modal {
    ========================================================================= */
 window.vaultBlocks = {}; // Global store for loaded question text
 
+
+/* =========================================================================
+   LOADING SCREEN: shown while the question index downloads (first visit can take a while)
+   ========================================================================= */
+function showIndexLoading(container, indexer, opts = {}) {
+    container.empty();
+    const wrap = container.createDiv({ cls: 'gate-view-container' });
+    const card = wrap.createDiv({ cls: 'gate-loading-card', attr: { role: 'status', 'aria-live': 'polite' } });
+    card.createDiv({ cls: 'gate-spinner', attr: { 'aria-hidden': 'true' } });
+    card.createEl('h3', { text: opts.title || 'Loading your questions' });
+    const step = card.createDiv({ cls: 'gate-loading-step', text: 'Starting\u2026' });
+    const bar = card.createDiv({ cls: 'gate-progress' });
+    const fill = bar.createDiv({ cls: 'gate-progress-fill' });
+    const hint = card.createDiv({ cls: 'gate-loading-hint', text: 'The first visit downloads every paper, so it takes a little longer. Once loaded, switching tabs is instant.' });
+    const slow = setTimeout(() => { hint.textContent = 'Still working\u2026 a slow connection can make the first load take up to a minute. You don\u2019t need to refresh.'; hint.classList.add('slow'); }, 8000);
+    const off = indexer.onProgress((p) => {
+        if (!p) return;
+        step.textContent = p.total > 1 ? `${p.label} \u00b7 ${p.done} of ${p.total}` : p.label;
+        fill.style.width = (p.pct || 0) + '%';
+    });
+    return () => { clearTimeout(slow); off(); };
+}
+
+function showIndexError(container, indexer, onRetry) {
+    container.empty();
+    const wrap = container.createDiv({ cls: 'gate-view-container' });
+    const card = wrap.createDiv({ cls: 'gate-loading-card error', attr: { role: 'alert' } });
+    card.createEl('h3', { text: 'Couldn\u2019t load your questions' });
+    card.createDiv({ cls: 'gate-loading-step', text: indexer.lastError || 'Something went wrong while downloading the question index.' });
+    card.createDiv({ cls: 'gate-loading-hint', text: 'Check your internet connection and that pyq-vault-index.json exists in the repository root. Nothing is lost \u2014 you can try again.' });
+    card.createEl('button', { text: 'Try again', cls: 'gate-btn primary' }).onclick = onRetry;
+}
+
 class GateIndexer {
     constructor(app) {
         this.app = app;
@@ -916,13 +954,53 @@ class GateIndexer {
         return { total: 0, bySection: { GA: 0, EE: 0 }, byMarks: { GA1: 0, GA2: 0, EE1: 0, EE2: 0 }, unknownType: 0, duplicates: 0, keyFileErrors: [] };
     }
     
-    async buildMasterIndex(force = false) {
+    // ---- loading progress (read by the loading screen) ----
+    static PHASES = [['Contacting your vault', 4], ['Reading answer keys', 12], ['Reading question papers', 24], ['Downloading question text', 48], ['Reading subject & topic tags', 12]];
+    onProgress(fn) { this._listeners = this._listeners || new Set(); this._listeners.add(fn); fn(this.progress || { label: 'Starting…', pct: 0 }); return () => this._listeners.delete(fn); }
+    _emit() { (this._listeners || []).forEach(fn => { try { fn(this.progress); } catch (e) {} }); }
+    _phase(i, total) {
+        const P = GateIndexer.PHASES, before = P.slice(0, i).reduce((a, p) => a + p[1], 0);
+        this._ph = { i, before, span: P[i][1], total: Math.max(total, 1), done: 0, label: P[i][0] };
+        this._setProgress();
+    }
+    _tick() { if (this._ph) { this._ph.done++; this._setProgress(); } }
+    _setProgress() {
+        const p = this._ph;
+        this.progress = { label: p.label, done: p.done, total: p.total, pct: Math.min(99, Math.round(p.before + p.span * (p.done / p.total))), error: null };
+        this._emit();
+    }
+    // Fetch many files at once (8 at a time); results come back in the original order so processing stays deterministic.
+    async _fetchMany(files, kind, phaseIndex) {
+        this._phase(phaseIndex, files.length);
+        const out = new Array(files.length); let next = 0;
+        const worker = async () => {
+            while (next < files.length) {
+                const i = next++, file = files[i];
+                try { out[i] = { file, value: await fetchWithRetry(file).then(r => r[kind]()) }; }
+                catch (error) { out[i] = { file, error }; }
+                this._tick();
+            }
+        };
+        await Promise.all(Array.from({ length: Math.min(8, files.length) }, worker));
+        return out;
+    }
+
+    // One build at a time: tab switches and the Retry button never start duplicate downloads.
+    buildMasterIndex(force = false) {
+        if (this.building) return this.building;
+        if (!force && this.masterIndex.length > 0 && !this.lastBuildHadErrors) return Promise.resolve();
+        this.lastError = null;
+        this.building = this._build(force).finally(() => { this.building = null; this._ph = null; this.progress = { label: 'Done', pct: 100, done: 1, total: 1, error: this.lastError }; this._emit(); });
+        return this.building;
+    }
+
+    async _build(force = false) {
         // Previously this returned early any time masterIndex was non-empty,
         // even if the last build had partial fetch failures. That silently
         // locked in a broken/partial index until the user manually clicked
         // Refresh. Now a build with errors is not treated as "done" — it will
         // retry automatically the next time buildMasterIndex is called.
-        if (!force && this.masterIndex.length > 0 && !this.lastBuildHadErrors) return;
+        this._phase(0, 1);
         await this.app.historyManager.load();
         
         let manifest;
@@ -933,7 +1011,7 @@ class GateIndexer {
         } 
         catch (e) { 
             console.error("GATE Simulator Fetch Error:", e); 
-            new Notice("Error loading pyq-vault-index.json after retries. Check the console.");
+            this.lastError = "Couldn't download pyq-vault-index.json (" + (e && e.message ? e.message.replace(/^Failed to fetch "[^"]*" after \d+ attempts: /, '') : 'network error') + ").";
             this.lastBuildHadErrors = true;
             return; 
         }
@@ -947,9 +1025,10 @@ class GateIndexer {
         const requiredSourceFiles = new Set(); 
 
         // 1. Load Answer Keys
-        for (const file of manifest.answerKeys || []) {
+        const keyResults = await this._fetchMany(manifest.answerKeys || [], 'json', 1);
+        for (const { file, value: data, error: fetchErr } of keyResults) {
             try {
-                const data = await fetchWithRetry(file).then(r => r.json());
+                if (fetchErr) throw fetchErr;
                 AnswerKeySchema.validate(data, file);
                 const setKey = (data.set === undefined || data.set === null) ? 'null' : data.set;
                 keysDict[`${data.year}_${setKey}`] = data;
@@ -957,9 +1036,11 @@ class GateIndexer {
         }
 
         // 2. Load "onlyQ" Year Files to build the index
-        for (const file of manifest.onlyQYear || []) {
+        const yearResults = await this._fetchMany(manifest.onlyQYear || [], 'text', 2);
+        for (const { file, value: yearText, error: fetchErr } of yearResults) {
             try {
-                let content = await fetchWithRetry(file).then(r => r.text());
+                if (fetchErr) throw fetchErr;
+                let content = yearText;
                 let inst = "Unknown Institute"; 
                 
                 const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
@@ -1027,6 +1108,9 @@ class GateIndexer {
         ];
 
         const loadSourceFile = async (fileName) => {
+            try { await loadSourceFileInner(fileName); } finally { this._tick(); }
+        };
+        const loadSourceFileInner = async (fileName) => {
             let content = null;
             let lastFileErr = null;
             for (const base of basePathsToSearch) {
@@ -1055,7 +1139,8 @@ class GateIndexer {
         };
         // Fetch in parallel (6 at a time) instead of one by one
         const pending = Array.from(requiredSourceFiles);
-        await Promise.all(Array.from({ length: 6 }, async () => {
+        this._phase(3, pending.length);
+        await Promise.all(Array.from({ length: 8 }, async () => {
             while (pending.length) await loadSourceFile(pending.shift());
         }));
         console.info(`GATE Simulator: loaded ${Object.keys(window.vaultBlocks).length} question blocks from ${requiredSourceFiles.size} source files`);
@@ -1065,9 +1150,11 @@ class GateIndexer {
         const tagRegex = /!?\[\[([^#|\]]+).*?#\^([a-zA-Z0-9_-]+)\]\]/g;
         const plainLinkRegex = /(?<!!)\[\[([^\]|#]+?)(?:\|[^\]]+)?\]\]/g;
 
-        for (const file of tagFiles) {
+        const tagResults = await this._fetchMany(tagFiles, 'text', 4);
+        for (const { file, value: tagText, error: fetchErr } of tagResults) {
             try {
-                let content = await fetchWithRetry(file).then(r => r.text());
+                if (fetchErr) throw fetchErr;
+                let content = tagText;
                 const isSubject = (manifest.onlyQSubject||[]).includes(file);
                 const isTopic = (manifest.onlyQTopic||[]).includes(file);
                 
@@ -1458,9 +1545,15 @@ class GateExamView {
         this.isPaused = false;
     }
     async onOpen() {
-        this.containerEl.empty();
-        this.containerEl.createEl('h3', { text: 'Loading Database...', style: 'padding:20px' });
-        await this.app.indexer.buildMasterIndex();
+        const idx = this.app.indexer;
+        const needsLoad = idx.masterIndex.length === 0 || idx.lastBuildHadErrors || idx.building;
+        const stop = needsLoad ? showIndexLoading(this.containerEl, idx) : null;
+        await idx.buildMasterIndex();
+        if (stop) stop();
+        if (idx.masterIndex.length === 0) {
+            showIndexError(this.containerEl, idx, () => { this.onOpen(); });
+            return;
+        }
         const session = await this.app.sessionManager.loadSession();
         this.renderConfigUI(session);
     }
@@ -1482,7 +1575,10 @@ class GateExamView {
         const configBox = wrapper.createDiv({ cls: 'gate-config-screen' });
 
         const refreshBtn = configBox.createEl('button', { text: '⟳ Refresh Question Index', cls: 'gate-btn gate-refresh-btn' });
-        refreshBtn.onclick = async () => { new Notice("Refreshing..."); await this.app.indexer.buildMasterIndex(true); this.renderConfigUI(session); };
+        refreshBtn.onclick = async () => {
+            const stop = showIndexLoading(this.containerEl, this.app.indexer, { title: 'Refreshing question index' });
+            this.app.indexer.buildMasterIndex(true).then(() => { stop(); if (this.app.indexer.masterIndex.length === 0) showIndexError(this.containerEl, this.app.indexer, () => this.onOpen()); else this.renderConfigUI(session); });
+        };
 
         if (session) {
             const banner = configBox.createDiv({ cls: 'gate-active-test-banner' });
@@ -1505,6 +1601,17 @@ class GateExamView {
         const stats = this.app.indexer.stats;
         const poolBox = configBox.createDiv({ cls: 'gate-pool-stats' });
         poolBox.createEl('h3', { text: `${stats.total} question(s) available in pool` });
+        const bm = stats.byMarks || {};
+        poolBox.createDiv({ cls: 'gate-pool-breakdown', text: `General Aptitude ${stats.bySection.GA} (1M\u00b7${bm.GA1 || 0}, 2M\u00b7${bm.GA2 || 0})   \u00b7   Core ${stats.bySection.EE} (1M\u00b7${bm.EE1 || 0}, 2M\u00b7${bm.EE2 || 0})` });
+        const problems = [];
+        if (stats.unknownType > 0) problems.push(`${stats.unknownType} question(s) have no answer key and will be skipped in grading`);
+        const failed = (stats.sourceFileErrors || []).length + (stats.yearFileErrors || []).length + (stats.tagFileErrors || []).length + (stats.keyFileErrors || []).length;
+        if (failed > 0) problems.push(`${failed} file(s) failed to load \u2014 some questions may show "text missing"`);
+        if (problems.length) {
+            const warn = poolBox.createDiv({ cls: 'gate-pool-warn' });
+            warn.createSpan({ text: problems.join('. ') + '. ' });
+            if (failed > 0) warn.createEl('button', { text: 'Retry', cls: 'gate-btn' }).onclick = () => refreshBtn.click();
+        }
 
         configBox.createEl('h1', { text: 'Session Policy', cls: 'gate-config-title' });
         const goals = configBox.createDiv({ cls: 'gate-goal-grid' });
@@ -1522,43 +1629,229 @@ class GateExamView {
 
         const formBody = configBox.createDiv({ cls: 'gate-config-body' });
         const config = { mode: this.setupMode, count: 65, sort: 'OFFICIAL', freshness: 'ALL' };
+        const ix = this.app.indexer;
 
         new Setting(formBody).setName('Filters').setHeading();
-        let instSel; new Setting(formBody).setName('Institute').addDropdown(d => { ['ALL', ...Array.from(this.app.indexer.institutes).sort()].forEach(i => d.addOption(i, i)); d.setValue('ALL'); instSel = d.selectEl; });
-        let subjSel, topicSel;
-        new Setting(formBody).setName('Subject').addDropdown(d => { ['ALL', ...Array.from(this.app.indexer.subjects).sort()].forEach(s => d.addOption(s, s)); d.setValue('ALL'); subjSel = d.selectEl; d.onChange(v => refreshTopicOptions(v)); });
-        new Setting(formBody).setName('Topic').addDropdown(d => { topicSel = d.selectEl; });
+        let instSel;
+        new Setting(formBody)
+            .setName('Institute')
+            .addDropdown(d => {
+                ['ALL', ...Array.from(ix.institutes).sort()].forEach(i => d.addOption(i, i));
+                d.setValue('ALL');
+                instSel = d.selectEl;
+            });
 
-        const refreshTopicOptions = (sFilt) => {
-            const opts = (sFilt && sFilt !== 'ALL') ? Array.from(this.app.indexer.topics).filter(t => this.app.indexer.topicToSubjects.get(t)?.has(sFilt)) : Array.from(this.app.indexer.topics);
-            topicSel.empty(); topicSel.createEl('option', { value: 'ALL', text: 'ALL' });
-            opts.forEach(t => topicSel.createEl('option', { value: t, text: t }));
+        let subjSel, topicSel, topicDesc;
+        const subjList = ['ALL', ...Array.from(ix.subjects).sort()];
+        const allTopics = Array.from(ix.topics).sort();
+        new Setting(formBody)
+            .setName('Subject')
+            .setDesc(subjList.length > 1 ? 'From your Subject-wise tag files.' : 'No Subject tag files found \u2014 every question counts as untagged.')
+            .addDropdown(d => {
+                subjList.forEach(s => d.addOption(s, s));
+                d.setValue('ALL');
+                subjSel = d.selectEl;
+                d.onChange(v => refreshTopicOptions(v));
+            });
+        const topicSetting = new Setting(formBody)
+            .setName('Topic')
+            .addDropdown(d => { topicSel = d.selectEl; });
+        topicDesc = topicSetting.descEl;
+        const topicOptionLabel = (t, weaknessMap) => {
+            const info = weaknessMap[t];
+            if (!info) return t;
+            const pyqTxt = `${info.count} PYQ${info.count === 1 ? '' : 's'}`;
+            if (info.accuracy === null) return `${t} (${pyqTxt}, unattempted)`;
+            return `${t} (${pyqTxt} \u00b7 ${info.correct}/${info.attempts} correct = ${Math.round(info.accuracy * 100)}%)`;
+        };
+        // Once a Subject is picked, only topics whose file declares that Subject are listed, and the PYQ count / accuracy
+        // shown next to each topic is scoped to that Subject too.
+        const refreshTopicOptions = (subjectFilter) => {
+            const prevVal = topicSel.value;
+            const options = (subjectFilter && subjectFilter !== 'ALL')
+                ? allTopics.filter(t => ix.topicToSubjects.get(t)?.has(subjectFilter))
+                : allTopics;
+            const weaknessMap = QuestionSelector.computeTopicWeaknessMap(ix.masterIndex, this.app.historyManager, subjectFilter);
+            topicSel.empty();
+            topicSel.createEl('option', { value: 'ALL', text: 'ALL' });
+            options.forEach(t => topicSel.createEl('option', { value: t, text: topicOptionLabel(t, weaknessMap) }));
+            topicSel.value = options.includes(prevVal) ? prevVal : 'ALL';
+            if (allTopics.length === 0) {
+                topicDesc.textContent = 'No Topic tag files found \u2014 every question counts as untagged.';
+            } else if (subjectFilter && subjectFilter !== 'ALL') {
+                topicDesc.textContent = options.length > 0
+                    ? `Topics declared under "${subjectFilter}". (PYQ count \u00b7 your accuracy, scoped to this Subject)`
+                    : `No topic file declares "${subjectFilter}" as its subject yet \u2014 showing none. Add a "subject:" property or a [[${subjectFilter}]] link to a topic file to connect it.`;
+            } else {
+                topicDesc.textContent = 'From your Topic-wise tag files (e.g. Trends). (PYQ count \u00b7 your accuracy) \u2014 pick a Subject above to narrow this list.';
+            }
         };
         refreshTopicOptions('ALL');
 
-        let freshSel; new Setting(formBody).setName('Freshness').addDropdown(d => { [['ALL', 'All'], ['UNSEEN', 'Unseen'], ['UNATTEMPTED', 'Unattempted'], ['MISTAKE', 'Mistake Review']].forEach(([v, t]) => d.addOption(v, t)); d.setValue(this.setupMode === 'REVIEW' ? 'MISTAKE' : 'ALL'); freshSel = d.selectEl; });
-        let algoSel; new Setting(formBody).setName('Algorithm').addDropdown(d => { QuestionSelector.ALGORITHMS.forEach(([id, lbl]) => d.addOption(id, lbl)); d.setValue('ADAPTIVE'); algoSel = d.selectEl; });
-        
+        let freshOpts = [['ALL', 'Include all'], ['UNSEEN', 'Unseen only'], ['UNATTEMPTED', 'Unattempted only']];
+        if (this.setupMode === 'REVIEW') freshOpts = [['MISTAKE', 'Needs review only']];
+        let freshSel;
+        new Setting(formBody)
+            .setName('Freshness policy')
+            .setDesc(this.setupMode === 'REVIEW'
+                ? 'Only questions you got wrong that you haven\u2019t yet mastered (see mastery badges once the test starts).'
+                : 'Which previously-seen questions are eligible for this test.')
+            .addDropdown(d => {
+                freshOpts.forEach(([v, t]) => d.addOption(v, t));
+                d.setValue(freshOpts[0][0]);
+                freshSel = d.selectEl;
+            });
+
+        let algoSel;
+        new Setting(formBody)
+            .setName('Selection algorithm')
+            .setDesc('How questions are prioritized within the filters above. Never affects grading \u2014 only which questions are picked, and each question will show why it was chosen.')
+            .addDropdown(d => {
+                QuestionSelector.ALGORITHMS.forEach(([id, label]) => d.addOption(id, label));
+                d.setValue(this.app.settings.selectionAlgorithm || 'ADAPTIVE');
+                algoSel = d.selectEl;
+            });
+
+        const yearPresets = [
+            ['ALL', 'All years'],
+            ['2010-2016', '2010\u20132016 (concept building)'],
+            ['2017-2022', '2017\u20132022 (transition / trend)'],
+            ['2023-2026', '2023\u20132026 (mock-style practice)'],
+            ['CUSTOM', 'Custom']
+        ];
+        let yearPresetSel, customYearInp;
+        new Setting(formBody)
+            .setName('Year range')
+            .setDesc('Older PYQs build concepts; recent ones match current exam style \u2014 filter to whichever pass you\u2019re on.')
+            .addDropdown(d => {
+                yearPresets.forEach(([v, t]) => d.addOption(v, t));
+                d.setValue('ALL');
+                yearPresetSel = d.selectEl;
+                d.onChange(v => { customYearSetting.settingEl.style.display = v === 'CUSTOM' ? 'flex' : 'none'; });
+            });
+        const customYearSetting = new Setting(formBody)
+            .setName('Custom years')
+            .setDesc('Used only when Year range is Custom. Comma-separated \u2014 mix single years, ranges and specific sets, e.g. "2014(3), 2017-2020, 2023". A bare year (or a range) includes every set of that year.')
+            .addText(t => { t.setPlaceholder('2014(3), 2017-2020, 2023'); customYearInp = t.inputEl; });
+        customYearSetting.settingEl.classList.add('is-stacked');
+        customYearSetting.settingEl.style.display = 'none';
+
         new Setting(formBody).setName('Test structure').setHeading();
-        let countInp, durInp;
-        new Setting(formBody).setName('Question count').addText(t => { t.inputEl.type = 'number'; t.setValue(this.setupMode === 'REPLICATION' ? '65' : '30'); countInp = t.inputEl; });
-        new Setting(formBody).setName('Duration (Mins)').addText(t => { t.inputEl.type = 'number'; t.setValue(this.setupMode === 'REPLICATION' ? '180' : '60'); durInp = t.inputEl; });
-        
+        let sortSel;
+        new Setting(formBody)
+            .setName('Sort order')
+            .addDropdown(d => {
+                [['OFFICIAL', 'Official GATE flow'], ['CHAOTIC', 'Pure random / chaotic']].forEach(([v, t]) => d.addOption(v, t));
+                d.setValue('OFFICIAL');
+                sortSel = d.selectEl;
+            });
+
+        let countInp, typeSel, marksSel;
+        if (this.setupMode !== 'REPLICATION') {
+            new Setting(formBody)
+                .setName('Question count')
+                .setDesc('0 = include everything that matches your filters.')
+                .addText(t => { t.inputEl.type = 'number'; t.inputEl.min = '0'; t.setValue('30'); countInp = t.inputEl; });
+            if (this.setupMode === 'PATTERN') {
+                new Setting(formBody)
+                    .setName('Question type')
+                    .addDropdown(d => {
+                        [['ALL', 'All'], ['MCQ', 'MCQ'], ['MSQ', 'MSQ'], ['NAT', 'NAT']].forEach(([v, t]) => d.addOption(v, t));
+                        d.setValue('ALL');
+                        typeSel = d.selectEl;
+                    });
+                new Setting(formBody)
+                    .setName('Marks')
+                    .addDropdown(d => {
+                        [['ALL', 'All'], ['1', '1 Mark'], ['2', '2 Marks']].forEach(([v, t]) => d.addOption(v, t));
+                        d.setValue('ALL');
+                        marksSel = d.selectEl;
+                    });
+            }
+        } else {
+            new Setting(formBody)
+                .setName('Question count')
+                .setDesc('Locked to the official 65-question mix: 5 GA\u00b71M, 5 GA\u00b72M, 25 EE\u00b71M, 30 EE\u00b72M.');
+        }
+
+        let durInp, untimed = false;
+        if (this.setupMode !== 'REPLICATION') {
+            new Setting(formBody)
+                .setName('Untimed practice')
+                .setDesc('No countdown, no auto-submit \u2014 for concept-building passes, not speed.')
+                .addToggle(t => {
+                    t.setValue(false);
+                    t.onChange(v => {
+                        untimed = v;
+                        durInp.disabled = v;
+                        durSetting.settingEl.style.opacity = v ? '0.5' : '1';
+                    });
+                });
+        }
+        const durSetting = new Setting(formBody)
+            .setName('Duration')
+            .setDesc('Minutes. Ignored when Untimed practice is on.')
+            .addText(t => {
+                t.inputEl.type = 'number'; t.inputEl.min = '1';
+                t.setValue(this.setupMode === 'REPLICATION' ? '180' : '60');
+                durInp = t.inputEl;
+            });
+
+        // Filled in only when the official blueprint can't be satisfied, with a concrete next step.
         const errorBox = configBox.createDiv({ cls: 'gate-inline-banner', style: 'display: none;' });
         const startBtn = configBox.createEl('button', { text: 'Initialize Engine', cls: 'gate-start-btn' });
         startBtn.onclick = () => {
-            errorBox.style.display = 'none'; errorBox.empty();
-            config.institute = instSel.value; config.subject = subjSel.value; config.topic = topicSel.value; config.freshness = freshSel.value; config.algorithm = algoSel.value;
-            config.count = parseInt(countInp.value, 10) || 0;
-            const isUntimed = false; const durMins = parseInt(durInp.value, 10) || 0;
-            
+            errorBox.empty();
+            errorBox.style.display = 'none';
+            config.institute = instSel.value;
+            config.subject = subjSel.value;
+            config.topic = topicSel.value;
+            config.freshness = freshSel.value;
+            config.sort = sortSel.value;
+            config.algorithm = algoSel.value;
+            if (countInp) {
+                const c = parseInt(countInp.value, 10);
+                config.count = (Number.isFinite(c) && c >= 0) ? c : 0;
+            }
+            if (typeSel) config.patType = typeSel.value;
+            if (marksSel) config.patMarks = marksSel.value;
+            const preset = yearPresetSel.value;
+            if (preset === 'ALL') {
+                config.years = null;
+            } else if (preset === 'CUSTOM') {
+                config.years = GateUtils.parseYearSelector(customYearInp.value);
+                if (!config.years) new Notice('No valid years found in Custom years \u2014 showing all years instead.');
+            } else {
+                config.years = GateUtils.parseYearSelector(preset);
+            }
+            let durMinutes = 0;
+            if (!untimed) {
+                durMinutes = parseInt(durInp.value, 10);
+                if (!Number.isFinite(durMinutes) || durMinutes <= 0) { new Notice('Please enter a valid duration in minutes.'); return; }
+            }
             try {
-                this.questions = TestGenerator.generate(this.app.indexer.masterIndex, config, this.app.historyManager);
-                this.questions.forEach((_, i) => { this.answers[i] = ""; this.reviews[i] = false; this.questionTimes[i] = 0; });
-                this.viewedIndices = new Set(); this.isUntimed = isUntimed; this.timeLeft = durMins * 60; this.currentIndex = 0; this.selectedAlgorithm = config.algorithm;
-                if (!isUntimed) this.startTimer();
+                this.questions = TestGenerator.generate(ix.masterIndex, config, this.app.historyManager);
+                this.questions.forEach((_, i) => { this.answers[i] = ''; this.reviews[i] = false; this.questionTimes[i] = 0; });
+                this.viewedIndices = new Set();
+                this.isUntimed = untimed;
+                this.timeLeft = untimed ? 0 : durMinutes * 60;
+                this.currentIndex = 0;
+                this.selectedAlgorithm = config.algorithm;
+                if (!untimed) this.startTimer();
                 this.renderExamUI();
-            } catch (e) { new Notice(e.message); }
+            } catch (e) {
+                if (e instanceof ReplicationShortfallError) {
+                    errorBox.style.display = 'block';
+                    errorBox.createEl('p', { text: e.message });
+                    errorBox.createEl('p', { cls: 'gate-text-muted', text: e.buckets.map(b => `${b.label}: ${b.have}/${b.need}`).join('  \u00b7  ') + `  (${e.totalAvailable} total across all buckets)` });
+                    const btnRow = errorBox.createDiv({ cls: 'gate-banner-btns' });
+                    btnRow.createEl('button', { text: 'Switch to Custom Drill', cls: 'gate-btn primary' }).onclick = () => { this.setupMode = 'DRILL'; this.renderConfigUI(session); };
+                    btnRow.createEl('button', { text: 'Adjust filters', cls: 'gate-btn' }).onclick = () => { errorBox.style.display = 'none'; errorBox.empty(); };
+                    new Notice('Not enough questions for the official mix \u2014 see options below, or relax your filters.');
+                } else {
+                    new Notice(e.message);
+                }
+            }
         };
     }
     renderExamUI() {
@@ -1674,6 +1967,22 @@ class GateExamView {
         this.dom.btnNext.disabled = this.currentIndex === this.questions.length - 1;
         (this.dom.paletteButtons || []).forEach(b => b.classList.remove('active'));
         this.updatePaletteButton(this.currentIndex);
+        this.revealActivePaletteButton();
+        if (this.dom.content) this.dom.content.scrollTop = 0;
+    }
+
+    // Keep the current question's button in view inside the palette (vertical grid on desktop, horizontal strip on phones).
+    revealActivePaletteButton() {
+        const btn = this.dom.paletteButtons && this.dom.paletteButtons[this.currentIndex];
+        const grid = btn && btn.parentElement;
+        if (!btn || !grid) return;
+        const gr = grid.getBoundingClientRect(), br = btn.getBoundingClientRect();
+        if (grid.scrollHeight > grid.clientHeight + 1 && (br.top < gr.top || br.bottom > gr.bottom)) {
+            grid.scrollTo({ top: grid.scrollTop + (br.top - gr.top) - (gr.height - br.height) / 2, behavior: 'smooth' });
+        }
+        if (grid.scrollWidth > grid.clientWidth + 1 && (br.left < gr.left || br.right > gr.right)) {
+            grid.scrollTo({ left: grid.scrollLeft + (br.left - gr.left) - (gr.width - br.width) / 2, behavior: 'smooth' });
+        }
     }
     
     startTimer() {
@@ -1751,13 +2060,13 @@ class GateExamView {
 
 class GateDashboardView {
     constructor(app, container) { this.app = app; this.containerEl = container; }
-    async onOpen() {
-        this.containerEl.empty();
-        this.containerEl.createEl('h3', { text: 'Loading Analytics...', style: 'padding:20px' });
-        await this.loadAndRender();
-    }
+    async onOpen() { await this.loadAndRender(); }
     async loadAndRender() {
-        await this.app.historyManager.load(); await this.app.indexer.buildMasterIndex();
+        const idx = this.app.indexer;
+        const stop = (idx.masterIndex.length === 0 || idx.lastBuildHadErrors || idx.building) ? showIndexLoading(this.containerEl, idx, { title: 'Loading your analytics' }) : null;
+        await this.app.historyManager.load(); await idx.buildMasterIndex();
+        if (stop) stop();
+        if (idx.masterIndex.length === 0) { showIndexError(this.containerEl, idx, () => this.loadAndRender()); return; }
         this.containerEl.empty();
         const layout = this.containerEl.createDiv({ cls: 'gate-dashboard-container' });
         const header = layout.createDiv({ cls: 'gate-dash-header' });
@@ -1785,7 +2094,7 @@ class GateSettingTab {
         const s = this.app.settings;
         const save = () => { localStorage.setItem('gate_settings', JSON.stringify(this.app.settings)); new Notice("Settings saved."); };
 
-        const page = this.containerEl.createDiv({ cls: 'gate-view-container' }).createDiv({ cls: 'gate-settings' });
+        const page = this.containerEl.createDiv({ cls: 'gate-view-container gate-scrollable' }).createDiv({ cls: 'gate-settings' });
         const head = page.createDiv({ cls: 'gate-settings-head' });
         head.createEl('h2', { text: 'Settings' });
         head.createDiv({ cls: 'gate-settings-sub', text: 'Changes apply instantly and are saved on this device.' });
