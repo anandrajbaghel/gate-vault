@@ -1454,6 +1454,101 @@
             "size": 393
         },
         {
+            "path": "12. PYQs Pattern Book/Trends - First-Order DEs.md",
+            "hash": "ef486f5d342263b28fbe3c481452307cf18d6fb9536855746840555ef63aeda5",
+            "size": 318
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Generators.md",
+            "hash": "f6563ae14ca93d2cab3b9077e67b59e3e2af91f449ad48feff396b0f3f55d42f",
+            "size": 724
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Geometric Distribution.md",
+            "hash": "ff1c570b7a23f65ae5b2e43b4f3e4766c27a8370196793cad6863f93ea26271c",
+            "size": 258
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Grammar.md",
+            "hash": "95ccffda14db92f7019d7f4db7915c25307d734ca26c8136a612d41c4b6e1ac4",
+            "size": 791
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Image.md",
+            "hash": "253ae9d5251f6edef2b4dd5351a0b22ccae385efab717a6ef09d2bb827f82483",
+            "size": 203
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Inference.md",
+            "hash": "02d3ba79901c73fb2a7cbb60f786ef5890abd22c637cd03473818305f6081c01",
+            "size": 347
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Integral.md",
+            "hash": "658419b287940be6019740859eb88465d86eb273b101fe4301b15d34efb0acf4",
+            "size": 552
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Inverse.md",
+            "hash": "e0acd3f4ed162273cef28ff61a3eb8fff2c107d849c15aeed08f75a55ebf55b5",
+            "size": 206
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - LCD.md",
+            "hash": "0805b168b2e5519d0b69b574698b466755803c4780cf33ab6623ea83f94907f9",
+            "size": 469
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Line Integral.md",
+            "hash": "88d0e3908d9d6a31c2532098e4afed1eb6ac4e452969fba4bcf44cd047a9280e",
+            "size": 468
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Min & Max.md",
+            "hash": "806cbadfafaad28978fa7e409c2e1ce4ccd6fc384dfc764b69b0b71d6eb4fae1",
+            "size": 212
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Motors.md",
+            "hash": "95e280d9c21fae6145d6f15f1ab03f77a938ec102ca032427eb84930f2de3d3b",
+            "size": 588
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Multivariable.md",
+            "hash": "8b1752aac676d90d560a3bfdcbe0079aba60201a1078047f1f3212399f2aedad",
+            "size": 315
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Newton-Raphson.md",
+            "hash": "cfd1e330f057392a477e2be6e18c44858e69cedbaedbac79e9898446da94afbb",
+            "size": 245
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Number Theory.md",
+            "hash": "b525c77df75cd970919c17a1f9a12977d60c988beb57ef2140b187d89b5279fe",
+            "size": 302
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Observability.md",
+            "hash": "df2478ec547b26c912f826d0ec0caf49b06bd4577f14cffafd118e400e9487be",
+            "size": 322
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - PDF.md",
+            "hash": "9eaf3da7ec29816c0dcdfc8c3385a6dd92bf69c6f3a5ce82341bbdbaeee0397a",
+            "size": 445
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - Partial Derivative.md",
+            "hash": "e8534eac364088bd093d6d0c264dcd98928400457f08f7cd7c0e193f9572329d",
+            "size": 249
+        },
+        {
+            "path": "12. PYQs Pattern Book/Trends - PnC.md",
+            "hash": "6c40bde45f25bb7158ecfad76b2c1299850216ddf5ddcab49833d6512021aba6",
+            "size": 413
+        },
+        {
             "path": "12. PYQs Pattern Book/trends - 555 Timer.md",
             "hash": "5d1d7ed66ac1dee46f722dfa10eb67e44c0459367687eac9cdc965b222218de7",
             "size": 435
@@ -1747,6 +1842,281 @@
             "path": "12. PYQs Pattern Book/trends - Equivalent Circuit.md",
             "hash": "75d6a3cc76e09480ef82b5348f0c4584c6c27f5706f72c17001a43541777f48d",
             "size": 635
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Faraday's Law.md",
+            "hash": "5fa41519f6fa2366deeff49139871ad2dc890f89d2cf42a75575f40e79ac25e9",
+            "size": 364
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Fault Analysis.md",
+            "hash": "c271ad5d73ebbd79aa47ecf7245f8a26332d3ee762a388ad7b1396ec24e7a64d",
+            "size": 1545
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Feedback Amplifiers.md",
+            "hash": "6a27a4c59b945a31f4e0ce6e1e661f1bd6fcd208f86ae3bef817192da5480909",
+            "size": 322
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Ferranti Effect.md",
+            "hash": "7279b7d6967e691d94c2b46ac1ff8617819ed85ba9a8443fe7a02bdc2f4f0fae",
+            "size": 377
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Filters.md",
+            "hash": "202c02f1687e4501ce080a9cf8be6be5b08f3d9bab05f8fe0e27589c463e737e",
+            "size": 657
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Flip Flops.md",
+            "hash": "38ca628460639a33ec51de0254118635ae89b32cfba19d6d9d5396dba30d760d",
+            "size": 584
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Fourier Analysis.md",
+            "hash": "c5000e5b57abe6a9a0c835a513a0f037016e1ac606bfda82092cdee06a60eeb5",
+            "size": 390
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Fourier Series.md",
+            "hash": "50477fac7a2371668fb9ddd19556de97c87d513c50a34b6a7a83e0c8e437f1e2",
+            "size": 1192
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Fourier Transform.md",
+            "hash": "bb06b49eb8a01b319d3766c5a93587f89de0534be8c2caf3683a3eb504cf0e93",
+            "size": 1153
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Frequency Response of Amplifiers.md",
+            "hash": "2ab1dabe7043cf8962770cff302935f651dd02d4bd53d1a462604969bc20239b",
+            "size": 374
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Frequency Response.md",
+            "hash": "426935b97b2151d14e8b9274892077ab17ddb1cf78262218dbc68ae4c94becb8",
+            "size": 1991
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Geometry.md",
+            "hash": "d8c19eb67212e955f2c3b375f1e47ac193cc9663096ac7b6e7eb9317ee41279a",
+            "size": 624
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Harmonics.md",
+            "hash": "f53fb375ab703643c1b168a60e27198d87d3a247ec3708a0aa8189031b3acfef",
+            "size": 750
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - High Voltage DC Transmission.md",
+            "hash": "3b4b309edd4a95b8e20a46eb802f731a4f4d306d4b53c65b9fb6df282e7ebd87",
+            "size": 394
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - IGBT.md",
+            "hash": "b308d8477150acdf0b1bd3bd2c0b8ad88ddfe95de1ee86888576fbc348048314",
+            "size": 307
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Induction Machines.md",
+            "hash": "111f5a606cc40b5239d82b7c99b5326dbd7c82db54c9c88064666254d7ab736e",
+            "size": 2399
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Instrument Transformers.md",
+            "hash": "19124a062564224a96139d361752a96a5bf1ab8bfbd23ac0a647e821081c5001",
+            "size": 416
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Insulators and Corona.md",
+            "hash": "a7dbb25db00fc8f35c8e0c9682841ea0c3353bab0b878622e045fc5222d65687",
+            "size": 404
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Inverters.md",
+            "hash": "6de6c113e3e63199559475f739dfffa16877dbac21b7df340adee47f290194e0",
+            "size": 1333
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Karnaugh Maps.md",
+            "hash": "27512d9af2a027fb911d5f52bf779eb4df38331d43385e7cbc66a6737e6af906",
+            "size": 1000
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - LTI Systems.md",
+            "hash": "3afbe755d809d23c773b3bf160a9101c8cc59ac0df39b0c2a633f65dd4a3b948",
+            "size": 1318
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Laplace Transform.md",
+            "hash": "17363756d487f6304a877bddd109c7dcbb4b2947c70d14b2ab3e2b485f5ff6da",
+            "size": 1492
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Linear Algebra Basics.md",
+            "hash": "dd5f5963d810be3c533d9bcb0930c0e89ccf2f1a9e8607d5035bc90d388b2ae5",
+            "size": 412
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Linear Algebra.md",
+            "hash": "ae49cae5ffd4f09b60518a5dadf272076c8bb5a38e070b5144607f8fdbafaa08",
+            "size": 2222
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Load Frequency Control (LFC).md",
+            "hash": "7595ca741977eecefd1b91e8d36dfe4f5d34306099d2e8b9f6548210707eb69d",
+            "size": 496
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Load Sharing.md",
+            "hash": "6468da18ae01223bffaa4bbe8a0be53b148be18b95cd67057dc0718c402b4e47",
+            "size": 319
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Logic Families.md",
+            "hash": "1f13643d612854fe11ccc255ef96f9956819f63f03939f3cbabbf8ee5cc8df3d",
+            "size": 295
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Losses.md",
+            "hash": "8bd491cc52820b24dba9f85d1c948274afc55fc9a16a41fe382f7a66f8fc5471",
+            "size": 393
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - MOSFET Circuits.md",
+            "hash": "5015e53696408d4434e52e5dbdaaab1c064cc60cb866a695d04fd5f31935e6bb",
+            "size": 845
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Machine Basics.md",
+            "hash": "bce20b9ad213a40d49539d91adad8d4d88f3495df500f70ee7a81eb731bf53e6",
+            "size": 719
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Magnetic Circuits.md",
+            "hash": "ff98408f077bb3942b7e194e706db3f363573641d3b0734b6fa331bee61b33f6",
+            "size": 1016
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Magnetic Field and Biot-Savart Law.md",
+            "hash": "9a6558967b13f6d05b3114fa6124aab84395b412e1d5233ac564a381da302421",
+            "size": 372
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Magnetostatics.md",
+            "hash": "8a29815c86811b4c5107f70ec1c7caa40f3712531b9c84b3bc9aa9b109406106",
+            "size": 508
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Mathematical Modeling.md",
+            "hash": "9c11b8d6b4630966395bdc0b199273b2f811daae53738dbb0a6e8295478d72c1",
+            "size": 392
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Matrix.md",
+            "hash": "c30cb810de48e75231595146ef03a274d7afa39ddb842b6a36c51b81e0422d7f",
+            "size": 653
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Maximum Power Transfer.md",
+            "hash": "c3f504213c4f3cf58e71186a1945a583ab5e52fcceb6e6957947df026ed9524b",
+            "size": 489
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Maxwell Equations.md",
+            "hash": "f2697c5857d41ce947d0834c92da26042d12bf73f288e41199d7fc0dd7ac8e3f",
+            "size": 567
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Measurement Basics.md",
+            "hash": "85db0bd3daa63004be14866dfaf341c89851166740d85f44eb5163bbd84acebf",
+            "size": 470
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Measurement Errors and Error Analysis.md",
+            "hash": "551459eccbdc63345934db1b768d05c597ff72edd8b9e8e18784f4f655a50c95",
+            "size": 1009
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Modeling.md",
+            "hash": "70938a50a3576505f0356a40feced56ec6e613d75a664a8dcc250545fd8a26bb",
+            "size": 339
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Motor Dynamics.md",
+            "hash": "8ae81bbfc9a60d417b01d689c91e7296343fa3fabfa021727d722492b9cf37f3",
+            "size": 329
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Network Graphs.md",
+            "hash": "dfae8e7f56c102f2d9f9b2bf925889ee9d7c4b0195049afbeb9597feeba1be69",
+            "size": 341
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Network Synthesis.md",
+            "hash": "27d13010abdf027debb2b2279c707317c5fa2f8fd488b66df05e462e103c869d",
+            "size": 364
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Network Theorems.md",
+            "hash": "e90009db7b102d951b12c189bd19baf3a63fc84aded893895f2046efb22ac70b",
+            "size": 1524
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Nodal Analysis.md",
+            "hash": "bcdb41561e6a3337eacb78ded870373ce5f2c3e8e48526aa617eb01bc84cbbfe",
+            "size": 902
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Norton Theorem.md",
+            "hash": "44de311c8068bf7bb0713be4732185fea5387def6f4770847bcc23ddeccee54b",
+            "size": 327
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Number Systems.md",
+            "hash": "7d642ee74c9af839f76fed27842f5ec17f3a0f6fb9ccba03bf01aa733dff40fe",
+            "size": 387
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Numerical Methods.md",
+            "hash": "2761e5c42977e25a06b0b5b4d029d358632f279418b19efb07b7257b7eb97138",
+            "size": 587
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Nyquist Plot.md",
+            "hash": "9a5220e9863424e25f1a9061c234011cec4ddaa4c678d5e65b1eba4f52075399",
+            "size": 960
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Op-Amp Applications.md",
+            "hash": "d0da861fc84f4f38af9f514bf8bc4f0efc1b114ae75f8a6cabca45e9877a12a0",
+            "size": 377
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Operational Amplifiers.md",
+            "hash": "c154804bb92db477a9596cd3c020e4ca7e4b7ba356af56278f935aba7724256f",
+            "size": 1725
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Oscillators.md",
+            "hash": "34a8a554cb25eca0ab0db58a82add210105e00edb3b4df751f38e22d4d65a984",
+            "size": 414
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Oscilloscopes.md",
+            "hash": "871e84403795b8ae8b522a02a014859bfb62924195379cf19523baa76e70cbfe",
+            "size": 399
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Per-Unit System.md",
+            "hash": "07073b377116fa002f9ea047eb76927f31f27292e35d07494ca883efa908c401",
+            "size": 641
+        },
+        {
+            "path": "12. PYQs Pattern Book/trends - Phasor.md",
+            "hash": "30a03452c19a74809ce877b0d7db331f9de26b46f7bbf1837acb3443d71e8356",
+            "size": 481
         },
         {
             "path": "13. REVISION Sheets 📙/All Exam Conventions for Power System.md",
@@ -10375,8 +10745,8 @@
         }
     ],
     "statistics": {
-        "files": 2074,
+        "files": 2148,
         "directories": 240,
-        "bytes": 100180241
+        "bytes": 100228328
     }
 }
