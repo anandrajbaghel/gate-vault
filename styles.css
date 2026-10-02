@@ -682,3 +682,31 @@ mjx-container { color: inherit; }
 .gate-modal-actions .gate-btn, .gate-settings .gate-btn { width: auto; flex: 0 0 auto; padding: 9px 20px; }
 .gate-modal-actions .gate-btn.danger, .gate-settings .gate-btn.danger { background: var(--text-error); color: var(--gate-on-status); border-color: transparent; }
 .gate-settings input[type="text"] { width: 300px; }
+
+/* Pages taller than the window must scroll (the base container clips overflow) */
+.gate-view-container.gate-scrollable { overflow-y: auto; overscroll-behavior: contain; }
+
+/* =========================================================================
+   LOADING / ERROR CARD
+   ========================================================================= */
+.gate-loading-card { max-width: 460px; margin: min(18vh, 140px) auto 0; padding: 36px 32px 32px; text-align: center; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-l); background: var(--background-secondary); box-shadow: var(--shadow-m); }
+.gate-loading-card h3 { margin: 18px 0 6px; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; }
+.gate-loading-step { min-height: 1.4em; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.gate-progress { height: 8px; margin: 18px 0 16px; overflow: hidden; border-radius: 999px; background: var(--background-secondary-alt); }
+.gate-progress-fill { width: 0; height: 100%; border-radius: inherit; background: var(--interactive-accent); transition: width 0.25s ease; }
+.gate-loading-hint { font-size: 0.86rem; line-height: 1.5; color: var(--text-muted); }
+.gate-loading-hint.slow { color: var(--text-normal); }
+.gate-spinner { width: 36px; height: 36px; margin: 0 auto; border: 3px solid var(--background-modifier-border); border-top-color: var(--interactive-accent); border-radius: 50%; animation: gate-spin 0.8s linear infinite; }
+@keyframes gate-spin { to { transform: rotate(360deg); } }
+.gate-loading-card.error h3 { color: var(--text-error); }
+.gate-loading-card.error .gate-btn { margin-top: 18px; }
+@media (prefers-reduced-motion: reduce) { .gate-spinner { animation: gate-spin 2.4s linear infinite !important; } }
+
+/* Config screen (simulator filters) */
+.setting-item.is-stacked { flex-direction: column; align-items: stretch; gap: 8px; }
+.setting-item.is-stacked .setting-item-control, .setting-item.is-stacked input[type="text"] { width: 100%; }
+.gate-config-body select { max-width: min(440px, 100%); }
+.gate-config-body .setting-item-control { flex-wrap: wrap; justify-content: flex-end; }
+.gate-config-body .setting-item-description { margin-top: 2px; font-size: 0.85rem; line-height: 1.45; color: var(--text-muted); }
+.gate-pool-breakdown { margin-top: 4px; font-size: 0.88rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.gate-pool-warn { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 10px; padding: 8px 12px; border-left: 3px solid var(--gate-warning); border-radius: var(--radius-s); background: var(--background-primary); font-size: 0.88rem; }
