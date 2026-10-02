@@ -1414,6 +1414,11 @@
             "size": 128
         },
         {
+            "path": "12. PYQs Pattern Book/README.md",
+            "hash": "e7f2e26060ff75c8b51dd79c28a5aef2c32015e8cee95b4b8a33412b3fd16863",
+            "size": 17
+        },
+        {
             "path": "13. REVISION Sheets 📙/All Exam Conventions for Power System.md",
             "hash": "97b0ca9e9f7c19d71d2524a911d58b64c127f35f47ede10e378e2ad9fcf00baa",
             "size": 6693
@@ -10040,8 +10045,8 @@
         }
     ],
     "statistics": {
-        "files": 2007,
-        "directories": 239,
-        "bytes": 100136626
+        "files": 2008,
+        "directories": 240,
+        "bytes": 100136643
     }
 }
