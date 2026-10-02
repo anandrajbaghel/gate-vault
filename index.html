@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=16">
 
     <!-- MathJax: the app turns Obsidian's $...$ and $$...$$ into \( \) and \[ \] itself, so stray dollar signs in text are never treated as math -->
     <script>
@@ -64,7 +64,17 @@
     <div id="workspace">
         <div id="view-exam" class="view-container active">
             <div class="view-header"></div>
-            <div class="view-content"></div>
+            <div class="view-content">
+                <!-- Shown instantly, before any script runs; app.js replaces it with the live progress screen -->
+                <div class="gate-view-container"><div class="gate-loading-card" role="status">
+                    <div class="gate-spinner" aria-hidden="true"></div>
+                    <h3>Loading your questions</h3>
+                    <div class="gate-loading-step">Starting&hellip;</div>
+                    <div class="gate-progress"><div class="gate-progress-fill" style="width:6%"></div></div>
+                    <div class="gate-loading-hint">The first visit downloads every paper, so it takes a little longer. Once loaded, switching tabs is instant.</div>
+                </div></div>
+                <noscript><p style="padding:20px">This simulator needs JavaScript enabled.</p></noscript>
+            </div>
         </div>
         <div id="view-dashboard" class="view-container">
             <div class="view-header"></div>
@@ -76,6 +86,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=15"></script>
+    <script src="app.js?v=16"></script>
 </body>
 </html>
