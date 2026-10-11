@@ -1,0 +1,10 @@
+{
+  "_help": "Add your own callout types here. Use them in notes as  > [!theorem] Title  (add - or + after ] to make it foldable). color is r,g,b. icon is one of: pencil clipboard info checkCircle flame check help alert x zap bug list quote star lightbulb book target pin heart shield sigma flask - or give your own icon as  \"paths\": [\"M..\", \"..\"]  (24x24 stroke path data). \"aliases\" are extra names for the same type. Delete this file's entries any time; it is optional.",
+  "callouts": [
+    { "id": "theorem",    "name": "Theorem",    "color": "120,82,238", "icon": "book",      "aliases": ["thm"] },
+    { "id": "definition", "name": "Definition", "color": "8,109,221",  "icon": "pin",       "aliases": ["def"] },
+    { "id": "formula",    "name": "Formula",    "color": "236,117,0",  "icon": "sigma" },
+    { "id": "pyq",        "name": "PYQ",        "color": "8,185,78",   "icon": "target" },
+    { "id": "trick",      "name": "Trick",      "color": "0,191,188",  "icon": "lightbulb" }
+  ]
+}

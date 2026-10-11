@@ -1,0 +1,9 @@
+{
+  "name": "Diagrams",
+  "description": "Draws mermaid diagrams written in notes and adds a full-screen button (zoom and pan) when you hover one.",
+  "group": "Reading",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "styles": ["plugin.css"],
+  "scripts": ["viewer.js", "plugin.js"]
+}

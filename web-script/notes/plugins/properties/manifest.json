@@ -1,0 +1,12 @@
+{
+  "name": "Properties",
+  "description": "Shows a note's front-matter (tags, aliases, source and other fields) in a box above the text.",
+  "group": "Reading",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "styles": ["plugin.css"],
+  "script": "plugin.js",
+  "settings": [
+    { "key": "defaultState", "type": "select", "name": "Default state", "desc": "Show the properties box open or collapsed when a note opens.", "default": "open", "options": [["open", "Open"], ["collapsed", "Collapsed"]] }
+  ]
+}

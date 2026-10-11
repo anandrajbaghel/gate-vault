@@ -1,0 +1,9 @@
+{
+  "name": "Callouts",
+  "description": "Obsidian-style callout boxes (> [!note], > [!warning]- ...) with icons, colours and optional folding. Add your own types in callouts.custom.json.",
+  "group": "Reading",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "styles": ["plugin.css"],
+  "script": "plugin.js"
+}

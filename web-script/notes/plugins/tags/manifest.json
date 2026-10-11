@@ -1,0 +1,9 @@
+{
+  "name": "Tags",
+  "description": "Turns #tags in notes into clickable pills and adds a Tags tab (left sidebar) that lists every tag with its notes.",
+  "group": "Navigation",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "styles": ["plugin.css"],
+  "script": "plugin.js"
+}

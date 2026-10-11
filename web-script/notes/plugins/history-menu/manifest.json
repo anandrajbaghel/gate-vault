@@ -1,0 +1,9 @@
+{
+  "name": "Navigation history menu",
+  "description": "Right-click (or long-press on touch) the back and forward arrows to see where they lead and jump straight to any earlier or later note.",
+  "group": "Navigation",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "styles": ["plugin.css"],
+  "script": "plugin.js"
+}

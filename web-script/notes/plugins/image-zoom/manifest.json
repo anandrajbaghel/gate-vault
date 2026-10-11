@@ -1,0 +1,9 @@
+{
+  "name": "Image zoom",
+  "description": "Click an image in a note to see it larger; click again or press Esc to close.",
+  "group": "Reading",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "styles": ["plugin.css"],
+  "script": "plugin.js"
+}

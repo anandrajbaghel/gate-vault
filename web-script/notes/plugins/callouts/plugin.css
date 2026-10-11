@@ -1,0 +1,21 @@
+/* callouts plugin */
+.gn-callout { --callout-color: 8, 109, 221; margin: 1em 0; border: 1px solid rgba(var(--callout-color), 0.28); border-radius: var(--radius-s); background: rgba(var(--callout-color), 0.1); overflow: hidden; }
+.gn-callout-title { display: flex; align-items: flex-start; gap: 8px; padding: 10px 14px; color: rgb(var(--callout-color)); font-weight: 600; line-height: 1.4; list-style: none; }
+.gn-callout-title::-webkit-details-marker { display: none; }
+.gn-callout-title::marker { content: ""; }
+.gn-callout.is-collapsible > .gn-callout-title { cursor: pointer; user-select: none; }
+.gn-callout.is-collapsible > .gn-callout-title:hover { background: rgba(var(--callout-color), 0.08); }
+.gn-callout-icon { flex: 0 0 auto; display: inline-flex; margin-top: 0.2em; }
+.gn-callout-title-inner { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.gn-callout-title-inner p { margin: 0; }
+.gn-callout-fold { flex: 0 0 auto; display: inline-flex; margin-top: 0.25em; opacity: 0.8; transition: transform 0.15s; }
+.gn-callout:not([open]) > .gn-callout-title > .gn-callout-fold { transform: rotate(-90deg); }
+.gn-callout-content { padding: 0 14px 10px; min-width: 0; overflow-wrap: anywhere; }
+.gn-callout-content > :first-child { margin-top: 0.2em; }
+.gn-callout-content > :last-child { margin-bottom: 0.2em; }
+.gn-callout .gn-callout { margin: 0.7em 0; }
+.gn-callout-content .gate-table-wrap, .gn-callout-content .gate-code-block { max-width: 100%; }
+@media (max-width: 600px) {
+  .gn-callout-title { padding: 9px 12px; }
+  .gn-callout-content { padding: 0 12px 9px; }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Outgoing links",
+  "description": "The Links tab in the right sidebar: notes the open note links to, plus links that do not match any note.",
+  "group": "Panels",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "script": "plugin.js"
+}
