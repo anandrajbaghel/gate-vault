@@ -1,0 +1,11 @@
+{
+  "name": "Simulator launcher",
+  "description": "Adds a button (and a command) that opens the GATE simulator page, in the same tab or a new one.",
+  "group": "Navigation",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "script": "plugin.js",
+  "settings": [
+    { "key": "openIn", "type": "select", "name": "Open the simulator in", "desc": "Where the simulator page opens when you press the button.", "default": "new", "options": [["new", "A new tab"], ["same", "This tab"]] }
+  ]
+}
