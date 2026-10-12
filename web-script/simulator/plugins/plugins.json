@@ -1,6 +1,7 @@
 {
   "_help": "Folder names of the features (plugins) in this folder, in the order they load. To add a feature: upload its folder here (manifest.json + plugin.js) and add its folder name to this list. To remove one, delete the name (the folder can stay).",
   "plugins": [
-    "home"
+    "home",
+    "question-bank"
   ]
 }
