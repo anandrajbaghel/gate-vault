@@ -14,6 +14,7 @@
     "diagrams",
     "heading-fold",
     "link-preview",
-    "image-zoom"
+    "image-zoom",
+    "simulator-launcher"
   ]
 }
