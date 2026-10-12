@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Simulator &middot; GATE Vault</title>
+    <!-- Apply the saved theme before first paint (same key as the other pages) -->
+    <script>
+        (function () {
+            try {
+                var pref = localStorage.getItem('gate_theme') || 'system';
+                var t = pref === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : pref;
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+        })();
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    <!-- Theme tokens, buttons, switches and code styling are shared with the other pages -->
+    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="web-script/simulator/simulator.css?v=1">
+
+    <!-- MathJax / marked / DOMPurify / highlight.js: same setup as the original simulator, used by the question features -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true,
+                packages: { '[+]': ['mathtools', 'gensymb', 'upgreek', 'textcomp', 'textmacros', 'centernot', 'cases'] }
+            },
+            loader: { load: ['[tex]/mathtools', '[tex]/gensymb', '[tex]/upgreek', '[tex]/textcomp', '[tex]/textmacros', '[tex]/centernot', '[tex]/cases'] },
+            options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+            startup: { typeset: false }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+</head>
+<body class="gs-page">
+    <div id="nav">
+        <div class="nav-brand">
+            <svg width="26" height="18" viewBox="0 0 26 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M1 9C5 -1 9 -1 13 9S21 19 25 9"/></svg>
+            <span>GATE Simulator</span>
+        </div>
+        <div class="nav-links">
+            <a class="nav-btn" href="./">Classic</a>
+            <a class="nav-btn" href="notes.html">Notes</a>
+            <!-- tabs added by features (plugins) -->
+            <span id="gs-views" class="gs-views" hidden></span>
+        </div>
+        <div class="nav-right gn-nav-right">
+            <!-- features (plugins) add their buttons here -->
+            <span id="gs-topbar-slot" class="gn-topbar-slot"></span>
+            <button id="gn-settings-btn" class="gn-icon-btn" type="button" aria-label="Settings" title="Settings (Ctrl/Cmd+,)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></svg>
+            </button>
+            <div class="theme-wrap">
+                <button id="theme-btn" class="theme-btn" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="Change theme"></button>
+                <div id="theme-menu" class="theme-menu" role="menu" aria-label="Theme" hidden></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gs-app">
+        <main id="gs-main">
+            <!-- Replaced by the first page once features have loaded. The card only appears if loading is slow. -->
+            <div class="gn-card gn-delayed" role="status"><div class="gn-spinner" aria-hidden="true"></div><h2>Loading the simulator</h2><p class="gn-sub">Starting features&hellip;</p></div>
+            <noscript><p style="padding:20px">The simulator needs JavaScript enabled.</p></noscript>
+        </main>
+    </div>
+
+    <!-- The only script: it loads the core files and every enabled feature (plugin). Change the number after ?v= to publish an update. -->
+    <script src="web-script/simulator/core/boot.js?v=1"></script>
+</body>
+</html>
