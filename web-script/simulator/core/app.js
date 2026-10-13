@@ -41,7 +41,7 @@
         const v = views.find(x => x.id === id) || views[0];
         if (!v) { renderNav(); empty(); return; }
         current = { id: v.id, cleanup: null };
-        const box = el('div', { cls: 'gs-view', dataset: { view: v.id } });
+        const box = el('div', { cls: 'gs-view' + (v.fill ? ' gs-fill' : ''), dataset: { view: v.id } });
         mainEl.append(box);
         try { const r = v.mount(box, { go: GSim.app.go }); Promise.resolve(r).then(c => { if (current && current.id === v.id) current.cleanup = c; }).catch(e => failView(box, e)); }
         catch (e) { failView(box, e); }
