@@ -14,6 +14,9 @@
             } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
         })();
     </script>
+    <!-- Festival themes: the list of festivals + the engine run before first paint so the right theme is on from the start -->
+    <script src="web-script/shared/festival-list.js?v=1"></script>
+    <script src="web-script/shared/festivals.js?v=1" data-plugins-key="gate_notes_plugins" data-plugin-id="festival-themes"></script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -50,7 +53,7 @@
             <span>GATE Simulator</span>
         </div>
         <div class="nav-links">
-            <a class="nav-btn" href="./simulator">Simulator</a>
+            <a class="nav-btn" href="./">Simulator</a>
             <a class="nav-btn active" href="notes.html" aria-current="page">Notes</a>
         </div>
         <div class="nav-right gn-nav-right">
@@ -86,6 +89,6 @@
     </div>
 
     <!-- The only script: it loads the core files and every enabled feature (plugin). Change the number after ?v= to publish an update. -->
-    <script src="web-script/notes/core/boot.js?v=4"></script>
+    <script src="web-script/notes/core/boot.js?v=5"></script>
 </body>
 </html>
