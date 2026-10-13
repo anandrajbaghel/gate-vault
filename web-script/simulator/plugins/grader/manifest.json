@@ -1,0 +1,11 @@
+{
+  "name": "Grader",
+  "description": "Marks answers against the answer key: MCQ with negative marking, MSQ, NAT ranges and marks-to-all. Used by the exam.",
+  "group": "Questions",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "scripts": [
+    "grader.js",
+    "plugin.js"
+  ]
+}
