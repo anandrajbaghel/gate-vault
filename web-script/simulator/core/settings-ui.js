@@ -52,8 +52,8 @@
         const themeRow = new GS.ui.Setting(c).name('Theme').desc('System follows your device and switches automatically. Shared with the other pages.');
         themeRow.settingEl.classList.add('is-stacked');
         const grid = el('div', { cls: 'gate-theme-grid' });
-        GS.theme.THEMES.forEach(t => grid.append(el('button', { cls: 'gate-theme-card', dataset: { themeId: t.id }, attrs: { type: 'button' }, on: { click: () => GS.theme.apply(t.id) } },
-            GS.theme.makePreview(t), el('span', { cls: 'name', text: t.name }), el('span', { cls: 'desc', text: t.desc }))));
+        (GS.theme.list ? GS.theme.list() : GS.theme.THEMES).forEach(t => grid.append(el('button', { cls: 'gate-theme-card', dataset: { themeId: t.id }, attrs: { type: 'button' }, on: { click: () => GS.theme.apply(t.id) } },
+            GS.theme.makePreview(t), el('span', { cls: 'name', text: (t.emoji ? t.emoji + ' ' : '') + t.name }), el('span', { cls: 'desc', text: t.desc }))));
         themeRow.settingEl.append(grid);
         GS.theme.apply(GS.theme.getPref(), false);
         new GS.ui.Setting(c).name('Accent color').desc('Leave on the theme default, or pick your own.')
