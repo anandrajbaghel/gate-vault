@@ -53,8 +53,14 @@
                     const view = new L.GateExamView(null, box);
                     view.app = makeApp(view);
                     active = view;
+                    // tell other features when a test is on screen and when it was submitted (they just listen; nothing depends on this)
+                    const say = (name, v) => { try { GSim.events.emit(name, v); } catch (e) { console.error(e); } };
+                    const wrap = (name, fn) => { const orig = view[name].bind(view); view[name] = (...a) => fn(orig, ...a); };
+                    wrap('renderExamUI', (orig, ...a) => { say('exam:active', true); return orig(...a); });
+                    wrap('resetState', (orig, ...a) => { say('exam:active', false); return orig(...a); });
+                    wrap('submitTest', async (orig, ...a) => { const r = await orig(...a); say('exam:submitted'); return r; });
                     view.onOpen().catch(e => { console.error(e); GS.clear(box); box.append(el('div', { cls: 'gn-card' }, el('h2', { text: 'The test could not start' }), el('p', { cls: 'gn-sub', text: String((e && e.message) || e) }))); });
-                    return () => { if (active === view) active = null; view.onClose(); };
+                    return () => { if (active === view) active = null; say('exam:active', false); view.onClose(); };
                 }
             });
 
