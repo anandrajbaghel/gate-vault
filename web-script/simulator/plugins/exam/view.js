@@ -530,6 +530,7 @@ class GateExamView {
             const { q, i, userAns, timeSec, res, isAtt, isCor } = g;
             await this.app.historyManager.updateRecord(q.qid, true, isAtt, isCor, timeSec);
             if (tagMap[q.qid]?.tag) this.app.historyManager.recordMistakeTag(q.qid, tagMap[q.qid].tag);
+            if (tagMap[q.qid]?.note) this.app.historyManager.recordMistakeNote(q.qid, tagMap[q.qid].note);
             
             report += `### Q${i + 1} - [${q.qid}]\n\n${q.chunk}\n\n`;
             report += `**Your Answer:** \`${userAns || "None"}\` | **Result:** ${res.status} (${res.marksAwarded} Marks)\n\n---\n\n`;
