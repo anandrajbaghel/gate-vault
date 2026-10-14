@@ -18,7 +18,9 @@ const configPath = path.resolve(arg('config', path.join(here, 'notes.config.json
 const DEFAULTS = {
     exclude: ['.git', '.github', '.obsidian', '.trash', 'node_modules', 'web-script'], excludeFiles: ['README.md'], hide: [],
     attachmentExtensions: ['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp', 'avif', 'bmp', 'pdf', 'mp3', 'wav', 'ogg', 'm4a', 'mp4', 'webm'],
-    output: 'notes-index.json', searchOutput: 'notes-search.json', excerptLength: 200, searchTextLimit: 20000
+    output: 'notes-index.json', searchOutput: 'notes-search.json', excerptLength: 200, searchTextLimit: 20000,
+    // front-matter keys whose values are copied into notes-props.json (read by the formula and YouTube features)
+    indexedProperties: ['formula', 'define', 'youtube'], propsOutput: 'notes-props.json'
 };
 let cfg = { ...DEFAULTS };
 try { cfg = { ...DEFAULTS, ...JSON.parse(await fs.readFile(configPath, 'utf8')) }; }
@@ -69,6 +71,17 @@ const stripCode = t => t
     .replace(/(?<![\\$])\$(?![\s$])((?:[^$\\\n]|\\[\s\S]|\n(?!\s*\n))*?)(?<![\s\\])\$(?!\d)/g, '')
     .replace(/%%[\s\S]*?%%/g, '');
 const plainHeading = s => s.replace(/\[\[([^\]|]*)(?:\|([^\]]*))?\]\]/g, (m, a, b) => b || a).replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/\s+\^[\w-]+\s*$/, '').replace(/[*_`~=]/g, '').trim();
+/* front-matter values for the keys listed in indexedProperties -> { key: [string, ...] } (keys are matched case-insensitively) */
+const propKeys = (cfg.indexedProperties || []).map(k => String(k).trim().toLowerCase()).filter(Boolean);
+function pickProps(fm) {
+    const out = {};
+    for (const k of propKeys) {
+        if (fm[k] == null) continue;
+        const vals = (Array.isArray(fm[k]) ? fm[k] : [fm[k]]).map(v => String(v).trim()).filter(Boolean);
+        if (vals.length) out[k] = vals;
+    }
+    return out;
+}
 const ATT_RE = new RegExp('\\.(' + [...attExt].join('|') + ')$', 'i');
 
 function analyse(raw, rel) {
@@ -105,7 +118,7 @@ function analyse(raw, rel) {
     const searchText = plain(body.replace(/%%[\s\S]*?%%/g, '')).slice(0, cfg.searchTextLimit);
 
     return {
-        aliases: list(fm.aliases || fm.alias), tags: [...tags], links: [...links], refs: [...refs], headings, excerpt, searchText
+        aliases: list(fm.aliases || fm.alias), tags: [...tags], links: [...links], refs: [...refs], headings, excerpt, searchText, props: pickProps(fm)
     };
 }
 
@@ -114,7 +127,7 @@ const files = [];
 await walk(root, '', files);
 files.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
-const notes = [], attachments = [], search = {}, noteRefs = new Map();
+const notes = [], attachments = [], search = {}, noteRefs = new Map(), propsMap = {};
 for (const rel of files) {
     const ext = path.extname(rel).slice(1).toLowerCase();
     if (ext === 'md') {
@@ -131,6 +144,7 @@ for (const rel of files) {
         n.mtime = Math.round(stat.mtimeMs / 1000);
         notes.push(n);
         search[rel] = a.searchText;
+        if (Object.keys(a.props).length) propsMap[rel] = a.props;
         if (a.refs.length) noteRefs.set(rel, a.refs);
     } else if (attExt.has(ext)) attachments.push(rel);
 }
@@ -159,6 +173,15 @@ const body = '{\n"version":1,\n"generated":' + JSON.stringify(generated) + ',\n"
 await fs.writeFile(outIndex, body);
 await fs.writeFile(outSearch, JSON.stringify({ version: 1, docs: search }));
 
+// notes-props.json: only the front-matter lists the formula / YouTube features need (a separate, small file so the main index stays light)
+const outProps = path.join(root, cfg.propsOutput || 'notes-props.json');
+const propsHash = crypto.createHash('sha1').update(JSON.stringify([propKeys, propsMap])).digest('hex');
+let prevProps = null;
+try { prevProps = JSON.parse(await fs.readFile(outProps, 'utf8')); } catch (e) {}
+const propsGenerated = prevProps && prevProps.hash === propsHash ? prevProps.generated : new Date().toISOString();
+await fs.writeFile(outProps, '{\n"version":1,\n"generated":' + JSON.stringify(propsGenerated) + ',\n"hash":' + JSON.stringify(propsHash) + ',\n"keys":' + JSON.stringify(propKeys) + ',\n"notes":{\n' +
+    Object.keys(propsMap).map(p => JSON.stringify(p) + ':' + JSON.stringify(propsMap[p])).join(',\n') + '\n}\n}\n');
+
 const hidden = notes.filter(n => n.hidden).length;
 const tags = new Set(notes.flatMap(n => n.tags || []));
 console.log(`${cfg.output}: ${notes.length - hidden} notes (+${hidden} hidden), ${attachments.length} attachments, ${tags.size} tags`);
@@ -167,4 +190,5 @@ if (missing.length) {
     missing.slice(0, 15).forEach(x => console.log(`  ${x.ref}   (in ${x.note})`));
     if (missing.length > 15) console.log(`  ...and ${missing.length - 15} more (see "missing" in ${cfg.output})`);
 }
-console.log(same ? 'No changes since the last run.' : 'Index updated. Commit notes-index.json and notes-search.json.');
+console.log(`${cfg.propsOutput || 'notes-props.json'}: ${Object.keys(propsMap).length} note(s) with ${propKeys.join(' / ') || '(no keys)'}`);
+console.log(same ? 'No changes since the last run.' : 'Index updated. Commit notes-index.json, notes-search.json and ' + (cfg.propsOutput || 'notes-props.json') + '.');
