@@ -1,0 +1,84 @@
+{
+  "name": "YouTube videos",
+  "description": "Search the notes that have videos attached and open them on YouTube, with a thumbnail grid for the note you are reading. Videos are listed in a note's front-matter (a list of IDs or links).",
+  "group": "Tools",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "requires": [
+    "properties-data"
+  ],
+  "styles": [
+    "plugin.css"
+  ],
+  "script": "plugin.js",
+  "settings": [
+    {
+      "key": "frontmatterKey",
+      "type": "text",
+      "name": "Front-matter key",
+      "desc": "The property that holds a list of YouTube video IDs or links, for example youtube. It must be listed in indexedProperties in notes.config.json.",
+      "default": "youtube",
+      "placeholder": "youtube"
+    },
+    {
+      "key": "showThumbnails",
+      "type": "toggle",
+      "name": "Show thumbnails",
+      "desc": "Thumbnails are loaded from img.youtube.com, which tells YouTube that your browser is looking at those videos. Turn this off to avoid any request to YouTube until you open a video.",
+      "default": true
+    },
+    {
+      "key": "thumbnailQuality",
+      "type": "select",
+      "name": "Thumbnail quality",
+      "desc": "Higher quality looks sharper but downloads a larger image per thumbnail.",
+      "default": "mqdefault",
+      "options": [
+        [
+          "default",
+          "Small (120\u00d790)"
+        ],
+        [
+          "mqdefault",
+          "Medium (320\u00d7180)"
+        ],
+        [
+          "hqdefault",
+          "Large (480\u00d7360)"
+        ]
+      ]
+    },
+    {
+      "key": "maxStack",
+      "type": "slider",
+      "name": "Thumbnails per result",
+      "desc": "How many thumbnails fan out in a search result before the rest collapse into +N.",
+      "default": 4,
+      "min": 1,
+      "max": 8,
+      "step": 1
+    },
+    {
+      "key": "showButton",
+      "type": "toggle",
+      "name": "Search button in the top bar",
+      "desc": "Opens the video search. The command stays available when this is off.",
+      "default": true
+    },
+    {
+      "key": "showNoteButton",
+      "type": "toggle",
+      "name": "Video button for the open note",
+      "desc": "Appears in the top bar only while the note you are reading has videos.",
+      "default": true
+    },
+    {
+      "key": "hotkey",
+      "type": "text",
+      "name": "Search hotkey",
+      "desc": "Written like Mod+Shift+U (Mod is Ctrl on Windows/Linux and Cmd on Mac). Empty by default.",
+      "default": "",
+      "placeholder": "Mod+Shift+U"
+    }
+  ]
+}
