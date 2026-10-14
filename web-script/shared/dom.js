@@ -55,7 +55,8 @@
         plus: ['M12 5v14', 'M5 12h14'],
         minus: ['M5 12h14'],
         collapse: ['M7 20l5-5 5 5', 'M7 4l5 5 5-5'],
-        expand: ['M7 15l5 5 5-5', 'M7 9l5-5 5 5']
+        expand: ['M7 15l5 5 5-5', 'M7 9l5-5 5 5'],
+        calculator: ['M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z', 'M8 6h8', 'M8 11h.01', 'M12 11h.01', 'M16 11h.01', 'M8 15h.01', 'M12 15h.01', 'M16 15h.01', 'M8 18h.01', 'M12 18h.01', 'M16 18h.01']
     };
     GS.icon = function (name, size) {
         size = size || 18;
