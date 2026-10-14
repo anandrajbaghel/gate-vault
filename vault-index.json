@@ -6914,6 +6914,11 @@
             "size": 26662
         },
         {
+            "path": "Resources/Image/Notes/README.md",
+            "hash": "bf466a2bbe0ad53f19cc2d96633ea8d38393fcb9d6a92a41bada0424ed45f6e1",
+            "size": 14
+        },
+        {
             "path": "Resources/Image/Question Paper/.nomedia",
             "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
             "size": 1
@@ -11230,8 +11235,8 @@
         }
     ],
     "statistics": {
-        "files": 2245,
-        "directories": 240,
-        "bytes": 100293208
+        "files": 2246,
+        "directories": 241,
+        "bytes": 100293222
     }
 }
