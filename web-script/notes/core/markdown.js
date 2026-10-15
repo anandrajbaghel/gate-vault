@@ -37,28 +37,83 @@
     const nid = s => String(s).trim().toLowerCase().replace(/[\s._-]+/g, '');
 
     /* ---------------------------------------------------------------- frontmatter */
-    function unquote(v) { v = String(v).trim(); const m = v.match(/^(["'])([\s\S]*)\1$/); return m ? m[2] : v; }
-
+    /* ---------------------------------------------------------------- front-matter (a small YAML subset, kept identical in the index script and the reader)
+       Handles: key: value - key: [a, b] - lists written as "- item" - "double" quoted text with \\ \" \n \uXXXX escapes - 'single' quoted
+       text with '' - block text after | or > (as a value or as a list item) - values wrapped over several indented lines. */
+    const YESC = { '0': '\0', a: '\x07', b: '\b', t: '\t', n: '\n', v: '\v', f: '\f', r: '\r', e: '\x1b', ' ': ' ', '"': '"', '/': '/', '\\': '\\', N: '\x85', _: '\xa0', L: '\u2028', P: '\u2029' };
+    const yamlEscapes = s => s.replace(/\\(x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8}|[\s\S])/g, (m, c) => {
+        if (c.length > 1) { try { return String.fromCodePoint(parseInt(c.slice(1), 16)); } catch (e) { return m; } }
+        return Object.prototype.hasOwnProperty.call(YESC, c) ? YESC[c] : m;       // unknown escape: keep it as typed
+    });
+    function unquote(v) {
+        v = String(v).trim(); let m;
+        if ((m = v.match(/^"([\s\S]*)"$/))) return yamlEscapes(m[1]);
+        if ((m = v.match(/^'([\s\S]*)'$/))) return m[1].replace(/''/g, "'");
+        return v;
+    }
+    /* "a, 'b, c', x_{i,j}" -> pieces; commas inside quotes or brackets/braces do not split */
+    function splitInline(s) {
+        const out = []; let cur = '', depth = 0, q = '';
+        for (let i = 0; i < s.length; i++) {
+            const c = s[i];
+            if (q) { cur += c; if (c === '\\' && q === '"') { cur += s[++i] || ''; } else if (c === q) q = ''; continue; }
+            if (c === '"' || c === "'") { q = c; cur += c; continue; }
+            if ('[{('.includes(c)) depth++; else if (']})'.includes(c)) depth = Math.max(0, depth - 1);
+            if (c === ',' && depth === 0) { out.push(cur); cur = ''; continue; }
+            cur += c;
+        }
+        out.push(cur);
+        return out.map(unquote).filter(x => x !== '');
+    }
     function parseYamlish(src) {
         const props = [], lines = src.split('\n');
         let i = 0;
+        const indentOf = l => l.match(/^[ \t]*/)[0].replace(/\t/g, '    ').length;
+        const isBlockHead = v => /^[|>][+-]?\d?[+-]?$/.test(v);
+        const isItem = l => /^[ \t]*-(\s|$)/.test(l);
+        function block(head, parentIndent) {                       // consumes the indented lines that follow
+            const buf = []; let ind = -1;
+            while (i < lines.length) {
+                const l = lines[i];
+                if (l.trim() === '') { buf.push(''); i++; continue; }
+                const n = indentOf(l);
+                if (n <= parentIndent) break;
+                if (ind < 0) ind = n;
+                buf.push(n >= ind ? l.replace(/\t/g, '    ').slice(ind) : l.trim());
+                i++;
+            }
+            while (buf.length && buf[buf.length - 1] === '') buf.pop();
+            if (head[0] === '|') return buf.join('\n');
+            let out = '';
+            for (const l of buf) { if (l === '') out += '\n'; else { if (out && !out.endsWith('\n')) out += ' '; out += l; } }
+            return out.replace(/\s+$/, '');
+        }
+        function wrapped(first, parentIndent, stop) {                // plain/quoted text continued on deeper-indented lines
+            const more = [];
+            while (i < lines.length && lines[i].trim() !== '' && indentOf(lines[i]) > parentIndent && !stop(lines[i])) { more.push(lines[i].trim()); i++; }
+            return more.length ? first.trim() + ' ' + more.join(' ') : first;
+        }
         while (i < lines.length) {
             const m = lines[i].match(/^([^\s#:][^:]*?):(?:[ \t]+(.*)|[ \t]*)$/);
             i++;
             if (!m) continue;
             const key = m[1].trim();
-            let val = (m[2] || '').trim();
-            if (val === '|' || val === '>' || val === '|-' || val === '>-') {
-                const buf = [];
-                while (i < lines.length && (/^[ \t]+/.test(lines[i]) || lines[i] === '')) { buf.push(lines[i].replace(/^[ \t]+/, '')); i++; }
-                props.push([key, buf.join(val[0] === '>' ? ' ' : '\n').trim()]);
-            } else if (val === '') {
+            const val = (m[2] || '').trim();
+            if (isBlockHead(val)) { props.push([key, block(val, 0)]); }
+            else if (val === '') {
                 const arr = [];
-                while (i < lines.length && /^[ \t]*-(\s|$)/.test(lines[i])) { arr.push(unquote(lines[i].replace(/^[ \t]*-[ \t]*/, ''))); i++; }
+                while (i < lines.length && isItem(lines[i])) {
+                    const line = lines[i], ind = indentOf(line);
+                    let item = line.replace(/^[ \t]*-[ \t]*/, '');
+                    i++;
+                    if (isBlockHead(item.trim())) { arr.push(block(item.trim(), ind)); continue; }
+                    const lb = item.trim().match(/^(.+?:)[ \t]+([|>][+-]?\d?[+-]?)$/);                 // "- Label: |" followed by indented text
+                    if (lb) { arr.push(lb[1] + ' ' + block(lb[2], ind)); continue; }
+                    arr.push(unquote(wrapped(item, ind, isItem)));
+                }
                 props.push([key, arr.length ? arr : '']);
-            } else if (/^\[.*\]$/.test(val)) {
-                props.push([key, val.slice(1, -1).split(',').map(unquote).filter(s => s !== '')]);
-            } else props.push([key, unquote(val)]);
+            } else if (/^\[.*\]$/.test(val)) props.push([key, splitInline(val.slice(1, -1))]);
+            else props.push([key, unquote(wrapped(val, 0, l => false))]);
         }
         return props;
     }
