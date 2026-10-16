@@ -126,6 +126,7 @@
     registerTab({ id: 'general', title: 'General', order: 10, render: tabGeneral });
     registerTab({ id: 'appearance', title: 'Appearance', order: 20, render: tabAppearance });
     registerTab({ id: 'reading', title: 'Reading', order: 30, render: tabReading });
+    registerTab({ id: 'search', title: 'Search', order: 35, render: c => GN.finder.renderSettings(c) });
     registerTab({ id: 'core-plugins', title: 'Core plugins', order: 40, render: tabCorePlugins });
     registerTab({ id: 'data', title: 'Notes data', order: 50, render: tabData });
 
