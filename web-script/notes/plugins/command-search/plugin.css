@@ -1,0 +1,5 @@
+/* Command search */
+.cs-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.cs-name{font-weight:600;overflow-wrap:anywhere}
+.cs-group{font-size:.78rem;color:var(--text-muted)}
+.cs-keys{flex:0 0 auto;display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}

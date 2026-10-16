@@ -1,0 +1,14 @@
+{
+  "name": "Command search",
+  "description": "The \"Commands\" tab of the search window: find and run any command of the reader or its features (type > in the search window to jump to it). Recently used commands come first.",
+  "group": "Navigation",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "scripts": [
+    "../../../shared/fuzzy.js",
+    "plugin.js"
+  ],
+  "styles": [
+    "plugin.css"
+  ]
+}
