@@ -6914,6 +6914,26 @@
             "size": 26662
         },
         {
+            "path": "Resources/Image/Notes/Gain Margin (GM).png",
+            "hash": "4cf5eb7519c73d4704e60ebe7df8428252cbdc5104977b5ff77a74d2e727fe03",
+            "size": 252686
+        },
+        {
+            "path": "Resources/Image/Notes/Magnitude Plot of Bode Plot.png",
+            "hash": "37b1a2b07939b5ac8e2b81dc7e41cb87ab384871dcfa571b88f6014fd26d85fe",
+            "size": 23853
+        },
+        {
+            "path": "Resources/Image/Notes/Phase Margin (PM).png",
+            "hash": "b0a9acf1bc2c7e66fdf659fba3a9601ee205cd58ac2477424e99d021bab6ee68",
+            "size": 252400
+        },
+        {
+            "path": "Resources/Image/Notes/Phase Plot of Bode Plot.png",
+            "hash": "0d2e06a0aee75e0357e4f27fc479f999997c1ecafda11794a4d5ae9dea66544e",
+            "size": 20012
+        },
+        {
             "path": "Resources/Image/Notes/README.md",
             "hash": "bf466a2bbe0ad53f19cc2d96633ea8d38393fcb9d6a92a41bada0424ed45f6e1",
             "size": 14
@@ -11235,8 +11255,8 @@
         }
     ],
     "statistics": {
-        "files": 2246,
+        "files": 2250,
         "directories": 241,
-        "bytes": 100293222
+        "bytes": 100842173
     }
 }
