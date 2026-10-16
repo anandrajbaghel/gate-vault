@@ -1,8 +1,0 @@
-{
-  "name": "Quick switcher",
-  "description": "Jump to any note by typing part of its name, alias or folder (Ctrl/Cmd+O or Ctrl/Cmd+K). Adds a search button to the top bar.",
-  "group": "Navigation",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "script": "plugin.js"
-}
