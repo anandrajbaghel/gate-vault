@@ -114,7 +114,8 @@
         addArticleSection(where, def) { return this._track(GN.slots[where === 'after' ? 'after' : 'before'].add(Object.assign({}, def, { render: this.wrap(def.render) }))); }
         addMarkdownPostProcessor(fn, opts) { return this._track(GN.markdown.addPostProcessor(this.wrap(fn), Object.assign({ name: this.id }, opts))); }
         addCodeBlockProcessor(lang, fn) { return this._track(GN.markdown.addCodeBlockProcessor(lang, this.wrap(fn))); }
-        addFinderMode(def) { return this._track(GN.finder.addMode(def)); }
+        addFinderMode(def) { return this._track(GN.finder.addMode(Object.assign({}, def, { owner: this.id }))); }
+        addFinderTab(def) { return this.addFinderMode(def); }
         addSettingsTab(def) { return this._track(GN.settingsUI.registerTab(Object.assign({ group: 'plugins' }, def))); }
         registerDomEvent(target, type, fn, opts) {
             const w = this.wrap(fn);
