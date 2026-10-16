@@ -190,11 +190,12 @@
         const st = GN.index.state;
         const folders = new Set(st.visible.map(n => n.folder).filter(Boolean)).size;
         const actions = el('div', { cls: 'gn-home-actions' });
-        if (GN.commands.has('quick-switcher:open')) actions.append(el('button', { cls: 'gate-btn primary', text: 'Open a note\u2026', attrs: { type: 'button' }, on: { click: () => GN.commands.run('quick-switcher:open') } }));
-        if (GN.commands.has('search:open')) actions.append(el('button', { cls: 'gate-btn', text: 'Search note text', attrs: { type: 'button' }, on: { click: () => GN.commands.run('search:open') } }));
+        if (GN.finder.hasTab('quick')) actions.append(el('button', { cls: 'gate-btn primary', text: 'Open a note\u2026', attrs: { type: 'button' }, on: { click: () => GN.finder.open('quick') } }));
+        else actions.append(el('button', { cls: 'gate-btn primary', text: 'Search\u2026', attrs: { type: 'button' }, on: { click: () => GN.finder.open() } }));
+        if (GN.finder.hasTab('full')) actions.append(el('button', { cls: 'gate-btn', text: 'Search note text', attrs: { type: 'button' }, on: { click: () => GN.finder.open('full') } }));
         const tips = [];
-        if (GN.commands.has('quick-switcher:open')) tips.push('Ctrl/Cmd+O open a note');
-        if (GN.commands.has('search:open')) tips.push('Ctrl/Cmd+Shift+F search text');
+        if (GN.finder.hasTab('quick')) tips.push('Ctrl/Cmd+O open a note');
+        if (GN.finder.hasTab('full')) tips.push('Ctrl/Cmd+Shift+F search text');
         tips.push('Alt+\u2190 / Alt+\u2192 back and forward');
         content.append(
             el('p', { cls: 'gn-lead', text: 'A read-only reader for your Obsidian notes. Links, embeds, equations and more work the way they do in Obsidian.' }),
