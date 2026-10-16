@@ -1,0 +1,8 @@
+{
+  "name": "Quick switcher",
+  "description": "The \"Open note\" tab of the search window: jump to any note by typing part of its name, alias or folder (Ctrl/Cmd+O or Ctrl/Cmd+K by default; change hotkeys and the top-bar icon in Settings → Search).",
+  "group": "Navigation",
+  "version": "1.0.0",
+  "defaultEnabled": true,
+  "script": "plugin.js"
+}
