@@ -1,8 +1,0 @@
-{
-  "name": "Search",
-  "description": "Find words inside your notes (Ctrl/Cmd+Shift+F). Downloads the search data the first time you use it.",
-  "group": "Navigation",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "script": "plugin.js"
-}
