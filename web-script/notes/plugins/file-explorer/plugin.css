@@ -1,4 +1,0 @@
-/* File explorer plugin */
-.gn-files-tools { display: flex; align-items: center; gap: 2px; padding: 8px; flex: 0 0 auto; }
-.gn-filter { flex: 1; min-width: 0; padding: 6px 9px; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); background: var(--background-modifier-form-field); color: var(--text-normal); font: 0.85rem var(--font-interface); }
-@media (max-width: 900px) { .gn-filter { font-size: 16px; } }

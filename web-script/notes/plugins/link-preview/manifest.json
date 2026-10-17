@@ -1,9 +1,0 @@
-{
-  "name": "Link previews",
-  "description": "Hover a [[link]] to peek at the note, section or block it points to (mouse devices only).",
-  "group": "Reading",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "styles": ["plugin.css"],
-  "script": "plugin.js"
-}

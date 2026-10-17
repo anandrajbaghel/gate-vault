@@ -1,8 +1,0 @@
-{
-  "name": "Home",
-  "description": "A start page that shows which simulator features are installed and running. Safe to switch off.",
-  "group": "Core",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "script": "plugin.js"
-}

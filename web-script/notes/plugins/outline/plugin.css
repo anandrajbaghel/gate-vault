@@ -1,5 +1,0 @@
-/* Outline plugin */
-.gn-outline-item { display: block; padding: 4px 8px 4px calc(8px + var(--l, 0) * 14px); border-radius: var(--radius-s); color: var(--text-muted); font-size: 0.86rem; line-height: 1.35; text-decoration: none; overflow: hidden; text-overflow: ellipsis; }
-.gn-outline-item:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
-.gn-outline-item.is-active { color: var(--text-accent); font-weight: 600; }
-@media (max-width: 900px) { .gn-outline-item { padding-top: 8px; padding-bottom: 8px; } }

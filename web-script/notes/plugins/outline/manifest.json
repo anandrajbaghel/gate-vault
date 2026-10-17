@@ -1,9 +1,0 @@
-{
-  "name": "Outline",
-  "description": "The Outline tab in the right sidebar: the headings of the open note, click to jump, current section highlighted.",
-  "group": "Panels",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "styles": ["plugin.css"],
-  "script": "plugin.js"
-}

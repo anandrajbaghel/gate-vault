@@ -1,9 +1,0 @@
-{
-  "name": "File explorer",
-  "description": "The Files tab in the left sidebar: folders and notes as a tree, with a filter box and expand / collapse all.",
-  "group": "Navigation",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "styles": ["plugin.css"],
-  "script": "plugin.js"
-}

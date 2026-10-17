@@ -1,9 +1,0 @@
-{
-  "name": "Fold headings",
-  "description": "Hover a heading and click its arrow to fold or unfold that section.",
-  "group": "Reading",
-  "version": "1.0.0",
-  "defaultEnabled": true,
-  "styles": ["plugin.css"],
-  "script": "plugin.js"
-}
